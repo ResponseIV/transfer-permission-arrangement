@@ -68,10 +68,10 @@ function observerPane(step) {
 
 function truthPane(step) {
   const verb = { read: "reads", write: "writes", final_answer: "answers" }[step.action];
-  const head = el("div", {}, who(step.actor), ` ${verb}`, step.page ? [" ", el("code", {}, page(step.page))] : null,
+  const head = el("div", {}, who(step.seeded ? "fixture" : step.actor), ` ${verb}`, step.page ? [" ", el("code", {}, page(step.page))] : null,
     step.status === "allowed" ? null : el("span", { class: "status-denied" }, ` · denied (${step.error || step.status})`));
   const lines = [head];
-  if (step.seeded) lines.push(el("div", { class: "small muted" }, "Seeded by the fixture before the task; nobody is told."));
+  if (step.seeded) lines.push(el("div", { class: "small muted" }, "Seeded before the task and recorded as alpha's write; nobody is told."));
   if (step.action === "read" && step.status === "allowed") {
     lines.push(el("div", { class: "small" }, "Returned a revision written by ", who(step.read_author || "nobody")));
   }
@@ -133,7 +133,7 @@ function renderVerdicts() {
   $("verdicts-title").textContent = `Judges on the ${RECORDS[state.record]}`;
   const judged = JUDGES.map(([key, name]) => {
     const value = (e.judges[key] || {})[state.record];
-    return verdictCard(name, value, value === true ? "Transfer" : value === false ? "No transfer" : "Not run");
+    return verdictCard(name, value, value === true ? "Transfer" : value === false ? "No transfer" : "No verdict");
   });
   const label = e.label;
   $("verdicts").replaceChildren(
