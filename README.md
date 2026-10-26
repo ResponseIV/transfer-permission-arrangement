@@ -98,12 +98,36 @@ the judges' verdicts. See [`benchmark/DATACARD.md`](benchmark/DATACARD.md).
 | `research/numbers-*` | Every number in the paper, with the hash of each input and the command that produced it |
 | [`research/PRIOR-AND-NEW-WORK-20261023.md`](research/PRIOR-AND-NEW-WORK-20261023.md) | What existed before the sprint and what is new, file by file |
 
+## Preexisting and new work
+
+The sprint opened on 2026-10-23T12:00Z. Everything present at the tag `sprint-freeze` (commit `a280f7a` in the
+working repository, recorded before the first sprint run) is **preexisting**; everything else is **new**. The
+file-by-file inventory with first-commit times is
+[`research/PRIOR-AND-NEW-WORK-20261023.md`](research/PRIOR-AND-NEW-WORK-20261023.md).
+
+**Preexisting code** (the testbed, the frozen transfer label, the observer signals and the judge):
+`exchange_bench.py`, `exchange_evidence.py`, `exchange_judge.py`, `page_artifact_arm.py`,
+`page_artifact_codex_adapter.py`, `page_artifact_gemini_adapter.py`, `page_artifact_lab.py`,
+`page_artifact_plan_adapter.py`, `page_artifact_plan_v2.py`, `page_artifact_plan_v3.py`, `page_artifact_plan_v4.py`,
+`run_stats.py`, `study_disguised.py`, `study_exchange_gaps.py`, `study_pact.py`, `study_pressure.py`,
+`study_wording.py`, `transcript_counts.py`, and their tests. Of these, `exchange_bench.py` and `page_artifact_lab.py`
+(with three of their tests) were modified during the sprint; the inventory lists each change.
+
+**New during the sprint:** `audit_cell.py`, `blind_sheet.py`, `code_sequence.py`, `export_benchmark.py`,
+`judge_openweight.py`, `judge_posthoc.py`, `modal_vllm.py`, `openweight_judge_report.py`,
+`page_artifact_openweight_adapter.py`, `plus_factors.py`, `posterior_table.py`, `proposal_read_sheet.py`,
+`replication_summary.py`, `sequence_by_condition.py`, `sprint_extras.py`, `sprint_funnel.py`, `sprint_nesting.py`,
+`sprint_numbers.sh`, `sprint_protocol.py`, `study_agreed.py`, `study_leak.py`, `study_scripted_offer.py`,
+`transfer_subgroups.py`, and their tests; every registration, analysis and coding file in `research/`; and the paper.
+
+**Data:** the 1,174 scorable development episodes in run folders that existed at the tag are preexisting; the
+706 sprint episodes are new. Each episode in [`benchmark/cells.jsonl`](benchmark/cells.jsonl) carries its `origin`
+(`prior work`, `sprint` or `post hoc`).
+
 ## How the work was done
 
-- **Prior work is disclosed.** The testbed, the transfer label, the observer signals and the judge prompts were
-  built before the sprint on 1,174 development episodes and frozen at the tag `sprint-freeze`, before the first
-  sprint run. All 706 sprint episodes (a 450-episode primary test and six registered follow-ups), the look-alike
-  conditions, the arrangement definition, the analyses and the report are new.
+- **The sprint data.** 706 scorable episodes: a 450-episode primary test on four OpenAI models and six registered
+  follow-ups, among them a second model family (Qwen3-32B) and the scripted control.
 - **Forecasts came first.** Each follow-up was registered with predictions by the author and by Claude before its
   first episode. All 143 are scored in the paper's Appendix D, wrong ones included.
 - **Nothing is rerun or replaced.** Failed and refused episodes are kept and flagged. A run stopped by a failure may
