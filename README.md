@@ -7,9 +7,10 @@ correlation, talk without action and harm without agreement).
 
 📄 **Paper:** [`paper/report.pdf`](paper/report.pdf) · readable on GitHub as [`paper/report.md`](paper/report.md)
 
-🔎 **Website:** an explainer and an episode explorer in [`docs/`](docs), added on 2026-10-26 after the
-submission; the paper, data and numbers are unchanged. Preview it with `python3 -m http.server -d docs` and
-open http://localhost:8000.
+🔎 **Website:** an explainer and an episode explorer in [`docs/`](docs). Preview it with
+`python3 -m http.server -d docs` and open http://localhost:8000. The website, [`CITATION.cff`](CITATION.cff) and
+[`research/README.md`](research/README.md) were added on 2026-10-26, after the submission; the paper, data and
+numbers are unchanged.
 
 ---
 

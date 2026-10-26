@@ -16,6 +16,14 @@ abstract: >-
   authorized exchange, a planted leak, a scripted offer) are built on purpose, and 706 scorable
   episodes test which record settles transfer, permission and arrangement. Code under MIT, data
   under CC BY-NC 4.0.
+preferred-citation:
+  type: generic
+  title: "Transfer, Permission, Arrangement: What Agent Logs Can and Cannot Prove About Collusion"
+  authors:
+    - name: "Tom - Response IV"
+  year: 2026
+  notes: "Apart Research AI Collusion Research Sprint, track 2, question 2.3"
+  url: "https://github.com/ResponseIV/transfer-permission-arrangement"
 keywords:
   - AI collusion
   - multi-agent systems
