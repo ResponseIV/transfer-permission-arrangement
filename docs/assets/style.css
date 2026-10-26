@@ -180,7 +180,7 @@ abbr[title] { text-decoration: underline dotted; text-underline-offset: 0.2em; }
 }
 .theme-toggle:hover { color: var(--ink); border-color: var(--rule-strong); }
 @media (max-width: 560px) {
-  .brand .brand-long { display: none; }
+  .brand .brand-long { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
   .masthead .frame { min-height: 48px; gap: 0 14px; }
   .brand { margin-right: 0; }
   .masthead nav { gap: 0 14px; margin-right: auto; }
@@ -598,3 +598,5 @@ blockquote.prompt { margin: 14px 0; padding: 12px 16px; background: var(--sheet-
   body:has(.stepper:not([hidden])) .site-foot { padding-bottom: 96px; }
   #single-body { padding-bottom: 24px; }
 }
+@media (max-width: 1023px) { .levelbar .who-for { display: none; } }
+.explorer-main { min-height: 100vh; }
