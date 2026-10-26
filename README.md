@@ -7,6 +7,10 @@ correlation, talk without action and harm without agreement).
 
 📄 **Paper:** [`paper/report.pdf`](paper/report.pdf) · readable on GitHub as [`paper/report.md`](paper/report.md)
 
+🔎 **Website:** an explainer and an episode explorer in [`docs/`](docs), added on 2026-10-26 after the
+submission; the paper, data and numbers are unchanged. Preview it with `python3 -m http.server -d docs` and
+open http://localhost:8000.
+
 ---
 
 ## The question
@@ -92,6 +96,8 @@ the judges' verdicts. See [`benchmark/DATACARD.md`](benchmark/DATACARD.md).
 | [`tests/`](tests) | Unit tests for the scripts above |
 | [`data/`](data) | Every run: `events.jsonl` (the full log), `cells.jsonl`, `manifest.json` (condition, prompt, seed, input hashes), `requests.jsonl` (each model request and response), and a `.log` with UTC launch and exit lines. `exchange-judge-*` folders hold judge verdicts; `posthoc/` holds the planted-leak runs |
 | [`benchmark/`](benchmark) | All episodes in one file, with its data card |
+| [`docs/`](docs) | The website: an explainer and an episode explorer; its episodes come from `scripts/site_data.py` |
+| [`research/README.md`](research/README.md) | What each research record is, and the order to read them |
 | [`research/PREDICTIONS-*.md`](research) | The registrations: forecasts by the author and by Claude, committed before each run |
 | [`research/SPRINT-ANALYSIS-20261023.md`](research/SPRINT-ANALYSIS-20261023.md) | The scoring of every registered forecast and the findings, in the order they were made |
 | `research/CODING-*`, `CHECK-*`, `HANDREAD-*` | Hand coding of offers and arrangements, the blind check sheets, their keys, the author's answers and the comparisons |
@@ -152,7 +158,8 @@ tested.
 
 ## Licence and citation
 
-Code: MIT ([`LICENSE`](LICENSE)). Data: CC BY-NC 4.0 ([`LICENSE-data.md`](LICENSE-data.md)).
+Code: MIT ([`LICENSE`](LICENSE)). Data: CC BY-NC 4.0 ([`LICENSE-data.md`](LICENSE-data.md)). Citation metadata:
+[`CITATION.cff`](CITATION.cff).
 
 ```bibtex
 @misc{responseiv2026transfer,
