@@ -19,7 +19,8 @@ strong 600; emphasis uses the relevant family's italic. There are no shrinking p
 | Subheading | 24/32 | Subsections and the active desk comparison |
 | Intro | 24/32 | Opening standfirst |
 | Body | 18/28 | Narrative, case explanations and inference text |
-| Interface | 14/20, medium or strong | Navigation, controls, record categories |
+| Interface | 14/20, medium or strong | Navigation, controls |
+| Tag | 12/16 mono, tracked caps | Exhibit names, record categories, ledger gutters, kickers |
 | Note | 14/24 | Captions, provenance, cautions, metadata |
 | Record | 14/24, monospace | Literal page content, prompts, event paths |
 | Token specimen | 18/28, monospace | A short token being examined |
@@ -57,17 +58,20 @@ The compact 360px boundary changes gutters only. Role sizes change centrally at 
 
 ## Component rules
 
-- The opening exhibit and case files share an inset, rule colour, source label and caption role.
+- Every exhibit opens with a 2px ink rule and a tracked mono tag, uses ruled ledger lines and mono event
+  numbers, and closes with a caption in the note role. Compositions vary by case (see DESIGN.md).
   The opening record takes its natural content height; a hidden extra record does not reserve an empty area.
-- Case narrative stays in the body role. Its exact strings use the record role. The inference rows use
-  a fixed label column and body text, then stack on phones.
+- Case narrative stays in the body role. Its exact strings use the record role. The inference lines sit
+  against a single ink rule: what is established in roman, what is left open in italic.
 - Comparative metrics share one size. Their denominator and assumed population remain adjacent in notes
   or body text; magnitude is not used as decorative promotion.
 - Technical disclosures use the same ruled summary, control target and spacing. They open at a deep link.
 - Navigation and actions use text and underlines. Font size, weight, spacing and rules establish hierarchy;
   there is no decorative animation, gradient or 3D layer.
-- Colour roles distinguish text priority, source identity and evidence state. Text labels also carry the
-  distinction. Light, dark and print palettes are in the same token file.
+- Colour roles distinguish text priority, source identity and evidence state; text labels also carry the
+  distinction. The marker colour is reserved for the record that changes the verdict (instructions, a decisive log
+  line, the reveal) and is never used for errors or refusals, which are shown by a word and a strike-through.
+  Light, dark and print palettes are in the same token file.
 
 ## Maintaining the system
 

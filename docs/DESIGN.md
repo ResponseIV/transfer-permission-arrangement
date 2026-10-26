@@ -44,46 +44,47 @@ the scripted explanation in a `noscript` note and the desk offers a static compa
 
 ## Layout and visual language
 
-An investigative journal with a small evidence plate, rather than a product landing page. Cool white,
-blue ink, fine rules, a compact single-line masthead, underlined depth tabs and text-led actions.
-No decorative motion, shader, canvas, 3D, scroll reveal, external component library or runtime CDN.
+A printed case file, not a product page. Warm paper and ink; one rule weight for structure and a heavier ink
+rule to open every exhibit; one **marker** colour (vermilion) reserved for the record that changes the verdict:
+the instructions, the decisive line of a log, the reveal. Agents keep their own colours, always with their names.
+No gradients, shadows-as-decoration, coloured italic headlines or arrow glyphs on links.
 
-The system is defined in [DESIGN-SYSTEM.md](DESIGN-SYSTEM.md) and `assets/tokens.css`. It uses an 8px spacing
-unit: 24px phone gutters (16px on compact phones), 48px larger gutters, a 48–64px column gap, a 176px contents
-rail and a 656px prose measure. Small interface gaps can use a 4px half-step. Body type is 18/28px;
-notes and literal source records are 14/24px. Rules and optical adjustments are not spacing tokens.
-The cover stacks below 1024px. The contents rail becomes a native disclosure at that breakpoint.
-Charts and tables can use the wider article area; tables scroll within their own container.
+**One grammar, five compositions.** Every exhibit shares the same marks: a tracked mono tag naming it, ruled
+ledger lines, mono event numbers, a caption in the note role, and the marker only where the verdict turns. What
+varies is the composition, chosen to fit what each case shows:
 
-Type is self-hosted: Newsreader for editorial headings and reading text, Instrument Sans for navigation and
-signposts, and JetBrains Mono for recorded strings. Their OFL licences are in `assets/fonts/`.
-Colour and type tokens live in `assets/tokens.css`; the manual and system dark themes share the same values.
-Agent identities and verdicts have text labels in addition to colour.
+| Case | Composition |
+| --- | --- |
+| Opening | A log slip: add records one at a time; the instructions arrive in the marker colour |
+| Transfer | A log slip with the refused read struck through, then a unit chart of the 194 episodes (28 against 0) |
+| Permission | A redline of the two real prompts: the rule struck, the reworded sentence inserted, the shared trace beneath |
+| Arrangement | Two aligned tracks (offer, read, reply, use) with original event numbers; solid for agent-made, dashed for scripted |
+| Leak | A revision stack: the page an auditor finds lies over the planted revision Beta read |
 
-The font size, type contrast, prose measure, quiet navigation and ruled comparisons carry the character.
-There is no continuous animation. Reduced-motion preferences are respected. Controls have visible
-keyboard focus; principal controls have 48px targets. The reading bar is measured to keep
-anchors below it. The desk’s controls are in the document flow; records remain the focal point.
-At narrow widths the masthead uses the compact T/P/A title and short text links. Comparison landmarks
-remain adjacent on phones, with original event numbers.
+The page varies its width and rhythm: a cover split between the question and the opening exhibit, a full-width
+band of the three questions (echoed by the three-column "what to keep"), a measured reading column with a
+contents rail, and, on wide screens, cautions set as notes in the right margin.
+
+Type is self-hosted: Newsreader for reading and display (large, light, tight), Instrument Sans for controls and
+notes, JetBrains Mono for anything recorded and for the tracked tags. Licences are in `assets/fonts/`. Tokens live
+in `assets/tokens.css`; `tests/test_site.py` checks every colour pair in use, including the marker, in both themes.
 
 ## Evidence desk
 
-The explorer starts with the arranged/scripted comparison: offer, read, reply, uptake and instructions.
-These are explicitly selected landmarks, not fabricated matched turns. Long page excerpts disclose
-their full text in place; complete logs remain available in the inspector. Other cases and comparisons
-are selected inside a native disclosure, leaving the first source event near the opening question.
+Controls first. A sticky band holds the view (compare two, or one episode), the case, and the record stack
+(1 Pages, 2 + Access log, 3 + Answers, 4 + Instructions; cumulative, the fourth in the marker colour). The question
+and its reveal sit together under it; the reveal names the true actors of unsigned board events in the marker
+colour and gives each side's verdict.
 
-It supports both legacy `#sol-21` and explicit `#single/sol-21` links, and `#compare/<pair>` comparisons.
-Case and mode changes enter browser history; event, record and interpretation changes replace the
-current entry. The fragment stores all three states, so copied links and reloads restore the view.
-A direct comparison carries its left example into single-case mode.
+Compare is a ledger: landmarks in a gutter, A and B as columns, original event numbers, page text clamped with
+"Show the whole page". The instructions row is closed until the instructions record is held, and offers a button
+that adds it; once open it quotes the deciding sentences, with the whole prompt one tap away. Columns stay
+adjacent down to 320px.
 
-Record selection adds page history, reads, final answers and instructions. Instructions were never
-shown to the model judges; the interface says so. Observer and experiment-fixture lanes have visible
-and programmatic names at every width. Interpretation and benchmark labels stay behind an explicit
-reveal or the complete inspector. Unknown verdicts remain unknown. Source extraction, carrier checks
-and figure data retain their original generators. Page-specific desk CSS is separate from shared styles.
+One episode is a stepped log, observer beside fixture. The first depth reads the fixture side as a guide (what
+happens, what to notice) and gets its verdict at the last step; the third adds raw fields. Labels, signals and every
+judge verdict are in a closed inspector at the end. The router keeps `#compare/<pair>`, `#single/<case>` and legacy
+`#<case>` links, with record, step and reveal state.
 
 ## References
 

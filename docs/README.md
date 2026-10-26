@@ -14,9 +14,9 @@ The article is a case notebook: a refused read, a matched instruction pair, an a
 its scripted control, and an overwritten leak. Each exhibit separates the available record from
 the supported finding and the alternative it leaves open. The research depth adds a source map.
 
-The evidence desk starts with an arranged/scripted comparison. Its eight full episodes and three
-comparisons are available through “Choose another episode or comparison”. Interpretation is opt-in;
-the complete inspectors label observer and experiment-fixture records separately. A copied URL keeps
+The evidence desk starts with an arranged/scripted comparison. A sticky band switches between comparing two
+episodes and stepping through one, picks the case, and sets which records you hold. The reveal is opt-in;
+observer and experiment-fixture records stay separately labelled. A copied URL keeps
 the record, selected event and reveal state, for example:
 `explorer.html?level=expert#single/sol-21?record=full&step=3&reveal=false`.
 
