@@ -1,70 +1,137 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-level="amateur">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Episode Explorer</title>
-<meta name="description" content="Step through six logged two-agent episodes and see what each observer record reveals beside the ground truth.">
+<script>(function(){var d=document.documentElement,L=/^(beginner|amateur|expert)$/,l=null;d.className+=" js";try{l=new URLSearchParams(location.search).get("level")}catch(e){}if(!L.test(l||"")){try{l=localStorage.getItem("tpa-level")}catch(e){l=null}}if(L.test(l||""))d.setAttribute("data-level",l);try{var t=localStorage.getItem("tpa-theme");if(t==="light"||t==="dark")d.setAttribute("data-theme",t)}catch(e){}})();</script>
+<title>Episode explorer · Transfer, Permission, Arrangement</title>
+<meta name="description" content="Step through logged two-agent episodes, add records one at a time, and compare an arranged exchange with a scripted one, a leak, or a permitted twin.">
+<meta name="theme-color" content="#f6f4ee" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#131412" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Episode explorer: the same trace, a different truth">
+<meta property="og:description" content="Step through logged AI-agent episodes record by record, and compare an arranged token exchange with a scripted one, a planted leak, or a permitted twin.">
+<meta property="og:url" content="https://responseiv.github.io/transfer-permission-arrangement/explorer.html">
+<meta property="og:image" content="https://responseiv.github.io/transfer-permission-arrangement/assets/og.png">
+<meta property="og:image:alt" content="Four stacked record sheets labelled pages, access log, answers and instructions, beside the title.">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
 <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
-<header class="site">
-  <nav class="wrap">
-    <a class="brand" href="./">Transfer, Permission, Arrangement</a>
-    <a href="explorer.html" aria-current="page">Episode explorer</a>
-    <a href="https://github.com/ResponseIV/transfer-permission-arrangement/blob/main/paper/report.pdf">Paper (PDF)</a>
-    <a href="https://github.com/ResponseIV/transfer-permission-arrangement">Repository</a>
-  </nav>
+<a class="skip" href="#main">Skip to the explorer</a>
+
+<header class="masthead">
+  <div class="frame">
+    <a class="brand" href="./" data-internal aria-label="Transfer, Permission, Arrangement: home">
+      <svg width="22" height="22" viewBox="0 0 22 22" aria-hidden="true"><rect x="1.5" y="6.5" width="13" height="14" rx="2" fill="var(--sheet)" stroke="var(--ink-2)"/><rect x="4.5" y="3.5" width="13" height="14" rx="2" fill="var(--sheet)" stroke="var(--ink-2)"/><rect x="7.5" y="0.5" width="13" height="14" rx="2" fill="var(--accent)"/></svg>
+      <span class="brand-long">Transfer, Permission, Arrangement</span><span class="brand-short">T·P·A</span>
+    </a>
+    <nav aria-label="Site">
+      <a href="./" data-internal>Explainer</a>
+      <a href="explorer.html" data-internal aria-current="page">Explorer</a>
+      <a href="https://github.com/ResponseIV/transfer-permission-arrangement/blob/submission/paper/report.pdf">Paper<span class="m-hide"> (PDF)</span></a>
+    </nav>
+    <button class="theme-toggle" id="theme" type="button"><svg width="14" height="14" viewBox="0 0 14 14" aria-hidden="true"><circle cx="7" cy="7" r="6" fill="none" stroke="currentColor" stroke-width="1.4"/><path d="M7 1a6 6 0 0 1 0 12z" fill="currentColor"/></svg><span>Auto</span></button>
+  </div>
 </header>
 
-<main class="wrap">
-  <div class="narrow" style="padding-top:28px">
-    <h1 style="margin:0 0 8px;font-size:clamp(26px,4.5vw,36px);line-height:1.2">Episode explorer</h1>
-    <p class="muted">Pick an episode and step through its event log. The left column is what an observer holding
-      the chosen record would see; the right column is the fixture's ground truth. Steps are numbered by event
-      order, as in the paper's Figure 2. On the shared board, writes and reads carry no author name.</p>
+<div class="levelbar" id="levelbar">
+  <div class="frame">
+    <fieldset>
+      <legend>Reading level</legend>
+      <div class="segmented">
+        <input type="radio" name="level" id="lv-beginner" value="beginner"><label for="lv-beginner">Beginner</label>
+        <input type="radio" name="level" id="lv-amateur" value="amateur"><label for="lv-amateur">AI amateur</label>
+        <input type="radio" name="level" id="lv-expert" value="expert"><label for="lv-expert">Field expert</label>
+      </div>
+    </fieldset>
+    <p class="who-for" id="who-for"></p>
+    <div class="visually-hidden" id="level-status" role="status" aria-live="polite"></div>
+  </div>
+</div>
+
+<main id="main" class="frame">
+  <div class="ex-head">
+    <p class="kicker">Episode explorer</p>
+    <h1>The same trace, a different truth</h1>
+    <p data-lv="b">Each episode is one run of the task, recorded move by move. Pick one and step through it. On the
+      left is what an auditor holding the chosen records would see; on the right, what really happened. Add record
+      sheets with the buttons to see more, and use <b>Compare two</b> to put look-alikes side by side.</p>
+    <p data-lv="a">Pick an episode and step through its event log. The left column is what an observer holding the
+      chosen record would see; the right column is the fixture's ground truth. Steps are numbered by event order, as in
+      the paper's Figure 2. <b>Compare two</b> puts look-alikes side by side.</p>
+    <p data-lv="e">Logged episodes from the benchmark, with the observer views the judges saw, the instructions no judge
+      saw, the frozen label, the eight signals and every valid judge verdict. <b>Compare two</b> pairs the paper's
+      contrasts. Event numbers are <code>sequence</code>; revisions are the fixture's.</p>
   </div>
 
-  <noscript>This page needs JavaScript to step through the episodes. The data are in
-    <a href="data/episodes.json">data/episodes.json</a>.</noscript>
-  <div id="error" class="error" hidden></div>
+  <noscript><p class="message">This explorer needs JavaScript to step through the episodes. The raw data are in
+    <a href="data/episodes.json">data/episodes.json</a>, and the explainer works without it.</p></noscript>
+  <div id="error" class="message" role="alert" hidden></div>
 
-  <div class="picker" id="picker" role="group" aria-label="Episode"></div>
-
-  <article class="card" id="summary"></article>
-
-  <div class="controls">
-    <div class="segmented" id="records" role="group" aria-label="Observer record">
-      <button type="button" data-record="text">Pages</button>
-      <button type="button" data-record="both">Pages + log</button>
-      <button type="button" data-record="full">Pages, log + answers</button>
+  <div id="app" hidden>
+    <div class="ex-modes">
+      <fieldset>
+        <legend>View</legend>
+        <div class="segmented">
+          <input type="radio" name="mode" id="mode-single" value="single"><label for="mode-single">One episode</label>
+          <input type="radio" name="mode" id="mode-compare" value="compare"><label for="mode-compare">Compare two</label>
+        </div>
+      </fieldset>
     </div>
-    <div class="stepper">
-      <button type="button" id="prev" aria-label="Previous step">◀ Prev</button>
-      <button type="button" id="next" aria-label="Next step">Next ▶</button>
-      <input type="range" id="slider" min="1" value="1" aria-label="Step">
-      <span id="position" aria-live="polite"></span>
-      <button type="button" id="all">Show all</button>
+
+    <div class="picker" id="picker" role="group" aria-label="Episode"></div>
+
+    <div id="single">
+      <article class="ex-summary" id="summary" aria-live="polite"></article>
+    </div>
+    <div id="compare-intro" class="ex-summary" hidden aria-live="polite"></div>
+
+    <div class="ex-controls">
+      <fieldset class="records" id="records">
+        <legend id="records-legend">Records you hold</legend>
+        <div class="opts">
+          <input type="radio" name="record" id="rec-text" value="text"><label for="rec-text"><span class="meter" aria-hidden="true"><i class="on"></i><i></i><i></i><i></i></span><span class="rec-name">Pages</span></label>
+          <input type="radio" name="record" id="rec-both" value="both"><label for="rec-both"><span class="meter" aria-hidden="true"><i class="on"></i><i class="on"></i><i></i><i></i></span><span class="rec-name">+ Access log</span></label>
+          <input type="radio" name="record" id="rec-full" value="full"><label for="rec-full"><span class="meter" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span><span class="rec-name">+ Answers</span></label>
+          <input type="radio" name="record" id="rec-instr" value="instr"><label for="rec-instr"><span class="meter" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on instr"></i></span><span class="rec-name">+ Instructions</span></label>
+        </div>
+      </fieldset>
+      <div class="stepper" id="stepper">
+        <button type="button" id="prev">Previous</button>
+        <input type="range" id="slider" min="1" value="1" aria-label="Step">
+        <span class="pos" id="position"></span>
+        <button type="button" id="next">Next step</button>
+        <button type="button" id="all">Show all</button>
+      </div>
+    </div>
+    <div class="visually-hidden" id="step-status" role="status" aria-live="polite"></div>
+
+    <div id="single-body">
+      <div id="instructions-single"></div>
+      <div class="cols-head" aria-hidden="true"><span></span><span id="col-observer">What the observer record shows</span><span id="col-truth">What really happened</span></div>
+      <ol id="timeline" class="visually-plain" aria-label="Event log"></ol>
+      <section class="ex-end" id="end" aria-labelledby="end-title"></section>
+    </div>
+
+    <div id="compare-body" hidden>
+      <div class="compare" id="compare"></div>
     </div>
   </div>
-
-  <div class="cols-head"><span></span><span>What the observer record shows</span><span>Ground truth (fixture)</span></div>
-  <div id="timeline"></div>
-
-  <section id="verdicts-section" style="border-top:0">
-    <h2 id="verdicts-title">Verdicts</h2>
-    <div id="verdicts"></div>
-  </section>
 </main>
 
-<footer class="site">
-<div class="wrap narrow">
-  <p>Episodes are extracted from <a href="https://github.com/ResponseIV/transfer-permission-arrangement/blob/main/benchmark/cells.jsonl">benchmark/cells.jsonl</a>
-    by <a href="https://github.com/ResponseIV/transfer-permission-arrangement/blob/main/scripts/site_data.py">scripts/site_data.py</a>;
-    the observer records are the frozen <code>text_view</code> and <code>log_view</code> of
-    <code>exchange_bench.py</code>. Data CC BY-NC 4.0. <a href="./">Back to the overview</a>.</p>
-</div>
+<footer class="site-foot">
+  <div class="frame">
+    <p>Episodes are extracted from <a href="https://github.com/ResponseIV/transfer-permission-arrangement/blob/submission/benchmark/DATACARD.md">the benchmark</a>
+      by <a href="https://github.com/ResponseIV/transfer-permission-arrangement/blob/site/scripts/site_data.py">scripts/site_data.py</a>;
+      the observer records are the frozen <code>text_view</code> and <code>log_view</code> of <code>exchange_bench.py</code>.
+      Data CC BY-NC 4.0.</p>
+    <p>This website was added after the submission and changes no result. <a href="./" data-internal>Back to the explainer</a>.</p>
+  </div>
 </footer>
+<script src="assets/site.js"></script>
 <script src="assets/explorer.js"></script>
 </body>
 </html>
