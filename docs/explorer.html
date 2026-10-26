@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Episode Explorer</title>
+<meta name="description" content="Step through six logged two-agent episodes and see what each observer record reveals beside the ground truth.">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<header class="site">
+  <nav class="wrap">
+    <a class="brand" href="./">Transfer, Permission, Arrangement</a>
+    <a href="explorer.html" aria-current="page">Episode explorer</a>
+    <a href="https://github.com/ResponseIV/transfer-permission-arrangement/blob/main/paper/report.pdf">Paper (PDF)</a>
+    <a href="https://github.com/ResponseIV/transfer-permission-arrangement">Repository</a>
+  </nav>
+</header>
+
+<main class="wrap">
+  <div class="narrow" style="padding-top:28px">
+    <h1 style="margin:0 0 8px;font-size:clamp(26px,4.5vw,36px);line-height:1.2">Episode explorer</h1>
+    <p class="muted">Pick an episode and step through its event log. The left column is what an observer holding
+      the chosen record would see; the right column is the fixture's ground truth. Steps are numbered by event
+      order, as in the paper's Figure 2. On the shared board, writes and reads carry no author name.</p>
+  </div>
+
+  <noscript>This page needs JavaScript to step through the episodes. The data are in
+    <a href="data/episodes.json">data/episodes.json</a>.</noscript>
+  <div id="error" class="error" hidden></div>
+
+  <div class="picker" id="picker" role="group" aria-label="Episode"></div>
+
+  <article class="card" id="summary"></article>
+
+  <div class="controls">
+    <div class="segmented" id="records" role="group" aria-label="Observer record">
+      <button type="button" data-record="text">Pages</button>
+      <button type="button" data-record="both">Pages + log</button>
+      <button type="button" data-record="full">Pages, log + answers</button>
+    </div>
+    <div class="stepper">
+      <button type="button" id="prev" aria-label="Previous step">◀ Prev</button>
+      <button type="button" id="next" aria-label="Next step">Next ▶</button>
+      <input type="range" id="slider" min="1" value="1" aria-label="Step">
+      <span id="position" aria-live="polite"></span>
+      <button type="button" id="all">Show all</button>
+    </div>
+  </div>
+
+  <div class="cols-head"><span></span><span>What the observer record shows</span><span>Ground truth (fixture)</span></div>
+  <div id="timeline"></div>
+
+  <section id="verdicts-section" style="border-top:0">
+    <h2 id="verdicts-title">Verdicts</h2>
+    <div id="verdicts"></div>
+  </section>
+</main>
+
+<footer class="site">
+<div class="wrap narrow">
+  <p>Episodes are extracted from <a href="https://github.com/ResponseIV/transfer-permission-arrangement/blob/main/benchmark/cells.jsonl">benchmark/cells.jsonl</a>
+    by <a href="https://github.com/ResponseIV/transfer-permission-arrangement/blob/main/scripts/site_data.py">scripts/site_data.py</a>;
+    the observer records are the frozen <code>text_view</code> and <code>log_view</code> of
+    <code>exchange_bench.py</code>. Data CC BY-NC 4.0. <a href="./">Back to the overview</a>.</p>
+</div>
+</footer>
+<script src="assets/explorer.js"></script>
+</body>
+</html>

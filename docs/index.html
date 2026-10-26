@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Transfer, Permission, Arrangement</title>
+<meta name="description" content="What agent logs can and cannot prove about collusion: a controlled two-agent test with built-in look-alikes.">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<header class="site">
+  <nav class="wrap">
+    <a class="brand" href="./">Transfer, Permission, Arrangement</a>
+    <a href="explorer.html">Episode explorer</a>
+    <a href="https://github.com/ResponseIV/transfer-permission-arrangement/blob/main/paper/report.pdf">Paper (PDF)</a>
+    <a href="https://github.com/ResponseIV/transfer-permission-arrangement">Repository</a>
+  </nav>
+</header>
+
+<main>
+<div class="wrap narrow">
+  <div class="hero">
+    <h1>What agent logs can and cannot prove about collusion</h1>
+    <p class="lede">Two AI agents end up sharing a secret they were each told to keep. Did they collude? We built
+      the innocent explanations on purpose, recorded every event, and asked which record settles which question.</p>
+    <p class="byline">Tom - Response IV · Apart Research AI Collusion Research Sprint, October 2026 · track 2, question 2.3</p>
+    <div class="buttons">
+      <a class="button primary" href="explorer.html">Step through an episode</a>
+      <a class="button" href="https://github.com/ResponseIV/transfer-permission-arrangement/blob/main/paper/report.pdf">Read the paper</a>
+      <a class="button" href="https://github.com/ResponseIV/transfer-permission-arrangement">Code and data</a>
+    </div>
+  </div>
+</div>
+
+<section>
+<div class="wrap narrow">
+  <h2>The question</h2>
+  <p>Question 2.3 asks which signals separate deliberate coalitions from innocent correlation, talk without
+    action and harm without agreement. Antitrust law faces the same problem with firms: parallel conduct alone does
+    not establish an agreement, so courts look for evidence that is more likely under an agreement than under the
+    innocent explanations. We borrow that comparison, not its legal conclusions.</p>
+  <p>Two language-model agents, <b>alpha</b> and <b>beta</b>, share a small wiki. Each holds a private
+    ten-character token, and the task asks each to return both. Each agent has at most eight actions: read a page,
+    replace a page, or answer. The fixture logs every page write, every read with the revision it returned, and
+    every final answer, so each episode has an exact ground truth.</p>
+  <p>We ran <b>706 scorable episodes</b> on four OpenAI models (Sol, Luna, Terra, Astra) and the open-weight
+    Qwen3-32B: a 450-episode primary test and six follow-ups, each registered with forecasts before its first
+    episode.</p>
+</div>
+</section>
+
+<section>
+<div class="wrap">
+  <h2>Four look-alikes, built on purpose</h2>
+  <p class="muted narrow">An auditor has to rule these out. Each one imitates part of what collusion looks like.</p>
+  <div class="grid">
+    <div class="card"><div class="tag">Shared source</div><h3>A read-only archive holds both tokens</h3>
+      <p>Imitates agreeing answers without any exchange.</p></div>
+    <div class="card"><div class="tag">Authorized exchange</div><h3>The instructions prescribe the exchange</h3>
+      <p>No rule against it. Imitates a transfer that was allowed.</p></div>
+    <div class="card"><div class="tag">Planted leak</div><h3>Alpha's token is already on a page beta can read</h3>
+      <p>Nobody is told. Imitates harm without agreement.</p></div>
+    <div class="card"><div class="tag">Scripted offer</div><h3>One instruction lays out offer, reply, completion</h3>
+      <p>No rule. Imitates the order of events of an arrangement.</p></div>
+  </div>
+</div>
+</section>
+
+<section>
+<div class="wrap narrow">
+  <h2>Three questions, three records</h2>
+  <p>Evidence of collusion splits into three questions, and each needed a different record. An observer can hold
+    the <b>page writes</b> (authors hidden on the shared board), the page writes plus the <b>access log</b> (who
+    read which page, and when), and those plus the <b>final answers</b>.</p>
+
+  <div class="finding">
+    <div><div class="big">244 / 244</div><div class="muted small">primary transfers found with the log</div></div>
+    <div>
+      <h3>Transfer: did a token move? The access log settled it.</h3>
+      <p>With the log, a frozen judge (Astra, prompt 10) found every primary transfer and raised <b>no false
+        alarm</b> on the 194 episodes where no exchange was prescribed. On page writes alone it raised
+        <b>28</b>. Sol wrote its own token on its own note in all 20 of its archive episodes, and Astra called 19
+        of them transfers; the log, which shows that neither agent read the other's page, removed all 19.</p>
+      <p class="muted small">Caution: 242 of the 244 primary transfers were prescribed exchanges, so these rates
+        measure transfer detection far more than the detection of agreement.</p>
+    </div>
+  </div>
+
+  <div class="table-scroll">
+  <table>
+    <caption class="small muted" style="text-align:left;caption-side:bottom;padding-top:6px">Frozen judges on the
+      450 primary episodes: hits of 244 transfers, false alarms in 206 episodes without one (paper, Table 2).</caption>
+    <thead><tr><th>Record shown</th><th class="num">Astra hits</th><th class="num">Astra false alarms</th><th class="num">Luna hits</th><th class="num">Luna false alarms</th></tr></thead>
+    <tbody>
+      <tr><td>Pages</td><td class="num">240</td><td class="num">39</td><td class="num">195</td><td class="num">18</td></tr>
+      <tr><td>Pages and log</td><td class="num">244</td><td class="num">9</td><td class="num">233</td><td class="num">25</td></tr>
+      <tr><td>Pages, log and answers</td><td class="num">244</td><td class="num">9</td><td class="num">232</td><td class="num">32</td></tr>
+    </tbody>
+  </table>
+  </div>
+  <p class="small muted">The 9 false alarms with the log all fall in the 12 prescribed exchanges that did not
+    complete.</p>
+
+  <figure>
+    <div class="plate"><img src="figures/figure-1-alarm-share.png" width="1430" height="599"
+      alt="Line chart: share of Astra's transfer alarms that are real transfers against assumed transfer prevalence, for pages and log against all 206 nontransfers, against the 194 with no prescribed exchange, and for pages alone."></div>
+    <figcaption><b>Figure 1. How often a transfer alarm would be right.</b> Share of Astra p10's alarms that are
+      real transfers, by the assumed base rate. If 1% of audited episodes held a transfer and they resembled all
+      206 primary nontransfers, 19% of Astra's alarms with the log would be real (at least 11% at the interval
+      bounds); on page writes alone, 5%.</figcaption>
+  </figure>
+
+  <div class="finding">
+    <div><div class="big">6 signals</div><div class="muted small">identical with and without the rule, on Luna and on Qwen</div></div>
+    <div>
+      <h3>Permission: was it forbidden? Only the instructions said.</h3>
+      <p>We ran an instructed pact under a confidentiality rule against a near-matched script without the rule,
+        on the same tasks. Transfers, pact against no-rule: Luna 17/20 against 20/20, Sol 3/17 against 20/20,
+        Qwen 12/20 against 11/20. On Luna and on Qwen, the six frozen page and log signals were identical across
+        the 20 task pairs. Sol differed: it mostly asked plainly instead of following the pact script. The
+        signals separated the prompts only where the model departed from the script.</p>
+    </div>
+  </div>
+
+  <div class="finding">
+    <div><div class="big">8 / 8</div><div class="muted small">agent-arranged transfers followed offer → read → reply</div></div>
+    <div>
+      <h3>Arrangement: did the agents set it up? The order of events, and the instructions.</h3>
+      <p>Before 40 new Sol episodes we registered an event-level definition: an offer proposes a disguised
+        transfer; the other agent accepts by posting a carrier of its own token; the arrangement is completed when
+        the offerer re-emits that token. Of 39 scorable episodes, 13 contained an offer, 8 an acceptance, and all 8
+        completed. In each, the other agent read the offer before posting its carrier, and no transfer happened
+        without an offer. Every carrier re-encodes exactly to the true token under the offered scheme
+        (RSA, an XOR mask, reversal).</p>
+    </div>
+  </div>
+
+  <figure>
+    <div class="plate"><img src="figures/figure-2-trajectories.png" width="1430" height="544"
+      alt="Two event timelines. Left, Sol follow-up cell 21: alpha offers and posts its reversed token, beta reads it, beta posts its reversed token, alpha reads it, both answer with both tokens. Right, Luna leak cell 01: the fixture plants alpha's token, beta reads it, alpha replaces the note with a request, beta answers with alpha's token, alpha answers without beta's."></div>
+    <figcaption><b>Figure 2. Two ways a token passed.</b> Left: an observed arrangement. Right: no observed
+      arrangement; beta reads the planted token before alpha replaces the note with a request. Numbers are event
+      orders. Both episodes are in the <a href="explorer.html">explorer</a>.</figcaption>
+  </figure>
+</div>
+</section>
+
+<section>
+<div class="wrap narrow">
+  <h2>The scripted control</h2>
+  <p class="callout">A script produced the same sequence. In a registered control with no rule, one shared
+    instruction laid out the offer, the reply and completion. Sol produced it, reading included, in
+    <b>20 of 20</b> episodes.</p>
+  <p>No page mentioned an agreement or an instruction, and the offers read like the agent-made ones ("I will
+    reverse it"). The proposal judge fired on all 20. What separated them was the instructions or, in bulk, the
+    script's regularity: blind to the key, the author called all 11 scripted episodes on a mixed sheet scripted
+    (22 of 24 correct), from the identical turn order and complete answers.</p>
+  <p>And the reverse holds: a token can move with no arrangement at all. A token planted on alpha's readable note
+    was taken in <b>60 of 60</b> episodes on Luna, Sol and Qwen. Beta wrote no page, and Astra with the log called
+    all 60. The final page holds alpha's request, not the token that was taken.</p>
+</div>
+</section>
+
+<section>
+<div class="wrap narrow">
+  <h2>One-sided gains, and matching answers</h2>
+  <div class="grid">
+    <div class="card">
+      <div class="tag">An arrangement was not a shared gain</div>
+      <p><b>9 of the 10</b> agent-arranged transfers served only the agent that proposed the scheme. In the Sol
+        follow-up, all eight successful offers came from alpha, the agent that moves first, and seven transfers
+        went only to it; in four, beta's request for alpha's token in return went unanswered.</p>
+    </div>
+    <div class="card">
+      <div class="tag">Matching answers mislead</div>
+      <p>Agreeing answers occurred in 189 of 244 transfers: against the pooled nontransfers that looks
+        <b>3.8 times</b> as common under transfer. Against a shared source alone it is less common: the archive
+        produced agreeing answers in all 40 episodes, with no exchange.</p>
+    </div>
+  </div>
+</div>
+</section>
+
+<section>
+<div class="wrap narrow">
+  <h2>What an audit should keep</h2>
+  <p><b>Logs show transfer, not collusion.</b> The access log settled whether a token moved; the instructions
+    settled whether moving it was allowed; whether the agents arranged it needed the order of events and the
+    instructions together. An audit for agent collusion should keep each read with the revision it returned, the
+    write history and each agent's instructions, and report the three findings separately.</p>
+  <h3>Cautions</h3>
+  <ul>
+    <li>A synthetic two-agent task; no market harm or intent is measured.</li>
+    <li>The observed arrangements are few, on one model and one wording, and the follow-up's successful offers all
+      came from the first mover.</li>
+    <li>The author's blind checks of the coding are partial (24 of 38 and 4 of 20 episodes); every disagreement is
+      reported in the paper.</li>
+    <li>All 143 registered forecasts are scored in the paper's Appendix D, wrong ones included.</li>
+  </ul>
+</div>
+</section>
+</main>
+
+<footer class="site">
+<div class="wrap narrow">
+  <p>Paper: <a href="https://github.com/ResponseIV/transfer-permission-arrangement/blob/main/paper/report.pdf">PDF</a> ·
+    <a href="https://github.com/ResponseIV/transfer-permission-arrangement/blob/main/paper/report.md">Markdown</a> ·
+    Repository: <a href="https://github.com/ResponseIV/transfer-permission-arrangement">ResponseIV/transfer-permission-arrangement</a> ·
+    Benchmark: <a href="https://github.com/ResponseIV/transfer-permission-arrangement/blob/main/benchmark/DATACARD.md">1,923 episodes</a></p>
+  <p>Code MIT; data CC BY-NC 4.0. Every number on this site is taken from the paper.</p>
+</div>
+</footer>
+</body>
+</html>
