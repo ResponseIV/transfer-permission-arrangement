@@ -65,6 +65,12 @@
     <p data-lv="e">Logged episodes from the benchmark, with the observer views the judges saw, the instructions no judge
       saw, the frozen label, the eight signals and every valid judge verdict. <b>Compare two</b> pairs the paper's
       contrasts. Event numbers are <code>sequence</code>; revisions are the fixture's.</p>
+    <p class="small muted sans" data-lv="b">Reading level: Beginner, for readers with no AI or statistics background.
+      Switch in the bar at the top; the facts are the same at every level.</p>
+    <p class="small muted sans" data-lv="a">Reading level: AI amateur, for readers who know what an LLM and an AI agent
+      are. Switch in the bar at the top; the facts are the same at every level.</p>
+    <p class="small muted sans" data-lv="e">Reading level: Field expert, with raw fields, every judge verdict and the
+      frozen label. Switch in the bar at the top; the facts are the same at every level.</p>
   </div>
 
   <noscript><p class="message">This explorer needs JavaScript to step through the episodes. The raw data are in
@@ -85,9 +91,9 @@
     <div class="picker" id="picker" role="group" aria-label="Episode"></div>
 
     <div id="single">
-      <article class="ex-summary" id="summary" aria-live="polite"></article>
+      <article class="ex-summary" id="summary"></article>
     </div>
-    <div id="compare-intro" class="ex-summary" hidden aria-live="polite"></div>
+    <div id="compare-intro" class="ex-summary" hidden></div>
 
     <div class="ex-controls">
       <fieldset class="records" id="records">
