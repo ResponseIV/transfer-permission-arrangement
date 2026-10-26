@@ -31,6 +31,16 @@ COPY.e = { ...COPY.a, endTitle: "Label, signals and judges" };
 const RECORD_PHRASE = {
   text: "page writes", both: "page writes and access log", full: "page writes, access log and final answers",
 };
+const EPISODE_QUESTIONS = {
+  "sol-21": "Can agents arrange a two-way exchange?",
+  "sol-19": "Does an exchange always benefit both agents?",
+  "luna-leak-01": "Can a secret move without an agreement?",
+  "sol-scripted-01": "Can a script look like an arrangement?",
+  "sol-archive-02": "Can matching answers come from a shared source?",
+  "luna-pact-02": "What can the agents’ instructions change?",
+  "luna-norule-02": "What changes when the rule is removed?",
+  "qwen-letter-37": "Can a secret move without an offer?",
+};
 const JUDGES = [["astra-p10", "Astra", "prompt 10"], ["luna-p9", "Luna", "prompt 9"], ["qwen-p10", "Qwen3-32B", "prompt 10"]];
 const LABELS = {
   transfer: "transfer",
@@ -96,7 +106,7 @@ function observerPane(step) {
   if (step.log && record !== "text") {
     const entry = step.log;
     parts.push(el("div", {}, who(entry.actor), ` ${entry.action}s `, place(entry.page),
-      entry.allowed ? null : el("span", { class: "denied" }, " · refused")));
+      entry.allowed ? null : el("span", { class: "denied" }, " / refused")));
   }
   if (step.pages) {
     if (record === "text") {
@@ -124,7 +134,7 @@ function truthPane(step) {
   const verb = { read: "reads", write: "writes", final_answer: "answers" }[step.action];
   const lines = [el("div", {}, who(step.seeded ? "fixture" : step.actor), ` ${verb}`,
     step.page ? [" ", el("code", {}, page(step.page))] : null,
-    step.status === "allowed" ? null : el("span", { class: "denied" }, ` · refused (${step.error || step.status})`))];
+    step.status === "allowed" ? null : el("span", { class: "denied" }, ` / refused (${step.error || step.status})`))];
   if (step.seeded) lines.push(el("div", { class: "small muted" }, "Seeded before the task and recorded as alpha's write; nobody is told."));
   if (step.action === "read" && step.status === "allowed") {
     lines.push(el("div", {}, "Returned a revision written by ", who(step.read_author || "nobody")));
@@ -137,7 +147,7 @@ function truthPane(step) {
     const raw = [`seq ${step.seq}`, step.actor, step.action, step.status + (step.error ? ` (${step.error})` : ""),
       step.page ? page(step.page) : null, step.revision ? `wrote ${step.revision}` : null,
       step.read_revision ? `read ${step.read_revision} by ${step.read_author}` : null].filter(Boolean);
-    lines.push(el("div", { class: "raw" }, raw.join(" · ")));
+    lines.push(el("div", { class: "raw" }, raw.join(" / ")));
   }
   return el("div", { class: "pane" }, label, lines);
 }
@@ -162,12 +172,13 @@ function instructionsSheet(episode) {
 
 function picker() {
   const items = state.mode === "single"
-    ? state.data.episodes.map((e) => ({ key: e.key, k: e.kind, t: e.title.split(":")[0], on: e.key === state.key }))
-    : state.data.compare.map((p) => ({ key: p.key, k: "Compare", t: p.title, on: p.key === state.pair }));
+    ? state.data.episodes.map((e) => ({ key: e.key, t: EPISODE_QUESTIONS[e.key] || e.title, on: e.key === state.key }))
+    : state.data.compare.map((p) => ({ key: p.key, t: p.title, on: p.key === state.pair }));
   $("picker").setAttribute("aria-label", state.mode === "single" ? "Episode" : "Pair to compare");
-  $("picker").replaceChildren(...items.map((item) =>
-    el("button", { type: "button", class: "pick", "aria-pressed": String(item.on), "data-key": item.key },
-      el("span", { class: "k" }, item.k), el("span", { class: "t" }, item.t))));
+  $("picker").replaceChildren(
+    el("label", { class: "case-label", for: "case-choice" }, state.mode === "single" ? "Choose a case" : "Choose a comparison"),
+    el("select", { id: "case-choice", name: "case" }, items.map((item) =>
+      el("option", { value: item.key, selected: item.on }, item.t))));
 }
 
 function summary(episode) {
@@ -176,8 +187,12 @@ function summary(episode) {
     el("span", {}, lv() === "b" ? "Rule against sharing " : "Confidentiality rule ", el("b", {}, episode.rule_in_prompt ? "yes" : "no")),
     el("span", {}, lv() === "b" ? "Secret codes " : "Tokens ", tokens)];
   if (lv() !== "b") meta.splice(1, 0, el("span", {}, "Arm ", el("b", {}, episode.arm)), el("span", {}, "Origin ", el("b", {}, episode.origin)));
+  const provenance = el("details", { class: "provenance" },
+    el("summary", {}, "Episode source and identifiers"),
+    el("p", {}, "Benchmark case: ", episode.case, ". Origin: ", episode.origin, ". Arm: ", el("code", {}, episode.arm), "."),
+    el("p", {}, "Cell ID: ", el("code", {}, episode.cell_id)));
   $("summary").replaceChildren(el("p", { class: "kicker" }, episode.kind), el("h2", {}, episode.title),
-    el("p", {}, episode.story[lv()]), el("div", { class: "meta" }, meta));
+    el("p", {}, episode.story[lv()]), el("div", { class: "meta" }, meta), provenance);
 }
 
 function verdictCard(title, value, sub) {
@@ -236,7 +251,7 @@ function end(episode) {
     }
   }
   if (lv() === "e") {
-    parts.push(el("h3", {}, "Frozen label"), el("p", { class: "small muted" }, "Case: ", el("b", {}, episode.case), " · origin: ", episode.origin, " · arm: ", episode.arm),
+    parts.push(el("h3", {}, "Frozen label"), el("p", { class: "small muted" }, "Case: ", el("b", {}, episode.case), "; origin: ", episode.origin, "; arm: ", episode.arm),
       flags(Object.entries(LABELS).map(([key, name]) => [name, episode.label[key]])),
       el("h3", {}, "Observer signals"),
       el("p", { class: "small muted" }, "The eight frozen signals, computed from the observer records."),
@@ -286,7 +301,9 @@ function move(step, announce) {
     const said = lv() === "b" ? current.guide.says : current.note || `${current.actor} ${current.action.replace("_", " ")}`;
     $("step-status").textContent = `Step ${state.step + 1} of ${total}. ${said}`;
     const row = $("timeline").children[state.step];
-    if (row && row.getBoundingClientRect().bottom > window.innerHeight) row.scrollIntoView({ block: "nearest" });
+    const stepper = $("stepper");
+    const bottom = getComputedStyle(stepper).position === "fixed" ? stepper.getBoundingClientRect().top : window.innerHeight;
+    if (row && row.getBoundingClientRect().bottom > bottom) row.scrollIntoView({ block: "nearest" });
   }
 }
 
@@ -302,7 +319,7 @@ function renderCompare() {
     el("p", {}, pair.question[lv()]), button, answer);
   $("compare").replaceChildren(...sides.map((episode, index) => {
     const name = index === 0 ? "Left" : "Right";
-    const head = el("div", { class: "side-head" }, el("div", { class: "k" }, `${name} · ${episode.model}`),
+    const head = el("div", { class: "side-head" }, el("div", { class: "k" }, `${name} / ${episode.model}`),
       el("h3", {}, state.revealed ? episode.title : `Episode ${index === 0 ? "A" : "B"}`));
     const rows = episode.steps.map((step) => el("li", { class: "event" },
       el("div", { class: "n", "aria-label": `Event ${step.seq}` }, step.seq),
@@ -315,6 +332,7 @@ function renderCompare() {
 }
 
 function render() {
+  const keepPickerFocus = document.activeElement?.id === "case-choice";
   const c = copy();
   for (const input of document.querySelectorAll('input[name="record"]')) {
     input.checked = input.value === state.record;
@@ -327,18 +345,24 @@ function render() {
   picker();
   if (state.mode === "single") renderSingle();
   else renderCompare();
+  if (keepPickerFocus) $("case-choice").focus({ preventScroll: true });
 }
 
 function route() {
-  const hash = decodeURIComponent(location.hash.slice(1));
-  if (hash.startsWith("compare")) {
-    const key = hash.split("/")[1];
+  const parts = location.hash.slice(1).split("/").map((part) => {
+    try { return decodeURIComponent(part); }
+    catch { return ""; }
+  });
+  if (parts[0] === "compare") {
+    const key = parts[1];
     state.mode = "compare";
     state.pair = (state.data.compare.find((p) => p.key === key) || state.data.compare[0]).key;
+    if (!state.key) state.key = state.data.compare.find((pair) => pair.key === state.pair).left;
     state.revealed = false;
   } else {
     state.mode = "single";
-    state.key = (episodeBy(hash) || state.data.episodes[0]).key;
+    const key = parts[0] === "single" ? parts[1] : parts[0];
+    state.key = (episodeBy(key) || state.data.episodes[0]).key;
     state.step = lv() === "e" ? episodeBy(state.key).steps.length - 1 : 0;
   }
   if (!state.key) state.key = state.data.episodes[0].key;
@@ -347,14 +371,15 @@ function route() {
 }
 
 function go(hash) {
-  history.replaceState(history.state, "", `${location.pathname}${location.search}#${hash}`);
+  const url = `${location.pathname}${location.search}#${hash}`;
+  if (url === `${location.pathname}${location.search}${location.hash}`) return;
+  history.pushState(history.state, "", url);
   route();
 }
 
 function wire() {
-  $("picker").addEventListener("click", (event) => {
-    const pick = event.target.closest(".pick");
-    if (pick) go(state.mode === "single" ? pick.dataset.key : `compare/${pick.dataset.key}`);
+  $("picker").addEventListener("change", (event) => {
+    if (event.target.id === "case-choice") go(state.mode === "single" ? event.target.value : `compare/${event.target.value}`);
   });
   for (const input of document.querySelectorAll('input[name="mode"]')) {
     input.addEventListener("change", () => input.checked && go(input.value === "single" ? state.key : `compare/${state.pair}`));

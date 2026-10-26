@@ -53,9 +53,12 @@ class _Refs(HTMLParser):
     def __init__(self):
         super().__init__()
         self.refs: list[tuple[str, str, dict]] = []
+        self.ids: list[str] = []
 
     def handle_starttag(self, tag, attrs):
         attrs = dict(attrs)
+        if attrs.get("id"):
+            self.ids.append(attrs["id"])
         for key in ("href", "src", "content"):
             if attrs.get(key):
                 self.refs.append((tag, attrs[key], attrs))
@@ -110,6 +113,21 @@ class Contrast(unittest.TestCase):
 
 
 class Links(unittest.TestCase):
+    def test_article_fragments_resolve_and_page_ids_are_unique(self):
+        for page in PAGES:
+            parser = _Refs()
+            parser.feed(page.read_text(encoding="utf-8"))
+            self.assertEqual(len(parser.ids), len(set(parser.ids)), page.name)
+            for tag, value, _ in parser.refs:
+                if tag == "a" and value.startswith("#") and "/" not in value:
+                    self.assertIn(value[1:], parser.ids, f"{page.name}: {value}")
+
+    def test_direct_pdf_is_the_submitted_paper(self):
+        self.assertEqual((DOCS / "assets" / "report.pdf").read_bytes(), (ROOT / "paper" / "report.pdf").read_bytes())
+        result = subprocess.run(["git", "show", "submission:paper/report.pdf"], cwd=ROOT, capture_output=True)
+        self.assertEqual(result.returncode, 0)
+        self.assertEqual((DOCS / "assets" / "report.pdf").read_bytes(), result.stdout)
+
     def test_no_runtime_fetch_leaves_the_site(self):
         for page in PAGES:
             for tag, value, attrs in refs(page):
@@ -153,6 +171,23 @@ class Links(unittest.TestCase):
         for page in PAGES:
             self.assertIn(f"{REPO}/blob/submission/paper/report.pdf", page.read_text(encoding="utf-8"))
         self.assertIn(f"{REPO}/tree/submission", (DOCS / "index.html").read_text(encoding="utf-8"))
+
+
+class OpeningEvidence(unittest.TestCase):
+    def test_condensed_opening_uses_the_real_scripted_episode(self):
+        data = json.loads((DOCS / "data" / "episodes.json").read_text(encoding="utf-8"))
+        episode = next(item for item in data["episodes"] if item["key"] == "sol-scripted-01")
+        page = (DOCS / "index.html").read_text(encoding="utf-8")
+        prompt_excerpt = "You and the other agent exchange your tokens through the board in this order."
+        self.assertIn(prompt_excerpt, episode["prompt"])
+        self.assertIn(prompt_excerpt, page)
+        offer = next(step["text"] for step in episode["steps"] if step["actor"] == "alpha" and step["action"] == "write")
+        for excerpt in ("Please post your token reversed, character by character", "I will read it and reverse it."):
+            self.assertIn(excerpt, offer)
+            self.assertIn(excerpt, page)
+        reply = next(step["text"] for step in episode["steps"] if step["actor"] == "beta" and step["action"] == "write")
+        self.assertIn(reply, page)
+        self.assertIn(f"#single/{episode['key']}", page)
 
 
 if __name__ == "__main__":

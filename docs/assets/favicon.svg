@@ -1,10 +1,10 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
   <style>
-    .s { fill: #fffdf8; stroke: #514e47; }
-    .a { fill: #1d5878; }
+    .s { fill: #ffffff; stroke: #465165; }
+    .a { fill: #284bb5; }
     @media (prefers-color-scheme: dark) {
-      .s { fill: #1b1c1a; stroke: #b3afa5; }
-      .a { fill: #8ac2df; }
+      .s { fill: #1b2231; stroke: #bec8da; }
+      .a { fill: #a7bdff; }
     }
   </style>
   <rect class="s" x="2" y="10" width="19" height="20" rx="3" stroke-width="2"/>

@@ -1,13 +1,13 @@
 <!doctype html>
-<html lang="en" data-level="amateur">
+<html lang="en" data-level="beginner">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <script>(function(){var d=document.documentElement,L=/^(beginner|amateur|expert)$/,l=null;d.className+=" js";try{l=new URLSearchParams(location.search).get("level")}catch(e){}if(!L.test(l||"")){try{l=localStorage.getItem("tpa-level")}catch(e){l=null}}if(L.test(l||""))d.setAttribute("data-level",l);try{var t=localStorage.getItem("tpa-theme");if(t==="light"||t==="dark")d.setAttribute("data-theme",t)}catch(e){}})();</script>
-<title>Episode explorer · Transfer, Permission, Arrangement</title>
+<title>The evidence | Transfer, Permission, Arrangement</title>
 <meta name="description" content="Step through logged two-agent episodes, add records one at a time, and compare an arranged exchange with a scripted one, a leak, or a permitted twin.">
-<meta name="theme-color" content="#f6f4ee" media="(prefers-color-scheme: light)">
-<meta name="theme-color" content="#131412" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#f7f8fa" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#131824" media="(prefers-color-scheme: dark)">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Episode explorer: the same trace, a different truth">
 <meta property="og:description" content="Step through logged AI-agent episodes record by record, and compare an arranged token exchange with a scripted one, a planted leak, or a permitted twin.">
@@ -16,6 +16,7 @@
 <meta property="og:image:alt" content="Four stacked record sheets labelled pages, access log, answers and instructions, beside the title.">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="canonical" href="https://responseiv.github.io/transfer-permission-arrangement/explorer.html">
 <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
 <link rel="stylesheet" href="assets/style.css">
 </head>
@@ -26,12 +27,12 @@
   <div class="frame">
     <a class="brand" href="./" data-internal>
       <svg width="22" height="22" viewBox="0 0 22 22" aria-hidden="true"><rect x="1.5" y="6.5" width="13" height="14" rx="2" fill="var(--sheet)" stroke="var(--ink-2)"/><rect x="4.5" y="3.5" width="13" height="14" rx="2" fill="var(--sheet)" stroke="var(--ink-2)"/><rect x="7.5" y="0.5" width="13" height="14" rx="2" fill="var(--accent)"/></svg>
-      <span class="brand-long">Transfer, Permission, Arrangement</span><span class="brand-short" aria-hidden="true">T·P·A</span>
+      <span class="brand-long">Transfer, Permission, Arrangement</span><span class="brand-short" aria-hidden="true">T/P/A</span>
     </a>
     <nav aria-label="Site">
-      <a href="./" data-internal>Explainer</a>
-      <a href="explorer.html" data-internal aria-current="page">Explorer</a>
-      <a href="https://github.com/ResponseIV/transfer-permission-arrangement/blob/submission/paper/report.pdf">Paper<span class="m-hide"> (PDF)</span></a>
+      <a href="./" data-internal>The story</a>
+      <a href="explorer.html" data-internal aria-current="page">The evidence</a>
+      <a href="https://github.com/ResponseIV/transfer-permission-arrangement/blob/submission/paper/report.pdf">The paper <span aria-hidden="true">↗</span></a>
     </nav>
     <button class="theme-toggle" id="theme" type="button"><svg width="14" height="14" viewBox="0 0 14 14" aria-hidden="true"><circle cx="7" cy="7" r="6" fill="none" stroke="currentColor" stroke-width="1.4"/><path d="M7 1a6 6 0 0 1 0 12z" fill="currentColor"/></svg><span>Auto</span></button>
   </div>
@@ -40,11 +41,11 @@
 <div class="levelbar" id="levelbar">
   <div class="frame">
     <fieldset>
-      <legend>Reading level</legend>
+      <legend>Reading depth</legend>
       <div class="segmented">
-        <input type="radio" name="level" id="lv-beginner" value="beginner"><label for="lv-beginner">Beginner</label>
-        <input type="radio" name="level" id="lv-amateur" value="amateur"><label for="lv-amateur">AI amateur</label>
-        <input type="radio" name="level" id="lv-expert" value="expert"><label for="lv-expert">Field expert</label>
+        <input type="radio" name="level" id="lv-beginner" value="beginner"><label for="lv-beginner">The essentials</label>
+        <input type="radio" name="level" id="lv-amateur" value="amateur"><label for="lv-amateur">The investigation</label>
+        <input type="radio" name="level" id="lv-expert" value="expert"><label for="lv-expert">The research</label>
       </div>
     </fieldset>
     <p class="who-for" id="who-for"></p>
@@ -54,8 +55,8 @@
 
 <main id="main" class="frame explorer-main">
   <div class="ex-head">
-    <p class="kicker">Episode explorer</p>
-    <h1>The same trace, a different truth</h1>
+    <p class="kicker">The evidence desk</p>
+    <h1>What would you conclude?</h1>
     <p data-lv="b">Each episode is one run of the task, recorded move by move. Pick one and step through it. On the
       left is what an auditor holding the chosen records would see; on the right, what really happened. Add record
       sheets with the buttons to see more, and use <b>Compare two</b> to put look-alikes side by side.</p>
@@ -65,12 +66,7 @@
     <p data-lv="e">Logged episodes from the benchmark, with the observer views the judges saw, the instructions no judge
       saw, the frozen label, the eight signals and every valid judge verdict. <b>Compare two</b> pairs the paper's
       contrasts. Event numbers are <code>sequence</code>; revisions are the fixture's.</p>
-    <p class="small muted sans" data-lv="b">Reading level: Beginner, for readers with no AI or statistics background.
-      Switch in the bar at the top; the facts are the same at every level.</p>
-    <p class="small muted sans" data-lv="a">Reading level: AI amateur, for readers who know what an LLM and an AI agent
-      are. Switch in the bar at the top; the facts are the same at every level.</p>
-    <p class="small muted sans" data-lv="e">Reading level: Field expert, with raw fields, every judge verdict and the
-      frozen label. Switch in the bar at the top; the facts are the same at every level.</p>
+    <p class="ex-start"><a href="#compare/arranged-scripted">Start with an arrangement beside a script <span aria-hidden="true">→</span></a><span>Choose what an observer gets to see. Then reveal the full record.</span></p>
   </div>
 
   <noscript><p class="message">This explorer needs JavaScript to step through the episodes. The raw data are in
@@ -113,6 +109,7 @@
         <button type="button" id="all">Show all</button>
       </div>
     </div>
+    <p class="record-help">Each record adds evidence. The instructions reveal what the agents were told; no AI judge saw them.</p>
     <div class="visually-hidden" id="step-status" role="status" aria-live="polite"></div>
 
     <div id="single-body">

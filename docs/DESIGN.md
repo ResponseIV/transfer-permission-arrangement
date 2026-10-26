@@ -1,95 +1,99 @@
-# Website design brief
+# An editorial companion to the paper
 
-Post hoc (2026-10-26). The site in this folder explains the paper `paper/report.md` and lets readers step
-through logged episodes. It changes no result. Every number on it comes from the paper and is checked by
-`tests/test_site_numbers.py`.
+This site was redesigned after submission, on 26 October 2026. The scientific source remains
+`paper/report.md`, the `submission` tag and the extracted benchmark. The site changes no result.
 
-## Concept: the record you hold
+## The reading experience
 
-The paper's one idea is that what you can prove depends on which record you hold: the pages, the access log,
-the final answers, the instructions. The site makes that its form. Records are drawn as stacked sheets, each with a
-numbered tab. Wherever evidence appears (the explainer's diagrams, the explorer's record switch, the comparison
-mode) the same rule holds: adding a sheet shows more, and what a sheet cannot show is greyed and labelled, never
-silently hidden. The explorer gains the fourth sheet, the instructions, because that is the record that tells a
-scripted exchange from an arranged one, and a permitted exchange from a forbidden one.
+Lead with a question a reader can understand: **A secret moved. Was there a deal?** A condensed real
+episode sits beside it. Adding reads establishes the event order; adding the instructions reveals
+that the experiment supplied the sequence. The interface demonstrates why a plausible trace is
+not sufficient evidence of an agent-made plan.
 
-## Three reading levels, one set of facts
+The opening quotes and reversed token come from `sol-scripted-01` in `data/episodes.json`; the
+complete episode is linked beside them. The fixed order in the original log is preserved, but
+intermediate actions are omitted and explicitly labelled as a condensation. The anonymous observer
+records themselves are available in the explorer; the opening uses the fixture's attribution for
+explanation. It is not an invented chat or a new observation.
 
-One site with a persistent switch: **Beginner** (no AI or statistics background), **AI amateur** (knows what an
-LLM and an agent are), **Field expert** (works on multi-agent safety, evals or monitoring). Structure, figures,
-headline numbers and cautions are shared markup and identical at every level; only the prose around them changes.
+The story then asks three questions: transfer, permission, arrangement. Each heading states the
+problem in ordinary language, each finding names the needed record, and the cautions remain beside
+the result. The end offers a direct local PDF, the submitted repository, readable text and citation.
 
-| Level | Their question | They leave with |
-|---|---|---|
-| Beginner | "Did the AIs secretly team up, and how would anyone know?" | A token can move without a plan; a plan can be faked by a script; you need the right records to tell. And the limits: a small, synthetic test. |
-| AI amateur | "What does this say about monitoring agents?" | The three questions, which record settles each, the headline counts and the two cautions. |
-| Field expert | "What exactly was measured, against what denominators, and what can I reuse?" | Tables with intervals, the judge and prompt identities, signals, paired tests, the scripted control's design, blind-check coverage, the prior-work boundary, the freeze timeline, and how to reproduce. |
+## Three depths with different substance
 
-Default: **AI amateur**. It is the level the first-pass site was written at, it suits most people who arrive from a
-sprint or news link, and both neighbours are one click away. No first-visit question: a modal before the first
-sentence costs every reader and helps few. The choice persists in `localStorage` (guarded) and in `?level=`.
+| Depth | Contents |
+| --- | --- |
+| The essentials | Plain-language setup, the three findings, event traces, recommendations and limits. No statistical tables. Terms are explained when introduced. |
+| The investigation | Adds the constructed look-alikes, the research process, cumulative records, comparative tables, base-rate chart and discussion of matching answers. |
+| The research | Adds operational definitions, full breakdowns, intervals, judges, registration history, human-check coverage and reproduction notes. |
 
-Implementation: prose blocks carry `data-lv="b"`, `"a"`, `"e"` or combinations; an inline head script sets
-`<html data-level>` before first paint; CSS hides the other levels. Without JavaScript the page shows the AI-amateur
-level. On a switch the page keeps the nearest shared element at the same screen position, so the reader does not
-lose their place, and a polite live region announces the change. The switch is a native radio group.
+The first visit defaults to the essentials. Existing `?level=beginner`, `amateur`, `expert` URLs and
+stored choices remain compatible. The radio group uses these stable internal values but gives readers
+task-oriented labels. Choices persist across pages, are announced, and preserve a shared reading anchor.
+Links to hidden specialist sections select a sufficient depth before scrolling. Without JavaScript the
+essentials still read as a complete article; the opening discloses the scripted explanation in a
+`noscript` note and the explorer links its raw data.
 
-## Typography
+## Layout and visual language
 
-- **Newsreader** (variable, optical sizes 6–72, OFL) for text and headings: an editorial serif that stays calm at
-  body size and gains contrast at display size.
-- **Instrument Sans** (OFL) for interface: controls, labels, tabs, captions of data.
-- **JetBrains Mono** (OFL) for what the fixture recorded: page bodies, tokens, paths, event numbers.
+An investigative journal with a small evidence plate, rather than a product landing page. Cool white,
+blue ink, fine rules, a compact single-line masthead, underlined depth tabs and text-led actions.
+No decorative motion, shader, canvas, 3D, scroll reveal, external component library or runtime CDN.
 
-Scale (1.25, from 18 px body on desktop, 17 px on phones): 13 · 14.5 · 18 · 22.5 · 28 · 35 · 44 (hero, fluid).
-Measure 64–70 characters. Numbers in tables are tabular.
+The main grid uses an 8px spacing unit: 24px phone gutters, 48px larger gutters, a 64px column gap,
+a 176px contents rail and a 656px prose measure. Small interface gaps can use a 4px half-step.
+Body line height is 1.68. Rules and optical adjustments are not constrained to the spacing unit.
+The cover stacks below 1000px. The contents rail becomes a native disclosure at that breakpoint.
+Charts and tables can use the wider article area; tables scroll within their own container.
 
-## Colour
+Type is self-hosted: Instrument Sans for navigation and the opening question, Newsreader for reading
+and chapter headings, JetBrains Mono for recorded strings. Their OFL licences are in `assets/fonts/`.
+Colour tokens live in `assets/style.css`; the manual and system dark themes share the same values.
+Agent identities and verdicts have text labels in addition to colour.
 
-Paper and ink, one accent for "visible in this record", two agent colours, and a red-brown for the fourth sheet,
-the instructions. Tokens are defined on `:root` and redefined for dark mode (`prefers-color-scheme` and a manual
-toggle). `tests/test_site.py` computes the WCAG ratio of every text pair in use (at least 4.5:1) and of chart lines
-and control borders (at least 3:1), in both themes.
+The font size, type contrast, prose measure, quiet navigation and ruled comparisons carry the character.
+There is no continuous animation. Reduced-motion preferences are respected. Controls have visible
+keyboard focus; principal controls have at least 44px targets. Header and explorer-control measurements
+keep sticky elements from overlapping. The phone stepper reserves room so the current event is visible.
 
-| Token | Light | Dark | Use |
-|---|---|---|---|
-| `--paper` | #f6f4ee | #131412 | page background |
-| `--sheet` | #fffdf8 | #1b1c1a | cards, sheets |
-| `--ink` | #1b1a17 | #ebe8e0 | text |
-| `--ink-2` / `--ink-3` | #514e47 / #69655c | #b3afa5 / #9a968c | secondary text, labels |
-| `--control` | #857f72 | #73766b | borders of controls (3:1) |
-| `--accent` | #1d5878 | #8ac2df | links, the records you hold |
-| `--alpha` / `--beta` | #1d5878 / #94401e | #8ac2df / #eda17e | the two agents |
-| `--fixture` | #536220 | #b8c680 | fixture, archive |
-| `--yes` / `--no` | #1d6a3a / #8e2f21 | #8fd3a5 / #f2a191 | ground truth and verdicts, always with a word |
-| `--fig-*` | blue, green, red | lighter tints | Figure 1, in the paper's hues |
+## Evidence desk
 
-## Grid and components
+The explorer opens its cases through reader-facing questions in a native selector, with exact case
+identifiers retained in a source disclosure. It supports both legacy `#sol-21` and explicit
+`#single/sol-21` links, and `#compare/<pair>` comparisons. Case changes enter browser history;
+step and record changes do not. A direct comparison carries its left example into single-case mode.
 
-A single 680 px text column centred in a 1120 px frame; figures, tables and the explorer may break out to the
-frame. 16 px gutters on phones. Components: the record stack (diagram and control), finding blocks (question,
-record, headline number, prose), number tiles, a glossary, an expert "methods" section, the episode timeline with
-an observer column and a ground-truth column, and a side-by-side comparison.
+Record selection adds page history, reads, final answers and instructions. Instructions were never
+shown to the model judges; the interface says so. Unknown verdicts remain unknown. Source extraction,
+carrier checks and figure data retain their original generators.
 
-## Motion
+## References
 
-Only to show change: a sheet sliding onto the stack, the current explorer step highlighted. 150–250 ms ease-out.
-None under `prefers-reduced-motion`.
+These informed the design, rather than supplying copied components or claims:
 
-## Figures
+- [Anthropic, Alignment faking](https://www.anthropic.com/research/alignment-faking): a concrete opening,
+  a sustained explanation and substantive caveats.
+- [Swarmchasers, Tencent fleet report](https://swarmcha.se/posts/chinese-agent-fleet-full-report): visible
+  chapter navigation and a documented investigation process.
+- [Distill, Communicating with Interactive Articles](https://distill.pub/2020/communicating-with-interactive-articles/):
+  a small interaction that helps readers reason about the claim.
+- [Works in Progress](https://worksinprogress.co/archive/): compact publication furniture and editorial hierarchy.
+- [The Pudding](https://pudding.cool/about/): visual explanation shaped around the subject.
+- [Bencho](https://bencho.dev/): inspected its evidence-inspector and step-player ideas; no source or dependency copied.
 
-Figure 1 is redrawn as inline SVG from `paper/figures/figure-data.json` (the same values the paper plotted) by
-`scripts/site_figures.py`, once wide and once for phones, so it follows the theme; it is annotated only at the 1%
-base rate, where the paper states the values. Figure 2 becomes two HTML timelines with the paper's event numbers and labels. The beginner diagrams
-(the task, the record stack, the four look-alikes) are hand-drawn SVG, labelled in text.
+The user's explicit direction is calm, instructive and editorial, with an 8px grid. Local commits only;
+ask before any push or publication.
 
-## Cut
+## Verification and maintenance
 
-- The white-background PNG plates of the paper's figures.
-- The "One-sided gains, and matching answers" section as a separate block: folded into the arrangement and
-  look-alike sections where each point belongs.
-- Repeated summary of the scripted control (it was told twice).
-- The pill-cloud of label fields and signals at every level; it is now expert-only, each with a yes or no.
-- The instructions as a collapsed footnote; they are now the fourth record, the one that answers two questions.
-- Inline `<details>` of the full prompt in every summary; the instructions sheet replaces it.
-- Inline styles in the HTML.
+Run `python3 -m unittest discover -s tests -p 'test_site*.py' -q`. It checks the numeric registry at every
+depth, source extraction, generated figures, contrast, links, fragment targets, real opening excerpts and
+the local PDF's byte identity with the submitted PDF. This uses the standard library.
+
+Browser QA covers 375px, 768px and 1440px layouts; all depths, record tabs, hidden deep links, case and mode
+history, comparison reveal, theme and the phone stepper. A browser record is in the local session ledger.
+No scientific experiment or paid model call is part of site development.
+
+If the submitted paper changes intentionally, update the local PDF and provenance checks together.
+Do not silently replace the scientific source with a later draft.
