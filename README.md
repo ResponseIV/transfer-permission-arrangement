@@ -7,6 +7,9 @@ correlation, talk without action and harm without agreement).
 
 📄 **Paper:** [`paper/report.pdf`](paper/report.pdf) · readable on GitHub as [`paper/report.md`](paper/report.md)
 
+🏷️ **Submitted version:** the tag [`submission`](https://github.com/ResponseIV/transfer-permission-arrangement/tree/submission)
+(commit `d92edb7`) is the repository as submitted to the sprint.
+
 🔎 **Website:** an explainer and an episode explorer in [`docs/`](docs). Preview it with
 `python3 -m http.server -d docs` and open http://localhost:8000. The website, [`CITATION.cff`](CITATION.cff) and
 [`research/README.md`](research/README.md) were added on 2026-10-26, after the submission; the paper, data and
