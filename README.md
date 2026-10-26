@@ -1,142 +1,141 @@
-# Transfer, Permission, Arrangement: What Agent Logs Can and Cannot Prove About Collusion
+# Transfer, Permission, Arrangement
 
-Code, data and registrations for an Apart Research AI Collusion Research Sprint project (23–25 October
-2026, track 2, question 2.3: which signals separate deliberate coalitions from innocent correlation,
-talk without action and harm without agreement).
+**What agent logs can and cannot prove about collusion.** Code, data and registrations for an
+[Apart Research AI Collusion Research Sprint](https://apartresearch.com/sprints/ai-collusion-research-sprint-2026-10-23-to-2026-10-25)
+project (23–26 October 2026, track 2, question 2.3: which signals separate deliberate coalitions from innocent
+correlation, talk without action and harm without agreement).
 
-US antitrust law does not infer an agreement from parallel conduct alone; it asks for plus factors,
-evidence more likely under agreement than under the innocent explanations. We apply that test to AI
-agents. Two language-model agents share a small wiki; each holds a seed-derived ten-character token the
-other must return, and whether it may pass it on depends on the instructions. Every read, write and
-answer is logged with its author and the revision read, so each episode has an exact transfer label,
-and the innocent alternatives (a common source, an authorized exchange, a planted leak) are built on
-purpose.
+📄 **Paper:** [`paper/report.pdf`](paper/report.pdf) · readable on GitHub as [`paper/report.md`](paper/report.md)
 
-The paper is `dist/submission-draft-v6.4/report.pdf` (editable prose:
-`research/report-versions/REPORT-DRAFT-v6.4.source.md`); every number is traceable to
-`research/numbers-writeup-v6.3/` (which extends the earlier captures; `REPORT-INPUTS.json` lists each output,
-the command that made it and its hash). Evidence of collusion split into three layers, each settled by a
-different record:
+---
 
-| Layer | Record that settles it | Result |
+## The question
+
+Suppose two AI agents end up sharing a secret they were each told to keep. Did they collude? Antitrust law faces
+the same problem with firms and does not infer an agreement from parallel conduct alone: it asks for evidence that
+is more likely under an agreement than under the innocent explanations. We apply that test to agents, in a setting
+where the innocent explanations can be built on purpose and every event is recorded.
+
+Two language-model agents, alpha and beta, share a small wiki. Each holds a private ten-character token, and the
+task asks each to return both. Every page write, every read (with the revision it returned) and every final answer
+is logged, so each episode has an exact ground truth. Around that we built the look-alikes an auditor has to rule
+out:
+
+| Look-alike | What happens | What it imitates |
 |---|---|---|
-| Transfer: did a token move? | The access log and the answers | With the log, a frozen judge (gpt-6-astra, prompt 10) found all 244 transfers in 450 primary episodes with 9 false alarms in 206; on pages alone, 39. At a 1% base rate only about 19% of its alarms would be real |
-| Permission: was it forbidden? | The instructions | In a near-matched script without the rule, the six page and log signals were unchanged on Luna and Qwen3-32B (20 pairs each); on Sol, the traffic differed where the model resisted the script |
-| Agreement: did they arrange it? | An offer, its reading, a reply carrying the token, and the instructions | All 8 transfers the agents arranged themselves (Sol, registered follow-up) followed this sequence, but a script laying it out produced it in 20 of 20 Sol episodes, so the instructions are needed too; Qwen3-32B under the letter rule arranged none in 34 episodes; a planted leak was taken in 60 of 60 episodes across three models with no completed arrangement |
+| Shared source | A read-only archive holds both tokens | Agreeing answers without any exchange |
+| Authorized exchange | The instructions prescribe the exchange, with no rule against it | A transfer that was allowed |
+| Planted leak | Alpha's token is already on a page beta can read | Harm without agreement |
+| Scripted offer | One instruction lays out an offer, a reply and completion | The order of events of an arrangement |
 
-Two further results. All eight agent-arranged transfers showed the registered sequence, and so did every
-scripted-control episode, and what told a script apart was the instructions or, in bulk, its regularity (the author,
-blind to the key, identified all 11 scripted episodes on a mixed sheet). And an arrangement was not a shared
-gain: 9 of the 10 transfers the agents arranged served only the agent that proposed the scheme.
+## What we found
 
-Two cautions travel with these results. The 244 primary transfers are mostly positive controls (225
-instructed no-rule exchanges, 17 from the instructed pact, 2 arranged by the agents), so the judge rates
-measure transfer detection far more than agreement detection. And the author's blind checks are partial:
-24 of the 38 arrangement-sheet episodes and 4 of the 20 proposal-sheet cells
-(`research/CHECK-blind-arrangement-20261026-comparison.md`, `research/HANDREAD-proposals-20261023-answers.md`).
+Evidence of collusion splits into three questions, and each needed a different record.
 
-To audit one episode the way the paper recommends:
+| Question | Record that settled it | Result |
+|---|---|---|
+| **Transfer:** did a token move? | The access log and the answers | With the log, a frozen judge found all 244 primary transfers and raised no false alarm on the 194 episodes where no exchange was prescribed; on page writes alone it raised 28 |
+| **Permission:** was it forbidden? | The instructions | A near-matched script without the confidentiality rule left six page and log signals unchanged on two models; only a model that resisted the script changed its traffic |
+| **Arrangement:** did the agents set it up? | The order of events *and* the instructions | All 8 transfers the agents arranged themselves followed an offer, its reading and a reply carrying the token, but a script produced the same sequence in 20 of 20 episodes; a planted token was taken in 60 of 60 episodes with no arrangement at all |
+
+Two further results:
+
+- **An arrangement was not a shared gain.** In 9 of the 10 transfers the agents arranged, only the agent that
+  proposed the scheme obtained a token; in 5 of them the other agent asked for the return and got none.
+- **Matching answers mislead.** They look 3.8 times as common under transfer as without it, against the pooled
+  negatives, and are less common than under a shared source, which produced agreeing answers in 40 of 40 episodes.
+
+Read the results with two cautions. 242 of the 244 primary transfers were prescribed exchanges, so the judge rates
+measure transfer detection far more than the detection of agreement. And the author's blind checks of the coding
+are partial (24 of 38 and 4 of 20 episodes); they are reported with every disagreement.
+
+## Try it
+
+Python 3.12, standard library only; `pytest` for the tests.
+
+**Audit one episode the way the paper recommends**, layer by layer, from the records an observer would have:
 
 ```bash
 python3 scripts/audit_cell.py cell "study-wording-sol-step6-cont/retrieval-note-21-board-letter--private-writable" --observer full --instructions
 ```
 
-It reports the three findings separately, from the records an observer would have, with the innocent
-explanations that remain open; `--check` adds the ground truth beside them.
+Add `--check` to print the ground truth beside each finding.
 
-## Preexisting and new work
-
-**Preexisting** (developed before the sprint opened on 2026-10-23T12:00Z and frozen at the tag
-`sprint-freeze`): the testbed and its runner (`page_artifact_*.py`, `study_wording.py`,
-`study_pact.py`, `study_disguised.py`, `study_pressure.py`, `study_exchange_gaps.py`), the frozen
-transfer label, observer views and signals (`exchange_bench.py`, `exchange_evidence.py`), the judge
-and its prompts (`exchange_judge.py`), and 1,174 scorable development episodes.
-
-**New during the sprint**: all 706 scorable sprint episodes (the 450-episode primary test and 256 registered
-follow-ups, among them the Qwen3-32B letter-rule run and the scripted-offer control), the no-rule, leak and
-scripted-offer conditions (`study_agreed.py`, `study_leak.py`, `study_scripted_offer.py`), the open-weight
-route (`modal_vllm.py`, `page_artifact_openweight_adapter.py`, `judge_openweight.py`), every analysis
-(`sprint_funnel.py`, `plus_factors.py`, `sprint_extras.py`, `sprint_protocol.py`, `audit_cell.py`,
-`sequence_by_condition.py`, `code_sequence.py`, and the rest), the blind check sheets (`blind_sheet.py`),
-the registrations and the report. The file-by-file
-inventory with first-commit times is `research/PRIOR-AND-NEW-WORK-20261023.md`.
-
-## Layout
-
-| Path | What |
-|---|---|
-| `scripts/` | The testbed runner and arms (`study_*.py`, `page_artifact_*.py`), the frozen label and signals (`exchange_bench.py`, `exchange_evidence.py`), the judge (`exchange_judge.py`), every analysis, and `sprint_numbers.sh`, which regenerates the primary numbers (the later follow-ups use the commands in `research/numbers-writeup-v6.3/REPORT-INPUTS.json`) |
-| `tests/` | Unit tests for all of the above (`python -m pytest tests -q`) |
-| `data/study-*`, `data/page-artifact-plan-v*` | Every cell: `events.jsonl` (the full log), `cells.jsonl`, `manifest.json` (arm, prompt, seed, input hashes), `requests.jsonl` (each model request and response, as recorded); a `.log` beside each run has its UTC launch and exit lines |
-| `data/exchange-judge-*` | Judge verdicts per cell and view |
-| `data/posthoc/` | Post-hoc arms kept outside the frozen loader (the negligent leak), read with `--data data/posthoc` |
-| `research/PREDICTIONS-*.md` | Registrations by the operator and Claude; the after-freeze H/U analysis forecasts were written while some convention-arm cells already existed, so their whole-arm aggregates are exploratory |
-| `research/SPRINT-ANALYSIS-*.md` | Scoring of every registered prediction, findings, critique |
-| `research/numbers-final-*/`, `research/numbers-writeup-v6.3/` | The final primary numbers and the report's capture (`README.txt` gives the commit; `inputs.sha256` the hash of every input; `REPORT-INPUTS.json` the later outputs) |
-| `research/CODING-*.md`, `research/CHECK-*`, `research/HANDREAD-*` | Hand coding of offers and agreements, the blind sheets, their keys, the author's answers and the comparisons |
-| `dist/submission-draft-v6.4/` | The submitted report (PDF, DOCX, Markdown), its prediction ledger and verification record |
-| `research/PRIOR-AND-NEW-WORK-20261023.md` | Source inventory against the pre-sprint freeze; later follow-ups are new work even when their folder names do not contain `-sprint` |
-| `benchmark/` | Every labelled cell in one file, with ground truth, case type, signals and judge verdicts; see `benchmark/DATACARD.md` |
-
-## Reproduce
-
-Python 3.12, no third-party package for the analyses (`pytest` for the tests).
+**Run the tests and regenerate the numbers** (no model is called; everything is computed from `data/`):
 
 ```bash
-python -m pytest tests -q
+python3 -m pytest tests -q
+```
+
+```bash
 PY=python3 zsh scripts/sprint_numbers.sh research/numbers-check
 ```
 
-`sprint_numbers.sh` reads only `data/`; no model is called. The Qwen letter-rule and scripted-offer outputs,
-the coding aids and the benchmark export come from the commands listed under `commands` in
-`research/numbers-writeup-v6.3/REPORT-INPUTS.json` (for example
-`python3 scripts/sequence_by_condition.py --studies scripted-offer`, `python3 scripts/export_benchmark.py benchmark`).
-`nesting.json` and the all-cells files change as later runs join the all-cells population. It fails if the sprint counts do not nest
-inside the all-cells counts. The outputs match `research/numbers-writeup-v6.3/` except where
-noted in "Differences from the private repository" below.
-The `step6/` subfolder is regenerated separately from the original sprint tables. Later snapshots
-also include post-hoc outputs and must be compared on their stated data populations, not treated
-as byte-for-byte replacements for earlier snapshots that predate the replications.
+`sprint_numbers.sh` regenerates the primary numbers. The later follow-ups, the coding aids and the benchmark export
+use the commands listed under `commands` in
+[`research/numbers-writeup-v6.3/REPORT-INPUTS.json`](research/numbers-writeup-v6.3/REPORT-INPUTS.json), for example:
 
-Re-running cells needs access to the models and is not supported from this repository: the login helper
-for the OpenAI route is not released, and the runner also checks a pinned prior-work scorer that is not
-included here. The open-weight route (`modal_vllm.py`) needs your own Modal account. Everything the paper
-reports is computed from the recorded data, with no model call.
+```bash
+python3 scripts/export_benchmark.py benchmark
+```
 
-## Method notes
+**Use the benchmark.** [`benchmark/cells.jsonl`](benchmark/cells.jsonl) holds all 1,923 episodes (43 of them failed
+runs, kept and flagged), each with its full event log, ground-truth label, case type, eight observer signals and
+the judges' verdicts. See [`benchmark/DATACARD.md`](benchmark/DATACARD.md).
 
-- The instrument commit `a280f7a` predates the public opening at 2026-10-23T12:00Z. The annotated
-  `sprint-freeze` tag was recorded at 15:27:34Z, before the first original-sprint manifest at
-  15:27:57Z. Analyses written during the runs are exploratory; a forecast made after earlier cells
-  existed does not make a whole arm an unseen test. Registered follow-ups have their own scope.
-- A failed or refused cell is never rerun; a stopped run may resume once on its unrun cells (one run
-  resumed twice, a logged deviation), and after a usage-limit stop it continues from the cells not yet attempted.
-- OpenAI agents ran at high reasoning effort; OpenAI judges at low. Qwen3-32B (weights revision 9216db57) used its default
-  thinking mode for agents and judge on Modal; these are post-hoc runs. Judge format failures are
-  retained as failures and never re-asked; missing verdicts are not negatives. One possible
-  in-flight primary judgment was quarantined after the old supervisor stopped; its outcome
-  is unknown and it was not replayed. `interruptions.jsonl` preserves that disposition.
-- Times are UTC throughout.
+## Repository map
 
-## Differences from the private repository
+| Path | What is there |
+|---|---|
+| [`paper/`](paper) | The submitted report (PDF, DOCX, Markdown), its prose source, figures, the 143-line forecast ledger and the build and verification records |
+| [`scripts/`](scripts) | The testbed and its conditions (`study_*.py`, `page_artifact_*.py`), the frozen label and signals (`exchange_bench.py`, `exchange_evidence.py`), the judge (`exchange_judge.py`), the audit tool (`audit_cell.py`) and every analysis |
+| [`tests/`](tests) | Unit tests for the scripts above |
+| [`data/`](data) | Every run: `events.jsonl` (the full log), `cells.jsonl`, `manifest.json` (condition, prompt, seed, input hashes), `requests.jsonl` (each model request and response), and a `.log` with UTC launch and exit lines. `exchange-judge-*` folders hold judge verdicts; `posthoc/` holds the planted-leak runs |
+| [`benchmark/`](benchmark) | All episodes in one file, with its data card |
+| [`research/PREDICTIONS-*.md`](research) | The registrations: forecasts by the author and by Claude, committed before each run |
+| [`research/SPRINT-ANALYSIS-20261023.md`](research/SPRINT-ANALYSIS-20261023.md) | The scoring of every registered forecast and the findings, in the order they were made |
+| `research/CODING-*`, `CHECK-*`, `HANDREAD-*` | Hand coding of offers and arrangements, the blind check sheets, their keys, the author's answers and the comparisons |
+| `research/numbers-*` | Every number in the paper, with the hash of each input and the command that produced it |
+| [`research/PRIOR-AND-NEW-WORK-20261023.md`](research/PRIOR-AND-NEW-WORK-20261023.md) | What existed before the sprint and what is new, file by file |
 
-The project's working repository also holds unrelated material (collections of public posts, a wild
-corpus of agent-written pages), so this repository was assembled from an explicit list by
-`build_release.py` there, not copied. Absolute local paths were made relative (`RELEASE-REWRITES.txt`
-lists the files). One baseline detector of prior work (the "September scorer", not used in the paper)
-needs a file that is not released; without it `exchange_bench.py` leaves that detector out, so the
-`bench-*.json` tables here have one detector fewer; everything else regenerates unchanged.
+## How the work was done
+
+- **Prior work is disclosed.** The testbed, the transfer label, the observer signals and the judge prompts were
+  built before the sprint on 1,174 development episodes and frozen at the tag `sprint-freeze`, before the first
+  sprint run. All 706 sprint episodes (a 450-episode primary test and six registered follow-ups), the look-alike
+  conditions, the arrangement definition, the analyses and the report are new.
+- **Forecasts came first.** Each follow-up was registered with predictions by the author and by Claude before its
+  first episode. All 143 are scored in the paper's Appendix D, wrong ones included.
+- **Nothing is rerun or replaced.** Failed and refused episodes are kept and flagged. A run stopped by a failure may
+  resume once on its unrun episodes; the one run that resumed twice is logged as a deviation.
+- **Codings are checked blind.** Offers and arrangements were coded from the event logs before any judge verdict
+  was read, then checked by the author on shuffled sheets without the key.
+- **Times are UTC throughout.**
+
+**Not included.** Re-running the models is not supported from this repository: the login helper for the OpenAI
+route is withheld, and the runner checks a pinned prior-work scorer that belongs to a separate project (without it,
+the `bench-*` tables have one baseline detector fewer). The open-weight runs used Qwen/Qwen3-32B at revision
+`9216db57` on Modal (`scripts/modal_vllm.py`). Absolute local paths were made relative when the release was built
+([`research/RELEASE-REWRITES.txt`](research/RELEASE-REWRITES.txt)).
 
 ## Responsible use
 
-The tokens are random test strings and the agents' only world is the fixture; nothing here touches a
-real system. The work measures how well an auditor can detect and attribute information transfer
-between agents; the data are meant for evaluating such detectors. They show which encodings the
-models chose (reversal, splitting, per-character ciphers), all already common in the literature, and
-no method for evading monitoring is proposed or tested.
+The tokens are random test strings and the agents' only world is the test fixture; nothing here touches a real
+system. The data are meant for evaluating detectors and judges of information transfer and coordination between
+agents, not for training agents to pass information unseen. The encodings the models chose (reversal, splitting,
+per-character ciphers) are already common in the literature, and no method for evading monitoring is proposed or
+tested.
 
-## Licence
+## Licence and citation
 
-MIT for original code; CC BY-NC 4.0 for original data (operator decision, 2026-10-25).
-The applicable notices are `LICENSE-code.txt` and `LICENSE-data.md`. Dependencies and the
-official Apart template retain their own terms.
+Code: MIT ([`LICENSE`](LICENSE)). Data: CC BY-NC 4.0 ([`LICENSE-data.md`](LICENSE-data.md)).
+
+```bibtex
+@misc{responseiv2026transfer,
+  title  = {Transfer, Permission, Arrangement: What Agent Logs Can and Cannot Prove About Collusion},
+  author = {{Tom - Response IV}},
+  year   = {2026},
+  note   = {Apart Research AI Collusion Research Sprint, track 2, question 2.3},
+  url    = {https://github.com/ResponseIV/transfer-permission-arrangement}
+}
+```

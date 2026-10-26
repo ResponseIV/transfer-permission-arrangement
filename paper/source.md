@@ -165,7 +165,7 @@ would be real (at least 11% at the interval bounds); if no prescribed exchange w
 estimate is 100% and the bound 35%. On page writes alone, 5%. The base rate and the mix are the
 auditor's assumptions.
 
-![Figure 1](figures/writeup-v6.4/figure-1-alarm-share.png)
+![Figure 1](figures/figure-1-alarm-share.png)
 
 **Figure 1. How often a transfer alarm would be right.** Share of Astra p10's alarms that are real
 transfers, by the assumed base rate, from its primary-test rates: with the log against all 206
@@ -224,7 +224,7 @@ the reply came before the offer could be read. What separated them was the instr
 author called all 11 scripted episodes on a mixed sheet scripted (22 of 24 correct), from the identical
 turn order and complete answers (Qwen: 6 scorable episodes, Appendix B).
 
-![Figure 2](figures/writeup-v6.4/figure-2-trajectories.png)
+![Figure 2](figures/figure-2-trajectories.png)
 
 **Figure 2. Two ways a token passed.** Left: Sol follow-up episode 21, an observed arrangement: an
 offer with alpha's own reversed token, beta's read, beta's reversed token, alpha's read, then both

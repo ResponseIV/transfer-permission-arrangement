@@ -1,0 +1,2 @@
+# Tests only; the analyses use the Python 3.12 standard library.
+pytest==9.0.2
