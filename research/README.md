@@ -1,9 +1,9 @@
 # Research records
 
 The plan, registrations, analysis log, hand codings, blind checks and numbers behind the paper
-([`../paper/report.md`](../paper/report.md)). Times in file names and inside files are UTC. Each file's
-commit time in the working repository was its record; this release flattens that history into one
-commit, so the times written inside each file are the ones to read.
+([`../paper/report.md`](../paper/report.md)). Times in file names and inside files are UTC. In the working
+repository each file's commit time was its record; this release flattens that history into one commit and does
+not carry those times. Each file states its own time of writing or registration.
 
 ## Reading order
 
@@ -12,7 +12,9 @@ commit, so the times written inside each file are the ones to read.
    [`SPRINT-RUNBOOK-20261023.md`](SPRINT-RUNBOOK-20261023.md) (how each step was run).
    [`PRIOR-AND-NEW-WORK-20261023.md`](PRIOR-AND-NEW-WORK-20261023.md) draws the line between preexisting and
    new work, file by file.
-2. **Registrations**, each written before the first episode of its run, in this order:
+2. **Registrations**, in this order. Each came before the episodes it forecasts, with one exception: the
+   forecasts on the after-freeze analyses were registered while some convention-arm episodes already existed,
+   so their whole-arm aggregates are exploratory (paper, Appendix D).
 
    | File | Run it registers |
    |---|---|
