@@ -491,7 +491,13 @@ function wire() {
       state.record = target.dataset.record;
       render();
       setRoute(false);
-      document.querySelector(".instructions-record")?.scrollIntoView({ block: "nearest", behavior: "smooth" });
+      // The button is gone after the render: hand focus to the instructions it revealed.
+      const shown = document.querySelector(state.mode === "single" ? "#single-instructions .instructions-record" : "#landmark-instr");
+      if (shown) {
+        shown.setAttribute("tabindex", "-1");
+        shown.focus({ preventScroll: true });
+        shown.scrollIntoView({ block: "nearest", behavior: "smooth" });
+      }
     } else if (target.classList.contains("more")) {
       const open = target.getAttribute("aria-expanded") !== "true";
       target.setAttribute("aria-expanded", String(open));
