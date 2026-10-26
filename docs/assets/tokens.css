@@ -61,6 +61,10 @@
   --type-note: var(--weight-regular) var(--size-ui)/var(--line-note) var(--sans);
   --type-record: var(--weight-regular) var(--size-record)/var(--line-note) var(--mono);
   --type-tag: var(--weight-medium) 0.75rem/1rem var(--mono);
+  --type-chapter: var(--weight-regular) 2.5rem/2.875rem var(--serif);
+  --type-question: var(--weight-regular) 1.75rem/2.125rem var(--serif);
+  --type-figure: var(--weight-regular) 2rem/2.25rem var(--serif);
+  --type-cover: var(--weight-regular) clamp(3rem, 2rem + 4.6vw, 6rem)/0.98 var(--serif);
   --type-token: var(--weight-regular) var(--size-body)/var(--line-body) var(--mono);
   --type-metric: var(--weight-medium) 2.25rem/2.5rem var(--serif);
 

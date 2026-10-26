@@ -13,7 +13,7 @@ strong 600; emphasis uses the relevant family's italic. There are no shrinking p
 
 | Role | Size / line height in px | Use |
 | --- | --- | --- |
-| Display | 72/72 wide, 64/64 tablet, 40/48 phone | Opening research question |
+| Cover | fluid 48–96, line 0.98 (`--type-cover`) | The opening question, the one fluid size |
 | Page title | 48/48, 36/40 phone | Evidence desk entrance |
 | Chapter title | 36/40, 32/40 phone | Article chapters and overview |
 | Subheading | 24/32 | Subsections and the active desk comparison |
@@ -24,7 +24,9 @@ strong 600; emphasis uses the relevant family's italic. There are no shrinking p
 | Note | 14/24 | Captions, provenance, cautions, metadata |
 | Record | 14/24, monospace | Literal page content, prompts, event paths |
 | Token specimen | 18/28, monospace | A short token being examined |
-| Metric | 36/40 | Counts and hypothetical result comparisons |
+| Chapter | 40/46 (`--type-chapter`) | Article chapter titles |
+| Question | 28/34 (`--type-question`) | The three-question band; the desk's A and B |
+| Figure | 32/36 (`--type-figure`) | Counts in unit charts and hypothetical results |
 
 The desk has a page title followed by a 24px comparison heading, 18px question and 14px record labels.
 It does not repeat the article's chapter-title scale inside every evidence group. Literal source text
@@ -49,7 +51,7 @@ not additional spacing scales. Dimensions are relative units so browser text set
 | Prose measure | 656px maximum |
 | Publication frame | 1280px including gutters |
 | Desktop contents rail | 176px; 48–64px gap to article |
-| Main control target | 48px; contents links use a 40px row |
+| Control target | 48px for navigation and the article's main actions; 36px for segmented controls, the record stack and desk buttons; contents links use a 36px row |
 
 Responsive changes alter composition rather than inventing smaller component type. Below 1024px the
 cover stacks and the contents become a native disclosure. Below 768px the masthead uses T/P/A and the
