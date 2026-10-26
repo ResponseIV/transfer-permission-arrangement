@@ -1,0 +1,165 @@
+/* Design primitives and semantic roles. See docs/DESIGN-SYSTEM.md. */
+
+:root {
+  --paper: #f7f8fa;
+  --sheet: #ffffff;
+  --sheet-2: #edf0f5;
+  --ink: #1b2434;
+  --ink-2: #465165;
+  --ink-3: #5e6879;
+  --rule: #d8dde6;
+  --rule-strong: #aab3c2;
+  --control: #7c889b;
+  --accent: #284bb5;
+  --accent-soft: #e9eefb;
+  --alpha: #284bb5;
+  --beta: #824467;
+  --fixture: #486225;
+  --yes: #1d6a3a;
+  --yes-soft: #e0efe4;
+  --no: #8e2f21;
+  --no-soft: #f6e3de;
+  --mark: #f1e7b8;
+  --fig-log: #1f5f8b;
+  --fig-unpres: #2e7d55;
+  --fig-pages: #a8402c;
+
+  --serif: "Newsreader", "Iowan Old Style", "Palatino Linotype", Georgia, serif;
+  --sans: "Instrument Sans", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+
+  --size-ui: 0.875rem;
+  --size-record: 0.875rem;
+  --size-body: 1.125rem;
+  --size-heading: 1.5rem;
+  --size-title: 2rem;
+  --size-page: 2.25rem;
+  --size-display: 2.5rem;
+  --line-ui: 1.25rem;
+  --line-note: 1.5rem;
+  --line-body: 1.75rem;
+  --line-heading: 2rem;
+  --line-title: 2.5rem;
+  --line-page: 2.5rem;
+  --line-display: 3rem;
+  --weight-regular: 400;
+  --weight-medium: 500;
+  --weight-strong: 600;
+  --tracking-heading: -0.025em;
+  --tracking-display: var(--tracking-heading);
+
+  --type-display: var(--weight-medium) var(--size-display)/var(--line-display) var(--serif);
+  --type-page: var(--weight-medium) var(--size-page)/var(--line-page) var(--serif);
+  --type-title: var(--weight-medium) var(--size-title)/var(--line-title) var(--serif);
+  --type-heading: var(--weight-medium) var(--size-heading)/var(--line-heading) var(--serif);
+  --type-body: var(--weight-regular) var(--size-body)/var(--line-body) var(--serif);
+  --type-intro: var(--weight-regular) var(--size-heading)/var(--line-heading) var(--serif);
+  --type-ui: var(--weight-medium) var(--size-ui)/var(--line-ui) var(--sans);
+  --type-label: var(--weight-strong) var(--size-ui)/var(--line-ui) var(--sans);
+  --type-note: var(--weight-regular) var(--size-ui)/var(--line-note) var(--sans);
+  --type-record: var(--weight-regular) var(--size-record)/var(--line-note) var(--mono);
+  --type-token: var(--weight-regular) var(--size-body)/var(--line-body) var(--mono);
+  --type-metric: var(--weight-medium) 2.25rem/2.5rem var(--serif);
+
+  --space-half: 4px;
+  --space-1: 8px;
+  --space-2: 16px;
+  --space-3: 24px;
+  --space-4: 32px;
+  --space-5: 40px;
+  --space-6: 48px;
+  --space-8: 64px;
+  --space-10: 80px;
+  --space-12: 96px;
+  --measure: 41rem;
+  --wide: 62rem;
+  --frame: 80rem;
+  --rail: 11rem;
+  --label-column: 9rem;
+  --timeline-column: 12rem;
+  --gutter: var(--space-3);
+  --panel-inset: var(--space-2);
+  --section-space: var(--space-6);
+  --column-gap: var(--space-6);
+  --target: var(--space-6);
+  --bar: var(--space-8);
+  color-scheme: light;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --paper: #131824;
+    --sheet: #1b2231;
+    --sheet-2: #252e40;
+    --ink: #eef1f7;
+    --ink-2: #bec8da;
+    --ink-3: #a5b0c4;
+    --rule: #354055;
+    --rule-strong: #5a6780;
+    --control: #8491a8;
+    --accent: #a7bdff;
+    --accent-soft: #253451;
+    --alpha: #a7bdff;
+    --beta: #edb0d0;
+    --fixture: #bddc94;
+    --yes: #8fd3a5;
+    --yes-soft: #18301f;
+    --no: #f2a191;
+    --no-soft: #3a1f1a;
+    --mark: #57481a;
+    --fig-log: #7fb8de;
+    --fig-unpres: #79c99c;
+    --fig-pages: #ee9480;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --paper: #131824;
+  --sheet: #1b2231;
+  --sheet-2: #252e40;
+  --ink: #eef1f7;
+  --ink-2: #bec8da;
+  --ink-3: #a5b0c4;
+  --rule: #354055;
+  --rule-strong: #5a6780;
+  --control: #8491a8;
+  --accent: #a7bdff;
+  --accent-soft: #253451;
+  --alpha: #a7bdff;
+  --beta: #edb0d0;
+  --fixture: #bddc94;
+  --yes: #8fd3a5;
+  --yes-soft: #18301f;
+  --no: #f2a191;
+  --no-soft: #3a1f1a;
+  --mark: #57481a;
+  --fig-log: #7fb8de;
+  --fig-unpres: #79c99c;
+  --fig-pages: #ee9480;
+  color-scheme: dark;
+}
+
+
+@media (min-width: 640px) {
+  :root { --size-display: 4rem; --line-display: 4rem; --size-page: 3rem; --line-page: 3rem; --size-title: 2.25rem; }
+}
+@media (min-width: 768px) {
+  :root { --gutter: var(--space-6); --panel-inset: var(--space-3); --section-space: var(--space-8); }
+}
+@media (min-width: 1280px) {
+  :root { --size-display: 4.5rem; --line-display: 4.5rem; --section-space: var(--space-10); --column-gap: var(--space-8); }
+}
+@media (max-width: 359px) {
+  :root { --gutter: var(--space-2); }
+}
+@media print {
+  :root:not([data-theme]), :root[data-theme] {
+    --paper: #ffffff; --sheet: #ffffff; --sheet-2: #f1f1f1;
+    --ink: #111111; --ink-2: #333333; --ink-3: #444444;
+    --rule: #cccccc; --rule-strong: #888888;
+    --accent: #173784; --accent-soft: #eeeeee;
+    --alpha: #173784; --beta: #713956; --fixture: #344c14;
+    --no: #812718; --no-soft: #ffffff; --mark: #eeeeee;
+    --fig-log: #1f5f8b; --fig-unpres: #2e7d55; --fig-pages: #a8402c;
+  }
+}

@@ -53,6 +53,7 @@ FACTS = [
      ["the six frozen page and log signals were identical"]),
     ("6", r"6 scorable|Scripted offer", ["(Qwen: 6 scorable episodes, Appendix B)", "Qwen3-32B (6 of\n8 attempted)"]),
     ("7", r"seven transfers", ["seven transfers went only\nto it"]),
+    ("7", r"missed seven encoded carriers", ["one of eight transfers and misses seven encoded carriers"]),
     ("7", r"7 pending", ["14 wrong, 7 pending or not scored"]),
     ("8", r"eight (actions|turns)", ["Each has at most eight actions"]),
     ("8", r"8 an acceptance|all 8 completed", ["13 contained an offer, 8 an acceptance, and all 8 completed"]),
@@ -163,6 +164,7 @@ FACTS = [
     ("0/144", r"^(string reused|informed read|answers agree|uptake)", ["| uptake | 174/244 | 0/40 | 0/0 | 0/144 | 0/10 |"]),
     ("0/154", None, ["0/154 (0.000–0.024)"]),
     ("1/8", None, ["only 1 of the 8 transfers in the Sol follow-up"]),
+    ("1/8", r"retrospective|flow flag", ["Its flow flag finds\none of eight transfers and misses seven encoded carriers"]),
     ("1/31", None, ["1/31 (0.001–0.167)"]),
     ("2/2", None, ["2/2 (0.158–1.000)"]),
     ("2/3", r"two of the three models", ["signals unchanged on two models; a third model's traffic changed", "on three models"]),
@@ -237,7 +239,7 @@ def number_forms(claim: str) -> list[str]:
 
 def written(value: str, text: str) -> bool:
     value = value.rstrip("%")
-    words = {str(v): k for k, v in {**site_text.PAIR_WORDS, **site_text.WORDS}.items()}
+    words = {"1": "one", **{str(v): k for k, v in {**site_text.PAIR_WORDS, **site_text.WORDS}.items()}}
     pattern = re.escape(value) if not value.isdigit() or len(value) < 4 else re.escape(f"{int(value):,}") + "|" + value
     if value in words:
         pattern += "|" + words[value]

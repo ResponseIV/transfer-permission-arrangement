@@ -10,6 +10,16 @@ python3 -m http.server 4173 --bind 127.0.0.1 --directory docs
 Open `http://127.0.0.1:4173/`. The reading choice is stored locally and can be shared as
 `?level=beginner`, `?level=amateur` or `?level=expert`.
 
+The article is a case notebook: a refused read, a matched instruction pair, an arranged exchange,
+its scripted control, and an overwritten leak. Each exhibit separates the available record from
+the supported finding and the alternative it leaves open. The research depth adds a source map.
+
+The evidence desk starts with an arranged/scripted comparison. Its eight full episodes and three
+comparisons are available through “Choose another episode or comparison”. Interpretation is opt-in;
+the complete inspectors label observer and experiment-fixture records separately. A copied URL keeps
+the record, selected event and reveal state, for example:
+`explorer.html?level=expert#single/sol-21?record=full&step=3&reveal=false`.
+
 The folder can be moved to another static host or mounted below a path; runtime assets and navigation are
 relative. The canonical/social metadata currently targets `responseiv.github.io/transfer-permission-arrangement`.
 Update those URLs when moving to a permanent domain.
@@ -21,10 +31,16 @@ See [DESIGN.md](DESIGN.md) for the reading journeys and design decisions. Verify
 
 ```sh
 python3 -m unittest discover -s tests -p 'test_site*.py' -q
+node --test tests/site-reading-state.test.cjs tests/site-explorer.test.cjs
 node --check docs/assets/site.js
 node --check docs/assets/explorer.js
 ```
 
-The `assets/report.pdf` copy is the submitted paper and is checked byte for byte. The opening is a condensed
-real episode, also checked against the source. Episode data and generated figures retain their existing
+The `assets/report.pdf` copy is the submitted paper and is checked byte for byte. The opening and case exhibits
+are checked against real source episodes. Episode data and generated figures retain their existing
 generators, `scripts/site_data.py` and `scripts/site_figures.py`.
+
+The [design system](DESIGN-SYSTEM.md) defines type roles, spacing and component relationships.
+Its primitives and semantic roles live in `assets/tokens.css`, shared composition in `assets/style.css`,
+and desk composition in `assets/explorer.css`. Both pages load the same tokens first.
+The original audit and the revision’s verification record are in `audit/site-2026-10-26/` at repository root.

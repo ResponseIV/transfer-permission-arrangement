@@ -19,7 +19,7 @@ SKIP = {"script", "style", "code", "pre", "head", "title", "desc"}
 SPACED = {"td", "th", "div", "dt", "dd", "span", "li", "p", "br"}
 # Labels, not claims: episode identifiers (checked against the cell ids by test_site_data) and the paper's
 # figure, table and section numbers are matched as references instead.
-IDENTIFIER = re.compile(r"\b(?:cells?|episodes?|tasks?)\s+\d+(?:\s+and\s+\d+)?\b", re.I)
+IDENTIFIER = re.compile(r"\b(?:cells?|episodes?|tasks?|events?)\s+\d+(?:\s+and\s+\d+)?\b", re.I)
 VOID = {"meta", "link", "br", "img", "input", "hr", "source", "wbr", "circle", "rect", "path", "line", "polyline"}
 
 PAIR_WORDS = {"two": 2, "three": 3}
@@ -74,7 +74,8 @@ class _Page(HTMLParser):
             hidden = True  # chart axis labels; Figure 2's event numbers, checked against the figure data
         if tag in SPACED and self.open and not hidden:
             self.units[self.open[-1]].append(" ")
-        unit = (tag in UNITS or "tile" in (attrs.get("class") or "").split()) and not hidden
+        classes = set((attrs.get("class") or "").split())
+        unit = (tag in UNITS or bool({"tile", "result-row", "sequence-result"} & classes)) and not hidden
         if unit:
             self.units.append([])
             self.open.append(len(self.units) - 1)
