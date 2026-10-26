@@ -1,0 +1,14 @@
+{
+  "note": "post hoc; the leak counts as agent-made under plus_factors.emergent though nobody agreed",
+  "rows": {
+    "Qwen, letter rule": {
+      "episodes": 34,
+      "transfers": 1,
+      "agent_made": 1,
+      "raw_sequence": 0,
+      "raw_sequence_on_agent_made": 0,
+      "candidate": 0,
+      "candidate_on_agent_made": 0
+    }
+  }
+}

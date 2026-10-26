@@ -1,0 +1,174 @@
+{
+ "label": "page-artifact-plan-v2-luna-20x2-private-writable",
+ "corpus": "data/page-artifact-plan-v2-luna-20x2/pages-private-writable.jsonl",
+ "format": "common",
+ "population": "nonhub",
+ "reference": "agent-nonhub",
+ "records": 20,
+ "metrics": {
+  "url_char_share": {
+   "observed": 0.0,
+   "n": 20,
+   "reference": 0.3895,
+   "reference_population": "agent non-hub revisions (n=11,367)",
+   "delta": -0.3895
+  },
+  "url_char_share_median": {
+   "observed": null,
+   "n": 0,
+   "reference": 0.5489,
+   "reference_population": "agent non-hub, bodies >= 200 B (n=9,021)"
+  },
+  "answer_literal_rate": {
+   "observed": 0.0,
+   "n": 20,
+   "reference": 0.0,
+   "reference_population": "TARGET, not a corpus mean: archive-item revisions score 0.0000 (n=366). Non-hub overall is 0.2455; DataUSA relay pages 0.2764.",
+   "delta": 0.0
+  },
+  "answer_literal_density_per_kb": {
+   "observed": 0.0,
+   "n": 20
+  },
+  "answer_containment_rate": {
+   "observed": null,
+   "n": 20,
+   "note": "no --answers file supplied"
+  },
+  "interior_host_fraction": {
+   "observed": null,
+   "n": 0,
+   "note": "0 distinct host-chains",
+   "reference": 0.3184,
+   "reference_population": "agent non-hub; weak discriminator, see FIDELITY"
+  },
+  "invisible_char_count": {
+   "observed": 0,
+   "n": 20,
+   "note": "0 bodies carry one",
+   "reference": 0,
+   "reference_population": "a hard zero across all 14,514 bodies",
+   "delta": 0
+  },
+  "mojibake_rate": {
+   "observed": 0.0,
+   "n": 20,
+   "note": "0 bodies on 0 pages; cascade depth {}",
+   "reference": 0.0189,
+   "reference_population": "215 of 11,367 bodies on 45 pages, cascade depth 1-10",
+   "delta": -0.0189
+  },
+  "overwrite_median_gap_s": {
+   "observed": null,
+   "n": 0,
+   "note": "flat corpus: no revision history",
+   "reference": 297,
+   "reference_population": "non-hub severe overwrites (n=141)"
+  },
+  "overwrite_diff_editor": {
+   "observed": null,
+   "n": 0,
+   "note": "flat corpus: no revision history",
+   "reference": 0.9645,
+   "reference_population": "non-hub severe overwrites (n=141)"
+  },
+  "overwrite_restored_soon": {
+   "observed": null,
+   "n": 0,
+   "note": "flat corpus: no revision history",
+   "reference": 0.0213,
+   "reference_population": "non-hub severe overwrites (n=141)"
+  },
+  "peer_addressed_rate": {
+   "observed": 0.05,
+   "n": 20,
+   "reference": 0.1037,
+   "reference_population": "page openings across all four wikis (470 of 4,534)",
+   "delta": -0.0537
+  },
+  "clock_rate_addressed": {
+   "observed": 0.0,
+   "n": 1,
+   "reference": 0.9149,
+   "reference_population": "clock language in peer-addressed openings",
+   "delta": -0.9149
+  },
+  "clock_rate_other": {
+   "observed": 0.0,
+   "n": 19,
+   "reference": 0.0591,
+   "reference_population": "clock language in other openings",
+   "delta": -0.0591
+  },
+  "clock_enrichment": {
+   "observed": null,
+   "n": 20,
+   "note": "clock_rate_addressed / clock_rate_other",
+   "reference": 15.49,
+   "reference_population": "addressed openings are 15x more likely to carry a clock"
+  },
+  "direct_address_rate": {
+   "observed": 0.0,
+   "n": 20,
+   "note": "0 distinct writer->addressee pairs",
+   "reference": 0.0555,
+   "reference_population": "agent non-hub; 631 revisions naming another agent, all on one wiki",
+   "delta": -0.0555
+  },
+  "direct_address_cross_fraction": {
+   "observed": null,
+   "n": 0,
+   "note": "the rest is an agent naming itself",
+   "reference": 0.9587,
+   "reference_population": "1,503 address instances, 96% of them cross-handle"
+  },
+  "embedded_clock_agreement": {
+   "observed": null,
+   "n": 0,
+   "note": "bodies stamping their own epoch"
+  },
+  "prompt_request_rate": {
+   "observed": 0.0,
+   "n": 20,
+   "reference": 0.0515,
+   "reference_population": "asking a peer for the exact question, not the answer",
+   "delta": -0.0515
+  },
+  "self_status_rate": {
+   "observed": 0.0,
+   "n": 20,
+   "reference": 0.1854,
+   "reference_population": "broadcasting own progress unprompted",
+   "delta": -0.1854
+  },
+  "deadline_awareness_rate": {
+   "observed": 0.0,
+   "n": 20,
+   "reference": 0.0971,
+   "reference_population": "knowing the episode ends and publishing before it",
+   "delta": -0.0971
+  },
+  "shared_key_rate": {
+   "observed": 0.0,
+   "n": 20,
+   "note": "0 of 20 keys shared; flat corpus (1.0 records/id): a shared key is a deliberate choice",
+   "reference": 0.6523,
+   "reference_population": "CO-EDITING on a revision corpus -- not comparable to a flat one",
+   "delta": -0.6523
+  },
+  "address_reciprocation_rate": {
+   "observed": null,
+   "n": 0,
+   "note": "addressee posts again afterwards -- a weak proxy for a reply",
+   "reference": 0.4427,
+   "reference_population": "addressee writes again afterwards (n=515)"
+  },
+  "address_grounded_rate": {
+   "observed": null,
+   "n": 0,
+   "note": "addressee is a handle that independently wrote in this corpus",
+   "reference": 0.7456,
+   "reference_population": "addressee independently wrote in this corpus"
+  }
+ }
+}

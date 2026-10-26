@@ -1,0 +1,26 @@
+{
+  "by_case": {
+    "asked, nothing moved": 440,
+    "common source": 92,
+    "exchange against a rule": 117,
+    "invited exchange": 918,
+    "nothing moved": 284,
+    "operational failure": 43,
+    "read, not used": 29
+  },
+  "by_model": {
+    "gpt-5.5": 149,
+    "gpt-5.6-luna": 643,
+    "gpt-5.6-sol": 524,
+    "gpt-5.6-terra": 249,
+    "gpt-6-astra": 251,
+    "qwen3-32b": 107
+  },
+  "by_origin": {
+    "post hoc": 227,
+    "prior work": 1195,
+    "sprint": 501
+  },
+  "cells": 1923,
+  "sha256": "a523fa32facdda425dd77935642523582f2420c118896b8517b67576afa00b0b"
+}

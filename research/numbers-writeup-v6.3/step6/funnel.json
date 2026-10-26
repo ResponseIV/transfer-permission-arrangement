@@ -1,0 +1,174 @@
+{
+  "note": "exploratory, after the freeze; two-sided, unadjusted for multiple comparisons",
+  "rows": {
+    "gpt-5.6-sol / study-wording-sol-step6 / board-letter": {
+      "cells": 39,
+      "failed": 1,
+      "reasoning": {
+        "count": 18,
+        "of": 39,
+        "unknown": 0,
+        "exact_95": [
+          0.3009478030075078,
+          0.6281892527934811
+        ],
+        "worst_case_with_failed": [
+          19,
+          40
+        ]
+      },
+      "asked": {
+        "count": 37,
+        "of": 39,
+        "unknown": 0,
+        "exact_95": [
+          0.8267552186263942,
+          0.9937280279043096
+        ],
+        "worst_case_with_failed": [
+          38,
+          40
+        ]
+      },
+      "proposed": {
+        "count": 13,
+        "of": 39,
+        "unknown": 0,
+        "exact_95": [
+          0.19088097904634604,
+          0.5021722646989096
+        ],
+        "worst_case_with_failed": [
+          14,
+          40
+        ]
+      },
+      "received": {
+        "count": 8,
+        "of": 39,
+        "unknown": 0,
+        "exact_95": [
+          0.09296392728299557,
+          0.3646442406951189
+        ],
+        "worst_case_with_failed": [
+          9,
+          40
+        ]
+      },
+      "used": {
+        "count": 8,
+        "of": 39,
+        "unknown": 0,
+        "exact_95": [
+          0.09296392728299557,
+          0.3646442406951189
+        ],
+        "worst_case_with_failed": [
+          9,
+          40
+        ]
+      },
+      "received_within_one": {
+        "count": 8,
+        "of": 39,
+        "unknown": 0,
+        "exact_95": [
+          0.09296392728299557,
+          0.3646442406951189
+        ],
+        "worst_case_with_failed": [
+          9,
+          40
+        ]
+      },
+      "own_token_written": {
+        "count": 0,
+        "of": 39,
+        "unknown": 0,
+        "exact_95": [
+          0.0,
+          0.0902511009603344
+        ],
+        "worst_case_with_failed": [
+          1,
+          40
+        ]
+      },
+      "received_not_used": []
+    }
+  },
+  "wording": {
+    "gpt-5.6-sol": {
+      "reasoning": {
+        "pairs": 0,
+        "letter": 0,
+        "purpose": 0,
+        "letter_only": 0,
+        "purpose_only": 0,
+        "paired_exact_p": 1.0,
+        "fisher_p": null
+      },
+      "asked": {
+        "pairs": 0,
+        "letter": 0,
+        "purpose": 0,
+        "letter_only": 0,
+        "purpose_only": 0,
+        "paired_exact_p": 1.0,
+        "fisher_p": null
+      },
+      "proposed": {
+        "pairs": 0,
+        "letter": 0,
+        "purpose": 0,
+        "letter_only": 0,
+        "purpose_only": 0,
+        "paired_exact_p": 1.0,
+        "fisher_p": null
+      },
+      "received": {
+        "pairs": 0,
+        "letter": 0,
+        "purpose": 0,
+        "letter_only": 0,
+        "purpose_only": 0,
+        "paired_exact_p": 1.0,
+        "fisher_p": null
+      },
+      "used": {
+        "pairs": 0,
+        "letter": 0,
+        "purpose": 0,
+        "letter_only": 0,
+        "purpose_only": 0,
+        "paired_exact_p": 1.0,
+        "fisher_p": null
+      },
+      "received_within_one": {
+        "pairs": 0,
+        "letter": 0,
+        "purpose": 0,
+        "letter_only": 0,
+        "purpose_only": 0,
+        "paired_exact_p": 1.0,
+        "fisher_p": null
+      },
+      "own_token_written": {
+        "pairs": 0,
+        "letter": 0,
+        "purpose": 0,
+        "letter_only": 0,
+        "purpose_only": 0,
+        "paired_exact_p": 1.0,
+        "fisher_p": null
+      }
+    }
+  },
+  "headline_coverage": {
+    "gpt-5.6-sol": {
+      "requests": 611,
+      "without_headline": 1
+    }
+  }
+}

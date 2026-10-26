@@ -1,0 +1,262 @@
+{
+  "priors": [
+    0.01,
+    0.05,
+    0.2
+  ],
+  "note": "the prior is the auditor's, not measured here",
+  "posteriors": {
+    "judge astra-p10, both": {
+      "ratio_status": "unbounded",
+      "0.01": {
+        "point": null,
+        "worst_benchmark_bound": 0.031243697884937506,
+        "pooled_bound": 0.3456511851182686
+      },
+      "0.05": {
+        "point": null,
+        "worst_benchmark_bound": 0.14386970350152795,
+        "pooled_bound": 0.7335033392705992
+      },
+      "0.2": {
+        "point": null,
+        "worst_benchmark_bound": 0.4438947947387496,
+        "pooled_bound": 0.9289463033557873
+      }
+    },
+    "judge astra-p10, full": {
+      "ratio_status": "unbounded",
+      "0.01": {
+        "point": null,
+        "worst_benchmark_bound": 0.031243697884937506,
+        "pooled_bound": 0.3456511851182686
+      },
+      "0.05": {
+        "point": null,
+        "worst_benchmark_bound": 0.14386970350152795,
+        "pooled_bound": 0.7335033392705992
+      },
+      "0.2": {
+        "point": null,
+        "worst_benchmark_bound": 0.4438947947387496,
+        "pooled_bound": 0.9289463033557873
+      }
+    },
+    "judge luna-p9, text": {
+      "ratio_status": "finite",
+      "0.01": {
+        "point": 0.16229712858926343,
+        "worst_benchmark_bound": 0.023760915911051745,
+        "pooled_bound": 0.10200928854298269
+      },
+      "0.05": {
+        "point": 0.5023615285530272,
+        "worst_benchmark_bound": 0.11254700435153261,
+        "pooled_bound": 0.37182044448235835
+      },
+      "0.2": {
+        "point": 0.8274398868458275,
+        "worst_benchmark_bound": 0.3759345976702219,
+        "pooled_bound": 0.7376383247007482
+      }
+    },
+    "uptake": {
+      "ratio_status": "unbounded",
+      "0.01": {
+        "point": null,
+        "worst_benchmark_bound": 0.02090053012457786,
+        "pooled_bound": 0.2590573513924455
+      },
+      "0.05": {
+        "point": null,
+        "worst_benchmark_bound": 0.10009424522734367,
+        "pooled_bound": 0.6456121764166245
+      },
+      "0.2": {
+        "point": null,
+        "worst_benchmark_bound": 0.3456912660073084,
+        "pooled_bound": 0.8964095020522083
+      }
+    },
+    "judge luna-p9, both": {
+      "ratio_status": "finite",
+      "0.01": {
+        "point": 0.031150565523142326,
+        "worst_benchmark_bound": 0.019596217620713032,
+        "pooled_bound": 0.07676090519186295
+      },
+      "0.05": {
+        "point": 0.143490577657347,
+        "worst_benchmark_bound": 0.09432390538474669,
+        "pooled_bound": 0.30226992478410897
+      },
+      "0.2": {
+        "point": 0.4431342715861544,
+        "worst_benchmark_bound": 0.3309697151970575,
+        "pooled_bound": 0.6729664497119934
+      }
+    },
+    "informed read": {
+      "ratio_status": "unbounded",
+      "0.01": {
+        "point": null,
+        "worst_benchmark_bound": 0.018631584739020712,
+        "pooled_bound": 0.23719773382093232
+      },
+      "0.05": {
+        "point": null,
+        "worst_benchmark_bound": 0.09001851973090748,
+        "pooled_bound": 0.6183560078130292
+      },
+      "0.2": {
+        "point": null,
+        "worst_benchmark_bound": 0.31967534025571076,
+        "pooled_bound": 0.885006639734185
+      }
+    },
+    "string reused across authors": {
+      "ratio_status": "unbounded",
+      "0.01": {
+        "point": null,
+        "worst_benchmark_bound": 0.015094376088866221,
+        "pooled_bound": 0.20064970664550924
+      },
+      "0.05": {
+        "point": null,
+        "worst_benchmark_bound": 0.07394974780990499,
+        "pooled_bound": 0.5667104375690277
+      },
+      "0.2": {
+        "point": null,
+        "worst_benchmark_bound": 0.27500048904911417,
+        "pooled_bound": 0.8613546223820328
+      }
+    },
+    "judge astra-p10, text": {
+      "ratio_status": "finite",
+      "0.01": {
+        "point": 0.02048812968986094,
+        "worst_benchmark_bound": 0.014932750320278016,
+        "pooled_bound": 0.04578396526054517
+      },
+      "0.05": {
+        "point": 0.09827607387084887,
+        "worst_benchmark_bound": 0.07320475848675802,
+        "pooled_bound": 0.2000030497942756
+      },
+      "0.2": {
+        "point": 0.3411028993746447,
+        "worst_benchmark_bound": 0.27282678258315424,
+        "pooled_bound": 0.5428618731193914
+      }
+    },
+    "judge luna-p9, full": {
+      "ratio_status": "finite",
+      "0.01": {
+        "point": 0.02089675920087911,
+        "worst_benchmark_bound": 0.014814267290170487,
+        "pooled_bound": 0.0564070533168206
+      },
+      "0.05": {
+        "point": 0.10007764644983178,
+        "worst_benchmark_bound": 0.07265802274471767,
+        "pooled_bound": 0.23750273323423693
+      },
+      "0.2": {
+        "point": 0.3456495828367104,
+        "worst_benchmark_bound": 0.2712254614784734,
+        "pooled_bound": 0.596697846971998
+      }
+    },
+    "secret-like string on a page": {
+      "ratio_status": "finite",
+      "0.01": {
+        "point": 0.019722425127830533,
+        "worst_benchmark_bound": 0.014694407674814067,
+        "pooled_bound": 0.04540102263256188
+      },
+      "0.05": {
+        "point": 0.09488481062085125,
+        "worst_benchmark_bound": 0.07210441208922344,
+        "pooled_bound": 0.19859866530340556
+      },
+      "0.2": {
+        "point": 0.332421340629275,
+        "worst_benchmark_bound": 0.2695987380281304,
+        "pooled_bound": 0.5406770977737386
+      }
+    },
+    "opportunity": {
+      "ratio_status": "finite",
+      "0.01": {
+        "point": 0.010069225928256764,
+        "worst_benchmark_bound": 0.009853146819576003,
+        "pooled_bound": 0.011779313567343677
+      },
+      "0.05": {
+        "point": 0.05033205173016428,
+        "worst_benchmark_bound": 0.049294983087962506,
+        "pooled_bound": 0.05847617409958006
+      },
+      "0.2": {
+        "point": 0.20111731843575417,
+        "worst_benchmark_bound": 0.19761990722579567,
+        "pooled_bound": 0.22780701660715752
+      }
+    },
+    "answers agree": {
+      "ratio_status": "finite",
+      "0.01": {
+        "point": 0.007763401109057302,
+        "worst_benchmark_bound": 0.007189688217744197,
+        "pooled_bound": 0.026120357851475214
+      },
+      "0.05": {
+        "point": 0.039170984455958555,
+        "worst_benchmark_bound": 0.03636131638510643,
+        "pooled_bound": 0.12261550323595274
+      },
+      "0.2": {
+        "point": 0.16223175965665237,
+        "worst_benchmark_bound": 0.15199146612564074,
+        "pooled_bound": 0.39897273179604487
+      }
+    },
+    "asks for a code": {
+      "ratio_status": "finite",
+      "0.01": {
+        "point": 0.027408090657530634,
+        "worst_benchmark_bound": 0.005323367527399816,
+        "pooled_bound": 0.016373046749957418
+      },
+      "0.05": {
+        "point": 0.1280350181246153,
+        "worst_benchmark_bound": 0.027129461971628126,
+        "pooled_bound": 0.07981014767994747
+      },
+      "0.2": {
+        "point": 0.4108867427568042,
+        "worst_benchmark_bound": 0.11696541177494306,
+        "pooled_bound": 0.29177379132446224
+      }
+    },
+    "asks for a token": {
+      "ratio_status": "finite",
+      "0.01": {
+        "point": 0.0023953084992153297,
+        "worst_benchmark_bound": 0.0018725051277235956,
+        "pooled_bound": 0.0023329804320500885
+      },
+      "0.05": {
+        "point": 0.01235619940349382,
+        "worst_benchmark_bound": 0.009680414608693393,
+        "pooled_bound": 0.012037807642055937
+      },
+      "0.2": {
+        "point": 0.05609284332688588,
+        "worst_benchmark_bound": 0.04437122493842046,
+        "pooled_bound": 0.05470988479017865
+      }
+    }
+  }
+}

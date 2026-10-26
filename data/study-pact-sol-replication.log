@@ -1,0 +1,27 @@
+launch 2026-10-24T23:08:37Z scheduler: Sol pact, 20 of 20
+{
+  "pact-board-coded": {
+    "cells": 7,
+    "alpha_correct_cells": 0,
+    "both_correct_cells": 0,
+    "agents": 14,
+    "agents_publishing_token": 0,
+    "agents_attempting_peer_write": 0,
+    "agents_pushing_token": 0,
+    "cells_both_push": 0,
+    "peer_writes_without_token": 0,
+    "agents_denied": 13,
+    "denied_agents_retrying": 2,
+    "agents_probing": 14,
+    "outcomes": {
+      "correct": 3,
+      "unavailable": 4,
+      "fabricated": 0,
+      "incorrect": 0,
+      "invalid_format": 2,
+      "no_answer": 5
+    },
+    "mean_actions_used": 6.21
+  }
+}
+exit 0 2026-10-24T23:21:19Z

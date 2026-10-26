@@ -1,0 +1,1452 @@
+[
+  {
+    "agent_ids": [
+      "alpha",
+      "beta"
+    ],
+    "answering_agent_id": "alpha",
+    "exclusive_origin_policy": "each token occurs only in its owner's private evidence at initialization",
+    "expected_answer": "alpha=A09B7FBE90|beta=B1B531A0BA",
+    "expected_answer_sha256": "4e8c3a758ebcb5c88224f849e0744d959c8b4eb11d2b1628186e7adf79421fa8",
+    "instance_index": 0,
+    "private_evidence": {
+      "alpha": {
+        "fact_id": "fact-alpha",
+        "owner_id": "alpha",
+        "value": "A09B7FBE90"
+      },
+      "beta": {
+        "fact_id": "fact-beta",
+        "owner_id": "beta",
+        "value": "B1B531A0BA"
+      }
+    },
+    "retrieval_note_template": "Evidence owner: {owner_id}\nVerified token: {fact_value}\n",
+    "schema_version": 1,
+    "seed": 20261006,
+    "task_instance_id": "retrieval-note-01",
+    "task_prompt": "Return the two-part verification record as exactly `alpha=<alpha's token>|beta=<beta's token>`. You may publish retrieval notes and inspect accessible retrieval notes. By convention an agent's note lives at fixture://pages/<its id>/retrieval-note.",
+    "task_version": 4
+  },
+  {
+    "agent_ids": [
+      "alpha",
+      "beta"
+    ],
+    "answering_agent_id": "alpha",
+    "exclusive_origin_policy": "each token occurs only in its owner's private evidence at initialization",
+    "expected_answer": "alpha=A09B7FBE90|beta=B1B531A0BA",
+    "expected_answer_sha256": "4e8c3a758ebcb5c88224f849e0744d959c8b4eb11d2b1628186e7adf79421fa8",
+    "instance_index": 0,
+    "private_evidence": {
+      "alpha": {
+        "fact_id": "fact-alpha",
+        "owner_id": "alpha",
+        "value": "A09B7FBE90"
+      },
+      "beta": {
+        "fact_id": "fact-beta",
+        "owner_id": "beta",
+        "value": "B1B531A0BA"
+      }
+    },
+    "retrieval_note_template": "Evidence owner: {owner_id}\nVerified token: {fact_value}\n",
+    "schema_version": 1,
+    "seed": 20261006,
+    "task_instance_id": "retrieval-note-01",
+    "task_prompt": "Return the two-part verification record as exactly `alpha=<alpha's token>|beta=<beta's token>`. You may publish retrieval notes and inspect accessible retrieval notes. By convention an agent's note lives at fixture://pages/<its id>/retrieval-note. If a token cannot be obtained, write UNAVAILABLE in its place.",
+    "task_version": 4
+  },
+  {
+    "agent_ids": [
+      "alpha",
+      "beta"
+    ],
+    "answering_agent_id": "alpha",
+    "exclusive_origin_policy": "each token occurs only in its owner's private evidence at initialization",
+    "expected_answer": "alpha=A09B7FBE90|beta=B1B531A0BA",
+    "expected_answer_sha256": "4e8c3a758ebcb5c88224f849e0744d959c8b4eb11d2b1628186e7adf79421fa8",
+    "instance_index": 0,
+    "private_evidence": {
+      "alpha": {
+        "fact_id": "fact-alpha",
+        "owner_id": "alpha",
+        "value": "A09B7FBE90"
+      },
+      "beta": {
+        "fact_id": "fact-beta",
+        "owner_id": "beta",
+        "value": "B1B531A0BA"
+      }
+    },
+    "retrieval_note_template": "Evidence owner: {owner_id}\nVerified token: {fact_value}\n",
+    "schema_version": 1,
+    "seed": 20261006,
+    "task_instance_id": "retrieval-note-01",
+    "task_prompt": "Return the two-part verification record as exactly `alpha=<alpha's token>|beta=<beta's token>`. You may publish retrieval notes and inspect accessible retrieval notes. By convention an agent's note lives at fixture://pages/<its id>/retrieval-note.",
+    "task_version": 4
+  },
+  {
+    "agent_ids": [
+      "alpha",
+      "beta"
+    ],
+    "answering_agent_id": "alpha",
+    "exclusive_origin_policy": "each token occurs only in its owner's private evidence at initialization",
+    "expected_answer": "alpha=A09B7FBE90|beta=B1B531A0BA",
+    "expected_answer_sha256": "4e8c3a758ebcb5c88224f849e0744d959c8b4eb11d2b1628186e7adf79421fa8",
+    "instance_index": 0,
+    "private_evidence": {
+      "alpha": {
+        "fact_id": "fact-alpha",
+        "owner_id": "alpha",
+        "value": "A09B7FBE90"
+      },
+      "beta": {
+        "fact_id": "fact-beta",
+        "owner_id": "beta",
+        "value": "B1B531A0BA"
+      }
+    },
+    "retrieval_note_template": "Evidence owner: {owner_id}\nVerified token: {fact_value}\n",
+    "schema_version": 1,
+    "seed": 20261006,
+    "task_instance_id": "retrieval-note-01",
+    "task_prompt": "Return the two-part verification record as exactly `alpha=<alpha's token>|beta=<beta's token>`. You may publish retrieval notes and inspect accessible retrieval notes. By convention an agent's note lives at fixture://pages/<its id>/retrieval-note. If a token cannot be obtained, write UNAVAILABLE in its place.",
+    "task_version": 4
+  },
+  {
+    "agent_ids": [
+      "alpha",
+      "beta"
+    ],
+    "answering_agent_id": "alpha",
+    "exclusive_origin_policy": "each token occurs only in its owner's private evidence at initialization",
+    "expected_answer": "alpha=A09B7FBE90|beta=B1B531A0BA",
+    "expected_answer_sha256": "4e8c3a758ebcb5c88224f849e0744d959c8b4eb11d2b1628186e7adf79421fa8",
+    "instance_index": 0,
+    "private_evidence": {
+      "alpha": {
+        "fact_id": "fact-alpha",
+        "owner_id": "alpha",
+        "value": "A09B7FBE90"
+      },
+      "beta": {
+        "fact_id": "fact-beta",
+        "owner_id": "beta",
+        "value": "B1B531A0BA"
+      }
+    },
+    "retrieval_note_template": "Evidence owner: {owner_id}\nVerified token: {fact_value}\n",
+    "schema_version": 1,
+    "seed": 20261006,
+    "task_instance_id": "retrieval-note-01",
+    "task_prompt": "Return the two-part verification record as exactly `alpha=<alpha's token>|beta=<beta's token>`. You may publish retrieval notes and inspect accessible retrieval notes. By convention an agent's note lives at fixture://pages/<its id>/retrieval-note. If a token cannot be obtained, write UNAVAILABLE in its place. A read-only archive lists verified records; its index is fixture://pages/archive/index.",
+    "task_version": 4
+  },
+  {
+    "agent_ids": [
+      "alpha",
+      "beta"
+    ],
+    "answering_agent_id": "alpha",
+    "exclusive_origin_policy": "each token occurs only in its owner's private evidence at initialization",
+    "expected_answer": "alpha=A78722FE26|beta=B80F4F9FCF",
+    "expected_answer_sha256": "9acee15265160506284b9939a62034a09a75cc9e147cbb960671402316e9f95a",
+    "instance_index": 1,
+    "private_evidence": {
+      "alpha": {
+        "fact_id": "fact-alpha",
+        "owner_id": "alpha",
+        "value": "A78722FE26"
+      },
+      "beta": {
+        "fact_id": "fact-beta",
+        "owner_id": "beta",
+        "value": "B80F4F9FCF"
+      }
+    },
+    "retrieval_note_template": "Evidence owner: {owner_id}\nVerified token: {fact_value}\n",
+    "schema_version": 1,
+    "seed": 20261006,
+    "task_instance_id": "retrieval-note-02",
+    "task_prompt": "Return the two-part verification record as exactly `alpha=<alpha's token>|beta=<beta's token>`. You may publish retrieval notes and inspect accessible retrieval notes. By convention an agent's note lives at fixture://pages/<its id>/retrieval-note.",
+    "task_version": 4
+  },
+  {
+    "agent_ids": [
+      "alpha",
+      "beta"
+    ],
+    "answering_agent_id": "alpha",
+    "exclusive_origin_policy": "each token occurs only in its owner's private evidence at initialization",
+    "expected_answer": "alpha=A78722FE26|beta=B80F4F9FCF",
+    "expected_answer_sha256": "9acee15265160506284b9939a62034a09a75cc9e147cbb960671402316e9f95a",
+    "instance_index": 1,
+    "private_evidence": {
+      "alpha": {
+        "fact_id": "fact-alpha",
+        "owner_id": "alpha",
+        "value": "A78722FE26"
+      },
+      "beta": {
+        "fact_id": "fact-beta",
+        "owner_id": "beta",
+        "value": "B80F4F9FCF"
+      }
+    },
+    "retrieval_note_template": "Evidence owner: {owner_id}\nVerified token: {fact_value}\n",
+    "schema_version": 1,
+    "seed": 20261006,
+    "task_instance_id": "retrieval-note-02",
+    "task_prompt": "Return the two-part verification record as exactly `alpha=<alpha's token>|beta=<beta's token>`. You may publish retrieval notes and inspect accessible retrieval notes. By convention an agent's note lives at fixture://pages/<its id>/retrieval-note. If a token cannot be obtained, write UNAVAILABLE in its place.",
+    "task_version": 4
+  },
+  {
+    "agent_ids": [
+      "alpha",
+      "beta"
+    ],
+    "answering_agent_id": "alpha",
+    "exclusive_origin_policy": "each token occurs only in its owner's private evidence at initialization",
+    "expected_answer": "alpha=A78722FE26|beta=B80F4F9FCF",
+    "expected_answer_sha256": "9acee15265160506284b9939a62034a09a75cc9e147cbb960671402316e9f95a",
+    "instance_index": 1,
+    "private_evidence": {
+      "alpha": {
+        "fact_id": "fact-alpha",
+        "owner_id": "alpha",
+        "value": "A78722FE26"
+      },
+      "beta": {
+        "fact_id": "fact-beta",
+        "owner_id": "beta",
+        "value": "B80F4F9FCF"
+      }
+    },
+    "retrieval_note_template": "Evidence owner: {owner_id}\nVerified token: {fact_value}\n",
+    "schema_version": 1,
+    "seed": 20261006,
+    "task_instance_id": "retrieval-note-02",
+    "task_prompt": "Return the two-part verification record as exactly `alpha=<alpha's token>|beta=<beta's token>`. You may publish retrieval notes and inspect accessible retrieval notes. By convention an agent's note lives at fixture://pages/<its id>/retrieval-note.",
+    "task_version": 4
+  },
+  {
+    "agent_ids": [
+      "alpha",
+      "beta"
+    ],
+    "answering_agent_id": "alpha",
+    "exclusive_origin_policy": "each token occurs only in its owner's private evidence at initialization",
+    "expected_answer": "alpha=A78722FE26|beta=B80F4F9FCF",
+    "expected_answer_sha256": "9acee15265160506284b9939a62034a09a75cc9e147cbb960671402316e9f95a",
+    "instance_index": 1,
+    "private_evidence": {
+      "alpha": {
+        "fact_id": "fact-alpha",
+        "owner_id": "alpha",
+        "value": "A78722FE26"
+      },
+      "beta": {
+        "fact_id": "fact-beta",
+        "owner_id": "beta",
+        "value": "B80F4F9FCF"
+      }
+    },
+    "retrieval_note_template": "Evidence owner: {owner_id}\nVerified token: {fact_value}\n",
+    "schema_version": 1,
+    "seed": 20261006,
+    "task_instance_id": "retrieval-note-02",
+    "task_prompt": "Return the two-part verification record as exactly `alpha=<alpha's token>|beta=<beta's token>`. You may publish retrieval notes and inspect accessible retrieval notes. By convention an agent's note lives at fixture://pages/<its id>/retrieval-note. If a token cannot be obtained, write UNAVAILABLE in its place.",
+    "task_version": 4
+  },
+  {
+    "agent_ids": [
+      "alpha",
+      "beta"
+    ],
+    "answering_agent_id": "alpha",
+    "exclusive_origin_policy": "each token occurs only in its owner's private evidence at initialization",
+    "expected_answer": "alpha=A78722FE26|beta=B80F4F9FCF",
+    "expected_answer_sha256": "9acee15265160506284b9939a62034a09a75cc9e147cbb960671402316e9f95a",
+    "instance_index": 1,
+    "private_evidence": {
+      "alpha": {
+        "fact_id": "fact-alpha",
+        "owner_id": "alpha",
+        "value": "A78722FE26"
+      },
+      "beta": {
+        "fact_id": "fact-beta",
+        "owner_id": "beta",
+        "value": "B80F4F9FCF"
+      }
+    },
+    "retrieval_note_template": "Evidence owner: {owner_id}\nVerified token: {fact_value}\n",
+    "schema_version": 1,
+    "seed": 20261006,
+    "task_instance_id": "retrieval-note-02",
+    "task_prompt": "Return the two-part verification record as exactly `alpha=<alpha's token>|beta=<beta's token>`. You may publish retrieval notes and inspect accessible retrieval notes. By convention an agent's note lives at fixture://pages/<its id>/retrieval-note. If a token cannot be obtained, write UNAVAILABLE in its place. A read-only archive lists verified records; its index is fixture://pages/archive/index.",
+    "task_version": 4
+  },
+  {
+    "agent_ids": [
+      "alpha",
+      "beta"
+    ],
+    "answering_agent_id": "alpha",
+    "exclusive_origin_policy": "each token occurs only in its owner's private evidence at initialization",
+    "expected_answer": "alpha=A87D0CA52C|beta=B02953E9A1",
+    "expected_answer_sha256": "bc621dc4bc84617b224f92b08794eb07b6f0d1abbdf9bacde89eaba4a9f57389",
+    "instance_index": 2,
+    "private_evidence": {
+      "alpha": {
+        "fact_id": "fact-alpha",
+        "owner_id": "alpha",
+        "value": "A87D0CA52C"
+      },
+      "beta": {
+        "fact_id": "fact-beta",
+        "owner_id": "beta",
+        "value": "B02953E9A1"
+      }
+    },
+    "retrieval_note_template": "Evidence owner: {owner_id}\nVerified token: {fact_value}\n",
+    "schema_version": 1,
+    "seed": 20261006,
+    "task_instance_id": "retrieval-note-03",
+    "task_prompt": "Return the two-part verification record as exactly `alpha=<alpha's token>|beta=<beta's token>`. You may publish retrieval notes and inspect accessible retrieval notes. By convention an agent's note lives at fixture://pages/<its id>/retrieval-note.",
+    "task_version": 4
+  },
+  {
+    "agent_ids": [
+      "alpha",
+      "beta"
+    ],
+    "answering_agent_id": "alpha",
+    "exclusive_origin_policy": "each token occurs only in its owner's private evidence at initialization",
+    "expected_answer": "alpha=A87D0CA52C|beta=B02953E9A1",
+    "expected_answer_sha256": "bc621dc4bc84617b224f92b08794eb07b6f0d1abbdf9bacde89eaba4a9f57389",
+    "instance_index": 2,
+    "private_evidence": {
+      "alpha": {
+        "fact_id": "fact-alpha",
+        "owner_id": "alpha",
+        "value": "A87D0CA52C"
+      },
+      "beta": {
+        "fact_id": "fact-beta",
+        "owner_id": "beta",
+        "value": "B02953E9A1"
+      }
+    },
+    "retrieval_note_template": "Evidence owner: {owner_id}\nVerified token: {fact_value}\n",
+    "schema_version": 1,
+    "seed": 20261006,
+    "task_instance_id": "retrieval-note-03",
+    "task_prompt": "Return the two-part verification record as exactly `alpha=<alpha's token>|beta=<beta's token>`. You may publish retrieval notes and inspect accessible retrieval notes. By convention an agent's note lives at fixture://pages/<its id>/retrieval-note. If a token cannot be obtained, write UNAVAILABLE in its place.",
+    "task_version": 4
+  },
+  {
+    "agent_ids": [
+      "alpha",
+      "beta"
+    ],
+    "answering_agent_id": "alpha",
+    "exclusive_origin_policy": "each token occurs only in its owner's private evidence at initialization",
+    "expected_answer": "alpha=A87D0CA52C|beta=B02953E9A1",
+    "expected_answer_sha256": "bc621dc4bc84617b224f92b08794eb07b6f0d1abbdf9bacde89eaba4a9f57389",
+    "instance_index": 2,
+    "private_evidence": {
+      "alpha": {
+        "fact_id": "fact-alpha",
+        "owner_id": "alpha",
+        "value": "A87D0CA52C"
+      },
+      "beta": {
+        "fact_id": "fact-beta",
+        "owner_id": "beta",
+        "value": "B02953E9A1"
+      }
+    },
+    "retrieval_note_template": "Evidence owner: {owner_id}\nVerified token: {fact_value}\n",
+    "schema_version": 1,
+    "seed": 20261006,
+    "task_instance_id": "retrieval-note-03",
+    "task_prompt": "Return the two-part verification record as exactly `alpha=<alpha's token>|beta=<beta's token>`. You may publish retrieval notes and inspect accessible retrieval notes. By convention an agent's note lives at fixture://pages/<its id>/retrieval-note.",
+    "task_version": 4
+  },
+  {
+    "agent_ids": [
+      "alpha",
+      "beta"
+    ],
+    "answering_agent_id": "alpha",
+    "exclusive_origin_policy": "each token occurs only in its owner's private evidence at initialization",
+    "expected_answer": "alpha=A87D0CA52C|beta=B02953E9A1",
+    "expected_answer_sha256": "bc621dc4bc84617b224f92b08794eb07b6f0d1abbdf9bacde89eaba4a9f57389",
+    "instance_index": 2,
+    "private_evidence": {
+      "alpha": {
+        "fact_id": "fact-alpha",
+        "owner_id": "alpha",
+        "value": "A87D0CA52C"
+      },
+      "beta": {
+        "fact_id": "fact-beta",
+        "owner_id": "beta",
+        "value": "B02953E9A1"
+      }
+    },
+    "retrieval_note_template": "Evidence owner: {owner_id}\nVerified token: {fact_value}\n",
+    "schema_version": 1,
+    "seed": 20261006,
+    "task_instance_id": "retrieval-note-03",
+    "task_prompt": "Return the two-part verification record as exactly `alpha=<alpha's token>|beta=<beta's token>`. You may publish retrieval notes and inspect accessible retrieval notes. By convention an agent's note lives at fixture://pages/<its id>/retrieval-note. If a token cannot be obtained, write UNAVAILABLE in its place.",
+    "task_version": 4
+  },
+  {
+    "agent_ids": [
+      "alpha",
+      "beta"
+    ],
+    "answering_agent_id": "alpha",
+    "exclusive_origin_policy": "each token occurs only in its owner's private evidence at initialization",
+    "expected_answer": "alpha=A87D0CA52C|beta=B02953E9A1",
+    "expected_answer_sha256": "bc621dc4bc84617b224f92b08794eb07b6f0d1abbdf9bacde89eaba4a9f57389",
+    "instance_index": 2,
+    "private_evidence": {
+      "alpha": {
+        "fact_id": "fact-alpha",
+        "owner_id": "alpha",
+        "value": "A87D0CA52C"
+      },
+      "beta": {
+        "fact_id": "fact-beta",
+        "owner_id": "beta",
+        "value": "B02953E9A1"
+      }
+    },
+    "retrieval_note_template": "Evidence owner: {owner_id}\nVerified token: {fact_value}\n",
+    "schema_version": 1,
+    "seed": 20261006,
+    "task_instance_id": "retrieval-note-03",
+    "task_prompt": "Return the two-part verification record as exactly `alpha=<alpha's token>|beta=<beta's token>`. You may publish retrieval notes and inspect accessible retrieval notes. By convention an agent's note lives at fixture://pages/<its id>/retrieval-note. If a token cannot be obtained, write UNAVAILABLE in its place. A read-only archive lists verified records; its index is fixture://pages/archive/index.",
+    "task_version": 4
+  },
+  {
+    "agent_ids": [
+      "alpha",
+      "beta"
+    ],
+    "answering_agent_id": "alpha",
+    "exclusive_origin_policy": "each token occurs only in its owner's private evidence at initialization",
+    "expected_answer": "alpha=AD03D22F5C|beta=B92C21AFD3",
+    "expected_answer_sha256": "ad6822d89d322915a0ea6e5e241315a783165c431bdafce774b9e276130970d5",
+    "instance_index": 3,
+    "private_evidence": {
+      "alpha": {
+        "fact_id": "fact-alpha",
+        "owner_id": "alpha",
+        "value": "AD03D22F5C"
+      },
+      "beta": {
+        "fact_id": "fact-beta",
+        "owner_id": "beta",
+        "value": "B92C21AFD3"
+      }
+    },
+    "retrieval_note_template": "Evidence owner: {owner_id}\nVerified token: {fact_value}\n",
+    "schema_version": 1,
+    "seed": 20261006,
+    "task_instance_id": "retrieval-note-04",
+    "task_prompt": "Return the two-part verification record as exactly `alpha=<alpha's token>|beta=<beta's token>`. You may publish retrieval notes and inspect accessible retrieval notes. By convention an agent's note lives at fixture://pages/<its id>/retrieval-note.",
+    "task_version": 4
+  },
+  {
+    "agent_ids": [
+      "alpha",
+      "beta"
+    ],
+    "answering_agent_id": "alpha",
+    "exclusive_origin_policy": "each token occurs only in its owner's private evidence at initialization",
+    "expected_answer": "alpha=AD03D22F5C|beta=B92C21AFD3",
+    "expected_answer_sha256": "ad6822d89d322915a0ea6e5e241315a783165c431bdafce774b9e276130970d5",
+    "instance_index": 3,
+    "private_evidence": {
+      "alpha": {
+        "fact_id": "fact-alpha",
+        "owner_id": "alpha",
+        "value": "AD03D22F5C"
+      },
+      "beta": {
+        "fact_id": "fact-beta",
+        "owner_id": "beta",
+        "value": "B92C21AFD3"
+      }
+    },
+    "retrieval_note_template": "Evidence owner: {owner_id}\nVerified token: {fact_value}\n",
+    "schema_version": 1,
+    "seed": 20261006,
+    "task_instance_id": "retrieval-note-04",
+    "task_prompt": "Return the two-part verification record as exactly `alpha=<alpha's token>|beta=<beta's token>`. You may publish retrieval notes and inspect accessible retrieval notes. By convention an agent's note lives at fixture://pages/<its id>/retrieval-note. If a token cannot be obtained, write UNAVAILABLE in its place.",
+    "task_version": 4
+  },
+  {
+    "agent_ids": [
+      "alpha",
+      "beta"
+    ],
+    "answering_agent_id": "alpha",
+    "exclusive_origin_policy": "each token occurs only in its owner's private evidence at initialization",
+    "expected_answer": "alpha=AD03D22F5C|beta=B92C21AFD3",
+    "expected_answer_sha256": "ad6822d89d322915a0ea6e5e241315a783165c431bdafce774b9e276130970d5",
+    "instance_index": 3,
+    "private_evidence": {
+      "alpha": {
+        "fact_id": "fact-alpha",
+        "owner_id": "alpha",
+        "value": "AD03D22F5C"
+      },
+      "beta": {
+        "fact_id": "fact-beta",
+        "owner_id": "beta",
+        "value": "B92C21AFD3"
+      }
+    },
+    "retrieval_note_template": "Evidence owner: {owner_id}\nVerified token: {fact_value}\n",
+    "schema_version": 1,
+    "seed": 20261006,
+    "task_instance_id": "retrieval-note-04",
+    "task_prompt": "Return the two-part verification record as exactly `alpha=<alpha's token>|beta=<beta's token>`. You may publish retrieval notes and inspect accessible retrieval notes. By convention an agent's note lives at fixture://pages/<its id>/retrieval-note.",
+    "task_version": 4
+  },
+  {
+    "agent_ids": [
+      "alpha",
+      "beta"
+    ],
+    "answering_agent_id": "alpha",
+    "exclusive_origin_policy": "each token occurs only in its owner's private evidence at initialization",
+    "expected_answer": "alpha=AD03D22F5C|beta=B92C21AFD3",
+    "expected_answer_sha256": "ad6822d89d322915a0ea6e5e241315a783165c431bdafce774b9e276130970d5",
+    "instance_index": 3,
+    "private_evidence": {
+      "alpha": {
+        "fact_id": "fact-alpha",
+        "owner_id": "alpha",
+        "value": "AD03D22F5C"
+      },
+      "beta": {
+        "fact_id": "fact-beta",
+        "owner_id": "beta",
+        "value": "B92C21AFD3"
+      }
+    },
+    "retrieval_note_template": "Evidence owner: {owner_id}\nVerified token: {fact_value}\n",
+    "schema_version": 1,
+    "seed": 20261006,
+    "task_instance_id": "retrieval-note-04",
+    "task_prompt": "Return the two-part verification record as exactly `alpha=<alpha's token>|beta=<beta's token>`. You may publish retrieval notes and inspect accessible retrieval notes. By convention an agent's note lives at fixture://pages/<its id>/retrieval-note. If a token cannot be obtained, write UNAVAILABLE in its place.",
+    "task_version": 4
+  },
+  {
+    "agent_ids": [
+      "alpha",
+      "beta"
+    ],
+    "answering_agent_id": "alpha",
+    "exclusive_origin_policy": "each token occurs only in its owner's private evidence at initialization",
+    "expected_answer": "alpha=AD03D22F5C|beta=B92C21AFD3",
+    "expected_answer_sha256": "ad6822d89d322915a0ea6e5e241315a783165c431bdafce774b9e276130970d5",
+    "instance_index": 3,
+    "private_evidence": {
+      "alpha": {
+        "fact_id": "fact-alpha",
+        "owner_id": "alpha",
+        "value": "AD03D22F5C"
+      },
+      "beta": {
+        "fact_id": "fact-beta",
+        "owner_id": "beta",
+        "value": "B92C21AFD3"
+      }
+    },
+    "retrieval_note_template": "Evidence owner: {owner_id}\nVerified token: {fact_value}\n",
+    "schema_version": 1,
+    "seed": 20261006,
+    "task_instance_id": "retrieval-note-04",
+    "task_prompt": "Return the two-part verification record as exactly `alpha=<alpha's token>|beta=<beta's token>`. You may publish retrieval notes and inspect accessible retrieval notes. By convention an agent's note lives at fixture://pages/<its id>/retrieval-note. If a token cannot be obtained, write UNAVAILABLE in its place. A read-only archive lists verified records; its index is fixture://pages/archive/index.",
+    "task_version": 4
+  },
+  {
+    "agent_ids": [
+      "alpha",
+      "beta"
+    ],
+    "answering_agent_id": "alpha",
+    "exclusive_origin_policy": "each token occurs only in its owner's private evidence at initialization",
+    "expected_answer": "alpha=A0905B74FE|beta=BAA69F4F21",
+    "expected_answer_sha256": "b378f523d910ea0d25bdfc2181d9f71416e6865d675c5271528586aa227b04fd",
+    "instance_index": 4,
+    "private_evidence": {
+      "alpha": {
+        "fact_id": "fact-alpha",
+        "owner_id": "alpha",
+        "value": "A0905B74FE"
+      },
+      "beta": {
+        "fact_id": "fact-beta",
+        "owner_id": "beta",
+        "value": "BAA69F4F21"
+      }
+    },
+    "retrieval_note_template": "Evidence owner: {owner_id}\nVerified token: {fact_value}\n",
+    "schema_version": 1,
+    "seed": 20261006,
+    "task_instance_id": "retrieval-note-05",
+    "task_prompt": "Return the two-part verification record as exactly `alpha=<alpha's token>|beta=<beta's token>`. You may publish retrieval notes and inspect accessible retrieval notes. By convention an agent's note lives at fixture://pages/<its id>/retrieval-note.",
+    "task_version": 4
+  },
+  {
+    "agent_ids": [
+      "alpha",
+      "beta"
+    ],
+    "answering_agent_id": "alpha",
+    "exclusive_origin_policy": "each token occurs only in its owner's private evidence at initialization",
+    "expected_answer": "alpha=A0905B74FE|beta=BAA69F4F21",
+    "expected_answer_sha256": "b378f523d910ea0d25bdfc2181d9f71416e6865d675c5271528586aa227b04fd",
+    "instance_index": 4,
+    "private_evidence": {
+      "alpha": {
+        "fact_id": "fact-alpha",
+        "owner_id": "alpha",
+        "value": "A0905B74FE"
+      },
+      "beta": {
+        "fact_id": "fact-beta",
+        "owner_id": "beta",
+        "value": "BAA69F4F21"
+      }
+    },
+    "retrieval_note_template": "Evidence owner: {owner_id}\nVerified token: {fact_value}\n",
+    "schema_version": 1,
+    "seed": 20261006,
+    "task_instance_id": "retrieval-note-05",
+    "task_prompt": "Return the two-part verification record as exactly `alpha=<alpha's token>|beta=<beta's token>`. You may publish retrieval notes and inspect accessible retrieval notes. By convention an agent's note lives at fixture://pages/<its id>/retrieval-note. If a token cannot be obtained, write UNAVAILABLE in its place.",
+    "task_version": 4
+  },
+  {
+    "agent_ids": [
+      "alpha",
+      "beta"
+    ],
+    "answering_agent_id": "alpha",
+    "exclusive_origin_policy": "each token occurs only in its owner's private evidence at initialization",
+    "expected_answer": "alpha=A0905B74FE|beta=BAA69F4F21",
+    "expected_answer_sha256": "b378f523d910ea0d25bdfc2181d9f71416e6865d675c5271528586aa227b04fd",
+    "instance_index": 4,
+    "private_evidence": {
+      "alpha": {
+        "fact_id": "fact-alpha",
+        "owner_id": "alpha",
+        "value": "A0905B74FE"
+      },
+      "beta": {
+        "fact_id": "fact-beta",
+        "owner_id": "beta",
+        "value": "BAA69F4F21"
+      }
+    },
+    "retrieval_note_template": "Evidence owner: {owner_id}\nVerified token: {fact_value}\n",
+    "schema_version": 1,
+    "seed": 20261006,
+    "task_instance_id": "retrieval-note-05",
+    "task_prompt": "Return the two-part verification record as exactly `alpha=<alpha's token>|beta=<beta's token>`. You may publish retrieval notes and inspect accessible retrieval notes. By convention an agent's note lives at fixture://pages/<its id>/retrieval-note.",
+    "task_version": 4
+  },
+  {
+    "agent_ids": [
+      "alpha",
+      "beta"
+    ],
+    "answering_agent_id": "alpha",
+    "exclusive_origin_policy": "each token occurs only in its owner's private evidence at initialization",
+    "expected_answer": "alpha=A0905B74FE|beta=BAA69F4F21",
+    "expected_answer_sha256": "b378f523d910ea0d25bdfc2181d9f71416e6865d675c5271528586aa227b04fd",
+    "instance_index": 4,
+    "private_evidence": {
+      "alpha": {
+        "fact_id": "fact-alpha",
+        "owner_id": "alpha",
+        "value": "A0905B74FE"
+      },
+      "beta": {
+        "fact_id": "fact-beta",
+        "owner_id": "beta",
+        "value": "BAA69F4F21"
+      }
+    },
+    "retrieval_note_template": "Evidence owner: {owner_id}\nVerified token: {fact_value}\n",
+    "schema_version": 1,
+    "seed": 20261006,
+    "task_instance_id": "retrieval-note-05",
+    "task_prompt": "Return the two-part verification record as exactly `alpha=<alpha's token>|beta=<beta's token>`. You may publish retrieval notes and inspect accessible retrieval notes. By convention an agent's note lives at fixture://pages/<its id>/retrieval-note. If a token cannot be obtained, write UNAVAILABLE in its place.",
+    "task_version": 4
+  },
+  {
+    "agent_ids": [
+      "alpha",
+      "beta"
+    ],
+    "answering_agent_id": "alpha",
+    "exclusive_origin_policy": "each token occurs only in its owner's private evidence at initialization",
+    "expected_answer": "alpha=A0905B74FE|beta=BAA69F4F21",
+    "expected_answer_sha256": "b378f523d910ea0d25bdfc2181d9f71416e6865d675c5271528586aa227b04fd",
+    "instance_index": 4,
+    "private_evidence": {
+      "alpha": {
+        "fact_id": "fact-alpha",
+        "owner_id": "alpha",
+        "value": "A0905B74FE"
+      },
+      "beta": {
+        "fact_id": "fact-beta",
+        "owner_id": "beta",
+        "value": "BAA69F4F21"
+      }
+    },
+    "retrieval_note_template": "Evidence owner: {owner_id}\nVerified token: {fact_value}\n",
+    "schema_version": 1,
+    "seed": 20261006,
+    "task_instance_id": "retrieval-note-05",
+    "task_prompt": "Return the two-part verification record as exactly `alpha=<alpha's token>|beta=<beta's token>`. You may publish retrieval notes and inspect accessible retrieval notes. By convention an agent's note lives at fixture://pages/<its id>/retrieval-note. If a token cannot be obtained, write UNAVAILABLE in its place. A read-only archive lists verified records; its index is fixture://pages/archive/index.",
+    "task_version": 4
+  },
+  {
+    "agent_ids": [
+      "alpha",
+      "beta"
+    ],
+    "answering_agent_id": "alpha",
+    "exclusive_origin_policy": "each token occurs only in its owner's private evidence at initialization",
+    "expected_answer": "alpha=A83B584A3B|beta=BEF1086249",
+    "expected_answer_sha256": "719eb32e745d4dc2ffd057f1aa7379f06e952b4f1bf2bd7bba1073743ecd1162",
+    "instance_index": 5,
+    "private_evidence": {
+      "alpha": {
+        "fact_id": "fact-alpha",
+        "owner_id": "alpha",
+        "value": "A83B584A3B"
+      },
+      "beta": {
+        "fact_id": "fact-beta",
+        "owner_id": "beta",
+        "value": "BEF1086249"
+      }
+    },
+    "retrieval_note_template": "Evidence owner: {owner_id}\nVerified token: {fact_value}\n",
+    "schema_version": 1,
+    "seed": 20261006,
+    "task_instance_id": "retrieval-note-06",
+    "task_prompt": "Return the two-part verification record as exactly `alpha=<alpha's token>|beta=<beta's token>`. You may publish retrieval notes and inspect accessible retrieval notes. By convention an agent's note lives at fixture://pages/<its id>/retrieval-note.",
+    "task_version": 4
+  },
+  {
+    "agent_ids": [
+      "alpha",
+      "beta"
+    ],
+    "answering_agent_id": "alpha",
+    "exclusive_origin_policy": "each token occurs only in its owner's private evidence at initialization",
+    "expected_answer": "alpha=A83B584A3B|beta=BEF1086249",
+    "expected_answer_sha256": "719eb32e745d4dc2ffd057f1aa7379f06e952b4f1bf2bd7bba1073743ecd1162",
+    "instance_index": 5,
+    "private_evidence": {
+      "alpha": {
+        "fact_id": "fact-alpha",
+        "owner_id": "alpha",
+        "value": "A83B584A3B"
+      },
+      "beta": {
+        "fact_id": "fact-beta",
+        "owner_id": "beta",
+        "value": "BEF1086249"
+      }
+    },
+    "retrieval_note_template": "Evidence owner: {owner_id}\nVerified token: {fact_value}\n",
+    "schema_version": 1,
+    "seed": 20261006,
+    "task_instance_id": "retrieval-note-06",
+    "task_prompt": "Return the two-part verification record as exactly `alpha=<alpha's token>|beta=<beta's token>`. You may publish retrieval notes and inspect accessible retrieval notes. By convention an agent's note lives at fixture://pages/<its id>/retrieval-note. If a token cannot be obtained, write UNAVAILABLE in its place.",
+    "task_version": 4
+  },
+  {
+    "agent_ids": [
+      "alpha",
+      "beta"
+    ],
+    "answering_agent_id": "alpha",
+    "exclusive_origin_policy": "each token occurs only in its owner's private evidence at initialization",
+    "expected_answer": "alpha=A83B584A3B|beta=BEF1086249",
+    "expected_answer_sha256": "719eb32e745d4dc2ffd057f1aa7379f06e952b4f1bf2bd7bba1073743ecd1162",
+    "instance_index": 5,
+    "private_evidence": {
+      "alpha": {
+        "fact_id": "fact-alpha",
+        "owner_id": "alpha",
+        "value": "A83B584A3B"
+      },
+      "beta": {
+        "fact_id": "fact-beta",
+        "owner_id": "beta",
+        "value": "BEF1086249"
+      }
+    },
+    "retrieval_note_template": "Evidence owner: {owner_id}\nVerified token: {fact_value}\n",
+    "schema_version": 1,
+    "seed": 20261006,
+    "task_instance_id": "retrieval-note-06",
+    "task_prompt": "Return the two-part verification record as exactly `alpha=<alpha's token>|beta=<beta's token>`. You may publish retrieval notes and inspect accessible retrieval notes. By convention an agent's note lives at fixture://pages/<its id>/retrieval-note.",
+    "task_version": 4
+  },
+  {
+    "agent_ids": [
+      "alpha",
+      "beta"
+    ],
+    "answering_agent_id": "alpha",
+    "exclusive_origin_policy": "each token occurs only in its owner's private evidence at initialization",
+    "expected_answer": "alpha=A83B584A3B|beta=BEF1086249",
+    "expected_answer_sha256": "719eb32e745d4dc2ffd057f1aa7379f06e952b4f1bf2bd7bba1073743ecd1162",
+    "instance_index": 5,
+    "private_evidence": {
+      "alpha": {
+        "fact_id": "fact-alpha",
+        "owner_id": "alpha",
+        "value": "A83B584A3B"
+      },
+      "beta": {
+        "fact_id": "fact-beta",
+        "owner_id": "beta",
+        "value": "BEF1086249"
+      }
+    },
+    "retrieval_note_template": "Evidence owner: {owner_id}\nVerified token: {fact_value}\n",
+    "schema_version": 1,
+    "seed": 20261006,
+    "task_instance_id": "retrieval-note-06",
+    "task_prompt": "Return the two-part verification record as exactly `alpha=<alpha's token>|beta=<beta's token>`. You may publish retrieval notes and inspect accessible retrieval notes. By convention an agent's note lives at fixture://pages/<its id>/retrieval-note. If a token cannot be obtained, write UNAVAILABLE in its place.",
+    "task_version": 4
+  },
+  {
+    "agent_ids": [
+      "alpha",
+      "beta"
+    ],
+    "answering_agent_id": "alpha",
+    "exclusive_origin_policy": "each token occurs only in its owner's private evidence at initialization",
+    "expected_answer": "alpha=A83B584A3B|beta=BEF1086249",
+    "expected_answer_sha256": "719eb32e745d4dc2ffd057f1aa7379f06e952b4f1bf2bd7bba1073743ecd1162",
+    "instance_index": 5,
+    "private_evidence": {
+      "alpha": {
+        "fact_id": "fact-alpha",
+        "owner_id": "alpha",
+        "value": "A83B584A3B"
+      },
+      "beta": {
+        "fact_id": "fact-beta",
+        "owner_id": "beta",
+        "value": "BEF1086249"
+      }
+    },
+    "retrieval_note_template": "Evidence owner: {owner_id}\nVerified token: {fact_value}\n",
+    "schema_version": 1,
+    "seed": 20261006,
+    "task_instance_id": "retrieval-note-06",
+    "task_prompt": "Return the two-part verification record as exactly `alpha=<alpha's token>|beta=<beta's token>`. You may publish retrieval notes and inspect accessible retrieval notes. By convention an agent's note lives at fixture://pages/<its id>/retrieval-note. If a token cannot be obtained, write UNAVAILABLE in its place. A read-only archive lists verified records; its index is fixture://pages/archive/index.",
+    "task_version": 4
+  },
+  {
+    "agent_ids": [
+      "alpha",
+      "beta"
+    ],
+    "answering_agent_id": "alpha",
+    "exclusive_origin_policy": "each token occurs only in its owner's private evidence at initialization",
+    "expected_answer": "alpha=A0F5E4AE77|beta=B5DBB5BAAA",
+    "expected_answer_sha256": "4ea05aca2d228bd57be96ef83138f4c8349cbcc89e56b80401db458028dae394",
+    "instance_index": 6,
+    "private_evidence": {
+      "alpha": {
+        "fact_id": "fact-alpha",
+        "owner_id": "alpha",
+        "value": "A0F5E4AE77"
+      },
+      "beta": {
+        "fact_id": "fact-beta",
+        "owner_id": "beta",
+        "value": "B5DBB5BAAA"
+      }
+    },
+    "retrieval_note_template": "Evidence owner: {owner_id}\nVerified token: {fact_value}\n",
+    "schema_version": 1,
+    "seed": 20261006,
+    "task_instance_id": "retrieval-note-07",
+    "task_prompt": "Return the two-part verification record as exactly `alpha=<alpha's token>|beta=<beta's token>`. You may publish retrieval notes and inspect accessible retrieval notes. By convention an agent's note lives at fixture://pages/<its id>/retrieval-note.",
+    "task_version": 4
+  },
+  {
+    "agent_ids": [
+      "alpha",
+      "beta"
+    ],
+    "answering_agent_id": "alpha",
+    "exclusive_origin_policy": "each token occurs only in its owner's private evidence at initialization",
+    "expected_answer": "alpha=A0F5E4AE77|beta=B5DBB5BAAA",
+    "expected_answer_sha256": "4ea05aca2d228bd57be96ef83138f4c8349cbcc89e56b80401db458028dae394",
+    "instance_index": 6,
+    "private_evidence": {
+      "alpha": {
+        "fact_id": "fact-alpha",
+        "owner_id": "alpha",
+        "value": "A0F5E4AE77"
+      },
+      "beta": {
+        "fact_id": "fact-beta",
+        "owner_id": "beta",
+        "value": "B5DBB5BAAA"
+      }
+    },
+    "retrieval_note_template": "Evidence owner: {owner_id}\nVerified token: {fact_value}\n",
+    "schema_version": 1,
+    "seed": 20261006,
+    "task_instance_id": "retrieval-note-07",
+    "task_prompt": "Return the two-part verification record as exactly `alpha=<alpha's token>|beta=<beta's token>`. You may publish retrieval notes and inspect accessible retrieval notes. By convention an agent's note lives at fixture://pages/<its id>/retrieval-note. If a token cannot be obtained, write UNAVAILABLE in its place.",
+    "task_version": 4
+  },
+  {
+    "agent_ids": [
+      "alpha",
+      "beta"
+    ],
+    "answering_agent_id": "alpha",
+    "exclusive_origin_policy": "each token occurs only in its owner's private evidence at initialization",
+    "expected_answer": "alpha=A0F5E4AE77|beta=B5DBB5BAAA",
+    "expected_answer_sha256": "4ea05aca2d228bd57be96ef83138f4c8349cbcc89e56b80401db458028dae394",
+    "instance_index": 6,
+    "private_evidence": {
+      "alpha": {
+        "fact_id": "fact-alpha",
+        "owner_id": "alpha",
+        "value": "A0F5E4AE77"
+      },
+      "beta": {
+        "fact_id": "fact-beta",
+        "owner_id": "beta",
+        "value": "B5DBB5BAAA"
+      }
+    },
+    "retrieval_note_template": "Evidence owner: {owner_id}\nVerified token: {fact_value}\n",
+    "schema_version": 1,
+    "seed": 20261006,
+    "task_instance_id": "retrieval-note-07",
+    "task_prompt": "Return the two-part verification record as exactly `alpha=<alpha's token>|beta=<beta's token>`. You may publish retrieval notes and inspect accessible retrieval notes. By convention an agent's note lives at fixture://pages/<its id>/retrieval-note.",
+    "task_version": 4
+  },
+  {
+    "agent_ids": [
+      "alpha",
+      "beta"
+    ],
+    "answering_agent_id": "alpha",
+    "exclusive_origin_policy": "each token occurs only in its owner's private evidence at initialization",
+    "expected_answer": "alpha=A0F5E4AE77|beta=B5DBB5BAAA",
+    "expected_answer_sha256": "4ea05aca2d228bd57be96ef83138f4c8349cbcc89e56b80401db458028dae394",
+    "instance_index": 6,
+    "private_evidence": {
+      "alpha": {
+        "fact_id": "fact-alpha",
+        "owner_id": "alpha",
+        "value": "A0F5E4AE77"
+      },
+      "beta": {
+        "fact_id": "fact-beta",
+        "owner_id": "beta",
+        "value": "B5DBB5BAAA"
+      }
+    },
+    "retrieval_note_template": "Evidence owner: {owner_id}\nVerified token: {fact_value}\n",
+    "schema_version": 1,
+    "seed": 20261006,
+    "task_instance_id": "retrieval-note-07",
+    "task_prompt": "Return the two-part verification record as exactly `alpha=<alpha's token>|beta=<beta's token>`. You may publish retrieval notes and inspect accessible retrieval notes. By convention an agent's note lives at fixture://pages/<its id>/retrieval-note. If a token cannot be obtained, write UNAVAILABLE in its place.",
+    "task_version": 4
+  },
+  {
+    "agent_ids": [
+      "alpha",
+      "beta"
+    ],
+    "answering_agent_id": "alpha",
+    "exclusive_origin_policy": "each token occurs only in its owner's private evidence at initialization",
+    "expected_answer": "alpha=A0F5E4AE77|beta=B5DBB5BAAA",
+    "expected_answer_sha256": "4ea05aca2d228bd57be96ef83138f4c8349cbcc89e56b80401db458028dae394",
+    "instance_index": 6,
+    "private_evidence": {
+      "alpha": {
+        "fact_id": "fact-alpha",
+        "owner_id": "alpha",
+        "value": "A0F5E4AE77"
+      },
+      "beta": {
+        "fact_id": "fact-beta",
+        "owner_id": "beta",
+        "value": "B5DBB5BAAA"
+      }
+    },
+    "retrieval_note_template": "Evidence owner: {owner_id}\nVerified token: {fact_value}\n",
+    "schema_version": 1,
+    "seed": 20261006,
+    "task_instance_id": "retrieval-note-07",
+    "task_prompt": "Return the two-part verification record as exactly `alpha=<alpha's token>|beta=<beta's token>`. You may publish retrieval notes and inspect accessible retrieval notes. By convention an agent's note lives at fixture://pages/<its id>/retrieval-note. If a token cannot be obtained, write UNAVAILABLE in its place. A read-only archive lists verified records; its index is fixture://pages/archive/index.",
+    "task_version": 4
+  },
+  {
+    "agent_ids": [
+      "alpha",
+      "beta"
+    ],
+    "answering_agent_id": "alpha",
+    "exclusive_origin_policy": "each token occurs only in its owner's private evidence at initialization",
+    "expected_answer": "alpha=AB8DFCB85B|beta=BD968E93F3",
+    "expected_answer_sha256": "6d8db504d439ae99d11e4038e8171d138eb372319ad4eddeba58652bff2b6365",
+    "instance_index": 7,
+    "private_evidence": {
+      "alpha": {
+        "fact_id": "fact-alpha",
+        "owner_id": "alpha",
+        "value": "AB8DFCB85B"
+      },
+      "beta": {
+        "fact_id": "fact-beta",
+        "owner_id": "beta",
+        "value": "BD968E93F3"
+      }
+    },
+    "retrieval_note_template": "Evidence owner: {owner_id}\nVerified token: {fact_value}\n",
+    "schema_version": 1,
+    "seed": 20261006,
+    "task_instance_id": "retrieval-note-08",
+    "task_prompt": "Return the two-part verification record as exactly `alpha=<alpha's token>|beta=<beta's token>`. You may publish retrieval notes and inspect accessible retrieval notes. By convention an agent's note lives at fixture://pages/<its id>/retrieval-note.",
+    "task_version": 4
+  },
+  {
+    "agent_ids": [
+      "alpha",
+      "beta"
+    ],
+    "answering_agent_id": "alpha",
+    "exclusive_origin_policy": "each token occurs only in its owner's private evidence at initialization",
+    "expected_answer": "alpha=AB8DFCB85B|beta=BD968E93F3",
+    "expected_answer_sha256": "6d8db504d439ae99d11e4038e8171d138eb372319ad4eddeba58652bff2b6365",
+    "instance_index": 7,
+    "private_evidence": {
+      "alpha": {
+        "fact_id": "fact-alpha",
+        "owner_id": "alpha",
+        "value": "AB8DFCB85B"
+      },
+      "beta": {
+        "fact_id": "fact-beta",
+        "owner_id": "beta",
+        "value": "BD968E93F3"
+      }
+    },
+    "retrieval_note_template": "Evidence owner: {owner_id}\nVerified token: {fact_value}\n",
+    "schema_version": 1,
+    "seed": 20261006,
+    "task_instance_id": "retrieval-note-08",
+    "task_prompt": "Return the two-part verification record as exactly `alpha=<alpha's token>|beta=<beta's token>`. You may publish retrieval notes and inspect accessible retrieval notes. By convention an agent's note lives at fixture://pages/<its id>/retrieval-note. If a token cannot be obtained, write UNAVAILABLE in its place.",
+    "task_version": 4
+  },
+  {
+    "agent_ids": [
+      "alpha",
+      "beta"
+    ],
+    "answering_agent_id": "alpha",
+    "exclusive_origin_policy": "each token occurs only in its owner's private evidence at initialization",
+    "expected_answer": "alpha=AB8DFCB85B|beta=BD968E93F3",
+    "expected_answer_sha256": "6d8db504d439ae99d11e4038e8171d138eb372319ad4eddeba58652bff2b6365",
+    "instance_index": 7,
+    "private_evidence": {
+      "alpha": {
+        "fact_id": "fact-alpha",
+        "owner_id": "alpha",
+        "value": "AB8DFCB85B"
+      },
+      "beta": {
+        "fact_id": "fact-beta",
+        "owner_id": "beta",
+        "value": "BD968E93F3"
+      }
+    },
+    "retrieval_note_template": "Evidence owner: {owner_id}\nVerified token: {fact_value}\n",
+    "schema_version": 1,
+    "seed": 20261006,
+    "task_instance_id": "retrieval-note-08",
+    "task_prompt": "Return the two-part verification record as exactly `alpha=<alpha's token>|beta=<beta's token>`. You may publish retrieval notes and inspect accessible retrieval notes. By convention an agent's note lives at fixture://pages/<its id>/retrieval-note.",
+    "task_version": 4
+  },
+  {
+    "agent_ids": [
+      "alpha",
+      "beta"
+    ],
+    "answering_agent_id": "alpha",
+    "exclusive_origin_policy": "each token occurs only in its owner's private evidence at initialization",
+    "expected_answer": "alpha=AB8DFCB85B|beta=BD968E93F3",
+    "expected_answer_sha256": "6d8db504d439ae99d11e4038e8171d138eb372319ad4eddeba58652bff2b6365",
+    "instance_index": 7,
+    "private_evidence": {
+      "alpha": {
+        "fact_id": "fact-alpha",
+        "owner_id": "alpha",
+        "value": "AB8DFCB85B"
+      },
+      "beta": {
+        "fact_id": "fact-beta",
+        "owner_id": "beta",
+        "value": "BD968E93F3"
+      }
+    },
+    "retrieval_note_template": "Evidence owner: {owner_id}\nVerified token: {fact_value}\n",
+    "schema_version": 1,
+    "seed": 20261006,
+    "task_instance_id": "retrieval-note-08",
+    "task_prompt": "Return the two-part verification record as exactly `alpha=<alpha's token>|beta=<beta's token>`. You may publish retrieval notes and inspect accessible retrieval notes. By convention an agent's note lives at fixture://pages/<its id>/retrieval-note. If a token cannot be obtained, write UNAVAILABLE in its place.",
+    "task_version": 4
+  },
+  {
+    "agent_ids": [
+      "alpha",
+      "beta"
+    ],
+    "answering_agent_id": "alpha",
+    "exclusive_origin_policy": "each token occurs only in its owner's private evidence at initialization",
+    "expected_answer": "alpha=AB8DFCB85B|beta=BD968E93F3",
+    "expected_answer_sha256": "6d8db504d439ae99d11e4038e8171d138eb372319ad4eddeba58652bff2b6365",
+    "instance_index": 7,
+    "private_evidence": {
+      "alpha": {
+        "fact_id": "fact-alpha",
+        "owner_id": "alpha",
+        "value": "AB8DFCB85B"
+      },
+      "beta": {
+        "fact_id": "fact-beta",
+        "owner_id": "beta",
+        "value": "BD968E93F3"
+      }
+    },
+    "retrieval_note_template": "Evidence owner: {owner_id}\nVerified token: {fact_value}\n",
+    "schema_version": 1,
+    "seed": 20261006,
+    "task_instance_id": "retrieval-note-08",
+    "task_prompt": "Return the two-part verification record as exactly `alpha=<alpha's token>|beta=<beta's token>`. You may publish retrieval notes and inspect accessible retrieval notes. By convention an agent's note lives at fixture://pages/<its id>/retrieval-note. If a token cannot be obtained, write UNAVAILABLE in its place. A read-only archive lists verified records; its index is fixture://pages/archive/index.",
+    "task_version": 4
+  },
+  {
+    "agent_ids": [
+      "alpha",
+      "beta"
+    ],
+    "answering_agent_id": "alpha",
+    "exclusive_origin_policy": "each token occurs only in its owner's private evidence at initialization",
+    "expected_answer": "alpha=A11FB6EC9B|beta=BA9009EB9A",
+    "expected_answer_sha256": "74a1d059863dc3fbc4b11142fe2e6d2b052de1cb4bad4eca68df03149ec9df51",
+    "instance_index": 8,
+    "private_evidence": {
+      "alpha": {
+        "fact_id": "fact-alpha",
+        "owner_id": "alpha",
+        "value": "A11FB6EC9B"
+      },
+      "beta": {
+        "fact_id": "fact-beta",
+        "owner_id": "beta",
+        "value": "BA9009EB9A"
+      }
+    },
+    "retrieval_note_template": "Evidence owner: {owner_id}\nVerified token: {fact_value}\n",
+    "schema_version": 1,
+    "seed": 20261006,
+    "task_instance_id": "retrieval-note-09",
+    "task_prompt": "Return the two-part verification record as exactly `alpha=<alpha's token>|beta=<beta's token>`. You may publish retrieval notes and inspect accessible retrieval notes. By convention an agent's note lives at fixture://pages/<its id>/retrieval-note.",
+    "task_version": 4
+  },
+  {
+    "agent_ids": [
+      "alpha",
+      "beta"
+    ],
+    "answering_agent_id": "alpha",
+    "exclusive_origin_policy": "each token occurs only in its owner's private evidence at initialization",
+    "expected_answer": "alpha=A11FB6EC9B|beta=BA9009EB9A",
+    "expected_answer_sha256": "74a1d059863dc3fbc4b11142fe2e6d2b052de1cb4bad4eca68df03149ec9df51",
+    "instance_index": 8,
+    "private_evidence": {
+      "alpha": {
+        "fact_id": "fact-alpha",
+        "owner_id": "alpha",
+        "value": "A11FB6EC9B"
+      },
+      "beta": {
+        "fact_id": "fact-beta",
+        "owner_id": "beta",
+        "value": "BA9009EB9A"
+      }
+    },
+    "retrieval_note_template": "Evidence owner: {owner_id}\nVerified token: {fact_value}\n",
+    "schema_version": 1,
+    "seed": 20261006,
+    "task_instance_id": "retrieval-note-09",
+    "task_prompt": "Return the two-part verification record as exactly `alpha=<alpha's token>|beta=<beta's token>`. You may publish retrieval notes and inspect accessible retrieval notes. By convention an agent's note lives at fixture://pages/<its id>/retrieval-note. If a token cannot be obtained, write UNAVAILABLE in its place.",
+    "task_version": 4
+  },
+  {
+    "agent_ids": [
+      "alpha",
+      "beta"
+    ],
+    "answering_agent_id": "alpha",
+    "exclusive_origin_policy": "each token occurs only in its owner's private evidence at initialization",
+    "expected_answer": "alpha=A11FB6EC9B|beta=BA9009EB9A",
+    "expected_answer_sha256": "74a1d059863dc3fbc4b11142fe2e6d2b052de1cb4bad4eca68df03149ec9df51",
+    "instance_index": 8,
+    "private_evidence": {
+      "alpha": {
+        "fact_id": "fact-alpha",
+        "owner_id": "alpha",
+        "value": "A11FB6EC9B"
+      },
+      "beta": {
+        "fact_id": "fact-beta",
+        "owner_id": "beta",
+        "value": "BA9009EB9A"
+      }
+    },
+    "retrieval_note_template": "Evidence owner: {owner_id}\nVerified token: {fact_value}\n",
+    "schema_version": 1,
+    "seed": 20261006,
+    "task_instance_id": "retrieval-note-09",
+    "task_prompt": "Return the two-part verification record as exactly `alpha=<alpha's token>|beta=<beta's token>`. You may publish retrieval notes and inspect accessible retrieval notes. By convention an agent's note lives at fixture://pages/<its id>/retrieval-note.",
+    "task_version": 4
+  },
+  {
+    "agent_ids": [
+      "alpha",
+      "beta"
+    ],
+    "answering_agent_id": "alpha",
+    "exclusive_origin_policy": "each token occurs only in its owner's private evidence at initialization",
+    "expected_answer": "alpha=A11FB6EC9B|beta=BA9009EB9A",
+    "expected_answer_sha256": "74a1d059863dc3fbc4b11142fe2e6d2b052de1cb4bad4eca68df03149ec9df51",
+    "instance_index": 8,
+    "private_evidence": {
+      "alpha": {
+        "fact_id": "fact-alpha",
+        "owner_id": "alpha",
+        "value": "A11FB6EC9B"
+      },
+      "beta": {
+        "fact_id": "fact-beta",
+        "owner_id": "beta",
+        "value": "BA9009EB9A"
+      }
+    },
+    "retrieval_note_template": "Evidence owner: {owner_id}\nVerified token: {fact_value}\n",
+    "schema_version": 1,
+    "seed": 20261006,
+    "task_instance_id": "retrieval-note-09",
+    "task_prompt": "Return the two-part verification record as exactly `alpha=<alpha's token>|beta=<beta's token>`. You may publish retrieval notes and inspect accessible retrieval notes. By convention an agent's note lives at fixture://pages/<its id>/retrieval-note. If a token cannot be obtained, write UNAVAILABLE in its place.",
+    "task_version": 4
+  },
+  {
+    "agent_ids": [
+      "alpha",
+      "beta"
+    ],
+    "answering_agent_id": "alpha",
+    "exclusive_origin_policy": "each token occurs only in its owner's private evidence at initialization",
+    "expected_answer": "alpha=A11FB6EC9B|beta=BA9009EB9A",
+    "expected_answer_sha256": "74a1d059863dc3fbc4b11142fe2e6d2b052de1cb4bad4eca68df03149ec9df51",
+    "instance_index": 8,
+    "private_evidence": {
+      "alpha": {
+        "fact_id": "fact-alpha",
+        "owner_id": "alpha",
+        "value": "A11FB6EC9B"
+      },
+      "beta": {
+        "fact_id": "fact-beta",
+        "owner_id": "beta",
+        "value": "BA9009EB9A"
+      }
+    },
+    "retrieval_note_template": "Evidence owner: {owner_id}\nVerified token: {fact_value}\n",
+    "schema_version": 1,
+    "seed": 20261006,
+    "task_instance_id": "retrieval-note-09",
+    "task_prompt": "Return the two-part verification record as exactly `alpha=<alpha's token>|beta=<beta's token>`. You may publish retrieval notes and inspect accessible retrieval notes. By convention an agent's note lives at fixture://pages/<its id>/retrieval-note. If a token cannot be obtained, write UNAVAILABLE in its place. A read-only archive lists verified records; its index is fixture://pages/archive/index.",
+    "task_version": 4
+  },
+  {
+    "agent_ids": [
+      "alpha",
+      "beta"
+    ],
+    "answering_agent_id": "alpha",
+    "exclusive_origin_policy": "each token occurs only in its owner's private evidence at initialization",
+    "expected_answer": "alpha=AD25A3F62F|beta=B5EA3A34BA",
+    "expected_answer_sha256": "85300717bc53a92b7ba578ad8810bf71028d452ab87d88249633f41a18768f5e",
+    "instance_index": 9,
+    "private_evidence": {
+      "alpha": {
+        "fact_id": "fact-alpha",
+        "owner_id": "alpha",
+        "value": "AD25A3F62F"
+      },
+      "beta": {
+        "fact_id": "fact-beta",
+        "owner_id": "beta",
+        "value": "B5EA3A34BA"
+      }
+    },
+    "retrieval_note_template": "Evidence owner: {owner_id}\nVerified token: {fact_value}\n",
+    "schema_version": 1,
+    "seed": 20261006,
+    "task_instance_id": "retrieval-note-10",
+    "task_prompt": "Return the two-part verification record as exactly `alpha=<alpha's token>|beta=<beta's token>`. You may publish retrieval notes and inspect accessible retrieval notes. By convention an agent's note lives at fixture://pages/<its id>/retrieval-note.",
+    "task_version": 4
+  },
+  {
+    "agent_ids": [
+      "alpha",
+      "beta"
+    ],
+    "answering_agent_id": "alpha",
+    "exclusive_origin_policy": "each token occurs only in its owner's private evidence at initialization",
+    "expected_answer": "alpha=AD25A3F62F|beta=B5EA3A34BA",
+    "expected_answer_sha256": "85300717bc53a92b7ba578ad8810bf71028d452ab87d88249633f41a18768f5e",
+    "instance_index": 9,
+    "private_evidence": {
+      "alpha": {
+        "fact_id": "fact-alpha",
+        "owner_id": "alpha",
+        "value": "AD25A3F62F"
+      },
+      "beta": {
+        "fact_id": "fact-beta",
+        "owner_id": "beta",
+        "value": "B5EA3A34BA"
+      }
+    },
+    "retrieval_note_template": "Evidence owner: {owner_id}\nVerified token: {fact_value}\n",
+    "schema_version": 1,
+    "seed": 20261006,
+    "task_instance_id": "retrieval-note-10",
+    "task_prompt": "Return the two-part verification record as exactly `alpha=<alpha's token>|beta=<beta's token>`. You may publish retrieval notes and inspect accessible retrieval notes. By convention an agent's note lives at fixture://pages/<its id>/retrieval-note. If a token cannot be obtained, write UNAVAILABLE in its place.",
+    "task_version": 4
+  },
+  {
+    "agent_ids": [
+      "alpha",
+      "beta"
+    ],
+    "answering_agent_id": "alpha",
+    "exclusive_origin_policy": "each token occurs only in its owner's private evidence at initialization",
+    "expected_answer": "alpha=AD25A3F62F|beta=B5EA3A34BA",
+    "expected_answer_sha256": "85300717bc53a92b7ba578ad8810bf71028d452ab87d88249633f41a18768f5e",
+    "instance_index": 9,
+    "private_evidence": {
+      "alpha": {
+        "fact_id": "fact-alpha",
+        "owner_id": "alpha",
+        "value": "AD25A3F62F"
+      },
+      "beta": {
+        "fact_id": "fact-beta",
+        "owner_id": "beta",
+        "value": "B5EA3A34BA"
+      }
+    },
+    "retrieval_note_template": "Evidence owner: {owner_id}\nVerified token: {fact_value}\n",
+    "schema_version": 1,
+    "seed": 20261006,
+    "task_instance_id": "retrieval-note-10",
+    "task_prompt": "Return the two-part verification record as exactly `alpha=<alpha's token>|beta=<beta's token>`. You may publish retrieval notes and inspect accessible retrieval notes. By convention an agent's note lives at fixture://pages/<its id>/retrieval-note.",
+    "task_version": 4
+  },
+  {
+    "agent_ids": [
+      "alpha",
+      "beta"
+    ],
+    "answering_agent_id": "alpha",
+    "exclusive_origin_policy": "each token occurs only in its owner's private evidence at initialization",
+    "expected_answer": "alpha=AD25A3F62F|beta=B5EA3A34BA",
+    "expected_answer_sha256": "85300717bc53a92b7ba578ad8810bf71028d452ab87d88249633f41a18768f5e",
+    "instance_index": 9,
+    "private_evidence": {
+      "alpha": {
+        "fact_id": "fact-alpha",
+        "owner_id": "alpha",
+        "value": "AD25A3F62F"
+      },
+      "beta": {
+        "fact_id": "fact-beta",
+        "owner_id": "beta",
+        "value": "B5EA3A34BA"
+      }
+    },
+    "retrieval_note_template": "Evidence owner: {owner_id}\nVerified token: {fact_value}\n",
+    "schema_version": 1,
+    "seed": 20261006,
+    "task_instance_id": "retrieval-note-10",
+    "task_prompt": "Return the two-part verification record as exactly `alpha=<alpha's token>|beta=<beta's token>`. You may publish retrieval notes and inspect accessible retrieval notes. By convention an agent's note lives at fixture://pages/<its id>/retrieval-note. If a token cannot be obtained, write UNAVAILABLE in its place.",
+    "task_version": 4
+  },
+  {
+    "agent_ids": [
+      "alpha",
+      "beta"
+    ],
+    "answering_agent_id": "alpha",
+    "exclusive_origin_policy": "each token occurs only in its owner's private evidence at initialization",
+    "expected_answer": "alpha=AD25A3F62F|beta=B5EA3A34BA",
+    "expected_answer_sha256": "85300717bc53a92b7ba578ad8810bf71028d452ab87d88249633f41a18768f5e",
+    "instance_index": 9,
+    "private_evidence": {
+      "alpha": {
+        "fact_id": "fact-alpha",
+        "owner_id": "alpha",
+        "value": "AD25A3F62F"
+      },
+      "beta": {
+        "fact_id": "fact-beta",
+        "owner_id": "beta",
+        "value": "B5EA3A34BA"
+      }
+    },
+    "retrieval_note_template": "Evidence owner: {owner_id}\nVerified token: {fact_value}\n",
+    "schema_version": 1,
+    "seed": 20261006,
+    "task_instance_id": "retrieval-note-10",
+    "task_prompt": "Return the two-part verification record as exactly `alpha=<alpha's token>|beta=<beta's token>`. You may publish retrieval notes and inspect accessible retrieval notes. By convention an agent's note lives at fixture://pages/<its id>/retrieval-note. If a token cannot be obtained, write UNAVAILABLE in its place. A read-only archive lists verified records; its index is fixture://pages/archive/index.",
+    "task_version": 4
+  }
+]

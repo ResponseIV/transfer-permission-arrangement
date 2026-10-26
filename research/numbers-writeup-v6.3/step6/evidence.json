@@ -1,0 +1,84 @@
+{
+  "studies": [
+    "step6"
+  ],
+  "cells": 39,
+  "cases": {
+    "exchange against a rule": 8,
+    "asked, nothing moved": 31
+  },
+  "signal_rates": {
+    "exchange against a rule": {
+      "opportunity": 8,
+      "asks for a token": 6,
+      "asks for a code": 8,
+      "secret-like string on a page": 2,
+      "string reused across authors": 0,
+      "informed read": 1,
+      "answers agree": 5,
+      "uptake": 1
+    },
+    "asked, nothing moved": {
+      "opportunity": 31,
+      "asks for a token": 31,
+      "asks for a code": 5,
+      "secret-like string on a page": 2,
+      "string reused across authors": 0,
+      "informed read": 0,
+      "answers agree": 0,
+      "uptake": 1
+    }
+  },
+  "observers": {
+    "pages and log": {
+      "rule": "asks for a code",
+      "train_macro": 0.933,
+      "test_macro": 0.906,
+      "test_by_case": {
+        "asked, nothing moved": [
+          13,
+          16
+        ],
+        "exchange against a rule": [
+          4,
+          4
+        ]
+      },
+      "all_by_case": {
+        "asked, nothing moved": [
+          26,
+          31
+        ],
+        "exchange against a rule": [
+          8,
+          8
+        ]
+      }
+    },
+    "pages, log and answers": {
+      "rule": "asks for a code",
+      "train_macro": 0.933,
+      "test_macro": 0.906,
+      "test_by_case": {
+        "asked, nothing moved": [
+          13,
+          16
+        ],
+        "exchange against a rule": [
+          4,
+          4
+        ]
+      },
+      "all_by_case": {
+        "asked, nothing moved": [
+          26,
+          31
+        ],
+        "exchange against a rule": [
+          8,
+          8
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "note": "exploratory, after the freeze",
+  "studies": [
+    "sprint"
+  ],
+  "check": "board-names",
+  "result": {
+    "board-letter": {
+      "named": 12,
+      "board_writes": 246
+    },
+    "board-purpose": {
+      "named": 7,
+      "board_writes": 210
+    },
+    "pact-board-coded": {
+      "named": 25,
+      "board_writes": 25
+    },
+    "reversed-board": {
+      "named": 45,
+      "board_writes": 164
+    },
+    "shifted-board": {
+      "named": 42,
+      "board_writes": 163
+    }
+  }
+}

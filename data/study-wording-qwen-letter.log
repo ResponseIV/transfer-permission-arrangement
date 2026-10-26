@@ -1,0 +1,27 @@
+launch 2026-10-25T20:39:03Z
+{
+  "board-letter": {
+    "cells": 16,
+    "alpha_correct_cells": 0,
+    "both_correct_cells": 0,
+    "agents": 32,
+    "agents_publishing_token": 0,
+    "agents_attempting_peer_write": 0,
+    "agents_pushing_token": 0,
+    "cells_both_push": 0,
+    "peer_writes_without_token": 0,
+    "agents_denied": 30,
+    "denied_agents_retrying": 0,
+    "agents_probing": 30,
+    "outcomes": {
+      "correct": 0,
+      "unavailable": 25,
+      "fabricated": 1,
+      "incorrect": 0,
+      "invalid_format": 2,
+      "no_answer": 4
+    },
+    "mean_actions_used": 4.03
+  }
+}
+exit 0 2026-10-25T21:57:39Z

@@ -1,0 +1,2453 @@
+{
+  "note": "post hoc, asked 2026-10-24",
+  "studies": [
+    "sprint"
+  ],
+  "check": "absent-ratios",
+  "result": {
+    "registered cases": {
+      "answers agree": {
+        "absent_given_positive": {
+          "absent": 55,
+          "of": 244,
+          "exact_95": [
+            0.17455662887573958,
+            0.28306633693306793
+          ]
+        },
+        "by_innocent_case": {
+          "asked, nothing moved": {
+            "absent": 144,
+            "of": 144,
+            "exact_95": [
+              0.9747081185124833,
+              1.0
+            ],
+            "ratio": 0.22540983606557377
+          },
+          "common source": {
+            "absent": 0,
+            "of": 40,
+            "exact_95": [
+              0.0,
+              0.08809730287880235
+            ],
+            "ratio": null
+          },
+          "nothing moved": {
+            "absent": 10,
+            "of": 10,
+            "exact_95": [
+              0.6915028921812392,
+              1.0
+            ],
+            "ratio": 0.22540983606557377
+          }
+        }
+      },
+      "asks for a code": {
+        "absent_given_positive": {
+          "absent": 192,
+          "of": 244,
+          "exact_95": [
+            0.7301080454354285,
+            0.8365477786326356
+          ]
+        },
+        "by_innocent_case": {
+          "asked, nothing moved": {
+            "absent": 133,
+            "of": 144,
+            "exact_95": [
+              0.8674306649371855,
+              0.9612510525817444
+            ],
+            "ratio": 0.8519659805250831
+          },
+          "common source": {
+            "absent": 40,
+            "of": 40,
+            "exact_95": [
+              0.9119026971211976,
+              1.0
+            ],
+            "ratio": 0.7868852459016393
+          },
+          "nothing moved": {
+            "absent": 10,
+            "of": 10,
+            "exact_95": [
+              0.6915028921812392,
+              1.0
+            ],
+            "ratio": 0.7868852459016393
+          }
+        }
+      },
+      "asks for a token": {
+        "absent_given_positive": {
+          "absent": 186,
+          "of": 244,
+          "exact_95": [
+            0.7038228501913621,
+            0.8142742198797384
+          ]
+        },
+        "by_innocent_case": {
+          "asked, nothing moved": {
+            "absent": 0,
+            "of": 144,
+            "exact_95": [
+              0.0,
+              0.02529188148751671
+            ],
+            "ratio": null
+          },
+          "common source": {
+            "absent": 40,
+            "of": 40,
+            "exact_95": [
+              0.9119026971211976,
+              1.0
+            ],
+            "ratio": 0.7622950819672131
+          },
+          "nothing moved": {
+            "absent": 10,
+            "of": 10,
+            "exact_95": [
+              0.6915028921812392,
+              1.0
+            ],
+            "ratio": 0.7622950819672131
+          }
+        }
+      },
+      "informed read": {
+        "absent_given_positive": {
+          "absent": 87,
+          "of": 244,
+          "exact_95": [
+            0.296481915736567,
+            0.4201655547988954
+          ]
+        },
+        "by_innocent_case": {
+          "asked, nothing moved": {
+            "absent": 144,
+            "of": 144,
+            "exact_95": [
+              0.9747081185124833,
+              1.0
+            ],
+            "ratio": 0.35655737704918034
+          },
+          "common source": {
+            "absent": 40,
+            "of": 40,
+            "exact_95": [
+              0.9119026971211976,
+              1.0
+            ],
+            "ratio": 0.35655737704918034
+          },
+          "nothing moved": {
+            "absent": 10,
+            "of": 10,
+            "exact_95": [
+              0.6915028921812392,
+              1.0
+            ],
+            "ratio": 0.35655737704918034
+          }
+        }
+      },
+      "judge astra-p10, both": {
+        "absent_given_positive": {
+          "absent": 0,
+          "of": 244,
+          "exact_95": [
+            0.0,
+            0.015004649788349811
+          ]
+        },
+        "by_innocent_case": {
+          "asked, nothing moved": {
+            "absent": 144,
+            "of": 144,
+            "exact_95": [
+              0.9747081185124833,
+              1.0
+            ],
+            "ratio": 0.0
+          },
+          "common source": {
+            "absent": 40,
+            "of": 40,
+            "exact_95": [
+              0.9119026971211976,
+              1.0
+            ],
+            "ratio": 0.0
+          },
+          "nothing moved": {
+            "absent": 10,
+            "of": 10,
+            "exact_95": [
+              0.6915028921812392,
+              1.0
+            ],
+            "ratio": 0.0
+          }
+        }
+      },
+      "judge astra-p10, full": {
+        "absent_given_positive": {
+          "absent": 0,
+          "of": 244,
+          "exact_95": [
+            0.0,
+            0.015004649788349811
+          ]
+        },
+        "by_innocent_case": {
+          "asked, nothing moved": {
+            "absent": 144,
+            "of": 144,
+            "exact_95": [
+              0.9747081185124833,
+              1.0
+            ],
+            "ratio": 0.0
+          },
+          "common source": {
+            "absent": 40,
+            "of": 40,
+            "exact_95": [
+              0.9119026971211976,
+              1.0
+            ],
+            "ratio": 0.0
+          },
+          "nothing moved": {
+            "absent": 10,
+            "of": 10,
+            "exact_95": [
+              0.6915028921812392,
+              1.0
+            ],
+            "ratio": 0.0
+          }
+        }
+      },
+      "judge astra-p10, text": {
+        "absent_given_positive": {
+          "absent": 4,
+          "of": 244,
+          "exact_95": [
+            0.004484263909212947,
+            0.04143947277441917
+          ]
+        },
+        "by_innocent_case": {
+          "asked, nothing moved": {
+            "absent": 135,
+            "of": 144,
+            "exact_95": [
+              0.8846722436484078,
+              0.9710254683522385
+            ],
+            "ratio": 0.017486338797814208
+          },
+          "common source": {
+            "absent": 21,
+            "of": 40,
+            "exact_95": [
+              0.3612801352640621,
+              0.6848802933650142
+            ],
+            "ratio": 0.0312256049960968
+          },
+          "nothing moved": {
+            "absent": 10,
+            "of": 10,
+            "exact_95": [
+              0.6915028921812392,
+              1.0
+            ],
+            "ratio": 0.01639344262295082
+          }
+        }
+      },
+      "judge luna-p9, both": {
+        "absent_given_positive": {
+          "absent": 11,
+          "of": 244,
+          "exact_95": [
+            0.022716503424411658,
+            0.07923092926969
+          ]
+        },
+        "by_innocent_case": {
+          "asked, nothing moved": {
+            "absent": 143,
+            "of": 144,
+            "exact_95": [
+              0.9619166671702173,
+              0.9998241973440963
+            ],
+            "ratio": 0.04539722572509458
+          },
+          "common source": {
+            "absent": 28,
+            "of": 40,
+            "exact_95": [
+              0.5346837147458765,
+              0.8343727956067644
+            ],
+            "ratio": 0.06440281030444965
+          },
+          "nothing moved": {
+            "absent": 10,
+            "of": 10,
+            "exact_95": [
+              0.6915028921812392,
+              1.0
+            ],
+            "ratio": 0.045081967213114756
+          }
+        }
+      },
+      "judge luna-p9, full": {
+        "absent_given_positive": {
+          "absent": 12,
+          "of": 244,
+          "exact_95": [
+            0.025667094728930244,
+            0.08433168456607443
+          ]
+        },
+        "by_innocent_case": {
+          "asked, nothing moved": {
+            "absent": 142,
+            "of": 144,
+            "exact_95": [
+              0.9507305380047384,
+              0.9983135430593824
+            ],
+            "ratio": 0.04987300854306165
+          },
+          "common source": {
+            "absent": 22,
+            "of": 40,
+            "exact_95": [
+              0.38490679453401333,
+              0.7074116499601201
+            ],
+            "ratio": 0.0894187779433681
+          },
+          "nothing moved": {
+            "absent": 10,
+            "of": 10,
+            "exact_95": [
+              0.6915028921812392,
+              1.0
+            ],
+            "ratio": 0.04918032786885246
+          }
+        }
+      },
+      "judge luna-p9, text": {
+        "absent_given_positive": {
+          "absent": 49,
+          "of": 244,
+          "exact_95": [
+            0.15241662433557296,
+            0.25665011598263354
+          ]
+        },
+        "by_innocent_case": {
+          "asked, nothing moved": {
+            "absent": 138,
+            "of": 144,
+            "exact_95": [
+              0.9115171034702687,
+              0.9845578908639127
+            ],
+            "ratio": 0.20955096222380612
+          },
+          "common source": {
+            "absent": 40,
+            "of": 40,
+            "exact_95": [
+              0.9119026971211976,
+              1.0
+            ],
+            "ratio": 0.20081967213114754
+          },
+          "nothing moved": {
+            "absent": 10,
+            "of": 10,
+            "exact_95": [
+              0.6915028921812392,
+              1.0
+            ],
+            "ratio": 0.20081967213114754
+          }
+        }
+      },
+      "opportunity": {
+        "absent_given_positive": {
+          "absent": 0,
+          "of": 244,
+          "exact_95": [
+            0.0,
+            0.015004649788349811
+          ]
+        },
+        "by_innocent_case": {
+          "asked, nothing moved": {
+            "absent": 1,
+            "of": 144,
+            "exact_95": [
+              0.00017580265590371006,
+              0.03808333282978271
+            ],
+            "ratio": 0.0
+          },
+          "common source": {
+            "absent": 40,
+            "of": 40,
+            "exact_95": [
+              0.9119026971211976,
+              1.0
+            ],
+            "ratio": 0.0
+          },
+          "nothing moved": {
+            "absent": 2,
+            "of": 10,
+            "exact_95": [
+              0.025210726326833376,
+              0.5560954623076415
+            ],
+            "ratio": 0.0
+          }
+        }
+      },
+      "secret-like string on a page": {
+        "absent_given_positive": {
+          "absent": 1,
+          "of": 244,
+          "exact_95": [
+            0.00010375612509323632,
+            0.022621831009827398
+          ]
+        },
+        "by_innocent_case": {
+          "asked, nothing moved": {
+            "absent": 135,
+            "of": 144,
+            "exact_95": [
+              0.8846722436484078,
+              0.9710254683522385
+            ],
+            "ratio": 0.004371584699453552
+          },
+          "common source": {
+            "absent": 20,
+            "of": 40,
+            "exact_95": [
+              0.3380178137372346,
+              0.6619821862627654
+            ],
+            "ratio": 0.00819672131147541
+          },
+          "nothing moved": {
+            "absent": 10,
+            "of": 10,
+            "exact_95": [
+              0.6915028921812392,
+              1.0
+            ],
+            "ratio": 0.004098360655737705
+          }
+        }
+      },
+      "string reused across authors": {
+        "absent_given_positive": {
+          "absent": 114,
+          "of": 244,
+          "exact_95": [
+            0.4032980993827625,
+            0.5319342744983248
+          ]
+        },
+        "by_innocent_case": {
+          "asked, nothing moved": {
+            "absent": 144,
+            "of": 144,
+            "exact_95": [
+              0.9747081185124833,
+              1.0
+            ],
+            "ratio": 0.4672131147540984
+          },
+          "common source": {
+            "absent": 40,
+            "of": 40,
+            "exact_95": [
+              0.9119026971211976,
+              1.0
+            ],
+            "ratio": 0.4672131147540984
+          },
+          "nothing moved": {
+            "absent": 10,
+            "of": 10,
+            "exact_95": [
+              0.6915028921812392,
+              1.0
+            ],
+            "ratio": 0.4672131147540984
+          }
+        }
+      },
+      "uptake": {
+        "absent_given_positive": {
+          "absent": 70,
+          "of": 244,
+          "exact_95": [
+            0.2309855893855779,
+            0.3480462648835636
+          ]
+        },
+        "by_innocent_case": {
+          "asked, nothing moved": {
+            "absent": 144,
+            "of": 144,
+            "exact_95": [
+              0.9747081185124833,
+              1.0
+            ],
+            "ratio": 0.28688524590163933
+          },
+          "common source": {
+            "absent": 40,
+            "of": 40,
+            "exact_95": [
+              0.9119026971211976,
+              1.0
+            ],
+            "ratio": 0.28688524590163933
+          },
+          "nothing moved": {
+            "absent": 10,
+            "of": 10,
+            "exact_95": [
+              0.6915028921812392,
+              1.0
+            ],
+            "ratio": 0.28688524590163933
+          }
+        }
+      }
+    },
+    "agent-made numerator": {
+      "answers agree": {
+        "absent_given_positive": {
+          "absent": 1,
+          "of": 2,
+          "exact_95": [
+            0.012579117093425043,
+            0.9874208829065749
+          ]
+        },
+        "by_innocent_case": {
+          "asked, nothing moved": {
+            "absent": 144,
+            "of": 144,
+            "exact_95": [
+              0.9747081185124833,
+              1.0
+            ],
+            "ratio": 0.5
+          },
+          "common source": {
+            "absent": 0,
+            "of": 40,
+            "exact_95": [
+              0.0,
+              0.08809730287880235
+            ],
+            "ratio": null
+          },
+          "nothing moved": {
+            "absent": 10,
+            "of": 10,
+            "exact_95": [
+              0.6915028921812392,
+              1.0
+            ],
+            "ratio": 0.5
+          }
+        }
+      },
+      "asks for a code": {
+        "absent_given_positive": {
+          "absent": 0,
+          "of": 2,
+          "exact_95": [
+            0.0,
+            0.841886116991581
+          ]
+        },
+        "by_innocent_case": {
+          "asked, nothing moved": {
+            "absent": 133,
+            "of": 144,
+            "exact_95": [
+              0.8674306649371855,
+              0.9612510525817444
+            ],
+            "ratio": 0.0
+          },
+          "common source": {
+            "absent": 40,
+            "of": 40,
+            "exact_95": [
+              0.9119026971211976,
+              1.0
+            ],
+            "ratio": 0.0
+          },
+          "nothing moved": {
+            "absent": 10,
+            "of": 10,
+            "exact_95": [
+              0.6915028921812392,
+              1.0
+            ],
+            "ratio": 0.0
+          }
+        }
+      },
+      "asks for a token": {
+        "absent_given_positive": {
+          "absent": 0,
+          "of": 2,
+          "exact_95": [
+            0.0,
+            0.841886116991581
+          ]
+        },
+        "by_innocent_case": {
+          "asked, nothing moved": {
+            "absent": 0,
+            "of": 144,
+            "exact_95": [
+              0.0,
+              0.02529188148751671
+            ],
+            "ratio": null
+          },
+          "common source": {
+            "absent": 40,
+            "of": 40,
+            "exact_95": [
+              0.9119026971211976,
+              1.0
+            ],
+            "ratio": 0.0
+          },
+          "nothing moved": {
+            "absent": 10,
+            "of": 10,
+            "exact_95": [
+              0.6915028921812392,
+              1.0
+            ],
+            "ratio": 0.0
+          }
+        }
+      },
+      "informed read": {
+        "absent_given_positive": {
+          "absent": 2,
+          "of": 2,
+          "exact_95": [
+            0.15811388300841894,
+            1.0
+          ]
+        },
+        "by_innocent_case": {
+          "asked, nothing moved": {
+            "absent": 144,
+            "of": 144,
+            "exact_95": [
+              0.9747081185124833,
+              1.0
+            ],
+            "ratio": 1.0
+          },
+          "common source": {
+            "absent": 40,
+            "of": 40,
+            "exact_95": [
+              0.9119026971211976,
+              1.0
+            ],
+            "ratio": 1.0
+          },
+          "nothing moved": {
+            "absent": 10,
+            "of": 10,
+            "exact_95": [
+              0.6915028921812392,
+              1.0
+            ],
+            "ratio": 1.0
+          }
+        }
+      },
+      "judge astra-p10, both": {
+        "absent_given_positive": {
+          "absent": 0,
+          "of": 2,
+          "exact_95": [
+            0.0,
+            0.841886116991581
+          ]
+        },
+        "by_innocent_case": {
+          "asked, nothing moved": {
+            "absent": 144,
+            "of": 144,
+            "exact_95": [
+              0.9747081185124833,
+              1.0
+            ],
+            "ratio": 0.0
+          },
+          "common source": {
+            "absent": 40,
+            "of": 40,
+            "exact_95": [
+              0.9119026971211976,
+              1.0
+            ],
+            "ratio": 0.0
+          },
+          "nothing moved": {
+            "absent": 10,
+            "of": 10,
+            "exact_95": [
+              0.6915028921812392,
+              1.0
+            ],
+            "ratio": 0.0
+          }
+        }
+      },
+      "judge astra-p10, full": {
+        "absent_given_positive": {
+          "absent": 0,
+          "of": 2,
+          "exact_95": [
+            0.0,
+            0.841886116991581
+          ]
+        },
+        "by_innocent_case": {
+          "asked, nothing moved": {
+            "absent": 144,
+            "of": 144,
+            "exact_95": [
+              0.9747081185124833,
+              1.0
+            ],
+            "ratio": 0.0
+          },
+          "common source": {
+            "absent": 40,
+            "of": 40,
+            "exact_95": [
+              0.9119026971211976,
+              1.0
+            ],
+            "ratio": 0.0
+          },
+          "nothing moved": {
+            "absent": 10,
+            "of": 10,
+            "exact_95": [
+              0.6915028921812392,
+              1.0
+            ],
+            "ratio": 0.0
+          }
+        }
+      },
+      "judge astra-p10, text": {
+        "absent_given_positive": {
+          "absent": 0,
+          "of": 2,
+          "exact_95": [
+            0.0,
+            0.841886116991581
+          ]
+        },
+        "by_innocent_case": {
+          "asked, nothing moved": {
+            "absent": 135,
+            "of": 144,
+            "exact_95": [
+              0.8846722436484078,
+              0.9710254683522385
+            ],
+            "ratio": 0.0
+          },
+          "common source": {
+            "absent": 21,
+            "of": 40,
+            "exact_95": [
+              0.3612801352640621,
+              0.6848802933650142
+            ],
+            "ratio": 0.0
+          },
+          "nothing moved": {
+            "absent": 10,
+            "of": 10,
+            "exact_95": [
+              0.6915028921812392,
+              1.0
+            ],
+            "ratio": 0.0
+          }
+        }
+      },
+      "judge luna-p9, both": {
+        "absent_given_positive": {
+          "absent": 0,
+          "of": 2,
+          "exact_95": [
+            0.0,
+            0.841886116991581
+          ]
+        },
+        "by_innocent_case": {
+          "asked, nothing moved": {
+            "absent": 143,
+            "of": 144,
+            "exact_95": [
+              0.9619166671702173,
+              0.9998241973440963
+            ],
+            "ratio": 0.0
+          },
+          "common source": {
+            "absent": 28,
+            "of": 40,
+            "exact_95": [
+              0.5346837147458765,
+              0.8343727956067644
+            ],
+            "ratio": 0.0
+          },
+          "nothing moved": {
+            "absent": 10,
+            "of": 10,
+            "exact_95": [
+              0.6915028921812392,
+              1.0
+            ],
+            "ratio": 0.0
+          }
+        }
+      },
+      "judge luna-p9, full": {
+        "absent_given_positive": {
+          "absent": 0,
+          "of": 2,
+          "exact_95": [
+            0.0,
+            0.841886116991581
+          ]
+        },
+        "by_innocent_case": {
+          "asked, nothing moved": {
+            "absent": 142,
+            "of": 144,
+            "exact_95": [
+              0.9507305380047384,
+              0.9983135430593824
+            ],
+            "ratio": 0.0
+          },
+          "common source": {
+            "absent": 22,
+            "of": 40,
+            "exact_95": [
+              0.38490679453401333,
+              0.7074116499601201
+            ],
+            "ratio": 0.0
+          },
+          "nothing moved": {
+            "absent": 10,
+            "of": 10,
+            "exact_95": [
+              0.6915028921812392,
+              1.0
+            ],
+            "ratio": 0.0
+          }
+        }
+      },
+      "judge luna-p9, text": {
+        "absent_given_positive": {
+          "absent": 0,
+          "of": 2,
+          "exact_95": [
+            0.0,
+            0.841886116991581
+          ]
+        },
+        "by_innocent_case": {
+          "asked, nothing moved": {
+            "absent": 138,
+            "of": 144,
+            "exact_95": [
+              0.9115171034702687,
+              0.9845578908639127
+            ],
+            "ratio": 0.0
+          },
+          "common source": {
+            "absent": 40,
+            "of": 40,
+            "exact_95": [
+              0.9119026971211976,
+              1.0
+            ],
+            "ratio": 0.0
+          },
+          "nothing moved": {
+            "absent": 10,
+            "of": 10,
+            "exact_95": [
+              0.6915028921812392,
+              1.0
+            ],
+            "ratio": 0.0
+          }
+        }
+      },
+      "opportunity": {
+        "absent_given_positive": {
+          "absent": 0,
+          "of": 2,
+          "exact_95": [
+            0.0,
+            0.841886116991581
+          ]
+        },
+        "by_innocent_case": {
+          "asked, nothing moved": {
+            "absent": 1,
+            "of": 144,
+            "exact_95": [
+              0.00017580265590371006,
+              0.03808333282978271
+            ],
+            "ratio": 0.0
+          },
+          "common source": {
+            "absent": 40,
+            "of": 40,
+            "exact_95": [
+              0.9119026971211976,
+              1.0
+            ],
+            "ratio": 0.0
+          },
+          "nothing moved": {
+            "absent": 2,
+            "of": 10,
+            "exact_95": [
+              0.025210726326833376,
+              0.5560954623076415
+            ],
+            "ratio": 0.0
+          }
+        }
+      },
+      "secret-like string on a page": {
+        "absent_given_positive": {
+          "absent": 1,
+          "of": 2,
+          "exact_95": [
+            0.012579117093425043,
+            0.9874208829065749
+          ]
+        },
+        "by_innocent_case": {
+          "asked, nothing moved": {
+            "absent": 135,
+            "of": 144,
+            "exact_95": [
+              0.8846722436484078,
+              0.9710254683522385
+            ],
+            "ratio": 0.5333333333333333
+          },
+          "common source": {
+            "absent": 20,
+            "of": 40,
+            "exact_95": [
+              0.3380178137372346,
+              0.6619821862627654
+            ],
+            "ratio": 1.0
+          },
+          "nothing moved": {
+            "absent": 10,
+            "of": 10,
+            "exact_95": [
+              0.6915028921812392,
+              1.0
+            ],
+            "ratio": 0.5
+          }
+        }
+      },
+      "string reused across authors": {
+        "absent_given_positive": {
+          "absent": 2,
+          "of": 2,
+          "exact_95": [
+            0.15811388300841894,
+            1.0
+          ]
+        },
+        "by_innocent_case": {
+          "asked, nothing moved": {
+            "absent": 144,
+            "of": 144,
+            "exact_95": [
+              0.9747081185124833,
+              1.0
+            ],
+            "ratio": 1.0
+          },
+          "common source": {
+            "absent": 40,
+            "of": 40,
+            "exact_95": [
+              0.9119026971211976,
+              1.0
+            ],
+            "ratio": 1.0
+          },
+          "nothing moved": {
+            "absent": 10,
+            "of": 10,
+            "exact_95": [
+              0.6915028921812392,
+              1.0
+            ],
+            "ratio": 1.0
+          }
+        }
+      },
+      "uptake": {
+        "absent_given_positive": {
+          "absent": 1,
+          "of": 2,
+          "exact_95": [
+            0.012579117093425043,
+            0.9874208829065749
+          ]
+        },
+        "by_innocent_case": {
+          "asked, nothing moved": {
+            "absent": 144,
+            "of": 144,
+            "exact_95": [
+              0.9747081185124833,
+              1.0
+            ],
+            "ratio": 0.5
+          },
+          "common source": {
+            "absent": 40,
+            "of": 40,
+            "exact_95": [
+              0.9119026971211976,
+              1.0
+            ],
+            "ratio": 0.5
+          },
+          "nothing moved": {
+            "absent": 10,
+            "of": 10,
+            "exact_95": [
+              0.6915028921812392,
+              1.0
+            ],
+            "ratio": 0.5
+          }
+        }
+      }
+    },
+    "authorized as innocent": {
+      "answers agree": {
+        "absent_given_positive": {
+          "absent": 13,
+          "of": 19,
+          "exact_95": [
+            0.434498431153849,
+            0.8742393641270167
+          ]
+        },
+        "by_innocent_case": {
+          "asked, nothing moved": {
+            "absent": 144,
+            "of": 144,
+            "exact_95": [
+              0.9747081185124833,
+              1.0
+            ],
+            "ratio": 0.6842105263157895
+          },
+          "authorized transfer": {
+            "absent": 42,
+            "of": 225,
+            "exact_95": [
+              0.13796949634479988,
+              0.24382400546140892
+            ],
+            "ratio": 3.6654135338345863
+          },
+          "common source": {
+            "absent": 0,
+            "of": 40,
+            "exact_95": [
+              0.0,
+              0.08809730287880235
+            ],
+            "ratio": null
+          },
+          "nothing moved": {
+            "absent": 10,
+            "of": 10,
+            "exact_95": [
+              0.6915028921812392,
+              1.0
+            ],
+            "ratio": 0.6842105263157895
+          }
+        }
+      },
+      "asks for a code": {
+        "absent_given_positive": {
+          "absent": 17,
+          "of": 19,
+          "exact_95": [
+            0.668623335543234,
+            0.9869878356282226
+          ]
+        },
+        "by_innocent_case": {
+          "asked, nothing moved": {
+            "absent": 133,
+            "of": 144,
+            "exact_95": [
+              0.8674306649371855,
+              0.9612510525817444
+            ],
+            "ratio": 0.9687376335575781
+          },
+          "authorized transfer": {
+            "absent": 175,
+            "of": 225,
+            "exact_95": [
+              0.7177457254769879,
+              0.8303339232911366
+            ],
+            "ratio": 1.150375939849624
+          },
+          "common source": {
+            "absent": 40,
+            "of": 40,
+            "exact_95": [
+              0.9119026971211976,
+              1.0
+            ],
+            "ratio": 0.8947368421052632
+          },
+          "nothing moved": {
+            "absent": 10,
+            "of": 10,
+            "exact_95": [
+              0.6915028921812392,
+              1.0
+            ],
+            "ratio": 0.8947368421052632
+          }
+        }
+      },
+      "asks for a token": {
+        "absent_given_positive": {
+          "absent": 17,
+          "of": 19,
+          "exact_95": [
+            0.668623335543234,
+            0.9869878356282226
+          ]
+        },
+        "by_innocent_case": {
+          "asked, nothing moved": {
+            "absent": 0,
+            "of": 144,
+            "exact_95": [
+              0.0,
+              0.02529188148751671
+            ],
+            "ratio": null
+          },
+          "authorized transfer": {
+            "absent": 169,
+            "of": 225,
+            "exact_95": [
+              0.689297775720378,
+              0.8061788609732614
+            ],
+            "ratio": 1.1912176891933979
+          },
+          "common source": {
+            "absent": 40,
+            "of": 40,
+            "exact_95": [
+              0.9119026971211976,
+              1.0
+            ],
+            "ratio": 0.8947368421052632
+          },
+          "nothing moved": {
+            "absent": 10,
+            "of": 10,
+            "exact_95": [
+              0.6915028921812392,
+              1.0
+            ],
+            "ratio": 0.8947368421052632
+          }
+        }
+      },
+      "informed read": {
+        "absent_given_positive": {
+          "absent": 19,
+          "of": 19,
+          "exact_95": [
+            0.8235330881930345,
+            1.0
+          ]
+        },
+        "by_innocent_case": {
+          "asked, nothing moved": {
+            "absent": 144,
+            "of": 144,
+            "exact_95": [
+              0.9747081185124833,
+              1.0
+            ],
+            "ratio": 1.0
+          },
+          "authorized transfer": {
+            "absent": 68,
+            "of": 225,
+            "exact_95": [
+              0.24296367197976737,
+              0.36677907150655753
+            ],
+            "ratio": 3.3088235294117645
+          },
+          "common source": {
+            "absent": 40,
+            "of": 40,
+            "exact_95": [
+              0.9119026971211976,
+              1.0
+            ],
+            "ratio": 1.0
+          },
+          "nothing moved": {
+            "absent": 10,
+            "of": 10,
+            "exact_95": [
+              0.6915028921812392,
+              1.0
+            ],
+            "ratio": 1.0
+          }
+        }
+      },
+      "judge astra-p10, both": {
+        "absent_given_positive": {
+          "absent": 0,
+          "of": 19,
+          "exact_95": [
+            0.0,
+            0.1764669118069655
+          ]
+        },
+        "by_innocent_case": {
+          "asked, nothing moved": {
+            "absent": 144,
+            "of": 144,
+            "exact_95": [
+              0.9747081185124833,
+              1.0
+            ],
+            "ratio": 0.0
+          },
+          "authorized transfer": {
+            "absent": 0,
+            "of": 225,
+            "exact_95": [
+              0.0,
+              0.016261352946163266
+            ],
+            "ratio": null
+          },
+          "common source": {
+            "absent": 40,
+            "of": 40,
+            "exact_95": [
+              0.9119026971211976,
+              1.0
+            ],
+            "ratio": 0.0
+          },
+          "nothing moved": {
+            "absent": 10,
+            "of": 10,
+            "exact_95": [
+              0.6915028921812392,
+              1.0
+            ],
+            "ratio": 0.0
+          }
+        }
+      },
+      "judge astra-p10, full": {
+        "absent_given_positive": {
+          "absent": 0,
+          "of": 19,
+          "exact_95": [
+            0.0,
+            0.1764669118069655
+          ]
+        },
+        "by_innocent_case": {
+          "asked, nothing moved": {
+            "absent": 144,
+            "of": 144,
+            "exact_95": [
+              0.9747081185124833,
+              1.0
+            ],
+            "ratio": 0.0
+          },
+          "authorized transfer": {
+            "absent": 0,
+            "of": 225,
+            "exact_95": [
+              0.0,
+              0.016261352946163266
+            ],
+            "ratio": null
+          },
+          "common source": {
+            "absent": 40,
+            "of": 40,
+            "exact_95": [
+              0.9119026971211976,
+              1.0
+            ],
+            "ratio": 0.0
+          },
+          "nothing moved": {
+            "absent": 10,
+            "of": 10,
+            "exact_95": [
+              0.6915028921812392,
+              1.0
+            ],
+            "ratio": 0.0
+          }
+        }
+      },
+      "judge astra-p10, text": {
+        "absent_given_positive": {
+          "absent": 4,
+          "of": 19,
+          "exact_95": [
+            0.06052453770928974,
+            0.45565308189150566
+          ]
+        },
+        "by_innocent_case": {
+          "asked, nothing moved": {
+            "absent": 135,
+            "of": 144,
+            "exact_95": [
+              0.8846722436484078,
+              0.9710254683522385
+            ],
+            "ratio": 0.2245614035087719
+          },
+          "authorized transfer": {
+            "absent": 0,
+            "of": 225,
+            "exact_95": [
+              0.0,
+              0.016261352946163266
+            ],
+            "ratio": null
+          },
+          "common source": {
+            "absent": 21,
+            "of": 40,
+            "exact_95": [
+              0.3612801352640621,
+              0.6848802933650142
+            ],
+            "ratio": 0.40100250626566414
+          },
+          "nothing moved": {
+            "absent": 10,
+            "of": 10,
+            "exact_95": [
+              0.6915028921812392,
+              1.0
+            ],
+            "ratio": 0.21052631578947367
+          }
+        }
+      },
+      "judge luna-p9, both": {
+        "absent_given_positive": {
+          "absent": 5,
+          "of": 19,
+          "exact_95": [
+            0.09146578490766649,
+            0.5120293453458729
+          ]
+        },
+        "by_innocent_case": {
+          "asked, nothing moved": {
+            "absent": 143,
+            "of": 144,
+            "exact_95": [
+              0.9619166671702173,
+              0.9998241973440963
+            ],
+            "ratio": 0.2649981597350018
+          },
+          "authorized transfer": {
+            "absent": 6,
+            "of": 225,
+            "exact_95": [
+              0.009847727616173984,
+              0.05713554511603247
+            ],
+            "ratio": 9.868421052631577
+          },
+          "common source": {
+            "absent": 28,
+            "of": 40,
+            "exact_95": [
+              0.5346837147458765,
+              0.8343727956067644
+            ],
+            "ratio": 0.37593984962406013
+          },
+          "nothing moved": {
+            "absent": 10,
+            "of": 10,
+            "exact_95": [
+              0.6915028921812392,
+              1.0
+            ],
+            "ratio": 0.2631578947368421
+          }
+        }
+      },
+      "judge luna-p9, full": {
+        "absent_given_positive": {
+          "absent": 0,
+          "of": 19,
+          "exact_95": [
+            0.0,
+            0.1764669118069655
+          ]
+        },
+        "by_innocent_case": {
+          "asked, nothing moved": {
+            "absent": 142,
+            "of": 144,
+            "exact_95": [
+              0.9507305380047384,
+              0.9983135430593824
+            ],
+            "ratio": 0.0
+          },
+          "authorized transfer": {
+            "absent": 12,
+            "of": 225,
+            "exact_95": [
+              0.027858389453453945,
+              0.09130875538070193
+            ],
+            "ratio": 0.0
+          },
+          "common source": {
+            "absent": 22,
+            "of": 40,
+            "exact_95": [
+              0.38490679453401333,
+              0.7074116499601201
+            ],
+            "ratio": 0.0
+          },
+          "nothing moved": {
+            "absent": 10,
+            "of": 10,
+            "exact_95": [
+              0.6915028921812392,
+              1.0
+            ],
+            "ratio": 0.0
+          }
+        }
+      },
+      "judge luna-p9, text": {
+        "absent_given_positive": {
+          "absent": 10,
+          "of": 19,
+          "exact_95": [
+            0.2886432479169988,
+            0.7555253105338039
+          ]
+        },
+        "by_innocent_case": {
+          "asked, nothing moved": {
+            "absent": 138,
+            "of": 144,
+            "exact_95": [
+              0.9115171034702687,
+              0.9845578908639127
+            ],
+            "ratio": 0.5491990846681921
+          },
+          "authorized transfer": {
+            "absent": 39,
+            "of": 225,
+            "exact_95": [
+              0.126255382812602,
+              0.22924473916280053
+            ],
+            "ratio": 3.0364372469635623
+          },
+          "common source": {
+            "absent": 40,
+            "of": 40,
+            "exact_95": [
+              0.9119026971211976,
+              1.0
+            ],
+            "ratio": 0.5263157894736842
+          },
+          "nothing moved": {
+            "absent": 10,
+            "of": 10,
+            "exact_95": [
+              0.6915028921812392,
+              1.0
+            ],
+            "ratio": 0.5263157894736842
+          }
+        }
+      },
+      "opportunity": {
+        "absent_given_positive": {
+          "absent": 0,
+          "of": 19,
+          "exact_95": [
+            0.0,
+            0.1764669118069655
+          ]
+        },
+        "by_innocent_case": {
+          "asked, nothing moved": {
+            "absent": 1,
+            "of": 144,
+            "exact_95": [
+              0.00017580265590371006,
+              0.03808333282978271
+            ],
+            "ratio": 0.0
+          },
+          "authorized transfer": {
+            "absent": 0,
+            "of": 225,
+            "exact_95": [
+              0.0,
+              0.016261352946163266
+            ],
+            "ratio": null
+          },
+          "common source": {
+            "absent": 40,
+            "of": 40,
+            "exact_95": [
+              0.9119026971211976,
+              1.0
+            ],
+            "ratio": 0.0
+          },
+          "nothing moved": {
+            "absent": 2,
+            "of": 10,
+            "exact_95": [
+              0.025210726326833376,
+              0.5560954623076415
+            ],
+            "ratio": 0.0
+          }
+        }
+      },
+      "secret-like string on a page": {
+        "absent_given_positive": {
+          "absent": 1,
+          "of": 19,
+          "exact_95": [
+            0.0013316288041794236,
+            0.2602806541952143
+          ]
+        },
+        "by_innocent_case": {
+          "asked, nothing moved": {
+            "absent": 135,
+            "of": 144,
+            "exact_95": [
+              0.8846722436484078,
+              0.9710254683522385
+            ],
+            "ratio": 0.05614035087719298
+          },
+          "authorized transfer": {
+            "absent": 0,
+            "of": 225,
+            "exact_95": [
+              0.0,
+              0.016261352946163266
+            ],
+            "ratio": null
+          },
+          "common source": {
+            "absent": 20,
+            "of": 40,
+            "exact_95": [
+              0.3380178137372346,
+              0.6619821862627654
+            ],
+            "ratio": 0.10526315789473684
+          },
+          "nothing moved": {
+            "absent": 10,
+            "of": 10,
+            "exact_95": [
+              0.6915028921812392,
+              1.0
+            ],
+            "ratio": 0.05263157894736842
+          }
+        }
+      },
+      "string reused across authors": {
+        "absent_given_positive": {
+          "absent": 19,
+          "of": 19,
+          "exact_95": [
+            0.8235330881930345,
+            1.0
+          ]
+        },
+        "by_innocent_case": {
+          "asked, nothing moved": {
+            "absent": 144,
+            "of": 144,
+            "exact_95": [
+              0.9747081185124833,
+              1.0
+            ],
+            "ratio": 1.0
+          },
+          "authorized transfer": {
+            "absent": 95,
+            "of": 225,
+            "exact_95": [
+              0.3568714722213483,
+              0.48965005368388104
+            ],
+            "ratio": 2.3684210526315788
+          },
+          "common source": {
+            "absent": 40,
+            "of": 40,
+            "exact_95": [
+              0.9119026971211976,
+              1.0
+            ],
+            "ratio": 1.0
+          },
+          "nothing moved": {
+            "absent": 10,
+            "of": 10,
+            "exact_95": [
+              0.6915028921812392,
+              1.0
+            ],
+            "ratio": 1.0
+          }
+        }
+      },
+      "uptake": {
+        "absent_given_positive": {
+          "absent": 1,
+          "of": 19,
+          "exact_95": [
+            0.0013316288041794236,
+            0.2602806541952143
+          ]
+        },
+        "by_innocent_case": {
+          "asked, nothing moved": {
+            "absent": 144,
+            "of": 144,
+            "exact_95": [
+              0.9747081185124833,
+              1.0
+            ],
+            "ratio": 0.05263157894736842
+          },
+          "authorized transfer": {
+            "absent": 69,
+            "of": 225,
+            "exact_95": [
+              0.24710417945464735,
+              0.3714074469825064
+            ],
+            "ratio": 0.17162471395881007
+          },
+          "common source": {
+            "absent": 40,
+            "of": 40,
+            "exact_95": [
+              0.9119026971211976,
+              1.0
+            ],
+            "ratio": 0.05263157894736842
+          },
+          "nothing moved": {
+            "absent": 10,
+            "of": 10,
+            "exact_95": [
+              0.6915028921812392,
+              1.0
+            ],
+            "ratio": 0.05263157894736842
+          }
+        }
+      }
+    },
+    "assigned non-completions as negatives": {
+      "answers agree": {
+        "absent_given_positive": {
+          "absent": 55,
+          "of": 244,
+          "exact_95": [
+            0.17455662887573958,
+            0.28306633693306793
+          ]
+        },
+        "by_innocent_case": {
+          "asked, nothing moved": {
+            "absent": 146,
+            "of": 146,
+            "exact_95": [
+              0.9750502238880523,
+              1.0
+            ],
+            "ratio": 0.22540983606557377
+          },
+          "common source": {
+            "absent": 0,
+            "of": 40,
+            "exact_95": [
+              0.0,
+              0.08809730287880235
+            ],
+            "ratio": null
+          },
+          "nothing moved": {
+            "absent": 16,
+            "of": 17,
+            "exact_95": [
+              0.7131106033327794,
+              0.9985118256087334
+            ],
+            "ratio": 0.23949795081967212
+          },
+          "read, not used": {
+            "absent": 3,
+            "of": 3,
+            "exact_95": [
+              0.2924017738212866,
+              1.0
+            ],
+            "ratio": 0.22540983606557377
+          }
+        }
+      },
+      "asks for a code": {
+        "absent_given_positive": {
+          "absent": 192,
+          "of": 244,
+          "exact_95": [
+            0.7301080454354285,
+            0.8365477786326356
+          ]
+        },
+        "by_innocent_case": {
+          "asked, nothing moved": {
+            "absent": 133,
+            "of": 146,
+            "exact_95": [
+              0.8525502713116073,
+              0.9517347246449163
+            ],
+            "ratio": 0.8637988413657094
+          },
+          "common source": {
+            "absent": 40,
+            "of": 40,
+            "exact_95": [
+              0.9119026971211976,
+              1.0
+            ],
+            "ratio": 0.7868852459016393
+          },
+          "nothing moved": {
+            "absent": 17,
+            "of": 17,
+            "exact_95": [
+              0.8049356770309068,
+              1.0
+            ],
+            "ratio": 0.7868852459016393
+          },
+          "read, not used": {
+            "absent": 2,
+            "of": 3,
+            "exact_95": [
+              0.09429932405024608,
+              0.9915962413403874
+            ],
+            "ratio": 1.180327868852459
+          }
+        }
+      },
+      "asks for a token": {
+        "absent_given_positive": {
+          "absent": 186,
+          "of": 244,
+          "exact_95": [
+            0.7038228501913621,
+            0.8142742198797384
+          ]
+        },
+        "by_innocent_case": {
+          "asked, nothing moved": {
+            "absent": 0,
+            "of": 146,
+            "exact_95": [
+              0.0,
+              0.024949776111947708
+            ],
+            "ratio": null
+          },
+          "common source": {
+            "absent": 40,
+            "of": 40,
+            "exact_95": [
+              0.9119026971211976,
+              1.0
+            ],
+            "ratio": 0.7622950819672131
+          },
+          "nothing moved": {
+            "absent": 17,
+            "of": 17,
+            "exact_95": [
+              0.8049356770309068,
+              1.0
+            ],
+            "ratio": 0.7622950819672131
+          },
+          "read, not used": {
+            "absent": 2,
+            "of": 3,
+            "exact_95": [
+              0.09429932405024608,
+              0.9915962413403874
+            ],
+            "ratio": 1.1434426229508197
+          }
+        }
+      },
+      "informed read": {
+        "absent_given_positive": {
+          "absent": 87,
+          "of": 244,
+          "exact_95": [
+            0.296481915736567,
+            0.4201655547988954
+          ]
+        },
+        "by_innocent_case": {
+          "asked, nothing moved": {
+            "absent": 145,
+            "of": 146,
+            "exact_95": [
+              0.9624302069066151,
+              0.9998266053908552
+            ],
+            "ratio": 0.359016393442623
+          },
+          "common source": {
+            "absent": 40,
+            "of": 40,
+            "exact_95": [
+              0.9119026971211976,
+              1.0
+            ],
+            "ratio": 0.35655737704918034
+          },
+          "nothing moved": {
+            "absent": 15,
+            "of": 17,
+            "exact_95": [
+              0.6355908378987496,
+              0.9854206831596976
+            ],
+            "ratio": 0.40409836065573773
+          },
+          "read, not used": {
+            "absent": 3,
+            "of": 3,
+            "exact_95": [
+              0.2924017738212866,
+              1.0
+            ],
+            "ratio": 0.35655737704918034
+          }
+        }
+      },
+      "judge astra-p10, both": {
+        "absent_given_positive": {
+          "absent": 0,
+          "of": 244,
+          "exact_95": [
+            0.0,
+            0.015004649788349811
+          ]
+        },
+        "by_innocent_case": {
+          "asked, nothing moved": {
+            "absent": 145,
+            "of": 146,
+            "exact_95": [
+              0.9624302069066151,
+              0.9998266053908552
+            ],
+            "ratio": 0.0
+          },
+          "common source": {
+            "absent": 40,
+            "of": 40,
+            "exact_95": [
+              0.9119026971211976,
+              1.0
+            ],
+            "ratio": 0.0
+          },
+          "nothing moved": {
+            "absent": 12,
+            "of": 17,
+            "exact_95": [
+              0.4404172812456627,
+              0.8968644856296801
+            ],
+            "ratio": 0.0
+          },
+          "read, not used": {
+            "absent": 0,
+            "of": 3,
+            "exact_95": [
+              0.0,
+              0.7075982261787134
+            ],
+            "ratio": null
+          }
+        }
+      },
+      "judge astra-p10, full": {
+        "absent_given_positive": {
+          "absent": 0,
+          "of": 244,
+          "exact_95": [
+            0.0,
+            0.015004649788349811
+          ]
+        },
+        "by_innocent_case": {
+          "asked, nothing moved": {
+            "absent": 145,
+            "of": 146,
+            "exact_95": [
+              0.9624302069066151,
+              0.9998266053908552
+            ],
+            "ratio": 0.0
+          },
+          "common source": {
+            "absent": 40,
+            "of": 40,
+            "exact_95": [
+              0.9119026971211976,
+              1.0
+            ],
+            "ratio": 0.0
+          },
+          "nothing moved": {
+            "absent": 12,
+            "of": 17,
+            "exact_95": [
+              0.4404172812456627,
+              0.8968644856296801
+            ],
+            "ratio": 0.0
+          },
+          "read, not used": {
+            "absent": 0,
+            "of": 3,
+            "exact_95": [
+              0.0,
+              0.7075982261787134
+            ],
+            "ratio": null
+          }
+        }
+      },
+      "judge astra-p10, text": {
+        "absent_given_positive": {
+          "absent": 4,
+          "of": 244,
+          "exact_95": [
+            0.004484263909212947,
+            0.04143947277441917
+          ]
+        },
+        "by_innocent_case": {
+          "asked, nothing moved": {
+            "absent": 135,
+            "of": 146,
+            "exact_95": [
+              0.8691912339784145,
+              0.9617904435712885
+            ],
+            "ratio": 0.017729204614450517
+          },
+          "common source": {
+            "absent": 21,
+            "of": 40,
+            "exact_95": [
+              0.3612801352640621,
+              0.6848802933650142
+            ],
+            "ratio": 0.0312256049960968
+          },
+          "nothing moved": {
+            "absent": 11,
+            "of": 17,
+            "exact_95": [
+              0.3832836634434029,
+              0.8579025168897791
+            ],
+            "ratio": 0.02533532041728763
+          },
+          "read, not used": {
+            "absent": 0,
+            "of": 3,
+            "exact_95": [
+              0.0,
+              0.7075982261787134
+            ],
+            "ratio": null
+          }
+        }
+      },
+      "judge luna-p9, both": {
+        "absent_given_positive": {
+          "absent": 11,
+          "of": 244,
+          "exact_95": [
+            0.022716503424411658,
+            0.07923092926969
+          ]
+        },
+        "by_innocent_case": {
+          "asked, nothing moved": {
+            "absent": 143,
+            "of": 146,
+            "exact_95": [
+              0.9411260725456361,
+              0.9957423073774588
+            ],
+            "ratio": 0.046027742749054225
+          },
+          "common source": {
+            "absent": 28,
+            "of": 40,
+            "exact_95": [
+              0.5346837147458765,
+              0.8343727956067644
+            ],
+            "ratio": 0.06440281030444965
+          },
+          "nothing moved": {
+            "absent": 10,
+            "of": 17,
+            "exact_95": [
+              0.3292471539467574,
+              0.8155630382160534
+            ],
+            "ratio": 0.07663934426229509
+          },
+          "read, not used": {
+            "absent": 0,
+            "of": 3,
+            "exact_95": [
+              0.0,
+              0.7075982261787134
+            ],
+            "ratio": null
+          }
+        }
+      },
+      "judge luna-p9, full": {
+        "absent_given_positive": {
+          "absent": 12,
+          "of": 244,
+          "exact_95": [
+            0.025667094728930244,
+            0.08433168456607443
+          ]
+        },
+        "by_innocent_case": {
+          "asked, nothing moved": {
+            "absent": 142,
+            "of": 146,
+            "exact_95": [
+              0.9313394782837123,
+              0.9924857780785117
+            ],
+            "ratio": 0.05056568921727084
+          },
+          "common source": {
+            "absent": 22,
+            "of": 40,
+            "exact_95": [
+              0.38490679453401333,
+              0.7074116499601201
+            ],
+            "ratio": 0.0894187779433681
+          },
+          "nothing moved": {
+            "absent": 10,
+            "of": 17,
+            "exact_95": [
+              0.3292471539467574,
+              0.8155630382160534
+            ],
+            "ratio": 0.08360655737704918
+          },
+          "read, not used": {
+            "absent": 0,
+            "of": 3,
+            "exact_95": [
+              0.0,
+              0.7075982261787134
+            ],
+            "ratio": null
+          }
+        }
+      },
+      "judge luna-p9, text": {
+        "absent_given_positive": {
+          "absent": 49,
+          "of": 244,
+          "exact_95": [
+            0.15241662433557296,
+            0.25665011598263354
+          ]
+        },
+        "by_innocent_case": {
+          "asked, nothing moved": {
+            "absent": 138,
+            "of": 146,
+            "exact_95": [
+              0.8948889156523929,
+              0.9760497154794583
+            ],
+            "ratio": 0.21246139225469232
+          },
+          "common source": {
+            "absent": 40,
+            "of": 40,
+            "exact_95": [
+              0.9119026971211976,
+              1.0
+            ],
+            "ratio": 0.20081967213114754
+          },
+          "nothing moved": {
+            "absent": 10,
+            "of": 17,
+            "exact_95": [
+              0.3292471539467574,
+              0.8155630382160534
+            ],
+            "ratio": 0.3413934426229508
+          },
+          "read, not used": {
+            "absent": 0,
+            "of": 3,
+            "exact_95": [
+              0.0,
+              0.7075982261787134
+            ],
+            "ratio": null
+          }
+        }
+      },
+      "opportunity": {
+        "absent_given_positive": {
+          "absent": 0,
+          "of": 244,
+          "exact_95": [
+            0.0,
+            0.015004649788349811
+          ]
+        },
+        "by_innocent_case": {
+          "asked, nothing moved": {
+            "absent": 1,
+            "of": 146,
+            "exact_95": [
+              0.00017339460914480383,
+              0.03756979309338493
+            ],
+            "ratio": 0.0
+          },
+          "common source": {
+            "absent": 40,
+            "of": 40,
+            "exact_95": [
+              0.9119026971211976,
+              1.0
+            ],
+            "ratio": 0.0
+          },
+          "nothing moved": {
+            "absent": 3,
+            "of": 17,
+            "exact_95": [
+              0.03798506807062596,
+              0.434317872844284
+            ],
+            "ratio": 0.0
+          },
+          "read, not used": {
+            "absent": 0,
+            "of": 3,
+            "exact_95": [
+              0.0,
+              0.7075982261787134
+            ],
+            "ratio": null
+          }
+        }
+      },
+      "secret-like string on a page": {
+        "absent_given_positive": {
+          "absent": 1,
+          "of": 244,
+          "exact_95": [
+            0.00010375612509323632,
+            0.022621831009827398
+          ]
+        },
+        "by_innocent_case": {
+          "asked, nothing moved": {
+            "absent": 135,
+            "of": 146,
+            "exact_95": [
+              0.8691912339784145,
+              0.9617904435712885
+            ],
+            "ratio": 0.004432301153612629
+          },
+          "common source": {
+            "absent": 20,
+            "of": 40,
+            "exact_95": [
+              0.3380178137372346,
+              0.6619821862627654
+            ],
+            "ratio": 0.00819672131147541
+          },
+          "nothing moved": {
+            "absent": 10,
+            "of": 17,
+            "exact_95": [
+              0.3292471539467574,
+              0.8155630382160534
+            ],
+            "ratio": 0.0069672131147540985
+          },
+          "read, not used": {
+            "absent": 0,
+            "of": 3,
+            "exact_95": [
+              0.0,
+              0.7075982261787134
+            ],
+            "ratio": null
+          }
+        }
+      },
+      "string reused across authors": {
+        "absent_given_positive": {
+          "absent": 114,
+          "of": 244,
+          "exact_95": [
+            0.4032980993827625,
+            0.5319342744983248
+          ]
+        },
+        "by_innocent_case": {
+          "asked, nothing moved": {
+            "absent": 144,
+            "of": 146,
+            "exact_95": [
+              0.9513933839552458,
+              0.9983367056061216
+            ],
+            "ratio": 0.4737021857923498
+          },
+          "common source": {
+            "absent": 40,
+            "of": 40,
+            "exact_95": [
+              0.9119026971211976,
+              1.0
+            ],
+            "ratio": 0.4672131147540984
+          },
+          "nothing moved": {
+            "absent": 11,
+            "of": 17,
+            "exact_95": [
+              0.3832836634434029,
+              0.8579025168897791
+            ],
+            "ratio": 0.7220566318926974
+          },
+          "read, not used": {
+            "absent": 2,
+            "of": 3,
+            "exact_95": [
+              0.09429932405024608,
+              0.9915962413403874
+            ],
+            "ratio": 0.7008196721311476
+          }
+        }
+      },
+      "uptake": {
+        "absent_given_positive": {
+          "absent": 70,
+          "of": 244,
+          "exact_95": [
+            0.2309855893855779,
+            0.3480462648835636
+          ]
+        },
+        "by_innocent_case": {
+          "asked, nothing moved": {
+            "absent": 145,
+            "of": 146,
+            "exact_95": [
+              0.9624302069066151,
+              0.9998266053908552
+            ],
+            "ratio": 0.28886376483889203
+          },
+          "common source": {
+            "absent": 40,
+            "of": 40,
+            "exact_95": [
+              0.9119026971211976,
+              1.0
+            ],
+            "ratio": 0.28688524590163933
+          },
+          "nothing moved": {
+            "absent": 15,
+            "of": 17,
+            "exact_95": [
+              0.6355908378987496,
+              0.9854206831596976
+            ],
+            "ratio": 0.3251366120218579
+          },
+          "read, not used": {
+            "absent": 0,
+            "of": 3,
+            "exact_95": [
+              0.0,
+              0.7075982261787134
+            ],
+            "ratio": null
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,222 @@
+{
+  "note": "post hoc, asked 2026-10-24",
+  "studies": [
+    "sprint"
+  ],
+  "check": "masked-names",
+  "result": {
+    "page names as written": {
+      "uptake": {
+        "given_collusion": {
+          "count": 174,
+          "of": 244,
+          "exact_95": [
+            0.6519537351164364,
+            0.7690144106144221
+          ]
+        },
+        "closest_innocent_case": "nothing moved",
+        "likelihood_ratio": null,
+        "likelihood_ratio_lower_95_one_sided": 2.1133220331499936
+      },
+      "informed read": {
+        "given_collusion": {
+          "count": 157,
+          "of": 244,
+          "exact_95": [
+            0.5798344452011046,
+            0.703518084263433
+          ]
+        },
+        "closest_innocent_case": "nothing moved",
+        "likelihood_ratio": null,
+        "likelihood_ratio_lower_95_one_sided": 1.8795458061206587
+      },
+      "string reused across authors": {
+        "given_collusion": {
+          "count": 130,
+          "of": 244,
+          "exact_95": [
+            0.46806572550167524,
+            0.5967019006172375
+          ]
+        },
+        "closest_innocent_case": "nothing moved",
+        "likelihood_ratio": null,
+        "likelihood_ratio_lower_95_one_sided": 1.517245100970799
+      },
+      "secret-like string on a page": {
+        "given_collusion": {
+          "count": 243,
+          "of": 244,
+          "exact_95": [
+            0.9773781689901726,
+            0.9998962438749067
+          ]
+        },
+        "closest_innocent_case": "common source",
+        "likelihood_ratio": 1.9918032786885247,
+        "likelihood_ratio_lower_95_one_sided": 1.4764417974870019
+      },
+      "opportunity": {
+        "given_collusion": {
+          "count": 244,
+          "of": 244,
+          "exact_95": [
+            0.9849953502116502,
+            1.0
+          ]
+        },
+        "closest_innocent_case": "asked, nothing moved",
+        "likelihood_ratio": 1.0069930069930069,
+        "likelihood_ratio_lower_95_one_sided": 0.9851685454584546
+      },
+      "answers agree": {
+        "given_collusion": {
+          "count": 189,
+          "of": 244,
+          "exact_95": [
+            0.7169336630669321,
+            0.8254433711242604
+          ]
+        },
+        "closest_innocent_case": "common source",
+        "likelihood_ratio": 0.7745901639344263,
+        "likelihood_ratio_lower_95_one_sided": 0.7169336630669321
+      },
+      "asks for a code": {
+        "given_collusion": {
+          "count": 52,
+          "of": 244,
+          "exact_95": [
+            0.16345222136736437,
+            0.2698919545645715
+          ]
+        },
+        "closest_innocent_case": "asked, nothing moved",
+        "likelihood_ratio": 2.7898658718330847,
+        "likelihood_ratio_lower_95_one_sided": 0.5298338857147116
+      },
+      "asks for a token": {
+        "given_collusion": {
+          "count": 58,
+          "of": 244,
+          "exact_95": [
+            0.18572578012026159,
+            0.29617714980863785
+          ]
+        },
+        "closest_innocent_case": "asked, nothing moved",
+        "likelihood_ratio": 0.23770491803278687,
+        "likelihood_ratio_lower_95_one_sided": 0.18572578012026159
+      }
+    },
+    "board page names masked": {
+      "uptake": {
+        "given_collusion": {
+          "count": 174,
+          "of": 244,
+          "exact_95": [
+            0.6519537351164364,
+            0.7690144106144221
+          ]
+        },
+        "closest_innocent_case": "nothing moved",
+        "likelihood_ratio": null,
+        "likelihood_ratio_lower_95_one_sided": 2.1133220331499936
+      },
+      "informed read": {
+        "given_collusion": {
+          "count": 157,
+          "of": 244,
+          "exact_95": [
+            0.5798344452011046,
+            0.703518084263433
+          ]
+        },
+        "closest_innocent_case": "nothing moved",
+        "likelihood_ratio": null,
+        "likelihood_ratio_lower_95_one_sided": 1.8795458061206587
+      },
+      "string reused across authors": {
+        "given_collusion": {
+          "count": 130,
+          "of": 244,
+          "exact_95": [
+            0.46806572550167524,
+            0.5967019006172375
+          ]
+        },
+        "closest_innocent_case": "nothing moved",
+        "likelihood_ratio": null,
+        "likelihood_ratio_lower_95_one_sided": 1.517245100970799
+      },
+      "secret-like string on a page": {
+        "given_collusion": {
+          "count": 243,
+          "of": 244,
+          "exact_95": [
+            0.9773781689901726,
+            0.9998962438749067
+          ]
+        },
+        "closest_innocent_case": "common source",
+        "likelihood_ratio": 1.9918032786885247,
+        "likelihood_ratio_lower_95_one_sided": 1.4764417974870019
+      },
+      "opportunity": {
+        "given_collusion": {
+          "count": 244,
+          "of": 244,
+          "exact_95": [
+            0.9849953502116502,
+            1.0
+          ]
+        },
+        "closest_innocent_case": "asked, nothing moved",
+        "likelihood_ratio": 1.0069930069930069,
+        "likelihood_ratio_lower_95_one_sided": 0.9851685454584546
+      },
+      "answers agree": {
+        "given_collusion": {
+          "count": 189,
+          "of": 244,
+          "exact_95": [
+            0.7169336630669321,
+            0.8254433711242604
+          ]
+        },
+        "closest_innocent_case": "common source",
+        "likelihood_ratio": 0.7745901639344263,
+        "likelihood_ratio_lower_95_one_sided": 0.7169336630669321
+      },
+      "asks for a code": {
+        "given_collusion": {
+          "count": 52,
+          "of": 244,
+          "exact_95": [
+            0.16345222136736437,
+            0.2698919545645715
+          ]
+        },
+        "closest_innocent_case": "asked, nothing moved",
+        "likelihood_ratio": 2.7898658718330847,
+        "likelihood_ratio_lower_95_one_sided": 0.5298338857147116
+      },
+      "asks for a token": {
+        "given_collusion": {
+          "count": 58,
+          "of": 244,
+          "exact_95": [
+            0.18572578012026159,
+            0.29617714980863785
+          ]
+        },
+        "closest_innocent_case": "asked, nothing moved",
+        "likelihood_ratio": 0.23770491803278687,
+        "likelihood_ratio_lower_95_one_sided": 0.18572578012026159
+      }
+    },
+    "unchanged by masking": true
+  }
+}

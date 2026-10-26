@@ -1,0 +1,40 @@
+{
+  "version": "6.4",
+  "source_commit": "16d7cd314170a5d792d9b52d9731e80d8f4415d6",
+  "abstract_words": 210,
+  "template_sha256": "59f82a5692ee59be5fbddc055f8b50749ec9b27c8d9e826dde079451afdd226e",
+  "builder_sha256": "0fd7508cab6bd813347be9d4dfc1e31efe0abd15423035da8658530e66dc1fa6",
+  "prose": "research/report-versions/REPORT-DRAFT-v6.4.source.md",
+  "facts": "research/report-support-20261025/verified-tables-v5.2.json",
+  "prose_sha256": "839acf9f4808ebef528fec7bbf1d3731394e6dbc958154e80ff5e8875b4d66b0",
+  "facts_sha256": "062fec13339ace84fdfa4a046e4c0839d86d380f2bc215e8e8733e18497f8698",
+  "manuscript_sha256": "bd007a3282b5ce290cd65b87ecab9fcf66fec090f62df9abb88a20414cc7e73b",
+  "docx_sha256": "95229114abf07452562758cd9c3f021b79a1acca102675110dfb8e1edf4d78c2",
+  "prediction_ledger_sha256": "817f4b9a019956e32be74693ed9c04329ed38b143d043c43c1deac8ba4de5429",
+  "figures": {
+    "figure-1-alarm-share.png": "057b8802a20e5f0f0d2a79e301bf559c056adf60becf92164928c7300b7af3e4",
+    "figure-1-alarm-share.pdf": "3752bb8827a0c9bc529c9e94ad3480046de2be839e72db7cf550da24ed545397",
+    "figure-1-alarm-share.svg": "23e388938f3d0aaed77148d4c0aea1bbdaad966cc1cf8f1e3954062ca7b6dce3",
+    "figure-data.json": "1eef8461eaf94d9a5f457adcf9428927bd6c53f8ccd9f33990505c1494618da0",
+    "figure-2-trajectories.svg": "84113408d46ab6b10661eb0b8e72a7a2ba947f74b9bda43581eabf2edfdc33af",
+    "figure-2-trajectories.png": "8652234c9df3c4a68ed2f69ca3141d5d894c1edbcfcc8b816cada798111efba3",
+    "figure-2-trajectories.pdf": "8f9b53537a980abbcba5e2f20d4932f85048ce9840934a1e0bbab88229245f47"
+  },
+  "figure_directory": "research/figures/writeup-v6.4",
+  "layout": {
+    "line_spacing": 1.25,
+    "paragraph_spacing_pt": 9.0
+  },
+  "report_input_manifest_sha256": "646688f4e8ee04d487d3c7566e26efebd0119045b5a4f1b3460a0e8e7760841c",
+  "analysis_sha256": {
+    "protocol.json": "a9e43c45fe913bf9d642fd97b1505df6e75e3f98dd8d5949e9d86e9f8de170bb",
+    "funnel.json": "e90f6c49c2fa062625f538b819adce31990932642bdfd3a9d72d8ea1408cab06",
+    "plus-factors-sprint.json": "5c5bb4d53271bd3da30b7bad63b1842248c305023abb120c45e1ed1ed629c25e",
+    "transfer-subgroups.json": "a74038294ff51e19c5419c3a6afe9f24654c767520e63724f5cd6edbb39fc898",
+    "openweight-judge.json": "078dc4559e6538f401cac13f634ead0a30c54ff29a9dcb86dff36c953d30ab88"
+  },
+  "blank_fields": [
+    "independent human checks"
+  ],
+  "numbers": "research/numbers-writeup-v6.3"
+}

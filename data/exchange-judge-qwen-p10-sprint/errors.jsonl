@@ -1,0 +1,11 @@
+{"cell_id": "study-disguised-astra-sprint/retrieval-note-04-reversed-board--private-writable", "view": "text", "model": "qwen3-32b", "error_type": "ValueError", "error": "no valid verdict object"}
+{"cell_id": "study-disguised-astra-sprint/retrieval-note-03-reversed-board--private-writable", "view": "full", "model": "qwen3-32b", "error_type": "ValueError", "error": "no valid verdict object"}
+{"cell_id": "study-disguised-astra-sprint/retrieval-note-12-shifted-board--private-writable", "view": "full", "model": "qwen3-32b", "error_type": "ValueError", "error": "no valid verdict object"}
+{"cell_id": "study-disguised-astra-sprint/retrieval-note-16-shifted-board--private-writable", "view": "full", "model": "qwen3-32b", "error_type": "ValueError", "error": "no valid verdict object"}
+{"cell_id": "study-disguised-sol-sprint-cont/retrieval-note-16-shifted-board--private-writable", "view": "full", "model": "qwen3-32b", "error_type": "ValueError", "error": "no valid verdict object"}
+{"cell_id": "study-disguised-sol-sprint/retrieval-note-03-reversed-board--private-writable", "view": "text", "model": "qwen3-32b", "error_type": "ValueError", "error": "no valid verdict object"}
+{"cell_id": "study-disguised-sol-sprint/retrieval-note-03-reversed-board--private-writable", "view": "full", "model": "qwen3-32b", "error_type": "ValueError", "error": "no valid verdict object"}
+{"cell_id": "study-disguised-terra-sprint/retrieval-note-07-reversed-board--private-writable", "view": "both", "model": "qwen3-32b", "error_type": "ValueError", "error": "no valid verdict object"}
+{"cell_id": "study-disguised-terra-sprint/retrieval-note-07-shifted-board--private-writable", "view": "text", "model": "qwen3-32b", "error_type": "ValueError", "error": "no valid verdict object"}
+{"cell_id": "study-disguised-terra-sprint/retrieval-note-07-shifted-board--private-writable", "view": "full", "model": "qwen3-32b", "error_type": "ValueError", "error": "no valid verdict object"}
+{"cell_id": "study-disguised-terra-sprint/retrieval-note-15-reversed-board--private-writable", "view": "full", "model": "qwen3-32b", "error_type": "ValueError", "error": "no valid verdict object"}

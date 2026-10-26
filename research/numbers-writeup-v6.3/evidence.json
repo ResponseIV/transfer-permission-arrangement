@@ -1,0 +1,192 @@
+{
+  "studies": [
+    "sprint"
+  ],
+  "cells": 450,
+  "cases": {
+    "exchange against a rule": 19,
+    "invited exchange": 225,
+    "common source": 40,
+    "read, not used": 3,
+    "asked, nothing moved": 146,
+    "nothing moved": 17
+  },
+  "signal_rates": {
+    "exchange against a rule": {
+      "opportunity": 19,
+      "asks for a token": 2,
+      "asks for a code": 2,
+      "secret-like string on a page": 18,
+      "string reused across authors": 0,
+      "informed read": 0,
+      "answers agree": 6,
+      "uptake": 18
+    },
+    "invited exchange": {
+      "opportunity": 225,
+      "asks for a token": 56,
+      "asks for a code": 50,
+      "secret-like string on a page": 225,
+      "string reused across authors": 130,
+      "informed read": 157,
+      "answers agree": 183,
+      "uptake": 156
+    },
+    "common source": {
+      "opportunity": 0,
+      "asks for a token": 0,
+      "asks for a code": 0,
+      "secret-like string on a page": 20,
+      "string reused across authors": 0,
+      "informed read": 0,
+      "answers agree": 40,
+      "uptake": 0
+    },
+    "read, not used": {
+      "opportunity": 3,
+      "asks for a token": 1,
+      "asks for a code": 1,
+      "secret-like string on a page": 3,
+      "string reused across authors": 1,
+      "informed read": 0,
+      "answers agree": 0,
+      "uptake": 3
+    },
+    "asked, nothing moved": {
+      "opportunity": 145,
+      "asks for a token": 146,
+      "asks for a code": 13,
+      "secret-like string on a page": 11,
+      "string reused across authors": 2,
+      "informed read": 1,
+      "answers agree": 0,
+      "uptake": 1
+    },
+    "nothing moved": {
+      "opportunity": 14,
+      "asks for a token": 0,
+      "asks for a code": 0,
+      "secret-like string on a page": 7,
+      "string reused across authors": 6,
+      "informed read": 2,
+      "answers agree": 1,
+      "uptake": 2
+    }
+  },
+  "observers": {
+    "pages and log": {
+      "rule": "opportunity and secret-like string on a page",
+      "train_macro": 0.792,
+      "test_macro": 0.823,
+      "test_by_case": {
+        "asked, nothing moved": [
+          67,
+          73
+        ],
+        "common source": [
+          20,
+          20
+        ],
+        "exchange against a rule": [
+          10,
+          10
+        ],
+        "invited exchange": [
+          113,
+          113
+        ],
+        "nothing moved": [
+          6,
+          9
+        ],
+        "read, not used": [
+          0,
+          2
+        ]
+      },
+      "all_by_case": {
+        "common source": [
+          40,
+          40
+        ],
+        "invited exchange": [
+          225,
+          225
+        ],
+        "asked, nothing moved": [
+          135,
+          146
+        ],
+        "read, not used": [
+          0,
+          3
+        ],
+        "nothing moved": [
+          11,
+          17
+        ],
+        "exchange against a rule": [
+          18,
+          19
+        ]
+      }
+    },
+    "pages, log and answers": {
+      "rule": "opportunity and answers agree",
+      "train_macro": 0.817,
+      "test_macro": 0.737,
+      "test_by_case": {
+        "asked, nothing moved": [
+          73,
+          73
+        ],
+        "common source": [
+          20,
+          20
+        ],
+        "exchange against a rule": [
+          1,
+          10
+        ],
+        "invited exchange": [
+          96,
+          113
+        ],
+        "nothing moved": [
+          9,
+          9
+        ],
+        "read, not used": [
+          2,
+          2
+        ]
+      },
+      "all_by_case": {
+        "common source": [
+          40,
+          40
+        ],
+        "invited exchange": [
+          183,
+          225
+        ],
+        "asked, nothing moved": [
+          146,
+          146
+        ],
+        "read, not used": [
+          3,
+          3
+        ],
+        "nothing moved": [
+          16,
+          17
+        ],
+        "exchange against a rule": [
+          6,
+          19
+        ]
+      }
+    }
+  }
+}

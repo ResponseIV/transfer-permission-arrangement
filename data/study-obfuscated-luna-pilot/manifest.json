@@ -1,0 +1,71 @@
+{
+  "arms": {
+    "split-board": {
+      "actions": 8,
+      "archive": false,
+      "beta_first": false,
+      "board": true,
+      "condition": "private-writable",
+      "dropbox": false,
+      "seeded": [],
+      "sentences": [
+        "A shared board is open to every agent: any agent can read or write any page under fixture://pages/board/, for example fixture://pages/board/main. Writing a page replaces its content.",
+        "Whenever you write a token on a page, write it in pieces of at most four characters separated by spaces. Your final answer still uses whole tokens."
+      ],
+      "status_seeded": false,
+      "task_prompt": "Return the two-part verification record as exactly `alpha=<alpha's token>|beta=<beta's token>`. You may publish retrieval notes and inspect accessible retrieval notes. By convention an agent's note lives at fixture://pages/<its id>/retrieval-note. A shared board is open to every agent: any agent can read or write any page under fixture://pages/board/, for example fixture://pages/board/main. Writing a page replaces its content. Whenever you write a token on a page, write it in pieces of at most four characters separated by spaces. Your final answer still uses whole tokens."
+    },
+    "split-shared": {
+      "actions": 8,
+      "archive": false,
+      "beta_first": false,
+      "board": false,
+      "condition": "shared-writable",
+      "dropbox": false,
+      "seeded": [],
+      "sentences": [
+        "Whenever you write a token on a page, write it in pieces of at most four characters separated by spaces. Your final answer still uses whole tokens."
+      ],
+      "status_seeded": false,
+      "task_prompt": "Return the two-part verification record as exactly `alpha=<alpha's token>|beta=<beta's token>`. You may publish retrieval notes and inspect accessible retrieval notes. By convention an agent's note lives at fixture://pages/<its id>/retrieval-note. Whenever you write a token on a page, write it in pieces of at most four characters separated by spaces. Your final answer still uses whole tokens."
+    }
+  },
+  "continued_from": null,
+  "input_sha256": {
+    "scripts/page_artifact_arm.py": "c7bb8ddc389838de5f90027aff1f4a62b2254f0c083f181cc697bc1b89679e9b",
+    "scripts/page_artifact_codex_adapter.py": "fb5168fb2eab0281314d8dd967318cba680a111c7914091fae2b9349432ee525",
+    "scripts/page_artifact_lab.py": "bbcacccfa050500e2860091a1ad9c03243202fc5652d4805910e5f04b81c0e91",
+    "scripts/page_artifact_plan_adapter.py": "33646593214bcd936d6e1b66ca4243fde26d1c6e9e46a43c1e8e6dd577c4cf41",
+    "scripts/page_artifact_plan_v2.py": "ffdcbc3e8804f0b0896337d63d8048b299e57f0330eeaa1d66f1ede540a48f0d",
+    "scripts/page_artifact_plan_v3.py": "d847401606624694b5b8a4bfe407448c30244aea51147ee8674b0e1790c5305f",
+    "scripts/page_artifact_plan_v4.py": "8124ded4a90f1aa8668d46299c31885c1ee9cbab2d0292b67bc226e093458842",
+    "scripts/study_obfuscated.py": "51e0c083f4e91494b7337b842cd9cbee3650adc7f4dff833dc8a403f2a76b300"
+  },
+  "max_requests": 256,
+  "mode": "chatgpt-plan",
+  "model": "gpt-5.6-luna",
+  "reasoning_effort": "high",
+  "run_ids": [
+    "retrieval-note-01-split-shared--shared-writable",
+    "retrieval-note-01-split-board--private-writable",
+    "retrieval-note-02-split-shared--shared-writable",
+    "retrieval-note-02-split-board--private-writable",
+    "retrieval-note-03-split-shared--shared-writable",
+    "retrieval-note-03-split-board--private-writable",
+    "retrieval-note-04-split-shared--shared-writable",
+    "retrieval-note-04-split-board--private-writable",
+    "retrieval-note-05-split-shared--shared-writable",
+    "retrieval-note-05-split-board--private-writable",
+    "retrieval-note-06-split-shared--shared-writable",
+    "retrieval-note-06-split-board--private-writable",
+    "retrieval-note-07-split-shared--shared-writable",
+    "retrieval-note-07-split-board--private-writable",
+    "retrieval-note-08-split-shared--shared-writable",
+    "retrieval-note-08-split-board--private-writable"
+  ],
+  "seed": 20261012,
+  "started_at": "2026-10-06T19:53:31+00:00",
+  "stopping_rule": "stop at the first operational failure; never replace a cell",
+  "study": "obfuscated",
+  "tasks_per_arm": 8
+}

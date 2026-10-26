@@ -1,0 +1,118 @@
+{
+  "note": "post hoc, asked 2026-10-24",
+  "studies": [
+    "pact-sol-replication",
+    "pact-agreed-sol"
+  ],
+  "check": "paired-arms",
+  "result": {
+    "arms": [
+      "pact-board-coded",
+      "reversed-agreed-board"
+    ],
+    "pairs": 17,
+    "unpaired": [
+      "retrieval-note-08",
+      "retrieval-note-11",
+      "retrieval-note-12"
+    ],
+    "signals": {
+      "opportunity": {
+        "both": 11,
+        "only_pact-board-coded": 0,
+        "only_reversed-agreed-board": 6,
+        "neither": 0,
+        "paired_exact_p": 0.03125,
+        "fisher_p": 0.018404287592274245
+      },
+      "asks for a token": {
+        "both": 0,
+        "only_pact-board-coded": 12,
+        "only_reversed-agreed-board": 0,
+        "neither": 5,
+        "paired_exact_p": 0.00048828125,
+        "fisher_p": 2.25693604810498e-05
+      },
+      "asks for a code": {
+        "both": 0,
+        "only_pact-board-coded": 12,
+        "only_reversed-agreed-board": 0,
+        "neither": 5,
+        "paired_exact_p": 0.00048828125,
+        "fisher_p": 2.25693604810498e-05
+      },
+      "secret-like string on a page": {
+        "both": 4,
+        "only_pact-board-coded": 0,
+        "only_reversed-agreed-board": 13,
+        "neither": 0,
+        "paired_exact_p": 0.000244140625,
+        "fisher_p": 5.1294001093295e-06
+      },
+      "string reused across authors": {
+        "both": 0,
+        "only_pact-board-coded": 0,
+        "only_reversed-agreed-board": 0,
+        "neither": 17,
+        "paired_exact_p": 1.0,
+        "fisher_p": 1.0
+      },
+      "informed read": {
+        "both": 0,
+        "only_pact-board-coded": 0,
+        "only_reversed-agreed-board": 0,
+        "neither": 17,
+        "paired_exact_p": 1.0,
+        "fisher_p": 1.0
+      },
+      "answers agree": {
+        "both": 3,
+        "only_pact-board-coded": 0,
+        "only_reversed-agreed-board": 14,
+        "neither": 0,
+        "paired_exact_p": 0.0001220703125,
+        "fisher_p": 9.77028592253238e-07
+      },
+      "uptake": {
+        "both": 3,
+        "only_pact-board-coded": 0,
+        "only_reversed-agreed-board": 14,
+        "neither": 0,
+        "paired_exact_p": 0.0001220703125,
+        "fisher_p": 9.77028592253238e-07
+      },
+      "transfer": {
+        "both": 3,
+        "only_pact-board-coded": 0,
+        "only_reversed-agreed-board": 14,
+        "neither": 0,
+        "paired_exact_p": 0.0001220703125,
+        "fisher_p": 9.77028592253238e-07
+      },
+      "exposure": {
+        "both": 3,
+        "only_pact-board-coded": 0,
+        "only_reversed-agreed-board": 14,
+        "neither": 0,
+        "paired_exact_p": 0.0001220703125,
+        "fisher_p": 9.77028592253238e-07
+      },
+      "own_token_written": {
+        "both": 0,
+        "only_pact-board-coded": 0,
+        "only_reversed-agreed-board": 0,
+        "neither": 17,
+        "paired_exact_p": 1.0,
+        "fisher_p": 1.0
+      },
+      "obtained": {
+        "both": 3,
+        "only_pact-board-coded": 0,
+        "only_reversed-agreed-board": 14,
+        "neither": 0,
+        "paired_exact_p": 0.0001220703125,
+        "fisher_p": 9.77028592253238e-07
+      }
+    }
+  }
+}

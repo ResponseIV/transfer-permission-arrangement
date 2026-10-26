@@ -1,0 +1,19 @@
+{
+  "passed": true,
+  "input_files_verified": 9,
+  "input_scope": "document-build excerpts and two exact event streams",
+  "main_pages": 8,
+  "total_pages": 27,
+  "pdf_bytes": 336628,
+  "abstract_words": 210,
+  "forecast_lines": 143,
+  "reference_links": 17,
+  "figure_curves_checked": 4,
+  "figure_points_checked": 404,
+  "embedded_figure_pixels_checked": 2,
+  "prose_and_facts_hashes_checked": true,
+  "main_tables_recomputed": 2,
+  "judge_appendix_tables_recomputed": 3,
+  "pdf_sha256": "7248f336a6c14a3537180dd6524959ea14db1318d4effa8970689ac4179c92a4",
+  "manual_checks": "Visual inspection and substantive review are recorded separately."
+}

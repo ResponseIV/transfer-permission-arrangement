@@ -1,0 +1,6 @@
+# Document build and PDF verification; LibreOffice must also be available.
+python-docx==1.2.0
+reportlab==4.4.9
+PyMuPDF==1.28.2
+# Tests (pytest 9 includes subtests).
+pytest==9.0.2

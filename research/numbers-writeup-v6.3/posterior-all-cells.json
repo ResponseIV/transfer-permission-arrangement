@@ -1,0 +1,154 @@
+{
+  "priors": [
+    0.01,
+    0.05,
+    0.2
+  ],
+  "note": "the prior is the auditor's, not measured here",
+  "posteriors": {
+    "uptake": {
+      "ratio_status": "finite",
+      "0.01": {
+        "point": 0.772050839570326,
+        "worst_benchmark_bound": 0.023444470995006447,
+        "pooled_bound": 0.5249720159425812
+      },
+      "0.05": {
+        "point": 0.9463742453771926,
+        "worst_benchmark_bound": 0.11118278438969367,
+        "pooled_bound": 0.8520350336081935
+      },
+      "0.2": {
+        "point": 0.9882112787039852,
+        "worst_benchmark_bound": 0.3727186224563429,
+        "pooled_bound": 0.9647293605065105
+      }
+    },
+    "opportunity": {
+      "ratio_status": "finite",
+      "0.01": {
+        "point": 0.01,
+        "worst_benchmark_bound": 0.00996163104530941,
+        "pooled_bound": 0.0167818388380197
+      },
+      "0.05": {
+        "point": 0.05000000000000001,
+        "worst_benchmark_bound": 0.04981587798681109,
+        "pooled_bound": 0.08167128905843142
+      },
+      "0.2": {
+        "point": 0.2,
+        "worst_benchmark_bound": 0.19937943871664957,
+        "pooled_bound": 0.29698256470120127
+      }
+    },
+    "secret-like string on a page": {
+      "ratio_status": "finite",
+      "0.01": {
+        "point": 0.009582982308340354,
+        "worst_benchmark_bound": 0.009436403213071265,
+        "pooled_bound": 0.020051164351476598
+      },
+      "0.05": {
+        "point": 0.0479957805907173,
+        "worst_benchmark_bound": 0.04728970222385403,
+        "pooled_bound": 0.09634324871888326
+      },
+      "0.2": {
+        "point": 0.1932059447983015,
+        "worst_benchmark_bound": 0.19079176413980056,
+        "pooled_bound": 0.33617478900259046
+      }
+    },
+    "answers agree": {
+      "ratio_status": "finite",
+      "0.01": {
+        "point": 0.008998566972941078,
+        "worst_benchmark_bound": 0.008790737443252322,
+        "pooled_bound": 0.052352033953371443
+      },
+      "0.05": {
+        "point": 0.04517562420651714,
+        "worst_benchmark_bound": 0.0441694953653353,
+        "pooled_bound": 0.22351280801334394
+      },
+      "0.2": {
+        "point": 0.18349806617963044,
+        "worst_benchmark_bound": 0.1799920160415504,
+        "pooled_bound": 0.5775766593825402
+      }
+    },
+    "informed read": {
+      "ratio_status": "finite",
+      "0.01": {
+        "point": 0.007555452377434945,
+        "worst_benchmark_bound": 0.007269974719506805,
+        "pooled_bound": 0.22979733494874685
+      },
+      "0.05": {
+        "point": 0.03815410849408506,
+        "worst_benchmark_bound": 0.036755299442667685,
+        "pooled_bound": 0.6085508748520134
+      },
+      "0.2": {
+        "point": 0.15854738706820196,
+        "worst_benchmark_bound": 0.15343883379426437,
+        "pooled_bound": 0.8807308715594698
+      }
+    },
+    "string reused across authors": {
+      "ratio_status": "unbounded",
+      "0.01": {
+        "point": null,
+        "worst_benchmark_bound": 0.0044649265879187616,
+        "pooled_bound": 0.23759138528310852
+      },
+      "0.05": {
+        "point": null,
+        "worst_benchmark_bound": 0.022835320517173453,
+        "pooled_bound": 0.6188690184576587
+      },
+      "0.2": {
+        "point": null,
+        "worst_benchmark_bound": 0.09991205795553033,
+        "pooled_bound": 0.8852277439310401
+      }
+    },
+    "asks for a code": {
+      "ratio_status": "finite",
+      "0.01": {
+        "point": 0.010206293846124703,
+        "worst_benchmark_bound": 0.0017861240420753693,
+        "pooled_bound": 0.010665917589659287
+      },
+      "0.05": {
+        "point": 0.0509889693897938,
+        "worst_benchmark_bound": 0.009237177922108063,
+        "pooled_bound": 0.053186485660081446
+      },
+      "0.2": {
+        "point": 0.20332089395781794,
+        "worst_benchmark_bound": 0.0424076198917874,
+        "pooled_bound": 0.21062649535480588
+      }
+    },
+    "asks for a token": {
+      "ratio_status": "finite",
+      "0.01": {
+        "point": 0.0015711586233253358,
+        "worst_benchmark_bound": 0.0013446259837207543,
+        "pooled_bound": 0.0023295096695378176
+      },
+      "0.05": {
+        "point": 0.008132761841960656,
+        "worst_benchmark_bound": 0.006966766147662235,
+        "pooled_bound": 0.012020073009469223
+      },
+      "0.2": {
+        "point": 0.037487335359675786,
+        "worst_benchmark_bound": 0.03224960620836605,
+        "pooled_bound": 0.05463276017254333
+      }
+    }
+  }
+}

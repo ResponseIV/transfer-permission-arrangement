@@ -1,0 +1,55 @@
+{
+  "nests": true,
+  "counts": {
+    "cells": {
+      "sprint": 450,
+      "all_cells": 1760,
+      "nests": true
+    },
+    "transfers": {
+      "sprint": 244,
+      "all_cells": 950,
+      "nests": true
+    },
+    "uptake: transfers missed": {
+      "sprint": 70,
+      "all_cells": 96,
+      "nests": true
+    },
+    "informed read: transfers missed": {
+      "sprint": 87,
+      "all_cells": 234,
+      "nests": true
+    },
+    "string reused across authors: transfers missed": {
+      "sprint": 114,
+      "all_cells": 771,
+      "nests": true
+    },
+    "secret-like string on a page: transfers missed": {
+      "sprint": 1,
+      "all_cells": 40,
+      "nests": true
+    },
+    "opportunity: transfers missed": {
+      "sprint": 0,
+      "all_cells": 0,
+      "nests": true
+    },
+    "answers agree: transfers missed": {
+      "sprint": 55,
+      "all_cells": 96,
+      "nests": true
+    },
+    "asks for a code: transfers missed": {
+      "sprint": 192,
+      "all_cells": 872,
+      "nests": true
+    },
+    "asks for a token: transfers missed": {
+      "sprint": 186,
+      "all_cells": 802,
+      "nests": true
+    }
+  }
+}

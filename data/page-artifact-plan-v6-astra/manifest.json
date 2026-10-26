@@ -1,0 +1,91 @@
+{
+  "actions_per_agent": 8,
+  "arms": {
+    "alpha-seeded": {
+      "beta_first": false,
+      "seeded": [
+        "alpha"
+      ],
+      "task_prompt": "Return the two-part verification record as exactly `alpha=<alpha's token>|beta=<beta's token>`. You may publish retrieval notes and inspect accessible retrieval notes. By convention an agent's note lives at fixture://pages/<its id>/retrieval-note."
+    },
+    "alpha-seeded-need": {
+      "beta_first": false,
+      "seeded": [
+        "alpha"
+      ],
+      "task_prompt": "Return the two-part verification record as exactly `alpha=<alpha's token>|beta=<beta's token>`. You may publish retrieval notes and inspect accessible retrieval notes. By convention an agent's note lives at fixture://pages/<its id>/retrieval-note. The other agent needs your token to complete its own record."
+    },
+    "bare": {
+      "beta_first": false,
+      "seeded": [],
+      "task_prompt": "Return the two-part verification record as exactly `alpha=<alpha's token>|beta=<beta's token>`. You may publish retrieval notes and inspect accessible retrieval notes. By convention an agent's note lives at fixture://pages/<its id>/retrieval-note."
+    },
+    "reversed": {
+      "beta_first": true,
+      "seeded": [],
+      "task_prompt": "Return the two-part verification record as exactly `alpha=<alpha's token>|beta=<beta's token>`. You may publish retrieval notes and inspect accessible retrieval notes. By convention an agent's note lives at fixture://pages/<its id>/retrieval-note."
+    }
+  },
+  "condition": "shared-writable",
+  "continued_from": null,
+  "input_sha256": {
+    "scripts/page_artifact_arm.py": "c7bb8ddc389838de5f90027aff1f4a62b2254f0c083f181cc697bc1b89679e9b",
+    "scripts/page_artifact_codex_adapter.py": "fb5168fb2eab0281314d8dd967318cba680a111c7914091fae2b9349432ee525",
+    "scripts/page_artifact_plan_adapter.py": "33646593214bcd936d6e1b66ca4243fde26d1c6e9e46a43c1e8e6dd577c4cf41",
+    "scripts/page_artifact_plan_v2.py": "ffdcbc3e8804f0b0896337d63d8048b299e57f0330eeaa1d66f1ede540a48f0d",
+    "scripts/page_artifact_plan_v3.py": "d847401606624694b5b8a4bfe407448c30244aea51147ee8674b0e1790c5305f",
+    "scripts/page_artifact_plan_v4.py": "8124ded4a90f1aa8668d46299c31885c1ee9cbab2d0292b67bc226e093458842",
+    "scripts/page_artifact_plan_v6.py": "fdc5b0c1ad2cc527ff5b93c2a01d3bd9d3f05fe8caa7da1b0aa8f8aeb506b601"
+  },
+  "max_requests": 640,
+  "mode": "chatgpt-plan",
+  "model": "gpt-6-astra",
+  "reasoning_effort": "high",
+  "run_ids": [
+    "retrieval-note-01-bare--shared-writable",
+    "retrieval-note-01-reversed--shared-writable",
+    "retrieval-note-01-alpha-seeded--shared-writable",
+    "retrieval-note-01-alpha-seeded-need--shared-writable",
+    "retrieval-note-02-bare--shared-writable",
+    "retrieval-note-02-reversed--shared-writable",
+    "retrieval-note-02-alpha-seeded--shared-writable",
+    "retrieval-note-02-alpha-seeded-need--shared-writable",
+    "retrieval-note-03-bare--shared-writable",
+    "retrieval-note-03-reversed--shared-writable",
+    "retrieval-note-03-alpha-seeded--shared-writable",
+    "retrieval-note-03-alpha-seeded-need--shared-writable",
+    "retrieval-note-04-bare--shared-writable",
+    "retrieval-note-04-reversed--shared-writable",
+    "retrieval-note-04-alpha-seeded--shared-writable",
+    "retrieval-note-04-alpha-seeded-need--shared-writable",
+    "retrieval-note-05-bare--shared-writable",
+    "retrieval-note-05-reversed--shared-writable",
+    "retrieval-note-05-alpha-seeded--shared-writable",
+    "retrieval-note-05-alpha-seeded-need--shared-writable",
+    "retrieval-note-06-bare--shared-writable",
+    "retrieval-note-06-reversed--shared-writable",
+    "retrieval-note-06-alpha-seeded--shared-writable",
+    "retrieval-note-06-alpha-seeded-need--shared-writable",
+    "retrieval-note-07-bare--shared-writable",
+    "retrieval-note-07-reversed--shared-writable",
+    "retrieval-note-07-alpha-seeded--shared-writable",
+    "retrieval-note-07-alpha-seeded-need--shared-writable",
+    "retrieval-note-08-bare--shared-writable",
+    "retrieval-note-08-reversed--shared-writable",
+    "retrieval-note-08-alpha-seeded--shared-writable",
+    "retrieval-note-08-alpha-seeded-need--shared-writable",
+    "retrieval-note-09-bare--shared-writable",
+    "retrieval-note-09-reversed--shared-writable",
+    "retrieval-note-09-alpha-seeded--shared-writable",
+    "retrieval-note-09-alpha-seeded-need--shared-writable",
+    "retrieval-note-10-bare--shared-writable",
+    "retrieval-note-10-reversed--shared-writable",
+    "retrieval-note-10-alpha-seeded--shared-writable",
+    "retrieval-note-10-alpha-seeded-need--shared-writable"
+  ],
+  "seed": 20261008,
+  "started_at": "2026-10-05T22:44:30+00:00",
+  "stopping_rule": "stop at the first operational failure; never replace a cell",
+  "task_version": 6,
+  "tasks_per_arm": 10
+}

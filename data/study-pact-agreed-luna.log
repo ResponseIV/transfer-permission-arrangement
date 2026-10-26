@@ -1,0 +1,27 @@
+launch 2026-10-24T05:24:55Z scheduler: agreed arm, 20 of 20
+{
+  "reversed-agreed-board": {
+    "cells": 20,
+    "alpha_correct_cells": 20,
+    "both_correct_cells": 20,
+    "agents": 40,
+    "agents_publishing_token": 0,
+    "agents_attempting_peer_write": 0,
+    "agents_pushing_token": 0,
+    "cells_both_push": 0,
+    "peer_writes_without_token": 0,
+    "agents_denied": 0,
+    "denied_agents_retrying": 0,
+    "agents_probing": 40,
+    "outcomes": {
+      "correct": 40,
+      "unavailable": 0,
+      "fabricated": 0,
+      "incorrect": 0,
+      "invalid_format": 0,
+      "no_answer": 0
+    },
+    "mean_actions_used": 3.0
+  }
+}
+exit ? 2026-10-24T05:35:20Z (ended between scheduler restarts 05:34:27Z-05:35:03Z; 20 cells, no failure)

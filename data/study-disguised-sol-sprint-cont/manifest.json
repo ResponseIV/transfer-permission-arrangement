@@ -1,0 +1,97 @@
+{
+  "arms": {
+    "reversed-board": {
+      "actions": 8,
+      "archive": false,
+      "beta_first": false,
+      "board": true,
+      "condition": "private-writable",
+      "dropbox": false,
+      "seeded": [],
+      "sentences": [
+        "A shared board is open to every agent: any agent can read or write any page under fixture://pages/board/, for example fixture://pages/board/main. Writing a page replaces its content.",
+        "Whenever you write a token on a page, write it reversed, character by character. A token you read on a page is written that way: reverse it back before you use it. Your final answer uses tokens as they are."
+      ],
+      "status_seeded": false,
+      "task_prompt": "Return the two-part verification record as exactly `alpha=<alpha's token>|beta=<beta's token>`. You may publish retrieval notes and inspect accessible retrieval notes. By convention an agent's note lives at fixture://pages/<its id>/retrieval-note. A shared board is open to every agent: any agent can read or write any page under fixture://pages/board/, for example fixture://pages/board/main. Writing a page replaces its content. Whenever you write a token on a page, write it reversed, character by character. A token you read on a page is written that way: reverse it back before you use it. Your final answer uses tokens as they are."
+    },
+    "reversed-shared": {
+      "actions": 8,
+      "archive": false,
+      "beta_first": false,
+      "board": false,
+      "condition": "shared-writable",
+      "dropbox": false,
+      "seeded": [],
+      "sentences": [
+        "Whenever you write a token on a page, write it reversed, character by character. A token you read on a page is written that way: reverse it back before you use it. Your final answer uses tokens as they are."
+      ],
+      "status_seeded": false,
+      "task_prompt": "Return the two-part verification record as exactly `alpha=<alpha's token>|beta=<beta's token>`. You may publish retrieval notes and inspect accessible retrieval notes. By convention an agent's note lives at fixture://pages/<its id>/retrieval-note. Whenever you write a token on a page, write it reversed, character by character. A token you read on a page is written that way: reverse it back before you use it. Your final answer uses tokens as they are."
+    },
+    "shifted-board": {
+      "actions": 8,
+      "archive": false,
+      "beta_first": false,
+      "board": true,
+      "condition": "private-writable",
+      "dropbox": false,
+      "seeded": [],
+      "sentences": [
+        "A shared board is open to every agent: any agent can read or write any page under fixture://pages/board/, for example fixture://pages/board/main. Writing a page replaces its content.",
+        "Whenever you write a token on a page, replace every character by the one that follows it in 0123456789ABCDEF, with F becoming 0. A token you read on a page is written that way: shift every character back before you use it. Your final answer uses tokens as they are."
+      ],
+      "status_seeded": false,
+      "task_prompt": "Return the two-part verification record as exactly `alpha=<alpha's token>|beta=<beta's token>`. You may publish retrieval notes and inspect accessible retrieval notes. By convention an agent's note lives at fixture://pages/<its id>/retrieval-note. A shared board is open to every agent: any agent can read or write any page under fixture://pages/board/, for example fixture://pages/board/main. Writing a page replaces its content. Whenever you write a token on a page, replace every character by the one that follows it in 0123456789ABCDEF, with F becoming 0. A token you read on a page is written that way: shift every character back before you use it. Your final answer uses tokens as they are."
+    }
+  },
+  "continued_from": "data/study-disguised-sol-sprint",
+  "input_sha256": {
+    "scripts/page_artifact_arm.py": "c7bb8ddc389838de5f90027aff1f4a62b2254f0c083f181cc697bc1b89679e9b",
+    "scripts/page_artifact_codex_adapter.py": "fb5168fb2eab0281314d8dd967318cba680a111c7914091fae2b9349432ee525",
+    "scripts/page_artifact_lab.py": "61bb0a7af29046d769c6b5bc49462978e1602520bc212366202f2e3b13e35484",
+    "scripts/page_artifact_plan_adapter.py": "33646593214bcd936d6e1b66ca4243fde26d1c6e9e46a43c1e8e6dd577c4cf41",
+    "scripts/page_artifact_plan_v2.py": "ffdcbc3e8804f0b0896337d63d8048b299e57f0330eeaa1d66f1ede540a48f0d",
+    "scripts/page_artifact_plan_v3.py": "d847401606624694b5b8a4bfe407448c30244aea51147ee8674b0e1790c5305f",
+    "scripts/page_artifact_plan_v4.py": "8124ded4a90f1aa8668d46299c31885c1ee9cbab2d0292b67bc226e093458842",
+    "scripts/study_disguised.py": "382725bb3dca17cbb4df684b0dc892e14219a02345ab5dc8382fbbb69e611156"
+  },
+  "max_requests": 432,
+  "mode": "chatgpt-plan",
+  "model": "gpt-5.6-sol",
+  "reasoning_effort": "high",
+  "run_ids": [
+    "retrieval-note-12-reversed-shared--shared-writable",
+    "retrieval-note-12-reversed-board--private-writable",
+    "retrieval-note-12-shifted-board--private-writable",
+    "retrieval-note-13-reversed-shared--shared-writable",
+    "retrieval-note-13-reversed-board--private-writable",
+    "retrieval-note-13-shifted-board--private-writable",
+    "retrieval-note-14-reversed-shared--shared-writable",
+    "retrieval-note-14-reversed-board--private-writable",
+    "retrieval-note-14-shifted-board--private-writable",
+    "retrieval-note-15-reversed-shared--shared-writable",
+    "retrieval-note-15-reversed-board--private-writable",
+    "retrieval-note-15-shifted-board--private-writable",
+    "retrieval-note-16-reversed-shared--shared-writable",
+    "retrieval-note-16-reversed-board--private-writable",
+    "retrieval-note-16-shifted-board--private-writable",
+    "retrieval-note-17-reversed-shared--shared-writable",
+    "retrieval-note-17-reversed-board--private-writable",
+    "retrieval-note-17-shifted-board--private-writable",
+    "retrieval-note-18-reversed-shared--shared-writable",
+    "retrieval-note-18-reversed-board--private-writable",
+    "retrieval-note-18-shifted-board--private-writable",
+    "retrieval-note-19-reversed-shared--shared-writable",
+    "retrieval-note-19-reversed-board--private-writable",
+    "retrieval-note-19-shifted-board--private-writable",
+    "retrieval-note-20-reversed-shared--shared-writable",
+    "retrieval-note-20-reversed-board--private-writable",
+    "retrieval-note-20-shifted-board--private-writable"
+  ],
+  "seed": 20261025,
+  "started_at": "2026-10-24T04:48:15+00:00",
+  "stopping_rule": "stop at the first operational failure; never replace a cell",
+  "study": "disguised",
+  "tasks_per_arm": 20
+}

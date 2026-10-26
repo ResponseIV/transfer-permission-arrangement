@@ -1,0 +1,12 @@
+Files whose absolute local paths were made relative to the repository root in this release (content
+otherwise unchanged; their hashes in research/numbers-final-*/inputs.sha256 refer to the originals):
+- data/study-disguised-astra-sprint-cont/manifest.json
+- data/study-disguised-luna-sprint-cont/manifest.json
+- data/study-disguised-luna-sprint-cont2/manifest.json
+- data/study-disguised-sol-sprint-cont/manifest.json
+- data/study-disguised-terra-sprint-cont/manifest.json
+- data/study-pact-sol-replication-cont/manifest.json
+- data/study-pact-sol-replication-cont2/manifest.json
+- data/study-wording-sol-step6-cont/manifest.json
+- research/SPRINT-RUNBOOK-20261023.md
+- release/README.md

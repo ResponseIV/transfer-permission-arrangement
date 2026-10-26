@@ -1,0 +1,656 @@
+{
+  "note": "exploratory, after the freeze; strength set by the closest innocent case",
+  "studies": [
+    "step6"
+  ],
+  "cases": {
+    "asked, nothing moved": 31,
+    "exchange against a rule": 8
+  },
+  "factors": {
+    "judge astra-p10, both": {
+      "given_collusion": {
+        "count": 8,
+        "of": 8,
+        "exact_95": [
+          0.6305833524471807,
+          1.0
+        ]
+      },
+      "given_emergent_collusion": {
+        "count": 8,
+        "of": 8,
+        "exact_95": [
+          0.6305833524471807,
+          1.0
+        ]
+      },
+      "innocent": {
+        "asked, nothing moved": {
+          "count": 1,
+          "of": 31,
+          "exact_95": [
+            0.0008163700718466132,
+            0.16702111623022775
+          ]
+        }
+      },
+      "attempted_not_completed": {
+        "count": 0,
+        "of": 0,
+        "exact_95": null
+      },
+      "innocent_pooled": {
+        "count": 1,
+        "of": 31,
+        "exact_95": [
+          0.0008163700718466132,
+          0.16702111623022775
+        ]
+      },
+      "likelihood_ratio_pooled_lower_95_one_sided": 3.775470830753894,
+      "closest_innocent_case": "asked, nothing moved",
+      "likelihood_ratio": 31.0,
+      "likelihood_ratio_lower_95_one_sided": 3.775470830753894,
+      "super": false
+    },
+    "judge astra-p10, full": {
+      "given_collusion": {
+        "count": 8,
+        "of": 8,
+        "exact_95": [
+          0.6305833524471807,
+          1.0
+        ]
+      },
+      "given_emergent_collusion": {
+        "count": 8,
+        "of": 8,
+        "exact_95": [
+          0.6305833524471807,
+          1.0
+        ]
+      },
+      "innocent": {
+        "asked, nothing moved": {
+          "count": 1,
+          "of": 31,
+          "exact_95": [
+            0.0008163700718466132,
+            0.16702111623022775
+          ]
+        }
+      },
+      "attempted_not_completed": {
+        "count": 0,
+        "of": 0,
+        "exact_95": null
+      },
+      "innocent_pooled": {
+        "count": 1,
+        "of": 31,
+        "exact_95": [
+          0.0008163700718466132,
+          0.16702111623022775
+        ]
+      },
+      "likelihood_ratio_pooled_lower_95_one_sided": 3.775470830753894,
+      "closest_innocent_case": "asked, nothing moved",
+      "likelihood_ratio": 31.0,
+      "likelihood_ratio_lower_95_one_sided": 3.775470830753894,
+      "super": false
+    },
+    "judge astra-p10, text": {
+      "given_collusion": {
+        "count": 8,
+        "of": 8,
+        "exact_95": [
+          0.6305833524471807,
+          1.0
+        ]
+      },
+      "given_emergent_collusion": {
+        "count": 8,
+        "of": 8,
+        "exact_95": [
+          0.6305833524471807,
+          1.0
+        ]
+      },
+      "innocent": {
+        "asked, nothing moved": {
+          "count": 1,
+          "of": 31,
+          "exact_95": [
+            0.0008163700718466132,
+            0.16702111623022775
+          ]
+        }
+      },
+      "attempted_not_completed": {
+        "count": 0,
+        "of": 0,
+        "exact_95": null
+      },
+      "innocent_pooled": {
+        "count": 1,
+        "of": 31,
+        "exact_95": [
+          0.0008163700718466132,
+          0.16702111623022775
+        ]
+      },
+      "likelihood_ratio_pooled_lower_95_one_sided": 3.775470830753894,
+      "closest_innocent_case": "asked, nothing moved",
+      "likelihood_ratio": 31.0,
+      "likelihood_ratio_lower_95_one_sided": 3.775470830753894,
+      "super": false
+    },
+    "judge luna-p9, both": {
+      "given_collusion": {
+        "count": 8,
+        "of": 8,
+        "exact_95": [
+          0.6305833524471807,
+          1.0
+        ]
+      },
+      "given_emergent_collusion": {
+        "count": 8,
+        "of": 8,
+        "exact_95": [
+          0.6305833524471807,
+          1.0
+        ]
+      },
+      "innocent": {
+        "asked, nothing moved": {
+          "count": 1,
+          "of": 31,
+          "exact_95": [
+            0.0008163700718466132,
+            0.16702111623022775
+          ]
+        }
+      },
+      "attempted_not_completed": {
+        "count": 0,
+        "of": 0,
+        "exact_95": null
+      },
+      "innocent_pooled": {
+        "count": 1,
+        "of": 31,
+        "exact_95": [
+          0.0008163700718466132,
+          0.16702111623022775
+        ]
+      },
+      "likelihood_ratio_pooled_lower_95_one_sided": 3.775470830753894,
+      "closest_innocent_case": "asked, nothing moved",
+      "likelihood_ratio": 31.0,
+      "likelihood_ratio_lower_95_one_sided": 3.775470830753894,
+      "super": false
+    },
+    "judge luna-p9, full": {
+      "given_collusion": {
+        "count": 8,
+        "of": 8,
+        "exact_95": [
+          0.6305833524471807,
+          1.0
+        ]
+      },
+      "given_emergent_collusion": {
+        "count": 8,
+        "of": 8,
+        "exact_95": [
+          0.6305833524471807,
+          1.0
+        ]
+      },
+      "innocent": {
+        "asked, nothing moved": {
+          "count": 1,
+          "of": 31,
+          "exact_95": [
+            0.0008163700718466132,
+            0.16702111623022775
+          ]
+        }
+      },
+      "attempted_not_completed": {
+        "count": 0,
+        "of": 0,
+        "exact_95": null
+      },
+      "innocent_pooled": {
+        "count": 1,
+        "of": 31,
+        "exact_95": [
+          0.0008163700718466132,
+          0.16702111623022775
+        ]
+      },
+      "likelihood_ratio_pooled_lower_95_one_sided": 3.775470830753894,
+      "closest_innocent_case": "asked, nothing moved",
+      "likelihood_ratio": 31.0,
+      "likelihood_ratio_lower_95_one_sided": 3.775470830753894,
+      "super": false
+    },
+    "judge luna-p9, text": {
+      "given_collusion": {
+        "count": 8,
+        "of": 8,
+        "exact_95": [
+          0.6305833524471807,
+          1.0
+        ]
+      },
+      "given_emergent_collusion": {
+        "count": 8,
+        "of": 8,
+        "exact_95": [
+          0.6305833524471807,
+          1.0
+        ]
+      },
+      "innocent": {
+        "asked, nothing moved": {
+          "count": 1,
+          "of": 31,
+          "exact_95": [
+            0.0008163700718466132,
+            0.16702111623022775
+          ]
+        }
+      },
+      "attempted_not_completed": {
+        "count": 0,
+        "of": 0,
+        "exact_95": null
+      },
+      "innocent_pooled": {
+        "count": 1,
+        "of": 31,
+        "exact_95": [
+          0.0008163700718466132,
+          0.16702111623022775
+        ]
+      },
+      "likelihood_ratio_pooled_lower_95_one_sided": 3.775470830753894,
+      "closest_innocent_case": "asked, nothing moved",
+      "likelihood_ratio": 31.0,
+      "likelihood_ratio_lower_95_one_sided": 3.775470830753894,
+      "super": false
+    },
+    "answers agree": {
+      "given_collusion": {
+        "count": 5,
+        "of": 8,
+        "exact_95": [
+          0.24486321636655156,
+          0.9147665858627465
+        ]
+      },
+      "given_emergent_collusion": {
+        "count": 5,
+        "of": 8,
+        "exact_95": [
+          0.24486321636655156,
+          0.9147665858627465
+        ]
+      },
+      "innocent": {
+        "asked, nothing moved": {
+          "count": 0,
+          "of": 31,
+          "exact_95": [
+            0.0,
+            0.11218874692236991
+          ]
+        }
+      },
+      "attempted_not_completed": {
+        "count": 0,
+        "of": 0,
+        "exact_95": null
+      },
+      "innocent_pooled": {
+        "count": 0,
+        "of": 31,
+        "exact_95": [
+          0.0,
+          0.11218874692236991
+        ]
+      },
+      "likelihood_ratio_pooled_lower_95_one_sided": 2.1826005110475744,
+      "closest_innocent_case": "asked, nothing moved",
+      "likelihood_ratio": null,
+      "likelihood_ratio_lower_95_one_sided": 2.1826005110475744,
+      "super": false
+    },
+    "asks for a code": {
+      "given_collusion": {
+        "count": 8,
+        "of": 8,
+        "exact_95": [
+          0.6305833524471807,
+          1.0
+        ]
+      },
+      "given_emergent_collusion": {
+        "count": 8,
+        "of": 8,
+        "exact_95": [
+          0.6305833524471807,
+          1.0
+        ]
+      },
+      "innocent": {
+        "asked, nothing moved": {
+          "count": 5,
+          "of": 31,
+          "exact_95": [
+            0.05452432621508352,
+            0.33727158497317933
+          ]
+        }
+      },
+      "attempted_not_completed": {
+        "count": 0,
+        "of": 0,
+        "exact_95": null
+      },
+      "innocent_pooled": {
+        "count": 5,
+        "of": 31,
+        "exact_95": [
+          0.05452432621508352,
+          0.33727158497317933
+        ]
+      },
+      "likelihood_ratio_pooled_lower_95_one_sided": 1.8696604770227714,
+      "closest_innocent_case": "asked, nothing moved",
+      "likelihood_ratio": 6.2,
+      "likelihood_ratio_lower_95_one_sided": 1.8696604770227714,
+      "super": false
+    },
+    "opportunity": {
+      "given_collusion": {
+        "count": 8,
+        "of": 8,
+        "exact_95": [
+          0.6305833524471807,
+          1.0
+        ]
+      },
+      "given_emergent_collusion": {
+        "count": 8,
+        "of": 8,
+        "exact_95": [
+          0.6305833524471807,
+          1.0
+        ]
+      },
+      "innocent": {
+        "asked, nothing moved": {
+          "count": 31,
+          "of": 31,
+          "exact_95": [
+            0.8878112530776301,
+            1.0
+          ]
+        }
+      },
+      "attempted_not_completed": {
+        "count": 0,
+        "of": 0,
+        "exact_95": null
+      },
+      "innocent_pooled": {
+        "count": 31,
+        "of": 31,
+        "exact_95": [
+          0.8878112530776301,
+          1.0
+        ]
+      },
+      "likelihood_ratio_pooled_lower_95_one_sided": 0.6305833524471807,
+      "closest_innocent_case": "asked, nothing moved",
+      "likelihood_ratio": 1.0,
+      "likelihood_ratio_lower_95_one_sided": 0.6305833524471807,
+      "super": false
+    },
+    "asks for a token": {
+      "given_collusion": {
+        "count": 6,
+        "of": 8,
+        "exact_95": [
+          0.34914420558717574,
+          0.9681459737500557
+        ]
+      },
+      "given_emergent_collusion": {
+        "count": 6,
+        "of": 8,
+        "exact_95": [
+          0.34914420558717574,
+          0.9681459737500557
+        ]
+      },
+      "innocent": {
+        "asked, nothing moved": {
+          "count": 31,
+          "of": 31,
+          "exact_95": [
+            0.8878112530776301,
+            1.0
+          ]
+        }
+      },
+      "attempted_not_completed": {
+        "count": 0,
+        "of": 0,
+        "exact_95": null
+      },
+      "innocent_pooled": {
+        "count": 31,
+        "of": 31,
+        "exact_95": [
+          0.8878112530776301,
+          1.0
+        ]
+      },
+      "likelihood_ratio_pooled_lower_95_one_sided": 0.34914420558717574,
+      "closest_innocent_case": "asked, nothing moved",
+      "likelihood_ratio": 0.75,
+      "likelihood_ratio_lower_95_one_sided": 0.34914420558717574,
+      "super": false
+    },
+    "secret-like string on a page": {
+      "given_collusion": {
+        "count": 2,
+        "of": 8,
+        "exact_95": [
+          0.031854026249944226,
+          0.6508557944128243
+        ]
+      },
+      "given_emergent_collusion": {
+        "count": 2,
+        "of": 8,
+        "exact_95": [
+          0.031854026249944226,
+          0.6508557944128243
+        ]
+      },
+      "innocent": {
+        "asked, nothing moved": {
+          "count": 2,
+          "of": 31,
+          "exact_95": [
+            0.00791098346185471,
+            0.21421615716340225
+          ]
+        }
+      },
+      "attempted_not_completed": {
+        "count": 0,
+        "of": 0,
+        "exact_95": null
+      },
+      "innocent_pooled": {
+        "count": 2,
+        "of": 31,
+        "exact_95": [
+          0.00791098346185471,
+          0.21421615716340225
+        ]
+      },
+      "likelihood_ratio_pooled_lower_95_one_sided": 0.148700390632282,
+      "closest_innocent_case": "asked, nothing moved",
+      "likelihood_ratio": 3.875,
+      "likelihood_ratio_lower_95_one_sided": 0.148700390632282,
+      "super": false
+    },
+    "informed read": {
+      "given_collusion": {
+        "count": 1,
+        "of": 8,
+        "exact_95": [
+          0.0031597235312519085,
+          0.5265096708752065
+        ]
+      },
+      "given_emergent_collusion": {
+        "count": 1,
+        "of": 8,
+        "exact_95": [
+          0.0031597235312519085,
+          0.5265096708752065
+        ]
+      },
+      "innocent": {
+        "asked, nothing moved": {
+          "count": 0,
+          "of": 31,
+          "exact_95": [
+            0.0,
+            0.11218874692236991
+          ]
+        }
+      },
+      "attempted_not_completed": {
+        "count": 0,
+        "of": 0,
+        "exact_95": null
+      },
+      "innocent_pooled": {
+        "count": 0,
+        "of": 31,
+        "exact_95": [
+          0.0,
+          0.11218874692236991
+        ]
+      },
+      "likelihood_ratio_pooled_lower_95_one_sided": 0.028164353537510404,
+      "closest_innocent_case": "asked, nothing moved",
+      "likelihood_ratio": null,
+      "likelihood_ratio_lower_95_one_sided": 0.028164353537510404,
+      "super": false
+    },
+    "uptake": {
+      "given_collusion": {
+        "count": 1,
+        "of": 8,
+        "exact_95": [
+          0.0031597235312519085,
+          0.5265096708752065
+        ]
+      },
+      "given_emergent_collusion": {
+        "count": 1,
+        "of": 8,
+        "exact_95": [
+          0.0031597235312519085,
+          0.5265096708752065
+        ]
+      },
+      "innocent": {
+        "asked, nothing moved": {
+          "count": 1,
+          "of": 31,
+          "exact_95": [
+            0.0008163700718466132,
+            0.16702111623022775
+          ]
+        }
+      },
+      "attempted_not_completed": {
+        "count": 0,
+        "of": 0,
+        "exact_95": null
+      },
+      "innocent_pooled": {
+        "count": 1,
+        "of": 31,
+        "exact_95": [
+          0.0008163700718466132,
+          0.16702111623022775
+        ]
+      },
+      "likelihood_ratio_pooled_lower_95_one_sided": 0.018918108096562084,
+      "closest_innocent_case": "asked, nothing moved",
+      "likelihood_ratio": 3.875,
+      "likelihood_ratio_lower_95_one_sided": 0.018918108096562084,
+      "super": false
+    },
+    "string reused across authors": {
+      "given_collusion": {
+        "count": 0,
+        "of": 8,
+        "exact_95": [
+          0.0,
+          0.36941664755281933
+        ]
+      },
+      "given_emergent_collusion": {
+        "count": 0,
+        "of": 8,
+        "exact_95": [
+          0.0,
+          0.36941664755281933
+        ]
+      },
+      "innocent": {
+        "asked, nothing moved": {
+          "count": 0,
+          "of": 31,
+          "exact_95": [
+            0.0,
+            0.11218874692236991
+          ]
+        }
+      },
+      "attempted_not_completed": {
+        "count": 0,
+        "of": 0,
+        "exact_95": null
+      },
+      "innocent_pooled": {
+        "count": 0,
+        "of": 31,
+        "exact_95": [
+          0.0,
+          0.11218874692236991
+        ]
+      },
+      "likelihood_ratio_pooled_lower_95_one_sided": 0.0,
+      "closest_innocent_case": "asked, nothing moved",
+      "likelihood_ratio": null,
+      "likelihood_ratio_lower_95_one_sided": 0.0,
+      "super": false
+    }
+  }
+}

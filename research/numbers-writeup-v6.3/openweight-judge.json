@@ -1,0 +1,2559 @@
+{
+  "all_accounted_for": true,
+  "all_complete": false,
+  "datasets": {
+    "agreed": {
+      "scorable_cells": 20,
+      "source_data": "data",
+      "study_matches": [
+        "pact-agreed-luna"
+      ],
+      "views": {
+        "both": {
+          "accounted_for": true,
+          "actionable_pending": 0,
+          "completed": true,
+          "expected": 20,
+          "interrupted_unknown": 0,
+          "kappa": {
+            "against_astra_p10_common_ids": {
+              "agree": 12,
+              "cells": 20,
+              "kappa": 0.0,
+              "kappa_range": {
+                "count_combinations_enumerated": 1,
+                "maximum": 0.0,
+                "minimum": 0.0,
+                "undefined_combinations": 0
+              },
+              "missing_reference_negative": 0,
+              "missing_reference_positive": 0,
+              "qwen_transfer_confusion": {
+                "cells": 20,
+                "fn": 8,
+                "fp": 0,
+                "tn": 0,
+                "tp": 12
+              },
+              "reference_denominator": 20,
+              "reference_negative": 0,
+              "reference_positive": 20,
+              "reference_transfer_confusion": {
+                "cells": 20,
+                "fn": 0,
+                "fp": 0,
+                "tn": 0,
+                "tp": 20
+              }
+            },
+            "against_luna_p9_common_ids": {
+              "agree": 7,
+              "cells": 20,
+              "kappa": -0.32653061224489804,
+              "kappa_range": {
+                "count_combinations_enumerated": 1,
+                "maximum": -0.32653061224489804,
+                "minimum": -0.32653061224489804,
+                "undefined_combinations": 0
+              },
+              "missing_reference_negative": 0,
+              "missing_reference_positive": 0,
+              "qwen_transfer_confusion": {
+                "cells": 20,
+                "fn": 8,
+                "fp": 0,
+                "tn": 0,
+                "tp": 12
+              },
+              "reference_denominator": 20,
+              "reference_negative": 9,
+              "reference_positive": 11,
+              "reference_transfer_confusion": {
+                "cells": 20,
+                "fn": 9,
+                "fp": 0,
+                "tn": 0,
+                "tp": 11
+              }
+            },
+            "against_receipt_label": {
+              "cells": 20,
+              "kappa": 0.0
+            },
+            "against_transfer_label": {
+              "cells": 20,
+              "kappa": 0.0
+            }
+          },
+          "pending": 0,
+          "receipt_confusion": {
+            "cells": 20,
+            "fn": 8,
+            "fp": 0,
+            "tn": 0,
+            "tp": 12
+          },
+          "terminal_errors": 0,
+          "transfer_confusion": {
+            "cells": 20,
+            "fn": 8,
+            "fp": 0,
+            "tn": 0,
+            "tp": 12
+          },
+          "unresolved_labels": {
+            "combined": {
+              "receipt": {
+                "negative": 0,
+                "positive": 0
+              },
+              "transfer": {
+                "negative": 0,
+                "positive": 0
+              }
+            },
+            "pending": {
+              "receipt": {
+                "negative": 0,
+                "positive": 0
+              },
+              "transfer": {
+                "negative": 0,
+                "positive": 0
+              }
+            },
+            "terminal_errors": {
+              "receipt": {
+                "negative": 0,
+                "positive": 0
+              },
+              "transfer": {
+                "negative": 0,
+                "positive": 0
+              }
+            }
+          },
+          "valid": 20
+        },
+        "full": {
+          "accounted_for": true,
+          "actionable_pending": 0,
+          "completed": true,
+          "expected": 20,
+          "interrupted_unknown": 0,
+          "kappa": {
+            "against_astra_p10_common_ids": {
+              "agree": 20,
+              "cells": 20,
+              "kappa": null,
+              "kappa_range": {
+                "count_combinations_enumerated": 1,
+                "maximum": null,
+                "minimum": null,
+                "undefined_combinations": 1
+              },
+              "missing_reference_negative": 0,
+              "missing_reference_positive": 0,
+              "qwen_transfer_confusion": {
+                "cells": 20,
+                "fn": 0,
+                "fp": 0,
+                "tn": 0,
+                "tp": 20
+              },
+              "reference_denominator": 20,
+              "reference_negative": 0,
+              "reference_positive": 20,
+              "reference_transfer_confusion": {
+                "cells": 20,
+                "fn": 0,
+                "fp": 0,
+                "tn": 0,
+                "tp": 20
+              }
+            },
+            "against_luna_p9_common_ids": {
+              "agree": 19,
+              "cells": 20,
+              "kappa": 0.0,
+              "kappa_range": {
+                "count_combinations_enumerated": 1,
+                "maximum": 0.0,
+                "minimum": 0.0,
+                "undefined_combinations": 0
+              },
+              "missing_reference_negative": 0,
+              "missing_reference_positive": 0,
+              "qwen_transfer_confusion": {
+                "cells": 20,
+                "fn": 0,
+                "fp": 0,
+                "tn": 0,
+                "tp": 20
+              },
+              "reference_denominator": 20,
+              "reference_negative": 1,
+              "reference_positive": 19,
+              "reference_transfer_confusion": {
+                "cells": 20,
+                "fn": 1,
+                "fp": 0,
+                "tn": 0,
+                "tp": 19
+              }
+            },
+            "against_receipt_label": {
+              "cells": 20,
+              "kappa": null
+            },
+            "against_transfer_label": {
+              "cells": 20,
+              "kappa": null
+            }
+          },
+          "pending": 0,
+          "receipt_confusion": {
+            "cells": 20,
+            "fn": 0,
+            "fp": 0,
+            "tn": 0,
+            "tp": 20
+          },
+          "terminal_errors": 0,
+          "transfer_confusion": {
+            "cells": 20,
+            "fn": 0,
+            "fp": 0,
+            "tn": 0,
+            "tp": 20
+          },
+          "unresolved_labels": {
+            "combined": {
+              "receipt": {
+                "negative": 0,
+                "positive": 0
+              },
+              "transfer": {
+                "negative": 0,
+                "positive": 0
+              }
+            },
+            "pending": {
+              "receipt": {
+                "negative": 0,
+                "positive": 0
+              },
+              "transfer": {
+                "negative": 0,
+                "positive": 0
+              }
+            },
+            "terminal_errors": {
+              "receipt": {
+                "negative": 0,
+                "positive": 0
+              },
+              "transfer": {
+                "negative": 0,
+                "positive": 0
+              }
+            }
+          },
+          "valid": 20
+        },
+        "text": {
+          "accounted_for": true,
+          "actionable_pending": 0,
+          "completed": true,
+          "expected": 20,
+          "interrupted_unknown": 0,
+          "kappa": {
+            "against_astra_p10_common_ids": {
+              "agree": 17,
+              "cells": 19,
+              "kappa": 0.0,
+              "kappa_range": {
+                "count_combinations_enumerated": 2,
+                "maximum": 0.0,
+                "minimum": -0.07142857142857148,
+                "undefined_combinations": 0
+              },
+              "missing_reference_negative": 0,
+              "missing_reference_positive": 1,
+              "qwen_transfer_confusion": {
+                "cells": 19,
+                "fn": 0,
+                "fp": 0,
+                "tn": 0,
+                "tp": 19
+              },
+              "reference_denominator": 20,
+              "reference_negative": 2,
+              "reference_positive": 18,
+              "reference_transfer_confusion": {
+                "cells": 19,
+                "fn": 2,
+                "fp": 0,
+                "tn": 0,
+                "tp": 17
+              }
+            },
+            "against_luna_p9_common_ids": {
+              "agree": 2,
+              "cells": 19,
+              "kappa": 0.0,
+              "kappa_range": {
+                "count_combinations_enumerated": 2,
+                "maximum": 0.011627906976744132,
+                "minimum": 0.0,
+                "undefined_combinations": 0
+              },
+              "missing_reference_negative": 1,
+              "missing_reference_positive": 0,
+              "qwen_transfer_confusion": {
+                "cells": 19,
+                "fn": 0,
+                "fp": 0,
+                "tn": 0,
+                "tp": 19
+              },
+              "reference_denominator": 20,
+              "reference_negative": 18,
+              "reference_positive": 2,
+              "reference_transfer_confusion": {
+                "cells": 19,
+                "fn": 17,
+                "fp": 0,
+                "tn": 0,
+                "tp": 2
+              }
+            },
+            "against_receipt_label": {
+              "cells": 19,
+              "kappa": null
+            },
+            "against_transfer_label": {
+              "cells": 19,
+              "kappa": null
+            }
+          },
+          "pending": 0,
+          "receipt_confusion": {
+            "cells": 19,
+            "fn": 0,
+            "fp": 0,
+            "tn": 0,
+            "tp": 19
+          },
+          "terminal_errors": 1,
+          "transfer_confusion": {
+            "cells": 19,
+            "fn": 0,
+            "fp": 0,
+            "tn": 0,
+            "tp": 19
+          },
+          "unresolved_labels": {
+            "combined": {
+              "receipt": {
+                "negative": 0,
+                "positive": 1
+              },
+              "transfer": {
+                "negative": 0,
+                "positive": 1
+              }
+            },
+            "pending": {
+              "receipt": {
+                "negative": 0,
+                "positive": 0
+              },
+              "transfer": {
+                "negative": 0,
+                "positive": 0
+              }
+            },
+            "terminal_errors": {
+              "receipt": {
+                "negative": 0,
+                "positive": 1
+              },
+              "transfer": {
+                "negative": 0,
+                "positive": 1
+              }
+            }
+          },
+          "valid": 19
+        }
+      }
+    },
+    "leak": {
+      "scorable_cells": 60,
+      "source_data": "data/posthoc",
+      "study_matches": [
+        "leak"
+      ],
+      "views": {
+        "both": {
+          "accounted_for": true,
+          "actionable_pending": 0,
+          "completed": true,
+          "expected": 60,
+          "interrupted_unknown": 0,
+          "kappa": {
+            "against_astra_p10_common_ids": {
+              "agree": 60,
+              "cells": 60,
+              "kappa": null,
+              "kappa_range": {
+                "count_combinations_enumerated": 1,
+                "maximum": null,
+                "minimum": null,
+                "undefined_combinations": 1
+              },
+              "missing_reference_negative": 0,
+              "missing_reference_positive": 0,
+              "qwen_transfer_confusion": {
+                "cells": 60,
+                "fn": 0,
+                "fp": 0,
+                "tn": 0,
+                "tp": 60
+              },
+              "reference_denominator": 60,
+              "reference_negative": 0,
+              "reference_positive": 60,
+              "reference_transfer_confusion": {
+                "cells": 60,
+                "fn": 0,
+                "fp": 0,
+                "tn": 0,
+                "tp": 60
+              }
+            },
+            "against_luna_p9_common_ids": {
+              "agree": 59,
+              "cells": 60,
+              "kappa": 0.0,
+              "kappa_range": {
+                "count_combinations_enumerated": 1,
+                "maximum": 0.0,
+                "minimum": 0.0,
+                "undefined_combinations": 0
+              },
+              "missing_reference_negative": 0,
+              "missing_reference_positive": 0,
+              "qwen_transfer_confusion": {
+                "cells": 60,
+                "fn": 0,
+                "fp": 0,
+                "tn": 0,
+                "tp": 60
+              },
+              "reference_denominator": 60,
+              "reference_negative": 1,
+              "reference_positive": 59,
+              "reference_transfer_confusion": {
+                "cells": 60,
+                "fn": 1,
+                "fp": 0,
+                "tn": 0,
+                "tp": 59
+              }
+            },
+            "against_receipt_label": {
+              "cells": 60,
+              "kappa": null
+            },
+            "against_transfer_label": {
+              "cells": 60,
+              "kappa": null
+            }
+          },
+          "pending": 0,
+          "receipt_confusion": {
+            "cells": 60,
+            "fn": 0,
+            "fp": 0,
+            "tn": 0,
+            "tp": 60
+          },
+          "terminal_errors": 0,
+          "transfer_confusion": {
+            "cells": 60,
+            "fn": 0,
+            "fp": 0,
+            "tn": 0,
+            "tp": 60
+          },
+          "unresolved_labels": {
+            "combined": {
+              "receipt": {
+                "negative": 0,
+                "positive": 0
+              },
+              "transfer": {
+                "negative": 0,
+                "positive": 0
+              }
+            },
+            "pending": {
+              "receipt": {
+                "negative": 0,
+                "positive": 0
+              },
+              "transfer": {
+                "negative": 0,
+                "positive": 0
+              }
+            },
+            "terminal_errors": {
+              "receipt": {
+                "negative": 0,
+                "positive": 0
+              },
+              "transfer": {
+                "negative": 0,
+                "positive": 0
+              }
+            }
+          },
+          "valid": 60
+        },
+        "full": {
+          "accounted_for": true,
+          "actionable_pending": 0,
+          "completed": true,
+          "expected": 60,
+          "interrupted_unknown": 0,
+          "kappa": {
+            "against_astra_p10_common_ids": {
+              "agree": 60,
+              "cells": 60,
+              "kappa": null,
+              "kappa_range": {
+                "count_combinations_enumerated": 1,
+                "maximum": null,
+                "minimum": null,
+                "undefined_combinations": 1
+              },
+              "missing_reference_negative": 0,
+              "missing_reference_positive": 0,
+              "qwen_transfer_confusion": {
+                "cells": 60,
+                "fn": 0,
+                "fp": 0,
+                "tn": 0,
+                "tp": 60
+              },
+              "reference_denominator": 60,
+              "reference_negative": 0,
+              "reference_positive": 60,
+              "reference_transfer_confusion": {
+                "cells": 60,
+                "fn": 0,
+                "fp": 0,
+                "tn": 0,
+                "tp": 60
+              }
+            },
+            "against_luna_p9_common_ids": {
+              "agree": 59,
+              "cells": 60,
+              "kappa": 0.0,
+              "kappa_range": {
+                "count_combinations_enumerated": 1,
+                "maximum": 0.0,
+                "minimum": 0.0,
+                "undefined_combinations": 0
+              },
+              "missing_reference_negative": 0,
+              "missing_reference_positive": 0,
+              "qwen_transfer_confusion": {
+                "cells": 60,
+                "fn": 0,
+                "fp": 0,
+                "tn": 0,
+                "tp": 60
+              },
+              "reference_denominator": 60,
+              "reference_negative": 1,
+              "reference_positive": 59,
+              "reference_transfer_confusion": {
+                "cells": 60,
+                "fn": 1,
+                "fp": 0,
+                "tn": 0,
+                "tp": 59
+              }
+            },
+            "against_receipt_label": {
+              "cells": 60,
+              "kappa": null
+            },
+            "against_transfer_label": {
+              "cells": 60,
+              "kappa": null
+            }
+          },
+          "pending": 0,
+          "receipt_confusion": {
+            "cells": 60,
+            "fn": 0,
+            "fp": 0,
+            "tn": 0,
+            "tp": 60
+          },
+          "terminal_errors": 0,
+          "transfer_confusion": {
+            "cells": 60,
+            "fn": 0,
+            "fp": 0,
+            "tn": 0,
+            "tp": 60
+          },
+          "unresolved_labels": {
+            "combined": {
+              "receipt": {
+                "negative": 0,
+                "positive": 0
+              },
+              "transfer": {
+                "negative": 0,
+                "positive": 0
+              }
+            },
+            "pending": {
+              "receipt": {
+                "negative": 0,
+                "positive": 0
+              },
+              "transfer": {
+                "negative": 0,
+                "positive": 0
+              }
+            },
+            "terminal_errors": {
+              "receipt": {
+                "negative": 0,
+                "positive": 0
+              },
+              "transfer": {
+                "negative": 0,
+                "positive": 0
+              }
+            }
+          },
+          "valid": 60
+        },
+        "text": {
+          "accounted_for": true,
+          "actionable_pending": 0,
+          "completed": true,
+          "expected": 60,
+          "interrupted_unknown": 0,
+          "kappa": {
+            "against_astra_p10_common_ids": {
+              "agree": 22,
+              "cells": 60,
+              "kappa": 0.0,
+              "kappa_range": {
+                "count_combinations_enumerated": 1,
+                "maximum": 0.0,
+                "minimum": 0.0,
+                "undefined_combinations": 0
+              },
+              "missing_reference_negative": 0,
+              "missing_reference_positive": 0,
+              "qwen_transfer_confusion": {
+                "cells": 60,
+                "fn": 38,
+                "fp": 0,
+                "tn": 0,
+                "tp": 22
+              },
+              "reference_denominator": 60,
+              "reference_negative": 0,
+              "reference_positive": 60,
+              "reference_transfer_confusion": {
+                "cells": 60,
+                "fn": 0,
+                "fp": 0,
+                "tn": 0,
+                "tp": 60
+              }
+            },
+            "against_luna_p9_common_ids": {
+              "agree": 37,
+              "cells": 60,
+              "kappa": 0.18246445497630343,
+              "kappa_range": {
+                "count_combinations_enumerated": 1,
+                "maximum": 0.18246445497630343,
+                "minimum": 0.18246445497630343,
+                "undefined_combinations": 0
+              },
+              "missing_reference_negative": 0,
+              "missing_reference_positive": 0,
+              "qwen_transfer_confusion": {
+                "cells": 60,
+                "fn": 38,
+                "fp": 0,
+                "tn": 0,
+                "tp": 22
+              },
+              "reference_denominator": 60,
+              "reference_negative": 37,
+              "reference_positive": 23,
+              "reference_transfer_confusion": {
+                "cells": 60,
+                "fn": 37,
+                "fp": 0,
+                "tn": 0,
+                "tp": 23
+              }
+            },
+            "against_receipt_label": {
+              "cells": 60,
+              "kappa": 0.0
+            },
+            "against_transfer_label": {
+              "cells": 60,
+              "kappa": 0.0
+            }
+          },
+          "pending": 0,
+          "receipt_confusion": {
+            "cells": 60,
+            "fn": 38,
+            "fp": 0,
+            "tn": 0,
+            "tp": 22
+          },
+          "terminal_errors": 0,
+          "transfer_confusion": {
+            "cells": 60,
+            "fn": 38,
+            "fp": 0,
+            "tn": 0,
+            "tp": 22
+          },
+          "unresolved_labels": {
+            "combined": {
+              "receipt": {
+                "negative": 0,
+                "positive": 0
+              },
+              "transfer": {
+                "negative": 0,
+                "positive": 0
+              }
+            },
+            "pending": {
+              "receipt": {
+                "negative": 0,
+                "positive": 0
+              },
+              "transfer": {
+                "negative": 0,
+                "positive": 0
+              }
+            },
+            "terminal_errors": {
+              "receipt": {
+                "negative": 0,
+                "positive": 0
+              },
+              "transfer": {
+                "negative": 0,
+                "positive": 0
+              }
+            }
+          },
+          "valid": 60
+        }
+      }
+    },
+    "openweight": {
+      "scorable_cells": 40,
+      "source_data": "data",
+      "study_matches": [
+        "pact-qwen-openweight",
+        "pact-agreed-qwen"
+      ],
+      "views": {
+        "both": {
+          "accounted_for": true,
+          "actionable_pending": 0,
+          "completed": true,
+          "expected": 40,
+          "interrupted_unknown": 0,
+          "kappa": {
+            "against_astra_p10_common_ids": {
+              "agree": 29,
+              "cells": 39,
+              "kappa": 0.0,
+              "kappa_range": {
+                "count_combinations_enumerated": 2,
+                "maximum": 0.0,
+                "minimum": 0.0,
+                "undefined_combinations": 0
+              },
+              "missing_reference_negative": 0,
+              "missing_reference_positive": 1,
+              "qwen_transfer_confusion": {
+                "cells": 39,
+                "fn": 6,
+                "fp": 12,
+                "tn": 4,
+                "tp": 17
+              },
+              "reference_denominator": 40,
+              "reference_negative": 0,
+              "reference_positive": 40,
+              "reference_transfer_confusion": {
+                "cells": 39,
+                "fn": 0,
+                "fp": 16,
+                "tn": 0,
+                "tp": 23
+              }
+            },
+            "against_luna_p9_common_ids": {
+              "agree": 20,
+              "cells": 39,
+              "kappa": 0.060836501901140566,
+              "kappa_range": {
+                "count_combinations_enumerated": 2,
+                "maximum": 0.09090909090909088,
+                "minimum": 0.04761904761904756,
+                "undefined_combinations": 0
+              },
+              "missing_reference_negative": 1,
+              "missing_reference_positive": 0,
+              "qwen_transfer_confusion": {
+                "cells": 39,
+                "fn": 6,
+                "fp": 12,
+                "tn": 4,
+                "tp": 17
+              },
+              "reference_denominator": 40,
+              "reference_negative": 22,
+              "reference_positive": 18,
+              "reference_transfer_confusion": {
+                "cells": 39,
+                "fn": 14,
+                "fp": 9,
+                "tn": 7,
+                "tp": 9
+              }
+            },
+            "against_receipt_label": {
+              "cells": 39,
+              "kappa": -0.04889975550122218
+            },
+            "against_transfer_label": {
+              "cells": 39,
+              "kappa": -0.01152737752161381
+            }
+          },
+          "pending": 0,
+          "receipt_confusion": {
+            "cells": 39,
+            "fn": 10,
+            "fp": 1,
+            "tn": 0,
+            "tp": 28
+          },
+          "terminal_errors": 1,
+          "transfer_confusion": {
+            "cells": 39,
+            "fn": 6,
+            "fp": 12,
+            "tn": 4,
+            "tp": 17
+          },
+          "unresolved_labels": {
+            "combined": {
+              "receipt": {
+                "negative": 0,
+                "positive": 1
+              },
+              "transfer": {
+                "negative": 1,
+                "positive": 0
+              }
+            },
+            "pending": {
+              "receipt": {
+                "negative": 0,
+                "positive": 0
+              },
+              "transfer": {
+                "negative": 0,
+                "positive": 0
+              }
+            },
+            "terminal_errors": {
+              "receipt": {
+                "negative": 0,
+                "positive": 1
+              },
+              "transfer": {
+                "negative": 1,
+                "positive": 0
+              }
+            }
+          },
+          "valid": 39
+        },
+        "full": {
+          "accounted_for": true,
+          "actionable_pending": 0,
+          "completed": true,
+          "expected": 40,
+          "interrupted_unknown": 0,
+          "kappa": {
+            "against_astra_p10_common_ids": {
+              "agree": 38,
+              "cells": 38,
+              "kappa": null,
+              "kappa_range": {
+                "count_combinations_enumerated": 3,
+                "maximum": 0.0,
+                "minimum": 0.0,
+                "undefined_combinations": 1
+              },
+              "missing_reference_negative": 0,
+              "missing_reference_positive": 2,
+              "qwen_transfer_confusion": {
+                "cells": 38,
+                "fn": 0,
+                "fp": 16,
+                "tn": 0,
+                "tp": 22
+              },
+              "reference_denominator": 40,
+              "reference_negative": 0,
+              "reference_positive": 40,
+              "reference_transfer_confusion": {
+                "cells": 38,
+                "fn": 0,
+                "fp": 16,
+                "tn": 0,
+                "tp": 22
+              }
+            },
+            "against_luna_p9_common_ids": {
+              "agree": 38,
+              "cells": 38,
+              "kappa": null,
+              "kappa_range": {
+                "count_combinations_enumerated": 3,
+                "maximum": 0.0,
+                "minimum": 0.0,
+                "undefined_combinations": 1
+              },
+              "missing_reference_negative": 0,
+              "missing_reference_positive": 2,
+              "qwen_transfer_confusion": {
+                "cells": 38,
+                "fn": 0,
+                "fp": 16,
+                "tn": 0,
+                "tp": 22
+              },
+              "reference_denominator": 40,
+              "reference_negative": 0,
+              "reference_positive": 40,
+              "reference_transfer_confusion": {
+                "cells": 38,
+                "fn": 0,
+                "fp": 16,
+                "tn": 0,
+                "tp": 22
+              }
+            },
+            "against_receipt_label": {
+              "cells": 38,
+              "kappa": 0.0
+            },
+            "against_transfer_label": {
+              "cells": 38,
+              "kappa": 0.0
+            }
+          },
+          "pending": 0,
+          "receipt_confusion": {
+            "cells": 38,
+            "fn": 0,
+            "fp": 1,
+            "tn": 0,
+            "tp": 37
+          },
+          "terminal_errors": 2,
+          "transfer_confusion": {
+            "cells": 38,
+            "fn": 0,
+            "fp": 16,
+            "tn": 0,
+            "tp": 22
+          },
+          "unresolved_labels": {
+            "combined": {
+              "receipt": {
+                "negative": 0,
+                "positive": 2
+              },
+              "transfer": {
+                "negative": 1,
+                "positive": 1
+              }
+            },
+            "pending": {
+              "receipt": {
+                "negative": 0,
+                "positive": 0
+              },
+              "transfer": {
+                "negative": 0,
+                "positive": 0
+              }
+            },
+            "terminal_errors": {
+              "receipt": {
+                "negative": 0,
+                "positive": 2
+              },
+              "transfer": {
+                "negative": 1,
+                "positive": 1
+              }
+            }
+          },
+          "valid": 38
+        },
+        "text": {
+          "accounted_for": true,
+          "actionable_pending": 0,
+          "completed": true,
+          "expected": 40,
+          "interrupted_unknown": 0,
+          "kappa": {
+            "against_astra_p10_common_ids": {
+              "agree": 23,
+              "cells": 40,
+              "kappa": -0.09677419354838702,
+              "kappa_range": {
+                "count_combinations_enumerated": 1,
+                "maximum": -0.09677419354838702,
+                "minimum": -0.09677419354838702,
+                "undefined_combinations": 0
+              },
+              "missing_reference_negative": 0,
+              "missing_reference_positive": 0,
+              "qwen_transfer_confusion": {
+                "cells": 40,
+                "fn": 4,
+                "fp": 11,
+                "tn": 6,
+                "tp": 19
+              },
+              "reference_denominator": 40,
+              "reference_negative": 11,
+              "reference_positive": 29,
+              "reference_transfer_confusion": {
+                "cells": 40,
+                "fn": 8,
+                "fp": 14,
+                "tn": 3,
+                "tp": 15
+              }
+            },
+            "against_luna_p9_common_ids": {
+              "agree": 11,
+              "cells": 40,
+              "kappa": 0.016949152542372895,
+              "kappa_range": {
+                "count_combinations_enumerated": 1,
+                "maximum": 0.016949152542372895,
+                "minimum": 0.016949152542372895,
+                "undefined_combinations": 0
+              },
+              "missing_reference_negative": 0,
+              "missing_reference_positive": 0,
+              "qwen_transfer_confusion": {
+                "cells": 40,
+                "fn": 4,
+                "fp": 11,
+                "tn": 6,
+                "tp": 19
+              },
+              "reference_denominator": 40,
+              "reference_negative": 39,
+              "reference_positive": 1,
+              "reference_transfer_confusion": {
+                "cells": 40,
+                "fn": 23,
+                "fp": 1,
+                "tn": 16,
+                "tp": 0
+              }
+            },
+            "against_receipt_label": {
+              "cells": 40,
+              "kappa": 0.14285714285714315
+            },
+            "against_transfer_label": {
+              "cells": 40,
+              "kappa": 0.18918918918918923
+            }
+          },
+          "pending": 0,
+          "receipt_confusion": {
+            "cells": 40,
+            "fn": 9,
+            "fp": 0,
+            "tn": 1,
+            "tp": 30
+          },
+          "terminal_errors": 0,
+          "transfer_confusion": {
+            "cells": 40,
+            "fn": 4,
+            "fp": 11,
+            "tn": 6,
+            "tp": 19
+          },
+          "unresolved_labels": {
+            "combined": {
+              "receipt": {
+                "negative": 0,
+                "positive": 0
+              },
+              "transfer": {
+                "negative": 0,
+                "positive": 0
+              }
+            },
+            "pending": {
+              "receipt": {
+                "negative": 0,
+                "positive": 0
+              },
+              "transfer": {
+                "negative": 0,
+                "positive": 0
+              }
+            },
+            "terminal_errors": {
+              "receipt": {
+                "negative": 0,
+                "positive": 0
+              },
+              "transfer": {
+                "negative": 0,
+                "positive": 0
+              }
+            }
+          },
+          "valid": 40
+        }
+      }
+    },
+    "replication": {
+      "scorable_cells": 37,
+      "source_data": "data",
+      "study_matches": [
+        "pact-sol-replication",
+        "pact-agreed-sol"
+      ],
+      "views": {
+        "both": {
+          "accounted_for": true,
+          "actionable_pending": 0,
+          "completed": true,
+          "expected": 37,
+          "interrupted_unknown": 0,
+          "kappa": {
+            "against_astra_p10_common_ids": {
+              "agree": 22,
+              "cells": 37,
+              "kappa": 0.19448476052249644,
+              "kappa_range": {
+                "count_combinations_enumerated": 1,
+                "maximum": 0.19448476052249644,
+                "minimum": 0.19448476052249644,
+                "undefined_combinations": 0
+              },
+              "missing_reference_negative": 0,
+              "missing_reference_positive": 0,
+              "qwen_transfer_confusion": {
+                "cells": 37,
+                "fn": 10,
+                "fp": 5,
+                "tn": 9,
+                "tp": 13
+              },
+              "reference_denominator": 37,
+              "reference_negative": 14,
+              "reference_positive": 23,
+              "reference_transfer_confusion": {
+                "cells": 37,
+                "fn": 0,
+                "fp": 0,
+                "tn": 14,
+                "tp": 23
+              }
+            },
+            "against_luna_p9_common_ids": {
+              "agree": 20,
+              "cells": 37,
+              "kappa": 0.06814814814814825,
+              "kappa_range": {
+                "count_combinations_enumerated": 1,
+                "maximum": 0.06814814814814825,
+                "minimum": 0.06814814814814825,
+                "undefined_combinations": 0
+              },
+              "missing_reference_negative": 0,
+              "missing_reference_positive": 0,
+              "qwen_transfer_confusion": {
+                "cells": 37,
+                "fn": 10,
+                "fp": 5,
+                "tn": 9,
+                "tp": 13
+              },
+              "reference_denominator": 37,
+              "reference_negative": 28,
+              "reference_positive": 9,
+              "reference_transfer_confusion": {
+                "cells": 37,
+                "fn": 14,
+                "fp": 0,
+                "tn": 14,
+                "tp": 9
+              }
+            },
+            "against_receipt_label": {
+              "cells": 37,
+              "kappa": 0.19448476052249644
+            },
+            "against_transfer_label": {
+              "cells": 37,
+              "kappa": 0.19448476052249644
+            }
+          },
+          "pending": 0,
+          "receipt_confusion": {
+            "cells": 37,
+            "fn": 10,
+            "fp": 5,
+            "tn": 9,
+            "tp": 13
+          },
+          "terminal_errors": 0,
+          "transfer_confusion": {
+            "cells": 37,
+            "fn": 10,
+            "fp": 5,
+            "tn": 9,
+            "tp": 13
+          },
+          "unresolved_labels": {
+            "combined": {
+              "receipt": {
+                "negative": 0,
+                "positive": 0
+              },
+              "transfer": {
+                "negative": 0,
+                "positive": 0
+              }
+            },
+            "pending": {
+              "receipt": {
+                "negative": 0,
+                "positive": 0
+              },
+              "transfer": {
+                "negative": 0,
+                "positive": 0
+              }
+            },
+            "terminal_errors": {
+              "receipt": {
+                "negative": 0,
+                "positive": 0
+              },
+              "transfer": {
+                "negative": 0,
+                "positive": 0
+              }
+            }
+          },
+          "valid": 37
+        },
+        "full": {
+          "accounted_for": true,
+          "actionable_pending": 0,
+          "completed": true,
+          "expected": 37,
+          "interrupted_unknown": 0,
+          "kappa": {
+            "against_astra_p10_common_ids": {
+              "agree": 32,
+              "cells": 37,
+              "kappa": 0.7001620745542951,
+              "kappa_range": {
+                "count_combinations_enumerated": 1,
+                "maximum": 0.7001620745542951,
+                "minimum": 0.7001620745542951,
+                "undefined_combinations": 0
+              },
+              "missing_reference_negative": 0,
+              "missing_reference_positive": 0,
+              "qwen_transfer_confusion": {
+                "cells": 37,
+                "fn": 1,
+                "fp": 4,
+                "tn": 10,
+                "tp": 22
+              },
+              "reference_denominator": 37,
+              "reference_negative": 14,
+              "reference_positive": 23,
+              "reference_transfer_confusion": {
+                "cells": 37,
+                "fn": 0,
+                "fp": 0,
+                "tn": 14,
+                "tp": 23
+              }
+            },
+            "against_luna_p9_common_ids": {
+              "agree": 32,
+              "cells": 37,
+              "kappa": 0.7001620745542951,
+              "kappa_range": {
+                "count_combinations_enumerated": 1,
+                "maximum": 0.7001620745542951,
+                "minimum": 0.7001620745542951,
+                "undefined_combinations": 0
+              },
+              "missing_reference_negative": 0,
+              "missing_reference_positive": 0,
+              "qwen_transfer_confusion": {
+                "cells": 37,
+                "fn": 1,
+                "fp": 4,
+                "tn": 10,
+                "tp": 22
+              },
+              "reference_denominator": 37,
+              "reference_negative": 14,
+              "reference_positive": 23,
+              "reference_transfer_confusion": {
+                "cells": 37,
+                "fn": 0,
+                "fp": 0,
+                "tn": 14,
+                "tp": 23
+              }
+            },
+            "against_receipt_label": {
+              "cells": 37,
+              "kappa": 0.7001620745542951
+            },
+            "against_transfer_label": {
+              "cells": 37,
+              "kappa": 0.7001620745542951
+            }
+          },
+          "pending": 0,
+          "receipt_confusion": {
+            "cells": 37,
+            "fn": 1,
+            "fp": 4,
+            "tn": 10,
+            "tp": 22
+          },
+          "terminal_errors": 0,
+          "transfer_confusion": {
+            "cells": 37,
+            "fn": 1,
+            "fp": 4,
+            "tn": 10,
+            "tp": 22
+          },
+          "unresolved_labels": {
+            "combined": {
+              "receipt": {
+                "negative": 0,
+                "positive": 0
+              },
+              "transfer": {
+                "negative": 0,
+                "positive": 0
+              }
+            },
+            "pending": {
+              "receipt": {
+                "negative": 0,
+                "positive": 0
+              },
+              "transfer": {
+                "negative": 0,
+                "positive": 0
+              }
+            },
+            "terminal_errors": {
+              "receipt": {
+                "negative": 0,
+                "positive": 0
+              },
+              "transfer": {
+                "negative": 0,
+                "positive": 0
+              }
+            }
+          },
+          "valid": 37
+        },
+        "text": {
+          "accounted_for": true,
+          "actionable_pending": 0,
+          "completed": true,
+          "expected": 37,
+          "interrupted_unknown": 0,
+          "kappa": {
+            "against_astra_p10_common_ids": {
+              "agree": 26,
+              "cells": 37,
+              "kappa": 0.39881831610044316,
+              "kappa_range": {
+                "count_combinations_enumerated": 1,
+                "maximum": 0.39881831610044316,
+                "minimum": 0.39881831610044316,
+                "undefined_combinations": 0
+              },
+              "missing_reference_negative": 0,
+              "missing_reference_positive": 0,
+              "qwen_transfer_confusion": {
+                "cells": 37,
+                "fn": 7,
+                "fp": 5,
+                "tn": 9,
+                "tp": 16
+              },
+              "reference_denominator": 37,
+              "reference_negative": 17,
+              "reference_positive": 20,
+              "reference_transfer_confusion": {
+                "cells": 37,
+                "fn": 4,
+                "fp": 1,
+                "tn": 13,
+                "tp": 19
+              }
+            },
+            "against_luna_p9_common_ids": {
+              "agree": 17,
+              "cells": 37,
+              "kappa": 0.01595744680851059,
+              "kappa_range": {
+                "count_combinations_enumerated": 1,
+                "maximum": 0.01595744680851059,
+                "minimum": 0.01595744680851059,
+                "undefined_combinations": 0
+              },
+              "missing_reference_negative": 0,
+              "missing_reference_positive": 0,
+              "qwen_transfer_confusion": {
+                "cells": 37,
+                "fn": 7,
+                "fp": 5,
+                "tn": 9,
+                "tp": 16
+              },
+              "reference_denominator": 37,
+              "reference_negative": 32,
+              "reference_positive": 5,
+              "reference_transfer_confusion": {
+                "cells": 37,
+                "fn": 18,
+                "fp": 0,
+                "tn": 14,
+                "tp": 5
+              }
+            },
+            "against_receipt_label": {
+              "cells": 37,
+              "kappa": 0.3293051359516616
+            },
+            "against_transfer_label": {
+              "cells": 37,
+              "kappa": 0.3293051359516616
+            }
+          },
+          "pending": 0,
+          "receipt_confusion": {
+            "cells": 37,
+            "fn": 7,
+            "fp": 5,
+            "tn": 9,
+            "tp": 16
+          },
+          "terminal_errors": 0,
+          "transfer_confusion": {
+            "cells": 37,
+            "fn": 7,
+            "fp": 5,
+            "tn": 9,
+            "tp": 16
+          },
+          "unresolved_labels": {
+            "combined": {
+              "receipt": {
+                "negative": 0,
+                "positive": 0
+              },
+              "transfer": {
+                "negative": 0,
+                "positive": 0
+              }
+            },
+            "pending": {
+              "receipt": {
+                "negative": 0,
+                "positive": 0
+              },
+              "transfer": {
+                "negative": 0,
+                "positive": 0
+              }
+            },
+            "terminal_errors": {
+              "receipt": {
+                "negative": 0,
+                "positive": 0
+              },
+              "transfer": {
+                "negative": 0,
+                "positive": 0
+              }
+            }
+          },
+          "valid": 37
+        }
+      }
+    },
+    "sprint": {
+      "scorable_cells": 450,
+      "source_data": "data",
+      "study_matches": [
+        "sprint"
+      ],
+      "views": {
+        "both": {
+          "accounted_for": true,
+          "actionable_pending": 0,
+          "completed": false,
+          "expected": 450,
+          "interrupted_unknown": 1,
+          "kappa": {
+            "against_astra_p10_common_ids": {
+              "agree": 343,
+              "cells": 448,
+              "kappa": 0.519882420184535,
+              "kappa_range": {
+                "count_combinations_enumerated": 3,
+                "maximum": 0.521422060164084,
+                "minimum": 0.5128589061330204,
+                "undefined_combinations": 0
+              },
+              "missing_reference_negative": 0,
+              "missing_reference_positive": 2,
+              "qwen_transfer_confusion": {
+                "cells": 448,
+                "fn": 43,
+                "fp": 69,
+                "tn": 137,
+                "tp": 199
+              },
+              "reference_denominator": 450,
+              "reference_negative": 197,
+              "reference_positive": 253,
+              "reference_transfer_confusion": {
+                "cells": 448,
+                "fn": 0,
+                "fp": 9,
+                "tn": 197,
+                "tp": 242
+              }
+            },
+            "against_luna_p9_common_ids": {
+              "agree": 339,
+              "cells": 448,
+              "kappa": 0.4988917166078319,
+              "kappa_range": {
+                "count_combinations_enumerated": 4,
+                "maximum": 0.5012506863522664,
+                "minimum": 0.49209932279909696,
+                "undefined_combinations": 0
+              },
+              "missing_reference_negative": 1,
+              "missing_reference_positive": 1,
+              "qwen_transfer_confusion": {
+                "cells": 448,
+                "fn": 43,
+                "fp": 69,
+                "tn": 137,
+                "tp": 199
+              },
+              "reference_denominator": 450,
+              "reference_negative": 192,
+              "reference_positive": 258,
+              "reference_transfer_confusion": {
+                "cells": 448,
+                "fn": 10,
+                "fp": 25,
+                "tn": 181,
+                "tp": 232
+              }
+            },
+            "against_receipt_label": {
+              "cells": 448,
+              "kappa": 0.495167708925526
+            },
+            "against_transfer_label": {
+              "cells": 448,
+              "kappa": 0.4919812084885793
+            }
+          },
+          "pending": 1,
+          "receipt_confusion": {
+            "cells": 448,
+            "fn": 44,
+            "fp": 67,
+            "tn": 136,
+            "tp": 201
+          },
+          "terminal_errors": 1,
+          "transfer_confusion": {
+            "cells": 448,
+            "fn": 43,
+            "fp": 69,
+            "tn": 137,
+            "tp": 199
+          },
+          "unresolved_labels": {
+            "combined": {
+              "receipt": {
+                "negative": 0,
+                "positive": 2
+              },
+              "transfer": {
+                "negative": 0,
+                "positive": 2
+              }
+            },
+            "pending": {
+              "receipt": {
+                "negative": 0,
+                "positive": 1
+              },
+              "transfer": {
+                "negative": 0,
+                "positive": 1
+              }
+            },
+            "terminal_errors": {
+              "receipt": {
+                "negative": 0,
+                "positive": 1
+              },
+              "transfer": {
+                "negative": 0,
+                "positive": 1
+              }
+            }
+          },
+          "valid": 448
+        },
+        "full": {
+          "accounted_for": true,
+          "actionable_pending": 0,
+          "completed": true,
+          "expected": 450,
+          "interrupted_unknown": 0,
+          "kappa": {
+            "against_astra_p10_common_ids": {
+              "agree": 376,
+              "cells": 443,
+              "kappa": 0.6872886266659644,
+              "kappa_range": {
+                "count_combinations_enumerated": 8,
+                "maximum": 0.6904072453946153,
+                "minimum": 0.6594325921986542,
+                "undefined_combinations": 0
+              },
+              "missing_reference_negative": 0,
+              "missing_reference_positive": 7,
+              "qwen_transfer_confusion": {
+                "cells": 443,
+                "fn": 13,
+                "fp": 63,
+                "tn": 143,
+                "tp": 224
+              },
+              "reference_denominator": 450,
+              "reference_negative": 197,
+              "reference_positive": 253,
+              "reference_transfer_confusion": {
+                "cells": 443,
+                "fn": 0,
+                "fp": 9,
+                "tn": 197,
+                "tp": 237
+              }
+            },
+            "against_luna_p9_common_ids": {
+              "agree": 373,
+              "cells": 443,
+              "kappa": 0.668249994650919,
+              "kappa_range": {
+                "count_combinations_enumerated": 8,
+                "maximum": 0.6714232069095005,
+                "minimum": 0.640612359200946,
+                "undefined_combinations": 0
+              },
+              "missing_reference_negative": 0,
+              "missing_reference_positive": 7,
+              "qwen_transfer_confusion": {
+                "cells": 443,
+                "fn": 13,
+                "fp": 63,
+                "tn": 143,
+                "tp": 224
+              },
+              "reference_denominator": 450,
+              "reference_negative": 186,
+              "reference_positive": 264,
+              "reference_transfer_confusion": {
+                "cells": 443,
+                "fn": 12,
+                "fp": 32,
+                "tn": 174,
+                "tp": 225
+              }
+            },
+            "against_receipt_label": {
+              "cells": 443,
+              "kappa": 0.6620829458417362
+            },
+            "against_transfer_label": {
+              "cells": 443,
+              "kappa": 0.6496347326576061
+            }
+          },
+          "pending": 0,
+          "receipt_confusion": {
+            "cells": 443,
+            "fn": 13,
+            "fp": 60,
+            "tn": 143,
+            "tp": 227
+          },
+          "terminal_errors": 7,
+          "transfer_confusion": {
+            "cells": 443,
+            "fn": 13,
+            "fp": 63,
+            "tn": 143,
+            "tp": 224
+          },
+          "unresolved_labels": {
+            "combined": {
+              "receipt": {
+                "negative": 0,
+                "positive": 7
+              },
+              "transfer": {
+                "negative": 0,
+                "positive": 7
+              }
+            },
+            "pending": {
+              "receipt": {
+                "negative": 0,
+                "positive": 0
+              },
+              "transfer": {
+                "negative": 0,
+                "positive": 0
+              }
+            },
+            "terminal_errors": {
+              "receipt": {
+                "negative": 0,
+                "positive": 7
+              },
+              "transfer": {
+                "negative": 0,
+                "positive": 7
+              }
+            }
+          },
+          "valid": 443
+        },
+        "text": {
+          "accounted_for": true,
+          "actionable_pending": 0,
+          "completed": true,
+          "expected": 450,
+          "interrupted_unknown": 0,
+          "kappa": {
+            "against_astra_p10_common_ids": {
+              "agree": 306,
+              "cells": 447,
+              "kappa": 0.3720971935802027,
+              "kappa_range": {
+                "count_combinations_enumerated": 4,
+                "maximum": 0.3753322700691122,
+                "minimum": 0.36406995230524647,
+                "undefined_combinations": 0
+              },
+              "missing_reference_negative": 0,
+              "missing_reference_positive": 3,
+              "qwen_transfer_confusion": {
+                "cells": 447,
+                "fn": 81,
+                "fp": 59,
+                "tn": 147,
+                "tp": 160
+              },
+              "reference_denominator": 450,
+              "reference_negative": 171,
+              "reference_positive": 279,
+              "reference_transfer_confusion": {
+                "cells": 447,
+                "fn": 4,
+                "fp": 39,
+                "tn": 167,
+                "tp": 237
+              }
+            },
+            "against_luna_p9_common_ids": {
+              "agree": 336,
+              "cells": 447,
+              "kappa": 0.5027509696040409,
+              "kappa_range": {
+                "count_combinations_enumerated": 4,
+                "maximum": 0.5063156022060132,
+                "minimum": 0.49261171443831236,
+                "undefined_combinations": 0
+              },
+              "missing_reference_negative": 0,
+              "missing_reference_positive": 3,
+              "qwen_transfer_confusion": {
+                "cells": 447,
+                "fn": 81,
+                "fp": 59,
+                "tn": 147,
+                "tp": 160
+              },
+              "reference_denominator": 450,
+              "reference_negative": 237,
+              "reference_positive": 213,
+              "reference_transfer_confusion": {
+                "cells": 447,
+                "fn": 49,
+                "fp": 18,
+                "tn": 188,
+                "tp": 192
+              }
+            },
+            "against_receipt_label": {
+              "cells": 447,
+              "kappa": 0.3881545424572132
+            },
+            "against_transfer_label": {
+              "cells": 447,
+              "kappa": 0.37458775559153334
+            }
+          },
+          "pending": 0,
+          "receipt_confusion": {
+            "cells": 447,
+            "fn": 81,
+            "fp": 56,
+            "tn": 147,
+            "tp": 163
+          },
+          "terminal_errors": 3,
+          "transfer_confusion": {
+            "cells": 447,
+            "fn": 81,
+            "fp": 59,
+            "tn": 147,
+            "tp": 160
+          },
+          "unresolved_labels": {
+            "combined": {
+              "receipt": {
+                "negative": 0,
+                "positive": 3
+              },
+              "transfer": {
+                "negative": 0,
+                "positive": 3
+              }
+            },
+            "pending": {
+              "receipt": {
+                "negative": 0,
+                "positive": 0
+              },
+              "transfer": {
+                "negative": 0,
+                "positive": 0
+              }
+            },
+            "terminal_errors": {
+              "receipt": {
+                "negative": 0,
+                "positive": 3
+              },
+              "transfer": {
+                "negative": 0,
+                "positive": 3
+              }
+            }
+          },
+          "valid": 447
+        }
+      }
+    },
+    "step6": {
+      "scorable_cells": 39,
+      "source_data": "data",
+      "study_matches": [
+        "step6"
+      ],
+      "views": {
+        "both": {
+          "accounted_for": true,
+          "actionable_pending": 0,
+          "completed": true,
+          "expected": 39,
+          "interrupted_unknown": 0,
+          "kappa": {
+            "against_astra_p10_common_ids": {
+              "agree": 28,
+              "cells": 39,
+              "kappa": 0.443579766536965,
+              "kappa_range": {
+                "count_combinations_enumerated": 1,
+                "maximum": 0.443579766536965,
+                "minimum": 0.443579766536965,
+                "undefined_combinations": 0
+              },
+              "missing_reference_negative": 0,
+              "missing_reference_positive": 0,
+              "qwen_transfer_confusion": {
+                "cells": 39,
+                "fn": 0,
+                "fp": 12,
+                "tn": 19,
+                "tp": 8
+              },
+              "reference_denominator": 39,
+              "reference_negative": 30,
+              "reference_positive": 9,
+              "reference_transfer_confusion": {
+                "cells": 39,
+                "fn": 0,
+                "fp": 1,
+                "tn": 30,
+                "tp": 8
+              }
+            },
+            "against_luna_p9_common_ids": {
+              "agree": 28,
+              "cells": 39,
+              "kappa": 0.443579766536965,
+              "kappa_range": {
+                "count_combinations_enumerated": 1,
+                "maximum": 0.443579766536965,
+                "minimum": 0.443579766536965,
+                "undefined_combinations": 0
+              },
+              "missing_reference_negative": 0,
+              "missing_reference_positive": 0,
+              "qwen_transfer_confusion": {
+                "cells": 39,
+                "fn": 0,
+                "fp": 12,
+                "tn": 19,
+                "tp": 8
+              },
+              "reference_denominator": 39,
+              "reference_negative": 30,
+              "reference_positive": 9,
+              "reference_transfer_confusion": {
+                "cells": 39,
+                "fn": 0,
+                "fp": 1,
+                "tn": 30,
+                "tp": 8
+              }
+            },
+            "against_receipt_label": {
+              "cells": 39,
+              "kappa": 0.393782383419689
+            },
+            "against_transfer_label": {
+              "cells": 39,
+              "kappa": 0.393782383419689
+            }
+          },
+          "pending": 0,
+          "receipt_confusion": {
+            "cells": 39,
+            "fn": 0,
+            "fp": 12,
+            "tn": 19,
+            "tp": 8
+          },
+          "terminal_errors": 0,
+          "transfer_confusion": {
+            "cells": 39,
+            "fn": 0,
+            "fp": 12,
+            "tn": 19,
+            "tp": 8
+          },
+          "unresolved_labels": {
+            "combined": {
+              "receipt": {
+                "negative": 0,
+                "positive": 0
+              },
+              "transfer": {
+                "negative": 0,
+                "positive": 0
+              }
+            },
+            "pending": {
+              "receipt": {
+                "negative": 0,
+                "positive": 0
+              },
+              "transfer": {
+                "negative": 0,
+                "positive": 0
+              }
+            },
+            "terminal_errors": {
+              "receipt": {
+                "negative": 0,
+                "positive": 0
+              },
+              "transfer": {
+                "negative": 0,
+                "positive": 0
+              }
+            }
+          },
+          "valid": 39
+        },
+        "full": {
+          "accounted_for": true,
+          "actionable_pending": 0,
+          "completed": true,
+          "expected": 39,
+          "interrupted_unknown": 0,
+          "kappa": {
+            "against_astra_p10_common_ids": {
+              "agree": 33,
+              "cells": 39,
+              "kappa": 0.6486486486486487,
+              "kappa_range": {
+                "count_combinations_enumerated": 1,
+                "maximum": 0.6486486486486487,
+                "minimum": 0.6486486486486487,
+                "undefined_combinations": 0
+              },
+              "missing_reference_negative": 0,
+              "missing_reference_positive": 0,
+              "qwen_transfer_confusion": {
+                "cells": 39,
+                "fn": 0,
+                "fp": 7,
+                "tn": 24,
+                "tp": 8
+              },
+              "reference_denominator": 39,
+              "reference_negative": 30,
+              "reference_positive": 9,
+              "reference_transfer_confusion": {
+                "cells": 39,
+                "fn": 0,
+                "fp": 1,
+                "tn": 30,
+                "tp": 8
+              }
+            },
+            "against_luna_p9_common_ids": {
+              "agree": 33,
+              "cells": 39,
+              "kappa": 0.6486486486486487,
+              "kappa_range": {
+                "count_combinations_enumerated": 1,
+                "maximum": 0.6486486486486487,
+                "minimum": 0.6486486486486487,
+                "undefined_combinations": 0
+              },
+              "missing_reference_negative": 0,
+              "missing_reference_positive": 0,
+              "qwen_transfer_confusion": {
+                "cells": 39,
+                "fn": 0,
+                "fp": 7,
+                "tn": 24,
+                "tp": 8
+              },
+              "reference_denominator": 39,
+              "reference_negative": 30,
+              "reference_positive": 9,
+              "reference_transfer_confusion": {
+                "cells": 39,
+                "fn": 0,
+                "fp": 1,
+                "tn": 30,
+                "tp": 8
+              }
+            },
+            "against_receipt_label": {
+              "cells": 39,
+              "kappa": 0.5844748858447488
+            },
+            "against_transfer_label": {
+              "cells": 39,
+              "kappa": 0.5844748858447488
+            }
+          },
+          "pending": 0,
+          "receipt_confusion": {
+            "cells": 39,
+            "fn": 0,
+            "fp": 7,
+            "tn": 24,
+            "tp": 8
+          },
+          "terminal_errors": 0,
+          "transfer_confusion": {
+            "cells": 39,
+            "fn": 0,
+            "fp": 7,
+            "tn": 24,
+            "tp": 8
+          },
+          "unresolved_labels": {
+            "combined": {
+              "receipt": {
+                "negative": 0,
+                "positive": 0
+              },
+              "transfer": {
+                "negative": 0,
+                "positive": 0
+              }
+            },
+            "pending": {
+              "receipt": {
+                "negative": 0,
+                "positive": 0
+              },
+              "transfer": {
+                "negative": 0,
+                "positive": 0
+              }
+            },
+            "terminal_errors": {
+              "receipt": {
+                "negative": 0,
+                "positive": 0
+              },
+              "transfer": {
+                "negative": 0,
+                "positive": 0
+              }
+            }
+          },
+          "valid": 39
+        },
+        "text": {
+          "accounted_for": true,
+          "actionable_pending": 0,
+          "completed": true,
+          "expected": 39,
+          "interrupted_unknown": 0,
+          "kappa": {
+            "against_astra_p10_common_ids": {
+              "agree": 26,
+              "cells": 39,
+              "kappa": 0.34241245136186765,
+              "kappa_range": {
+                "count_combinations_enumerated": 1,
+                "maximum": 0.34241245136186765,
+                "minimum": 0.34241245136186765,
+                "undefined_combinations": 0
+              },
+              "missing_reference_negative": 0,
+              "missing_reference_positive": 0,
+              "qwen_transfer_confusion": {
+                "cells": 39,
+                "fn": 1,
+                "fp": 13,
+                "tn": 18,
+                "tp": 7
+              },
+              "reference_denominator": 39,
+              "reference_negative": 30,
+              "reference_positive": 9,
+              "reference_transfer_confusion": {
+                "cells": 39,
+                "fn": 0,
+                "fp": 1,
+                "tn": 30,
+                "tp": 8
+              }
+            },
+            "against_luna_p9_common_ids": {
+              "agree": 26,
+              "cells": 39,
+              "kappa": 0.34241245136186765,
+              "kappa_range": {
+                "count_combinations_enumerated": 1,
+                "maximum": 0.34241245136186765,
+                "minimum": 0.34241245136186765,
+                "undefined_combinations": 0
+              },
+              "missing_reference_negative": 0,
+              "missing_reference_positive": 0,
+              "qwen_transfer_confusion": {
+                "cells": 39,
+                "fn": 1,
+                "fp": 13,
+                "tn": 18,
+                "tp": 7
+              },
+              "reference_denominator": 39,
+              "reference_negative": 30,
+              "reference_positive": 9,
+              "reference_transfer_confusion": {
+                "cells": 39,
+                "fn": 0,
+                "fp": 1,
+                "tn": 30,
+                "tp": 8
+              }
+            },
+            "against_receipt_label": {
+              "cells": 39,
+              "kappa": 0.29274611398963735
+            },
+            "against_transfer_label": {
+              "cells": 39,
+              "kappa": 0.29274611398963735
+            }
+          },
+          "pending": 0,
+          "receipt_confusion": {
+            "cells": 39,
+            "fn": 1,
+            "fp": 13,
+            "tn": 18,
+            "tp": 7
+          },
+          "terminal_errors": 0,
+          "transfer_confusion": {
+            "cells": 39,
+            "fn": 1,
+            "fp": 13,
+            "tn": 18,
+            "tp": 7
+          },
+          "unresolved_labels": {
+            "combined": {
+              "receipt": {
+                "negative": 0,
+                "positive": 0
+              },
+              "transfer": {
+                "negative": 0,
+                "positive": 0
+              }
+            },
+            "pending": {
+              "receipt": {
+                "negative": 0,
+                "positive": 0
+              },
+              "transfer": {
+                "negative": 0,
+                "positive": 0
+              }
+            },
+            "terminal_errors": {
+              "receipt": {
+                "negative": 0,
+                "positive": 0
+              },
+              "transfer": {
+                "negative": 0,
+                "positive": 0
+              }
+            }
+          },
+          "valid": 39
+        }
+      }
+    }
+  },
+  "input_sha256": {
+    "data/exchange-judge-astra-p10-agreed/judgments.jsonl": "ef05170d9bfc4cd7ca5be8d073c6c9e9ab3cba89531ee71f798becd13dd15337",
+    "data/exchange-judge-astra-p10-openweight/judgments.jsonl": "7fce46c6b4b4554cfb8d384fdf598acdaf89bfc592f1316b52069daabebd24e4",
+    "data/exchange-judge-astra-p10-replication/judgments.jsonl": "9a294124d5c93f3ca98c3bf5a76de4857103019b0b2f28632c25102e8c36d956",
+    "data/exchange-judge-astra-p10-sprint/judgments.jsonl": "7a50a734c1d8d9826f8ff80c7a1448bfac372b46f9846f276f663ee274de28fd",
+    "data/exchange-judge-astra-p10-step6/judgments.jsonl": "dafb524c78548bd9f15f4407a900cbd3e477fb2ed7c9864191211281e86fe828",
+    "data/exchange-judge-luna-p9-agreed/judgments.jsonl": "e1db4bb3a5a889180b4eb696d9bed57e94775a7082dbc82f763a2cf904b9a3c0",
+    "data/exchange-judge-luna-p9-openweight/judgments.jsonl": "1a69746398451d5ddf48de7abe48f066589470dbc7f4ca59a9555fcfa49bd5e8",
+    "data/exchange-judge-luna-p9-replication/judgments.jsonl": "4a63fd4a16dac4a8a951a0cb682390b653f169bce5f8965f30b4da9ec8dd9a63",
+    "data/exchange-judge-luna-p9-sprint/judgments.jsonl": "3dd970e6d6db51a39a55008685541252ce8bbddcc99eb9f48a7d6d5bd8fd3f18",
+    "data/exchange-judge-luna-p9-step6/judgments.jsonl": "a496aa22210a0e0c0b693465adbb51b0a175cfad36ef16f0a85ccbf3fdc69d36",
+    "data/exchange-judge-qwen-p10-agreed/errors.jsonl": "4fd506251771136c6620bb11a1da1975668e0348bd4849ef54a37801e9badd06",
+    "data/exchange-judge-qwen-p10-agreed/judgments.jsonl": "e03305263c6bed1099cdc83695f1440e0b5b52bbc03f13719d5fe8a8ad2aae84",
+    "data/exchange-judge-qwen-p10-openweight/errors.jsonl": "64424983dd5ce03dee5938192b150171da1b9f174a3aa6a9859c60c3c8e930be",
+    "data/exchange-judge-qwen-p10-openweight/judgments.jsonl": "7e98e0f338db09a81434fdb67c8c74d583e11f954afc6625470919f2df397098",
+    "data/exchange-judge-qwen-p10-replication/judgments.jsonl": "3c7d29623c5b3f7e2359799d3ab20772e1f33a57d3584eeb20d6bff8e1311293",
+    "data/exchange-judge-qwen-p10-sprint/errors.jsonl": "fb469b98ee6e1f65fcc2f938aba5b374cde62f69dc3e48722daebb4993b04504",
+    "data/exchange-judge-qwen-p10-sprint/interruptions.jsonl": "a08496e538b81535f8520fb15a782be3d4eac277638a4ded95a515d4def4deaf",
+    "data/exchange-judge-qwen-p10-sprint/judgments.jsonl": "27704cc36a563c2652015990e304383255102f1455f59c515f0571d0969cd3cd",
+    "data/exchange-judge-qwen-p10-step6/judgments.jsonl": "e2988ce04ccc139bc5dcf4ff6312f573ab6bc012a82cbfb5968774aa4745b330",
+    "data/page-artifact-plan-v4-luna-sprint/events.jsonl": "26d63eca1fe784bf92f1405d705fcb5e01486276de76478c9e1de4507172d932",
+    "data/page-artifact-plan-v4-luna-sprint/manifest.json": "fece24bc9a1ecde42a7a927d48ae0cfea8ad2f5f514f2972701f2ee7f7584085",
+    "data/page-artifact-plan-v4-sol-sprint/events.jsonl": "ca32065d99e4f021bbecb60605f5b0468d8c2cb66c364d60c8bab7f263b4f5fd",
+    "data/page-artifact-plan-v4-sol-sprint/manifest.json": "bd0c59398c5e8f6e760aa78b618f9c8048b72448906b2325a520a7835fcd9d96",
+    "data/posthoc/exchange-judge-astra-p10-leak/judgments.jsonl": "5f3b63a97054b66d52f470e21cbd433264f0b31d8e6be3a134f9d15f5222bc20",
+    "data/posthoc/exchange-judge-luna-p9-leak/judgments.jsonl": "169f1040afab43d556b3c0f3e57a32cedd4264198f724866e3de6a3b93fa4a74",
+    "data/posthoc/exchange-judge-qwen-p10-leak/judgments.jsonl": "d0d82f98757d64e3c0bbba299e6f1551bb0a626335e1cd2b8b7663b2d569b202",
+    "data/posthoc/study-wording-leak-luna-negligent/events.jsonl": "1e816f60309fc02dcfcc5bd0296cdfec8a968c76c27e4499ef8860a655d895de",
+    "data/posthoc/study-wording-leak-luna-negligent/manifest.json": "4b68dfd2b4ade82b06ecb38aa284671878c470f195a812c1db2e549b317ab66c",
+    "data/posthoc/study-wording-leak-qwen-negligent/events.jsonl": "465800edfcf48d369d82d246e73b8cbd8c3d9db0b49f1df776c289dc836cd46d",
+    "data/posthoc/study-wording-leak-qwen-negligent/manifest.json": "f6b033f919b943b90b7947d1d44575bf330d6c161a14f92cc9fbfd20b0f6c6d7",
+    "data/posthoc/study-wording-leak-sol-negligent/events.jsonl": "49ca27bba5cb67a1ad286d22f6414530e3e2254c1645026c345c6874438d00a5",
+    "data/posthoc/study-wording-leak-sol-negligent/manifest.json": "2fb4d7c47bc1405a280660e0c8107eba40c4ae85cfbbf3f4743f16289a2eb02f",
+    "data/study-disguised-astra-sprint-cont/events.jsonl": "6ed9fddf26624604c29180257469bf88bfefd4bebdab6bd781a6cb9cbe25ba16",
+    "data/study-disguised-astra-sprint-cont/manifest.json": "8cf3724419d7ede8e811f16f7bf4f7568a647dc594e9aa377770e031ca979c93",
+    "data/study-disguised-astra-sprint/events.jsonl": "33cbaa0158d4d881ef94e21a3d280d9164aedcff973071e201029caa681277bc",
+    "data/study-disguised-astra-sprint/manifest.json": "2230f9dab787ad862baefbb26bdf9acd4b28c6c1c32321ba944db5f9cad574c5",
+    "data/study-disguised-luna-sprint-cont/events.jsonl": "b89e1e26fae236bb78376231f98f6be67b64793ef6c1fa3098f00ffc5455ceb9",
+    "data/study-disguised-luna-sprint-cont/manifest.json": "241d0a429f91a39c508875b8ec026ad3531cd9885f5e20927c05a4ac39912fac",
+    "data/study-disguised-luna-sprint-cont2/events.jsonl": "f91b69650c628b1adeb4989e7c0c92ed618ae906f9b1049a1683ec0aea2d1bc7",
+    "data/study-disguised-luna-sprint-cont2/manifest.json": "be49753955e77a8e9fbd789f5c5e58d86dadf17f650d90189fc7bb94fdc18410",
+    "data/study-disguised-luna-sprint/events.jsonl": "96ceb5ab1cc3a0237544155f4b5990926c40ce3d6aefc15f5fdb03bfeeed5720",
+    "data/study-disguised-luna-sprint/manifest.json": "003941f79169572f4fef0d838a7abc6ce35f62047fde73c814f5fd1236001073",
+    "data/study-disguised-sol-sprint-cont/events.jsonl": "1d4379743936242897832759a347b79a7d375b8c646567e3cec3a911ee3e6083",
+    "data/study-disguised-sol-sprint-cont/manifest.json": "192f2e1532b91567b7e2f1e460ec0ac4ac5010e9fff9eb08b478c6461ad461e4",
+    "data/study-disguised-sol-sprint/events.jsonl": "51622d01272ac8731824a55039cfd43ba16731ffa592bfab17720cbb564791cd",
+    "data/study-disguised-sol-sprint/manifest.json": "eb2ff3feb8323033ae3cfa64d7a494d05a779f9352fe31cfb6a7e9e63f2f4a8a",
+    "data/study-disguised-terra-sprint-cont/events.jsonl": "081c6f44b069a9830fe7ba9d3a1d19d482ca6d60f12a9dae80bb75f48a86fb93",
+    "data/study-disguised-terra-sprint-cont/manifest.json": "81d04239f6cb7d6fd5a59079b8d4c59d96c079a2287d4bcc49945f53f3491421",
+    "data/study-disguised-terra-sprint/events.jsonl": "cdec75ca471f021ff88245e7bb6ae489d53ce38c47ba245f0f0d6aded0426876",
+    "data/study-disguised-terra-sprint/manifest.json": "d811920965e770669474ac9112f75e5fa4a4d4d94fc36780eaf908ba49a68502",
+    "data/study-pact-agreed-luna/events.jsonl": "989bfba3468b915714a239c2e7d9db6990e88442d569e08b54b2c03b98c76049",
+    "data/study-pact-agreed-luna/manifest.json": "a34391ea085d75dc3f941dd0e64a346d2bb1f5407fe253fb92fbedcf39338c83",
+    "data/study-pact-agreed-qwen/events.jsonl": "5c2f65256a0bfc0ce74f47a76aef1e2080a0ac9619148ba0e6766ba82e3e1f3e",
+    "data/study-pact-agreed-qwen/manifest.json": "2d50dec1f4ec723489cf385650d0a66ec6cad3899c14d5c6003f6f88eccbdbd7",
+    "data/study-pact-agreed-sol/events.jsonl": "989bfba3468b915714a239c2e7d9db6990e88442d569e08b54b2c03b98c76049",
+    "data/study-pact-agreed-sol/manifest.json": "0f58c4096a2f4a30a497625ac7b1ecf92cb9978d35fb1bace3032833f1a76bfc",
+    "data/study-pact-luna-sprint/events.jsonl": "6552a1f56a4bb56c00ec4463a7866327c3a205c6859b01fd48a889d5e59c4c57",
+    "data/study-pact-luna-sprint/manifest.json": "3244fbd796ce7b823e9da18f2d3da0a799af4fc55ce05cb3dab62961d2b525db",
+    "data/study-pact-qwen-openweight/events.jsonl": "33058971ef824e8fdd62b2b48637d3df2aa8e12bc61a289eeb822a3fd9d737b4",
+    "data/study-pact-qwen-openweight/manifest.json": "81e862887dbf09cd1f56b953e73b505cd109561b3750f4f626f2cf0b078c6a9a",
+    "data/study-pact-sol-replication-cont/events.jsonl": "f8088feff2304b1a8881e1ef99ddc7135766145e896152b01fd7dfc7d31a77e5",
+    "data/study-pact-sol-replication-cont/manifest.json": "869a541789e75478c58b2d9f96a3d5a2600b705ebc4c46b1a3c50ab58ace3907",
+    "data/study-pact-sol-replication-cont2/events.jsonl": "bad1e5daf0eb88e89216c8cb615d7ac27f5aa91e22ae44dec0605b2937d7cf8a",
+    "data/study-pact-sol-replication-cont2/manifest.json": "d309ee173a7672fd830f6a742894a37d563416fa653d3bb0d72f9879a10de4c0",
+    "data/study-pact-sol-replication/events.jsonl": "6052d45f2539686e320c3ab6514102022573d8195c2b0a9311a034910fd1e3b8",
+    "data/study-pact-sol-replication/manifest.json": "3ab2dde1763489676a18cc6eb376795068a758a8a978447cf13b64da4b74dc99",
+    "data/study-wording-astra-sprint-cont/events.jsonl": "3c8461016d52512418bb6f0aebe41dd3b29f2f6678b9e4a679864bf53313a26a",
+    "data/study-wording-astra-sprint-cont/manifest.json": "1cc0a72c5b984cb52c0b14df9213328c309fed4ebe41af8195015a9021850916",
+    "data/study-wording-astra-sprint-cont2/events.jsonl": "ab9d9e62250ad4f876044628f992ff3a1d457700c3d6c71cae354704a37f5cc1",
+    "data/study-wording-astra-sprint-cont2/manifest.json": "028cd2d25befbebbec9acac69f190ed7c62fb4adbaa65c9827f060261cdf2d7b",
+    "data/study-wording-astra-sprint/events.jsonl": "a9b85b8f5ca76c5d83ec115a0df10dec93ec0f85bda82bbda8fa9eac5401a5e8",
+    "data/study-wording-astra-sprint/manifest.json": "15b27435b53e3167e2266f79df00accc99ff4c7ca725e9d0153c4cb72cfc1eb5",
+    "data/study-wording-gpt55-sprint/events.jsonl": "3b3aa69964501d21de828bfd7e51a872df10fa82804147e8ff7f4d101d911635",
+    "data/study-wording-gpt55-sprint/manifest.json": "0588ad04dc1746ddedc2a4bbb4c2fa20ca9abde21ad5268fead75174b45b903b",
+    "data/study-wording-luna-sprint-cont/events.jsonl": "8e72c4f410dcb5801c944503250473f7e7b0de5e2c22efd331c98977924ce920",
+    "data/study-wording-luna-sprint-cont/manifest.json": "1119bc7eaae09785c13eaa96657f2cac32872028e1b21ef88c78a934797fcd72",
+    "data/study-wording-luna-sprint/events.jsonl": "8744c51025b202139a02b9093f2fcfabf850631cc259fa9b4714090372548392",
+    "data/study-wording-luna-sprint/manifest.json": "d613950a9d3c08f7e8d057bc0aa3844625ef056195b9cf5ce674ab2ae7781c10",
+    "data/study-wording-sol-sprint/events.jsonl": "c76e748a2b6d8d8e60260f02e41b1e50df9c40c89aecfa8bc181df21e015c1eb",
+    "data/study-wording-sol-sprint/manifest.json": "0a241d1514c8466e789b01130d1426d07b59c671bc55291006639f1efb44d896",
+    "data/study-wording-sol-step6-cont/events.jsonl": "a70416dc5fa4db4635572a2054d6b16a69e718cff54acd545d326236641d9e12",
+    "data/study-wording-sol-step6-cont/manifest.json": "afce3dc3f067488e7cb122d45d5a21f68db86a57cbdafb9078d7d30c63f24999",
+    "data/study-wording-sol-step6/events.jsonl": "ed97bd55fca24b42b3c9099ceb30f67114e2f4111afcf32774d931b62d2e068b",
+    "data/study-wording-sol-step6/manifest.json": "e868bb53311c4e1df310ca9d3318259b9eba8ad4eea99fc351423ad18bd9cd31",
+    "data/study-wording-terra-sprint-cont/events.jsonl": "2aa8acd9b78bf0cce3b3c2f19c44a282aeb847db54ce974ac9146faffaa8db7a",
+    "data/study-wording-terra-sprint-cont/manifest.json": "a708cc087cb6fe056e18cde6fb833f7ec2e77ef6ff0c7b742ebf84caa952f055",
+    "data/study-wording-terra-sprint/events.jsonl": "25007124335a26a9a85975a03f4b8ae648809ed3a23fb460f4d1de6ebb813c4a",
+    "data/study-wording-terra-sprint/manifest.json": "ede346f6d1baa722c0799082083bea3de068ede4e51682ac128f5d8d59ffa0bc"
+  },
+  "judge": "qwen3-32b",
+  "prompt_version": 10,
+  "registered_predictions": {
+    "J1": {
+      "expected": 450,
+      "interrupted_unknown": 1,
+      "observed": 199,
+      "range_with_unresolved": [
+        199,
+        201
+      ],
+      "status": "wrong",
+      "terminal_errors": 1,
+      "valid": 448
+    },
+    "J2": {
+      "expected": 450,
+      "interrupted_unknown": 1,
+      "observed": 69,
+      "range_with_unresolved": [
+        69,
+        69
+      ],
+      "status": "wrong",
+      "terminal_errors": 1,
+      "valid": 448
+    },
+    "J3": {
+      "both_fp_range": [
+        69,
+        69
+      ],
+      "status": "wrong",
+      "text_fp_range": [
+        59,
+        59
+      ]
+    },
+    "J4": {
+      "kappa": 0.519882420184535,
+      "kappa_range": {
+        "count_combinations_enumerated": 3,
+        "maximum": 0.521422060164084,
+        "minimum": 0.5128589061330204,
+        "undefined_combinations": 0
+      },
+      "note": "point kappa uses valid pairs; range allows either call for every missing Qwen verdict",
+      "paired_valid_cells": 448,
+      "reference_denominator": 450,
+      "reference_missing_verdicts": 2,
+      "status": "wrong"
+    },
+    "J5": {
+      "expected": 60,
+      "interrupted_unknown": 0,
+      "observed": 60,
+      "range_with_unresolved": [
+        60,
+        60
+      ],
+      "status": "held",
+      "terminal_errors": 0,
+      "valid": 60
+    },
+    "K1": {
+      "expected": 450,
+      "interrupted_unknown": 1,
+      "observed": 199,
+      "range_with_unresolved": [
+        199,
+        201
+      ],
+      "status": "held",
+      "terminal_errors": 1,
+      "valid": 448
+    },
+    "K2": {
+      "expected": 450,
+      "interrupted_unknown": 1,
+      "observed": 69,
+      "range_with_unresolved": [
+        69,
+        69
+      ],
+      "status": "wrong",
+      "terminal_errors": 1,
+      "valid": 448
+    },
+    "K3": {
+      "common_ids": {
+        "agree": 339,
+        "cells": 448,
+        "kappa": 0.4988917166078319,
+        "kappa_range": {
+          "count_combinations_enumerated": 4,
+          "maximum": 0.5012506863522664,
+          "minimum": 0.49209932279909696,
+          "undefined_combinations": 0
+        },
+        "missing_reference_negative": 1,
+        "missing_reference_positive": 1,
+        "qwen_transfer_confusion": {
+          "cells": 448,
+          "fn": 43,
+          "fp": 69,
+          "tn": 137,
+          "tp": 199
+        },
+        "reference_denominator": 450,
+        "reference_negative": 192,
+        "reference_positive": 258,
+        "reference_transfer_confusion": {
+          "cells": 448,
+          "fn": 10,
+          "fp": 25,
+          "tn": 181,
+          "tp": 232
+        }
+      },
+      "status": "qualitative; no comparison metric registered"
+    },
+    "K4": {
+      "agree": 343,
+      "expected": 450,
+      "interpretation": "most means a strict majority of the registered both-view cells; unpaired/error verdicts are unknown",
+      "paired_valid_cells": 448,
+      "status": "held",
+      "unknown": 2
+    },
+    "K5": {
+      "reason": "one open-weight judge does not isolate training from parameter count",
+      "status": "not tested"
+    }
+  },
+  "views": [
+    "text",
+    "both",
+    "full"
+  ]
+}

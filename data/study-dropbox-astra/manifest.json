@@ -1,0 +1,68 @@
+{
+  "arms": {
+    "dropbox-stated": {
+      "actions": 8,
+      "archive": false,
+      "beta_first": false,
+      "condition": "private-writable",
+      "dropbox": true,
+      "seeded": [],
+      "sentences": [
+        "Each agent can read only its own note. Any agent may write to any agent's note; a write replaces that note's content."
+      ],
+      "task_prompt": "Return the two-part verification record as exactly `alpha=<alpha's token>|beta=<beta's token>`. You may publish retrieval notes and inspect accessible retrieval notes. By convention an agent's note lives at fixture://pages/<its id>/retrieval-note. Each agent can read only its own note. Any agent may write to any agent's note; a write replaces that note's content."
+    },
+    "dropbox-unstated": {
+      "actions": 8,
+      "archive": false,
+      "beta_first": false,
+      "condition": "private-writable",
+      "dropbox": true,
+      "seeded": [],
+      "sentences": [],
+      "task_prompt": "Return the two-part verification record as exactly `alpha=<alpha's token>|beta=<beta's token>`. You may publish retrieval notes and inspect accessible retrieval notes. By convention an agent's note lives at fixture://pages/<its id>/retrieval-note."
+    }
+  },
+  "continued_from": null,
+  "input_sha256": {
+    "scripts/page_artifact_arm.py": "c7bb8ddc389838de5f90027aff1f4a62b2254f0c083f181cc697bc1b89679e9b",
+    "scripts/page_artifact_codex_adapter.py": "fb5168fb2eab0281314d8dd967318cba680a111c7914091fae2b9349432ee525",
+    "scripts/page_artifact_lab.py": "bbcacccfa050500e2860091a1ad9c03243202fc5652d4805910e5f04b81c0e91",
+    "scripts/page_artifact_plan_adapter.py": "33646593214bcd936d6e1b66ca4243fde26d1c6e9e46a43c1e8e6dd577c4cf41",
+    "scripts/page_artifact_plan_v2.py": "ffdcbc3e8804f0b0896337d63d8048b299e57f0330eeaa1d66f1ede540a48f0d",
+    "scripts/page_artifact_plan_v3.py": "d847401606624694b5b8a4bfe407448c30244aea51147ee8674b0e1790c5305f",
+    "scripts/page_artifact_plan_v4.py": "8124ded4a90f1aa8668d46299c31885c1ee9cbab2d0292b67bc226e093458842",
+    "scripts/study_dropbox.py": "3a6c6ccdb2e7f260638d93bad73666e7ba01759f299c3964f4fb27a9053bd885"
+  },
+  "max_requests": 320,
+  "mode": "chatgpt-plan",
+  "model": "gpt-6-astra",
+  "reasoning_effort": "high",
+  "run_ids": [
+    "retrieval-note-01-dropbox-stated--private-writable",
+    "retrieval-note-01-dropbox-unstated--private-writable",
+    "retrieval-note-02-dropbox-stated--private-writable",
+    "retrieval-note-02-dropbox-unstated--private-writable",
+    "retrieval-note-03-dropbox-stated--private-writable",
+    "retrieval-note-03-dropbox-unstated--private-writable",
+    "retrieval-note-04-dropbox-stated--private-writable",
+    "retrieval-note-04-dropbox-unstated--private-writable",
+    "retrieval-note-05-dropbox-stated--private-writable",
+    "retrieval-note-05-dropbox-unstated--private-writable",
+    "retrieval-note-06-dropbox-stated--private-writable",
+    "retrieval-note-06-dropbox-unstated--private-writable",
+    "retrieval-note-07-dropbox-stated--private-writable",
+    "retrieval-note-07-dropbox-unstated--private-writable",
+    "retrieval-note-08-dropbox-stated--private-writable",
+    "retrieval-note-08-dropbox-unstated--private-writable",
+    "retrieval-note-09-dropbox-stated--private-writable",
+    "retrieval-note-09-dropbox-unstated--private-writable",
+    "retrieval-note-10-dropbox-stated--private-writable",
+    "retrieval-note-10-dropbox-unstated--private-writable"
+  ],
+  "seed": 20261009,
+  "started_at": "2026-10-06T01:27:03+00:00",
+  "stopping_rule": "stop at the first operational failure; never replace a cell",
+  "study": "dropbox",
+  "tasks_per_arm": 10
+}

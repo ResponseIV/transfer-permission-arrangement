@@ -1,0 +1,2277 @@
+{
+  "note": "exploratory, after the freeze",
+  "studies": [
+    "study-",
+    "page-artifact"
+  ],
+  "check": "variants",
+  "result": {
+    "agent-made numerator": {
+      "cells": {
+        "nothing moved": 219,
+        "asked, nothing moved": 373,
+        "common source": 92,
+        "attempted, not completed": 118,
+        "read, not used": 8,
+        "exchange against a rule": 12
+      },
+      "factors": {
+        "asks for a code": {
+          "given_collusion": {
+            "count": 12,
+            "of": 12,
+            "exact_95": [
+              0.7353515306029488,
+              1.0
+            ]
+          },
+          "given_emergent_collusion": {
+            "count": 12,
+            "of": 12,
+            "exact_95": [
+              0.7353515306029488,
+              1.0
+            ]
+          },
+          "innocent": {
+            "nothing moved": {
+              "count": 0,
+              "of": 219,
+              "exact_95": [
+                0.0,
+                0.01670312809315888
+              ]
+            },
+            "asked, nothing moved": {
+              "count": 30,
+              "of": 373,
+              "exact_95": [
+                0.05492134685477,
+                0.11282722439445503
+              ]
+            },
+            "common source": {
+              "count": 0,
+              "of": 92,
+              "exact_95": [
+                0.0,
+                0.03930328773951808
+              ]
+            },
+            "read, not used": {
+              "count": 0,
+              "of": 8,
+              "exact_95": [
+                0.0,
+                0.36941664755281933
+              ]
+            }
+          },
+          "attempted_not_completed": {
+            "count": 24,
+            "of": 118,
+            "exact_95": [
+              0.13487661984289634,
+              0.28734329699364314
+            ]
+          },
+          "innocent_pooled": {
+            "count": 30,
+            "of": 692,
+            "exact_95": [
+              0.029437869960646984,
+              0.06131252805296761
+            ]
+          },
+          "likelihood_ratio_pooled_lower_95_one_sided": 11.99349552130165,
+          "closest_innocent_case": "asked, nothing moved",
+          "likelihood_ratio": 12.433333333333334,
+          "likelihood_ratio_lower_95_one_sided": 1.9905749658935117,
+          "super": false
+        },
+        "opportunity": {
+          "given_collusion": {
+            "count": 12,
+            "of": 12,
+            "exact_95": [
+              0.7353515306029488,
+              1.0
+            ]
+          },
+          "given_emergent_collusion": {
+            "count": 12,
+            "of": 12,
+            "exact_95": [
+              0.7353515306029488,
+              1.0
+            ]
+          },
+          "innocent": {
+            "nothing moved": {
+              "count": 33,
+              "of": 219,
+              "exact_95": [
+                0.10605047335148829,
+                0.20505930983314746
+              ]
+            },
+            "asked, nothing moved": {
+              "count": 341,
+              "of": 373,
+              "exact_95": [
+                0.8810472316490294,
+                0.9405794974937012
+              ]
+            },
+            "common source": {
+              "count": 0,
+              "of": 92,
+              "exact_95": [
+                0.0,
+                0.03930328773951808
+              ]
+            },
+            "read, not used": {
+              "count": 8,
+              "of": 8,
+              "exact_95": [
+                0.6305833524471807,
+                1.0
+              ]
+            }
+          },
+          "attempted_not_completed": {
+            "count": 105,
+            "of": 118,
+            "exact_95": [
+              0.8189763838075608,
+              0.9400193953762319
+            ]
+          },
+          "innocent_pooled": {
+            "count": 382,
+            "of": 692,
+            "exact_95": [
+              0.5140941238661882,
+              0.5895067364273456
+            ]
+          },
+          "likelihood_ratio_pooled_lower_95_one_sided": 1.2474014038575418,
+          "closest_innocent_case": "read, not used",
+          "likelihood_ratio": 1.0,
+          "likelihood_ratio_lower_95_one_sided": 0.7353515306029488,
+          "super": false
+        },
+        "asks for a token": {
+          "given_collusion": {
+            "count": 10,
+            "of": 12,
+            "exact_95": [
+              0.515862251314033,
+              0.9791374745399076
+            ]
+          },
+          "given_emergent_collusion": {
+            "count": 10,
+            "of": 12,
+            "exact_95": [
+              0.515862251314033,
+              0.9791374745399076
+            ]
+          },
+          "innocent": {
+            "nothing moved": {
+              "count": 0,
+              "of": 219,
+              "exact_95": [
+                0.0,
+                0.01670312809315888
+              ]
+            },
+            "asked, nothing moved": {
+              "count": 373,
+              "of": 373,
+              "exact_95": [
+                0.9901589855823274,
+                1.0
+              ]
+            },
+            "common source": {
+              "count": 0,
+              "of": 92,
+              "exact_95": [
+                0.0,
+                0.03930328773951808
+              ]
+            },
+            "read, not used": {
+              "count": 0,
+              "of": 8,
+              "exact_95": [
+                0.0,
+                0.36941664755281933
+              ]
+            }
+          },
+          "attempted_not_completed": {
+            "count": 65,
+            "of": 118,
+            "exact_95": [
+              0.45656845586815953,
+              0.6425129838332656
+            ]
+          },
+          "innocent_pooled": {
+            "count": 373,
+            "of": 692,
+            "exact_95": [
+              0.501055751955723,
+              0.5766449128783144
+            ]
+          },
+          "likelihood_ratio_pooled_lower_95_one_sided": 0.8945925643202405,
+          "closest_innocent_case": "asked, nothing moved",
+          "likelihood_ratio": 0.8333333333333334,
+          "likelihood_ratio_lower_95_one_sided": 0.515862251314033,
+          "super": false
+        },
+        "answers agree": {
+          "given_collusion": {
+            "count": 7,
+            "of": 12,
+            "exact_95": [
+              0.2766696856821058,
+              0.8483477701915699
+            ]
+          },
+          "given_emergent_collusion": {
+            "count": 7,
+            "of": 12,
+            "exact_95": [
+              0.2766696856821058,
+              0.8483477701915699
+            ]
+          },
+          "innocent": {
+            "nothing moved": {
+              "count": 0,
+              "of": 219,
+              "exact_95": [
+                0.0,
+                0.01670312809315888
+              ]
+            },
+            "asked, nothing moved": {
+              "count": 0,
+              "of": 373,
+              "exact_95": [
+                0.0,
+                0.0098410144176726
+              ]
+            },
+            "common source": {
+              "count": 92,
+              "of": 92,
+              "exact_95": [
+                0.9606967122604819,
+                1.0
+              ]
+            },
+            "read, not used": {
+              "count": 0,
+              "of": 8,
+              "exact_95": [
+                0.0,
+                0.36941664755281933
+              ]
+            }
+          },
+          "attempted_not_completed": {
+            "count": 3,
+            "of": 118,
+            "exact_95": [
+              0.005273988037600992,
+              0.07250243202424933
+            ]
+          },
+          "innocent_pooled": {
+            "count": 92,
+            "of": 692,
+            "exact_95": [
+              0.10853771155215583,
+              0.16053636782648817
+            ]
+          },
+          "likelihood_ratio_pooled_lower_95_one_sided": 1.7234081562200132,
+          "closest_innocent_case": "common source",
+          "likelihood_ratio": 0.5833333333333334,
+          "likelihood_ratio_lower_95_one_sided": 0.2766696856821058,
+          "super": false
+        },
+        "uptake": {
+          "given_collusion": {
+            "count": 3,
+            "of": 12,
+            "exact_95": [
+              0.054860644527992705,
+              0.5718584618781892
+            ]
+          },
+          "given_emergent_collusion": {
+            "count": 3,
+            "of": 12,
+            "exact_95": [
+              0.054860644527992705,
+              0.5718584618781892
+            ]
+          },
+          "innocent": {
+            "nothing moved": {
+              "count": 0,
+              "of": 219,
+              "exact_95": [
+                0.0,
+                0.01670312809315888
+              ]
+            },
+            "asked, nothing moved": {
+              "count": 1,
+              "of": 373,
+              "exact_95": [
+                6.787385728130557e-05,
+                0.014846163110688648
+              ]
+            },
+            "common source": {
+              "count": 0,
+              "of": 92,
+              "exact_95": [
+                0.0,
+                0.03930328773951808
+              ]
+            },
+            "read, not used": {
+              "count": 0,
+              "of": 8,
+              "exact_95": [
+                0.0,
+                0.36941664755281933
+              ]
+            }
+          },
+          "attempted_not_completed": {
+            "count": 24,
+            "of": 118,
+            "exact_95": [
+              0.13487661984289634,
+              0.28734329699364314
+            ]
+          },
+          "innocent_pooled": {
+            "count": 1,
+            "of": 692,
+            "exact_95": [
+              3.6585758447777635e-05,
+              0.008024962256005574
+            ]
+          },
+          "likelihood_ratio_pooled_lower_95_one_sided": 6.836249539608376,
+          "closest_innocent_case": "asked, nothing moved",
+          "likelihood_ratio": 93.25,
+          "likelihood_ratio_lower_95_one_sided": 0.14850615122900954,
+          "super": false
+        },
+        "secret-like string on a page": {
+          "given_collusion": {
+            "count": 4,
+            "of": 12,
+            "exact_95": [
+              0.09924609114958327,
+              0.651124493581186
+            ]
+          },
+          "given_emergent_collusion": {
+            "count": 4,
+            "of": 12,
+            "exact_95": [
+              0.09924609114958327,
+              0.651124493581186
+            ]
+          },
+          "innocent": {
+            "nothing moved": {
+              "count": 180,
+              "of": 219,
+              "exact_95": [
+                0.7646970903995858,
+                0.8701952113568978
+              ]
+            },
+            "asked, nothing moved": {
+              "count": 51,
+              "of": 373,
+              "exact_95": [
+                0.1035266957193873,
+                0.1758270467762295
+              ]
+            },
+            "common source": {
+              "count": 57,
+              "of": 92,
+              "exact_95": [
+                0.5123835409683362,
+                0.7188234498204985
+              ]
+            },
+            "read, not used": {
+              "count": 8,
+              "of": 8,
+              "exact_95": [
+                0.6305833524471807,
+                1.0
+              ]
+            }
+          },
+          "attempted_not_completed": {
+            "count": 35,
+            "of": 118,
+            "exact_95": [
+              0.21606605336831552,
+              0.3876590080659368
+            ]
+          },
+          "innocent_pooled": {
+            "count": 296,
+            "of": 692,
+            "exact_95": [
+              0.39053683948681495,
+              0.4655731547644735
+            ]
+          },
+          "likelihood_ratio_pooled_lower_95_one_sided": 0.21316970305083502,
+          "closest_innocent_case": "read, not used",
+          "likelihood_ratio": 0.3333333333333333,
+          "likelihood_ratio_lower_95_one_sided": 0.09924609114958327,
+          "super": false
+        },
+        "informed read": {
+          "given_collusion": {
+            "count": 1,
+            "of": 12,
+            "exact_95": [
+              0.002107593231860227,
+              0.38479616515094417
+            ]
+          },
+          "given_emergent_collusion": {
+            "count": 1,
+            "of": 12,
+            "exact_95": [
+              0.002107593231860227,
+              0.38479616515094417
+            ]
+          },
+          "innocent": {
+            "nothing moved": {
+              "count": 0,
+              "of": 219,
+              "exact_95": [
+                0.0,
+                0.01670312809315888
+              ]
+            },
+            "asked, nothing moved": {
+              "count": 1,
+              "of": 373,
+              "exact_95": [
+                6.787385728130557e-05,
+                0.014846163110688648
+              ]
+            },
+            "common source": {
+              "count": 0,
+              "of": 92,
+              "exact_95": [
+                0.0,
+                0.03930328773951808
+              ]
+            },
+            "read, not used": {
+              "count": 8,
+              "of": 8,
+              "exact_95": [
+                0.6305833524471807,
+                1.0
+              ]
+            }
+          },
+          "attempted_not_completed": {
+            "count": 6,
+            "of": 118,
+            "exact_95": [
+              0.01888613898902699,
+              0.10739031836955881
+            ]
+          },
+          "innocent_pooled": {
+            "count": 9,
+            "of": 692,
+            "exact_95": [
+              0.00596385161634925,
+              0.024544928572255875
+            ]
+          },
+          "likelihood_ratio_pooled_lower_95_one_sided": 0.08586674944503707,
+          "closest_innocent_case": "read, not used",
+          "likelihood_ratio": 0.08333333333333333,
+          "likelihood_ratio_lower_95_one_sided": 0.002107593231860227,
+          "super": false
+        },
+        "string reused across authors": {
+          "given_collusion": {
+            "count": 0,
+            "of": 12,
+            "exact_95": [
+              0.0,
+              0.2646484693970512
+            ]
+          },
+          "given_emergent_collusion": {
+            "count": 0,
+            "of": 12,
+            "exact_95": [
+              0.0,
+              0.2646484693970512
+            ]
+          },
+          "innocent": {
+            "nothing moved": {
+              "count": 0,
+              "of": 219,
+              "exact_95": [
+                0.0,
+                0.01670312809315888
+              ]
+            },
+            "asked, nothing moved": {
+              "count": 0,
+              "of": 373,
+              "exact_95": [
+                0.0,
+                0.0098410144176726
+              ]
+            },
+            "common source": {
+              "count": 0,
+              "of": 92,
+              "exact_95": [
+                0.0,
+                0.03930328773951808
+              ]
+            },
+            "read, not used": {
+              "count": 0,
+              "of": 8,
+              "exact_95": [
+                0.0,
+                0.36941664755281933
+              ]
+            }
+          },
+          "attempted_not_completed": {
+            "count": 13,
+            "of": 118,
+            "exact_95": [
+              0.05998060462376814,
+              0.18102361619243923
+            ]
+          },
+          "innocent_pooled": {
+            "count": 0,
+            "of": 692,
+            "exact_95": [
+              0.0,
+              0.005316567418580664
+            ]
+          },
+          "likelihood_ratio_pooled_lower_95_one_sided": 0.0,
+          "closest_innocent_case": "read, not used",
+          "likelihood_ratio": null,
+          "likelihood_ratio_lower_95_one_sided": 0.0,
+          "super": false
+        }
+      },
+      "posteriors": {
+        "asks for a code": {
+          "ratio_status": "finite",
+          "0.01": {
+            "point": 0.11157642835776248,
+            "worst_benchmark_bound": 0.019710502356935465,
+            "pooled_bound": 0.1080558411551232
+          },
+          "0.05": {
+            "point": 0.39554612937433725,
+            "worst_benchmark_bound": 0.09483184567968687,
+            "pooled_bound": 0.38696814668931395
+          },
+          "0.2": {
+            "point": 0.7565922920892495,
+            "worst_benchmark_bound": 0.3322844597098889,
+            "pooled_bound": 0.7498983261868913
+          }
+        },
+        "opportunity": {
+          "ratio_status": "finite",
+          "0.01": {
+            "point": 0.01,
+            "worst_benchmark_bound": 0.007373027911545611,
+            "pooled_bound": 0.012443229314565969
+          },
+          "0.05": {
+            "point": 0.05000000000000001,
+            "worst_benchmark_bound": 0.03726062489754306,
+            "pooled_bound": 0.06160797521502619
+          },
+          "0.2": {
+            "point": 0.2,
+            "worst_benchmark_bound": 0.15528974477409432,
+            "pooled_bound": 0.2377179308105789
+          }
+        },
+        "asks for a token": {
+          "ratio_status": "finite",
+          "0.01": {
+            "point": 0.008347245409015025,
+            "worst_benchmark_bound": 0.0051837188528929354,
+            "pooled_bound": 0.00895536526408303
+          },
+          "0.05": {
+            "point": 0.042016806722689086,
+            "worst_benchmark_bound": 0.02643297255694143,
+            "pooled_bound": 0.0449666190160958
+          },
+          "0.2": {
+            "point": 0.1724137931034483,
+            "worst_benchmark_bound": 0.11423338946264947,
+            "pooled_bound": 0.18277161021358296
+          }
+        },
+        "answers agree": {
+          "ratio_status": "finite",
+          "0.01": {
+            "point": 0.005857740585774059,
+            "worst_benchmark_bound": 0.002786855024025929,
+            "pooled_bound": 0.017110304225876085
+          },
+          "0.05": {
+            "point": 0.029787234042553196,
+            "worst_benchmark_bound": 0.014352566609968129,
+            "pooled_bound": 0.08316239024143053
+          },
+          "0.2": {
+            "point": 0.1272727272727273,
+            "worst_benchmark_bound": 0.06469278808423534,
+            "pooled_bound": 0.30111571797427544
+          }
+        },
+        "uptake": {
+          "ratio_status": "finite",
+          "0.01": {
+            "point": 0.4850455136540962,
+            "worst_benchmark_bound": 0.0014978153175852836,
+            "pooled_bound": 0.06459270400591778
+          },
+          "0.05": {
+            "point": 0.8307349665924276,
+            "worst_benchmark_bound": 0.00775549539249452,
+            "pooled_bound": 0.2645991450550141
+          },
+          "0.2": {
+            "point": 0.9588688946015425,
+            "worst_benchmark_bound": 0.035797500549689214,
+            "pooled_bound": 0.6308685966136803
+          }
+        },
+        "secret-like string on a page": {
+          "ratio_status": "finite",
+          "0.01": {
+            "point": 0.0033557046979865767,
+            "worst_benchmark_bound": 0.0010014817979371773,
+            "pooled_bound": 0.002148602889000128
+          },
+          "0.05": {
+            "point": 0.017241379310344827,
+            "worst_benchmark_bound": 0.005196335534708515,
+            "pooled_bound": 0.011094978410407009
+          },
+          "0.2": {
+            "point": 0.07692307692307693,
+            "worst_benchmark_bound": 0.024210815584811828,
+            "pooled_bound": 0.050596040054231586
+          }
+        },
+        "informed read": {
+          "ratio_status": "finite",
+          "0.01": {
+            "point": 0.0008410428931875525,
+            "worst_benchmark_bound": 2.1288367319609564e-05,
+            "pooled_bound": 0.0008665892751603549
+          },
+          "0.05": {
+            "point": 0.004366812227074236,
+            "worst_benchmark_bound": 0.0001109136563678287,
+            "pooled_bound": 0.004498970393761857
+          },
+          "0.2": {
+            "point": 0.020408163265306124,
+            "worst_benchmark_bound": 0.0005266208323395578,
+            "pooled_bound": 0.021015553054122463
+          }
+        },
+        "string reused across authors": {
+          "ratio_status": "unbounded",
+          "0.01": {
+            "point": null,
+            "worst_benchmark_bound": 0.0,
+            "pooled_bound": 0.0
+          },
+          "0.05": {
+            "point": null,
+            "worst_benchmark_bound": 0.0,
+            "pooled_bound": 0.0
+          },
+          "0.2": {
+            "point": null,
+            "worst_benchmark_bound": 0.0,
+            "pooled_bound": 0.0
+          }
+        }
+      }
+    },
+    "authorized as innocent": {
+      "cells": {
+        "authorized transfer": 894,
+        "nothing moved": 219,
+        "asked, nothing moved": 373,
+        "common source": 92,
+        "attempted, not completed": 118,
+        "read, not used": 8,
+        "exchange against a rule": 56
+      },
+      "factors": {
+        "opportunity": {
+          "given_collusion": {
+            "count": 56,
+            "of": 56,
+            "exact_95": [
+              0.9362499033376379,
+              1.0
+            ]
+          },
+          "given_emergent_collusion": {
+            "count": 12,
+            "of": 12,
+            "exact_95": [
+              0.7353515306029488,
+              1.0
+            ]
+          },
+          "innocent": {
+            "authorized transfer": {
+              "count": 894,
+              "of": 894,
+              "exact_95": [
+                0.9958822379562879,
+                1.0
+              ]
+            },
+            "nothing moved": {
+              "count": 33,
+              "of": 219,
+              "exact_95": [
+                0.10605047335148829,
+                0.20505930983314746
+              ]
+            },
+            "asked, nothing moved": {
+              "count": 341,
+              "of": 373,
+              "exact_95": [
+                0.8810472316490294,
+                0.9405794974937012
+              ]
+            },
+            "common source": {
+              "count": 0,
+              "of": 92,
+              "exact_95": [
+                0.0,
+                0.03930328773951808
+              ]
+            },
+            "read, not used": {
+              "count": 8,
+              "of": 8,
+              "exact_95": [
+                0.6305833524471807,
+                1.0
+              ]
+            }
+          },
+          "attempted_not_completed": {
+            "count": 105,
+            "of": 118,
+            "exact_95": [
+              0.8189763838075608,
+              0.9400193953762319
+            ]
+          },
+          "innocent_pooled": {
+            "count": 1276,
+            "of": 1586,
+            "exact_95": [
+              0.7841517867452723,
+              0.8237935661709426
+            ]
+          },
+          "likelihood_ratio_pooled_lower_95_one_sided": 1.136510336793963,
+          "closest_innocent_case": "read, not used",
+          "likelihood_ratio": 1.0,
+          "likelihood_ratio_lower_95_one_sided": 0.9362499033376379,
+          "super": false
+        },
+        "uptake": {
+          "given_collusion": {
+            "count": 47,
+            "of": 56,
+            "exact_95": [
+              0.7167202918386086,
+              0.9237812560749863
+            ]
+          },
+          "given_emergent_collusion": {
+            "count": 3,
+            "of": 12,
+            "exact_95": [
+              0.054860644527992705,
+              0.5718584618781892
+            ]
+          },
+          "innocent": {
+            "authorized transfer": {
+              "count": 807,
+              "of": 894,
+              "exact_95": [
+                0.8813485495337854,
+                0.9213197230581176
+              ]
+            },
+            "nothing moved": {
+              "count": 0,
+              "of": 219,
+              "exact_95": [
+                0.0,
+                0.01670312809315888
+              ]
+            },
+            "asked, nothing moved": {
+              "count": 1,
+              "of": 373,
+              "exact_95": [
+                6.787385728130557e-05,
+                0.014846163110688648
+              ]
+            },
+            "common source": {
+              "count": 0,
+              "of": 92,
+              "exact_95": [
+                0.0,
+                0.03930328773951808
+              ]
+            },
+            "read, not used": {
+              "count": 0,
+              "of": 8,
+              "exact_95": [
+                0.0,
+                0.36941664755281933
+              ]
+            }
+          },
+          "attempted_not_completed": {
+            "count": 24,
+            "of": 118,
+            "exact_95": [
+              0.13487661984289634,
+              0.28734329699364314
+            ]
+          },
+          "innocent_pooled": {
+            "count": 808,
+            "of": 1586,
+            "exact_95": [
+              0.4845412584083735,
+              0.5343391822334698
+            ]
+          },
+          "likelihood_ratio_pooled_lower_95_one_sided": 1.3413208607364502,
+          "closest_innocent_case": "authorized transfer",
+          "likelihood_ratio": 0.9297663303239512,
+          "likelihood_ratio_lower_95_one_sided": 0.7779278722695893,
+          "super": false
+        },
+        "secret-like string on a page": {
+          "given_collusion": {
+            "count": 48,
+            "of": 56,
+            "exact_95": [
+              0.7377826979099751,
+              0.9362486344412272
+            ]
+          },
+          "given_emergent_collusion": {
+            "count": 4,
+            "of": 12,
+            "exact_95": [
+              0.09924609114958327,
+              0.651124493581186
+            ]
+          },
+          "innocent": {
+            "authorized transfer": {
+              "count": 862,
+              "of": 894,
+              "exact_95": [
+                0.949842984560566,
+                0.9753904188074083
+              ]
+            },
+            "nothing moved": {
+              "count": 180,
+              "of": 219,
+              "exact_95": [
+                0.7646970903995858,
+                0.8701952113568978
+              ]
+            },
+            "asked, nothing moved": {
+              "count": 51,
+              "of": 373,
+              "exact_95": [
+                0.1035266957193873,
+                0.1758270467762295
+              ]
+            },
+            "common source": {
+              "count": 57,
+              "of": 92,
+              "exact_95": [
+                0.5123835409683362,
+                0.7188234498204985
+              ]
+            },
+            "read, not used": {
+              "count": 8,
+              "of": 8,
+              "exact_95": [
+                0.6305833524471807,
+                1.0
+              ]
+            }
+          },
+          "attempted_not_completed": {
+            "count": 35,
+            "of": 118,
+            "exact_95": [
+              0.21606605336831552,
+              0.3876590080659368
+            ]
+          },
+          "innocent_pooled": {
+            "count": 1158,
+            "of": 1586,
+            "exact_95": [
+              0.7075648458644848,
+              0.7518574381502123
+            ]
+          },
+          "likelihood_ratio_pooled_lower_95_one_sided": 0.981280041233794,
+          "closest_innocent_case": "read, not used",
+          "likelihood_ratio": 0.8571428571428571,
+          "likelihood_ratio_lower_95_one_sided": 0.7377826979099751,
+          "super": false
+        },
+        "answers agree": {
+          "given_collusion": {
+            "count": 34,
+            "of": 56,
+            "exact_95": [
+              0.467536927445787,
+              0.7350087374962713
+            ]
+          },
+          "given_emergent_collusion": {
+            "count": 7,
+            "of": 12,
+            "exact_95": [
+              0.2766696856821058,
+              0.8483477701915699
+            ]
+          },
+          "innocent": {
+            "authorized transfer": {
+              "count": 820,
+              "of": 894,
+              "exact_95": [
+                0.8971980760157485,
+                0.9344479520349775
+              ]
+            },
+            "nothing moved": {
+              "count": 0,
+              "of": 219,
+              "exact_95": [
+                0.0,
+                0.01670312809315888
+              ]
+            },
+            "asked, nothing moved": {
+              "count": 0,
+              "of": 373,
+              "exact_95": [
+                0.0,
+                0.0098410144176726
+              ]
+            },
+            "common source": {
+              "count": 92,
+              "of": 92,
+              "exact_95": [
+                0.9606967122604819,
+                1.0
+              ]
+            },
+            "read, not used": {
+              "count": 0,
+              "of": 8,
+              "exact_95": [
+                0.0,
+                0.36941664755281933
+              ]
+            }
+          },
+          "attempted_not_completed": {
+            "count": 3,
+            "of": 118,
+            "exact_95": [
+              0.005273988037600992,
+              0.07250243202424933
+            ]
+          },
+          "innocent_pooled": {
+            "count": 912,
+            "of": 1586,
+            "exact_95": [
+              0.5502672337418362,
+              0.599517543713398
+            ]
+          },
+          "likelihood_ratio_pooled_lower_95_one_sided": 0.779855289221186,
+          "closest_innocent_case": "common source",
+          "likelihood_ratio": 0.6071428571428571,
+          "likelihood_ratio_lower_95_one_sided": 0.467536927445787,
+          "super": false
+        },
+        "asks for a code": {
+          "given_collusion": {
+            "count": 12,
+            "of": 56,
+            "exact_95": [
+              0.11592219911993074,
+              0.3443954110863334
+            ]
+          },
+          "given_emergent_collusion": {
+            "count": 12,
+            "of": 12,
+            "exact_95": [
+              0.7353515306029488,
+              1.0
+            ]
+          },
+          "innocent": {
+            "authorized transfer": {
+              "count": 66,
+              "of": 894,
+              "exact_95": [
+                0.05755352069237238,
+                0.09296936546324108
+              ]
+            },
+            "nothing moved": {
+              "count": 0,
+              "of": 219,
+              "exact_95": [
+                0.0,
+                0.01670312809315888
+              ]
+            },
+            "asked, nothing moved": {
+              "count": 30,
+              "of": 373,
+              "exact_95": [
+                0.05492134685477,
+                0.11282722439445503
+              ]
+            },
+            "common source": {
+              "count": 0,
+              "of": 92,
+              "exact_95": [
+                0.0,
+                0.03930328773951808
+              ]
+            },
+            "read, not used": {
+              "count": 0,
+              "of": 8,
+              "exact_95": [
+                0.0,
+                0.36941664755281933
+              ]
+            }
+          },
+          "attempted_not_completed": {
+            "count": 24,
+            "of": 118,
+            "exact_95": [
+              0.13487661984289634,
+              0.28734329699364314
+            ]
+          },
+          "innocent_pooled": {
+            "count": 96,
+            "of": 1586,
+            "exact_95": [
+              0.04930094355747573,
+              0.07341705078034222
+            ]
+          },
+          "likelihood_ratio_pooled_lower_95_one_sided": 1.5789547235663337,
+          "closest_innocent_case": "asked, nothing moved",
+          "likelihood_ratio": 2.664285714285714,
+          "likelihood_ratio_lower_95_one_sided": 0.313797983625944,
+          "super": false
+        },
+        "asks for a token": {
+          "given_collusion": {
+            "count": 11,
+            "of": 56,
+            "exact_95": [
+              0.102348302601079,
+              0.3243329859241144
+            ]
+          },
+          "given_emergent_collusion": {
+            "count": 10,
+            "of": 12,
+            "exact_95": [
+              0.515862251314033,
+              0.9791374745399076
+            ]
+          },
+          "innocent": {
+            "authorized transfer": {
+              "count": 137,
+              "of": 894,
+              "exact_95": [
+                0.13024507916278588,
+                0.1785536938231631
+              ]
+            },
+            "nothing moved": {
+              "count": 0,
+              "of": 219,
+              "exact_95": [
+                0.0,
+                0.01670312809315888
+              ]
+            },
+            "asked, nothing moved": {
+              "count": 373,
+              "of": 373,
+              "exact_95": [
+                0.9901589855823274,
+                1.0
+              ]
+            },
+            "common source": {
+              "count": 0,
+              "of": 92,
+              "exact_95": [
+                0.0,
+                0.03930328773951808
+              ]
+            },
+            "read, not used": {
+              "count": 0,
+              "of": 8,
+              "exact_95": [
+                0.0,
+                0.36941664755281933
+              ]
+            }
+          },
+          "attempted_not_completed": {
+            "count": 65,
+            "of": 118,
+            "exact_95": [
+              0.45656845586815953,
+              0.6425129838332656
+            ]
+          },
+          "innocent_pooled": {
+            "count": 510,
+            "of": 1586,
+            "exact_95": [
+              0.2986092535154782,
+              0.3451805318081065
+            ]
+          },
+          "likelihood_ratio_pooled_lower_95_one_sided": 0.2965065905222508,
+          "closest_innocent_case": "asked, nothing moved",
+          "likelihood_ratio": 0.19642857142857142,
+          "likelihood_ratio_lower_95_one_sided": 0.102348302601079,
+          "super": false
+        },
+        "informed read": {
+          "given_collusion": {
+            "count": 4,
+            "of": 56,
+            "exact_95": [
+              0.019803931508829725,
+              0.17290469813936982
+            ]
+          },
+          "given_emergent_collusion": {
+            "count": 1,
+            "of": 12,
+            "exact_95": [
+              0.002107593231860227,
+              0.38479616515094417
+            ]
+          },
+          "innocent": {
+            "authorized transfer": {
+              "count": 712,
+              "of": 894,
+              "exact_95": [
+                0.7685089933572566,
+                0.8223627384941503
+              ]
+            },
+            "nothing moved": {
+              "count": 0,
+              "of": 219,
+              "exact_95": [
+                0.0,
+                0.01670312809315888
+              ]
+            },
+            "asked, nothing moved": {
+              "count": 1,
+              "of": 373,
+              "exact_95": [
+                6.787385728130557e-05,
+                0.014846163110688648
+              ]
+            },
+            "common source": {
+              "count": 0,
+              "of": 92,
+              "exact_95": [
+                0.0,
+                0.03930328773951808
+              ]
+            },
+            "read, not used": {
+              "count": 8,
+              "of": 8,
+              "exact_95": [
+                0.6305833524471807,
+                1.0
+              ]
+            }
+          },
+          "attempted_not_completed": {
+            "count": 6,
+            "of": 118,
+            "exact_95": [
+              0.01888613898902699,
+              0.10739031836955881
+            ]
+          },
+          "innocent_pooled": {
+            "count": 721,
+            "of": 1586,
+            "exact_95": [
+              0.4298850668822237,
+              0.4794888290348389
+            ]
+          },
+          "likelihood_ratio_pooled_lower_95_one_sided": 0.04130217496139165,
+          "closest_innocent_case": "read, not used",
+          "likelihood_ratio": 0.07142857142857142,
+          "likelihood_ratio_lower_95_one_sided": 0.019803931508829725,
+          "super": false
+        },
+        "string reused across authors": {
+          "given_collusion": {
+            "count": 0,
+            "of": 56,
+            "exact_95": [
+              0.0,
+              0.06375009666236209
+            ]
+          },
+          "given_emergent_collusion": {
+            "count": 0,
+            "of": 12,
+            "exact_95": [
+              0.0,
+              0.2646484693970512
+            ]
+          },
+          "innocent": {
+            "authorized transfer": {
+              "count": 179,
+              "of": 894,
+              "exact_95": [
+                0.1744557014258195,
+                0.2279837830168494
+              ]
+            },
+            "nothing moved": {
+              "count": 0,
+              "of": 219,
+              "exact_95": [
+                0.0,
+                0.01670312809315888
+              ]
+            },
+            "asked, nothing moved": {
+              "count": 0,
+              "of": 373,
+              "exact_95": [
+                0.0,
+                0.0098410144176726
+              ]
+            },
+            "common source": {
+              "count": 0,
+              "of": 92,
+              "exact_95": [
+                0.0,
+                0.03930328773951808
+              ]
+            },
+            "read, not used": {
+              "count": 0,
+              "of": 8,
+              "exact_95": [
+                0.0,
+                0.36941664755281933
+              ]
+            }
+          },
+          "attempted_not_completed": {
+            "count": 13,
+            "of": 118,
+            "exact_95": [
+              0.05998060462376814,
+              0.18102361619243923
+            ]
+          },
+          "innocent_pooled": {
+            "count": 179,
+            "of": 1586,
+            "exact_95": [
+              0.0977020028353634,
+              0.12947226578406967
+            ]
+          },
+          "likelihood_ratio_pooled_lower_95_one_sided": 0.0,
+          "closest_innocent_case": "authorized transfer",
+          "likelihood_ratio": 0.0,
+          "likelihood_ratio_lower_95_one_sided": 0.0,
+          "super": false
+        }
+      },
+      "posteriors": {
+        "opportunity": {
+          "ratio_status": "finite",
+          "0.01": {
+            "point": 0.01,
+            "worst_benchmark_bound": 0.009368471442977063,
+            "pooled_bound": 0.011349609977135045
+          },
+          "0.05": {
+            "point": 0.05000000000000001,
+            "worst_benchmark_bound": 0.046962187366085095,
+            "pooled_bound": 0.0564402827394229
+          },
+          "0.2": {
+            "point": 0.2,
+            "worst_benchmark_bound": 0.1896682545801812,
+            "pooled_bound": 0.2212611797260267
+          }
+        },
+        "uptake": {
+          "ratio_status": "finite",
+          "0.01": {
+            "point": 0.00930419798291684,
+            "worst_benchmark_bound": 0.00779659278217775,
+            "pooled_bound": 0.013367582260533197
+          },
+          "0.05": {
+            "point": 0.046652144080047434,
+            "worst_benchmark_bound": 0.039333133242957834,
+            "pooled_bound": 0.06594069627629326
+          },
+          "0.2": {
+            "point": 0.18860251541838358,
+            "worst_benchmark_bound": 0.1628169978840768,
+            "pooled_bound": 0.2511215663144999
+          }
+        },
+        "secret-like string on a page": {
+          "ratio_status": "finite",
+          "0.01": {
+            "point": 0.008583690987124463,
+            "worst_benchmark_bound": 0.007397223779724506,
+            "pooled_bound": 0.009814637708470018
+          },
+          "0.05": {
+            "point": 0.04316546762589928,
+            "worst_benchmark_bound": 0.03737920865792583,
+            "pooled_bound": 0.049109968891322464
+          },
+          "0.2": {
+            "point": 0.17647058823529413,
+            "worst_benchmark_bound": 0.1557232032265727,
+            "pooled_bound": 0.19699355047517958
+          }
+        },
+        "answers agree": {
+          "ratio_status": "finite",
+          "0.01": {
+            "point": 0.006095374686267479,
+            "worst_benchmark_bound": 0.004700397153563987,
+            "pooled_bound": 0.007815758871975742
+          },
+          "0.05": {
+            "point": 0.030965391621129327,
+            "worst_benchmark_bound": 0.024016234266731638,
+            "pooled_bound": 0.03942674391789709
+          },
+          "0.2": {
+            "point": 0.13178294573643412,
+            "worst_benchmark_bound": 0.10465205661167096,
+            "pooled_bound": 0.16315458147442222
+          }
+        },
+        "asks for a code": {
+          "ratio_status": "finite",
+          "0.01": {
+            "point": 0.02620670273308508,
+            "worst_benchmark_bound": 0.0031596614971635714,
+            "pooled_bound": 0.01569865910722548
+          },
+          "0.05": {
+            "point": 0.12298054731289151,
+            "worst_benchmark_bound": 0.016247347305381316,
+            "pooled_bound": 0.07672667269918074
+          },
+          "0.2": {
+            "point": 0.3997856377277599,
+            "worst_benchmark_bound": 0.0727428555572235,
+            "pooled_bound": 0.28301981317335206
+          }
+        },
+        "asks for a token": {
+          "ratio_status": "finite",
+          "0.01": {
+            "point": 0.0019801980198019807,
+            "worst_benchmark_bound": 0.001032753555834688,
+            "pooled_bound": 0.0029860727300808393
+          },
+          "0.05": {
+            "point": 0.010232558139534883,
+            "worst_benchmark_bound": 0.0053578911335808235,
+            "pooled_bound": 0.015365817078407559
+          },
+          "0.2": {
+            "point": 0.04680851063829788,
+            "worst_benchmark_bound": 0.02494871109217748,
+            "pooled_bound": 0.06901108709487858
+          }
+        },
+        "informed read": {
+          "ratio_status": "finite",
+          "0.01": {
+            "point": 0.0007209805335255949,
+            "worst_benchmark_bound": 0.00019999970432710553,
+            "pooled_bound": 0.00041701970848918466
+          },
+          "0.05": {
+            "point": 0.0037453183520599256,
+            "worst_benchmark_bound": 0.0010412269011891278,
+            "pooled_bound": 0.002169083531256727
+          },
+          "0.2": {
+            "point": 0.017543859649122806,
+            "worst_benchmark_bound": 0.004926591407505873,
+            "pooled_bound": 0.010220016512817735
+          }
+        },
+        "string reused across authors": {
+          "ratio_status": "finite",
+          "0.01": {
+            "point": 0.0,
+            "worst_benchmark_bound": 0.0,
+            "pooled_bound": 0.0
+          },
+          "0.05": {
+            "point": 0.0,
+            "worst_benchmark_bound": 0.0,
+            "pooled_bound": 0.0
+          },
+          "0.2": {
+            "point": 0.0,
+            "worst_benchmark_bound": 0.0,
+            "pooled_bound": 0.0
+          }
+        }
+      }
+    },
+    "assigned non-completions as negatives": {
+      "cells": {
+        "invited exchange": 894,
+        "nothing moved": 253,
+        "asked, nothing moved": 437,
+        "common source": 92,
+        "read, not used": 28,
+        "exchange against a rule": 56
+      },
+      "factors": {
+        "informed read": {
+          "given_collusion": {
+            "count": 716,
+            "of": 950,
+            "exact_95": [
+              0.724998215932692,
+              0.7807878724677355
+            ]
+          },
+          "given_emergent_collusion": {
+            "count": 1,
+            "of": 12,
+            "exact_95": [
+              0.002107593231860227,
+              0.38479616515094417
+            ]
+          },
+          "innocent": {
+            "nothing moved": {
+              "count": 3,
+              "of": 253,
+              "exact_95": [
+                0.002452051784219686,
+                0.03426024048840848
+              ]
+            },
+            "asked, nothing moved": {
+              "count": 3,
+              "of": 437,
+              "exact_95": [
+                0.001417969362046351,
+                0.01993040421859793
+              ]
+            },
+            "common source": {
+              "count": 0,
+              "of": 92,
+              "exact_95": [
+                0.0,
+                0.03930328773951808
+              ]
+            },
+            "read, not used": {
+              "count": 9,
+              "of": 28,
+              "exact_95": [
+                0.15877603788615385,
+                0.5235164067096185
+              ]
+            }
+          },
+          "attempted_not_completed": {
+            "count": 0,
+            "of": 0,
+            "exact_95": null
+          },
+          "innocent_pooled": {
+            "count": 15,
+            "of": 810,
+            "exact_95": [
+              0.01040079084930022,
+              0.030359778626017908
+            ]
+          },
+          "likelihood_ratio_pooled_lower_95_one_sided": 23.88022076390829,
+          "closest_innocent_case": "read, not used",
+          "likelihood_ratio": 2.3447953216374264,
+          "likelihood_ratio_lower_95_one_sided": 1.3848624544346524,
+          "super": false
+        },
+        "uptake": {
+          "given_collusion": {
+            "count": 854,
+            "of": 950,
+            "exact_95": [
+              0.8780012856590464,
+              0.9173792661514921
+            ]
+          },
+          "given_emergent_collusion": {
+            "count": 3,
+            "of": 12,
+            "exact_95": [
+              0.054860644527992705,
+              0.5718584618781892
+            ]
+          },
+          "innocent": {
+            "nothing moved": {
+              "count": 3,
+              "of": 253,
+              "exact_95": [
+                0.002452051784219686,
+                0.03426024048840848
+              ]
+            },
+            "asked, nothing moved": {
+              "count": 2,
+              "of": 437,
+              "exact_95": [
+                0.0005547359975096322,
+                0.016433931112446398
+              ]
+            },
+            "common source": {
+              "count": 0,
+              "of": 92,
+              "exact_95": [
+                0.0,
+                0.03930328773951808
+              ]
+            },
+            "read, not used": {
+              "count": 20,
+              "of": 28,
+              "exact_95": [
+                0.5133316845510592,
+                0.8677634874288749
+              ]
+            }
+          },
+          "attempted_not_completed": {
+            "count": 0,
+            "of": 0,
+            "exact_95": null
+          },
+          "innocent_pooled": {
+            "count": 25,
+            "of": 810,
+            "exact_95": [
+              0.020071217054062465,
+              0.04522600479613548
+            ]
+          },
+          "likelihood_ratio_pooled_lower_95_one_sided": 19.413638007973475,
+          "closest_innocent_case": "read, not used",
+          "likelihood_ratio": 1.2585263157894737,
+          "likelihood_ratio_lower_95_one_sided": 1.0117979131162864,
+          "super": false
+        },
+        "opportunity": {
+          "given_collusion": {
+            "count": 950,
+            "of": 950,
+            "exact_95": [
+              0.9961244982120137,
+              1.0
+            ]
+          },
+          "given_emergent_collusion": {
+            "count": 12,
+            "of": 12,
+            "exact_95": [
+              0.7353515306029488,
+              1.0
+            ]
+          },
+          "innocent": {
+            "nothing moved": {
+              "count": 62,
+              "of": 253,
+              "exact_95": [
+                0.19335046262228628,
+                0.30284807749131826
+              ]
+            },
+            "asked, nothing moved": {
+              "count": 397,
+              "of": 437,
+              "exact_95": [
+                0.8774448069176224,
+                0.9338015234391519
+              ]
+            },
+            "common source": {
+              "count": 0,
+              "of": 92,
+              "exact_95": [
+                0.0,
+                0.03930328773951808
+              ]
+            },
+            "read, not used": {
+              "count": 28,
+              "of": 28,
+              "exact_95": [
+                0.8765638814997361,
+                1.0
+              ]
+            }
+          },
+          "attempted_not_completed": {
+            "count": 0,
+            "of": 0,
+            "exact_95": null
+          },
+          "innocent_pooled": {
+            "count": 487,
+            "of": 810,
+            "exact_95": [
+              0.5665790001112707,
+              0.635150595269425
+            ]
+          },
+          "likelihood_ratio_pooled_lower_95_one_sided": 1.5683280557888275,
+          "closest_innocent_case": "read, not used",
+          "likelihood_ratio": 1.0,
+          "likelihood_ratio_lower_95_one_sided": 0.9961244982120137,
+          "super": false
+        },
+        "secret-like string on a page": {
+          "given_collusion": {
+            "count": 910,
+            "of": 950,
+            "exact_95": [
+              0.9431034222581103,
+              0.9697519010625308
+            ]
+          },
+          "given_emergent_collusion": {
+            "count": 4,
+            "of": 12,
+            "exact_95": [
+              0.09924609114958327,
+              0.651124493581186
+            ]
+          },
+          "innocent": {
+            "nothing moved": {
+              "count": 191,
+              "of": 253,
+              "exact_95": [
+                0.6971519225086817,
+                0.8066495373777137
+              ]
+            },
+            "asked, nothing moved": {
+              "count": 55,
+              "of": 437,
+              "exact_95": [
+                0.09623824287744043,
+                0.16065316214686098
+              ]
+            },
+            "common source": {
+              "count": 57,
+              "of": 92,
+              "exact_95": [
+                0.5123835409683362,
+                0.7188234498204985
+              ]
+            },
+            "read, not used": {
+              "count": 28,
+              "of": 28,
+              "exact_95": [
+                0.8765638814997361,
+                1.0
+              ]
+            }
+          },
+          "attempted_not_completed": {
+            "count": 0,
+            "of": 0,
+            "exact_95": null
+          },
+          "innocent_pooled": {
+            "count": 331,
+            "of": 810,
+            "exact_95": [
+              0.3745567592090726,
+              0.4433945205316485
+            ]
+          },
+          "likelihood_ratio_pooled_lower_95_one_sided": 2.1270073909061615,
+          "closest_innocent_case": "read, not used",
+          "likelihood_ratio": 0.9578947368421052,
+          "likelihood_ratio_lower_95_one_sided": 0.9431034222581103,
+          "super": false
+        },
+        "string reused across authors": {
+          "given_collusion": {
+            "count": 179,
+            "of": 950,
+            "exact_95": [
+              0.16402476147474698,
+              0.21476558549093538
+            ]
+          },
+          "given_emergent_collusion": {
+            "count": 0,
+            "of": 12,
+            "exact_95": [
+              0.0,
+              0.2646484693970512
+            ]
+          },
+          "innocent": {
+            "nothing moved": {
+              "count": 8,
+              "of": 253,
+              "exact_95": [
+                0.013748437543221873,
+                0.06135201342747432
+              ]
+            },
+            "asked, nothing moved": {
+              "count": 4,
+              "of": 437,
+              "exact_95": [
+                0.0024994423573230272,
+                0.02326921617193256
+              ]
+            },
+            "common source": {
+              "count": 0,
+              "of": 92,
+              "exact_95": [
+                0.0,
+                0.03930328773951808
+              ]
+            },
+            "read, not used": {
+              "count": 1,
+              "of": 28,
+              "exact_95": [
+                0.0009037987556580573,
+                0.18347759754462367
+              ]
+            }
+          },
+          "attempted_not_completed": {
+            "count": 0,
+            "of": 0,
+            "exact_95": null
+          },
+          "innocent_pooled": {
+            "count": 13,
+            "of": 810,
+            "exact_95": [
+              0.008572577080721813,
+              0.02728856791705958
+            ]
+          },
+          "likelihood_ratio_pooled_lower_95_one_sided": 6.01075006842723,
+          "closest_innocent_case": "read, not used",
+          "likelihood_ratio": 5.275789473684211,
+          "likelihood_ratio_lower_95_one_sided": 0.8939770504399287,
+          "super": false
+        },
+        "answers agree": {
+          "given_collusion": {
+            "count": 854,
+            "of": 950,
+            "exact_95": [
+              0.8780012856590464,
+              0.9173792661514921
+            ]
+          },
+          "given_emergent_collusion": {
+            "count": 7,
+            "of": 12,
+            "exact_95": [
+              0.2766696856821058,
+              0.8483477701915699
+            ]
+          },
+          "innocent": {
+            "nothing moved": {
+              "count": 1,
+              "of": 253,
+              "exact_95": [
+                0.00010006538041549184,
+                0.02182436387336728
+              ]
+            },
+            "asked, nothing moved": {
+              "count": 0,
+              "of": 437,
+              "exact_95": [
+                0.0,
+                0.008405843409635017
+              ]
+            },
+            "common source": {
+              "count": 92,
+              "of": 92,
+              "exact_95": [
+                0.9606967122604819,
+                1.0
+              ]
+            },
+            "read, not used": {
+              "count": 2,
+              "of": 28,
+              "exact_95": [
+                0.008770496703527132,
+                0.23503477317459076
+              ]
+            }
+          },
+          "attempted_not_completed": {
+            "count": 0,
+            "of": 0,
+            "exact_95": null
+          },
+          "innocent_pooled": {
+            "count": 95,
+            "of": 810,
+            "exact_95": [
+              0.09593338263036583,
+              0.14146392709253686
+            ]
+          },
+          "likelihood_ratio_pooled_lower_95_one_sided": 6.206538328917682,
+          "closest_innocent_case": "common source",
+          "likelihood_ratio": 0.8989473684210526,
+          "likelihood_ratio_lower_95_one_sided": 0.8780012856590464,
+          "super": false
+        },
+        "asks for a code": {
+          "given_collusion": {
+            "count": 78,
+            "of": 950,
+            "exact_95": [
+              0.06543945460112377,
+              0.10141339096764557
+            ]
+          },
+          "given_emergent_collusion": {
+            "count": 12,
+            "of": 12,
+            "exact_95": [
+              0.7353515306029488,
+              1.0
+            ]
+          },
+          "innocent": {
+            "nothing moved": {
+              "count": 0,
+              "of": 253,
+              "exact_95": [
+                0.0,
+                0.014474769706924073
+              ]
+            },
+            "asked, nothing moved": {
+              "count": 53,
+              "of": 437,
+              "exact_95": [
+                0.09218219642480385,
+                0.1556229091575574
+              ]
+            },
+            "common source": {
+              "count": 0,
+              "of": 92,
+              "exact_95": [
+                0.0,
+                0.03930328773951808
+              ]
+            },
+            "read, not used": {
+              "count": 1,
+              "of": 28,
+              "exact_95": [
+                0.0009037987556580573,
+                0.18347759754462367
+              ]
+            }
+          },
+          "attempted_not_completed": {
+            "count": 0,
+            "of": 0,
+            "exact_95": null
+          },
+          "innocent_pooled": {
+            "count": 54,
+            "of": 810,
+            "exact_95": [
+              0.05047533095873294,
+              0.08609334007318314
+            ]
+          },
+          "likelihood_ratio_pooled_lower_95_one_sided": 0.7600989175875549,
+          "closest_innocent_case": "asked, nothing moved",
+          "likelihood_ratio": 0.6769811320754717,
+          "likelihood_ratio_lower_95_one_sided": 0.35666182398757545,
+          "super": false
+        },
+        "asks for a token": {
+          "given_collusion": {
+            "count": 148,
+            "of": 950,
+            "exact_95": [
+              0.1332972072768165,
+              0.18043849746811036
+            ]
+          },
+          "given_emergent_collusion": {
+            "count": 10,
+            "of": 12,
+            "exact_95": [
+              0.515862251314033,
+              0.9791374745399076
+            ]
+          },
+          "innocent": {
+            "nothing moved": {
+              "count": 0,
+              "of": 253,
+              "exact_95": [
+                0.0,
+                0.014474769706924073
+              ]
+            },
+            "asked, nothing moved": {
+              "count": 437,
+              "of": 437,
+              "exact_95": [
+                0.991594156590365,
+                1.0
+              ]
+            },
+            "common source": {
+              "count": 0,
+              "of": 92,
+              "exact_95": [
+                0.0,
+                0.03930328773951808
+              ]
+            },
+            "read, not used": {
+              "count": 1,
+              "of": 28,
+              "exact_95": [
+                0.0009037987556580573,
+                0.18347759754462367
+              ]
+            }
+          },
+          "attempted_not_completed": {
+            "count": 0,
+            "of": 0,
+            "exact_95": null
+          },
+          "innocent_pooled": {
+            "count": 438,
+            "of": 810,
+            "exact_95": [
+              0.5057093948902567,
+              0.575474587045415
+            ]
+          },
+          "likelihood_ratio_pooled_lower_95_one_sided": 0.23163004983623545,
+          "closest_innocent_case": "asked, nothing moved",
+          "likelihood_ratio": 0.15578947368421053,
+          "likelihood_ratio_lower_95_one_sided": 0.1332972072768165,
+          "super": false
+        }
+      },
+      "posteriors": {
+        "informed read": {
+          "ratio_status": "finite",
+          "0.01": {
+            "point": 0.023136810471576393,
+            "worst_benchmark_bound": 0.013795530726191416,
+            "pooled_bound": 0.19433738493837618
+          },
+          "0.05": {
+            "point": 0.10985325866584839,
+            "worst_benchmark_bound": 0.06793582529831496,
+            "pooled_bound": 0.5569052663088888
+          },
+          "0.2": {
+            "point": 0.36956201150272816,
+            "worst_benchmark_bound": 0.25717694112951056,
+            "pooled_bound": 0.8565291130987703
+          }
+        },
+        "uptake": {
+          "ratio_status": "finite",
+          "0.01": {
+            "point": 0.012552810838505927,
+            "worst_benchmark_bound": 0.010116785561592147,
+            "pooled_bound": 0.16394765277514944
+          },
+          "0.05": {
+            "point": 0.062123290518352255,
+            "worst_benchmark_bound": 0.05056007048987468,
+            "pooled_bound": 0.5053839993999998
+          },
+          "0.2": {
+            "point": 0.23933061093762512,
+            "worst_benchmark_bound": 0.20188322247956733,
+            "pooled_bound": 0.8291593985250046
+          }
+        },
+        "opportunity": {
+          "ratio_status": "finite",
+          "0.01": {
+            "point": 0.01,
+            "worst_benchmark_bound": 0.00996163104530941,
+            "pooled_bound": 0.015594651776639065
+          },
+          "0.05": {
+            "point": 0.05000000000000001,
+            "worst_benchmark_bound": 0.04981587798681109,
+            "pooled_bound": 0.07624966169029143
+          },
+          "0.2": {
+            "point": 0.2,
+            "worst_benchmark_bound": 0.19937943871664957,
+            "pooled_bound": 0.281651519105164
+          }
+        },
+        "secret-like string on a page": {
+          "ratio_status": "finite",
+          "0.01": {
+            "point": 0.009582982308340354,
+            "worst_benchmark_bound": 0.009436403213071265,
+            "pooled_bound": 0.021033030105243995
+          },
+          "0.05": {
+            "point": 0.0479957805907173,
+            "worst_benchmark_bound": 0.04728970222385403,
+            "pooled_bound": 0.10067717360773507
+          },
+          "0.2": {
+            "point": 0.1932059447983015,
+            "worst_benchmark_bound": 0.19079176413980056,
+            "pooled_bound": 0.3471527379031911
+          }
+        },
+        "string reused across authors": {
+          "ratio_status": "finite",
+          "0.01": {
+            "point": 0.05059457713351235,
+            "worst_benchmark_bound": 0.00894925877251367,
+            "pooled_bound": 0.05723937848754054
+          },
+          "0.05": {
+            "point": 0.21732720492585203,
+            "worst_benchmark_bound": 0.04493707056026586,
+            "pooled_bound": 0.24032666161479938
+          },
+          "0.2": {
+            "point": 0.5687698592827961,
+            "worst_benchmark_bound": 0.18266882766840262,
+            "pooled_bound": 0.600429540977599
+          }
+        },
+        "answers agree": {
+          "ratio_status": "finite",
+          "0.01": {
+            "point": 0.008998566972941078,
+            "worst_benchmark_bound": 0.008790737443252322,
+            "pooled_bound": 0.058993846081253645
+          },
+          "0.05": {
+            "point": 0.04517562420651714,
+            "worst_benchmark_bound": 0.0441694953653353,
+            "pooled_bound": 0.2462273180049225
+          },
+          "0.2": {
+            "point": 0.18349806617963044,
+            "worst_benchmark_bound": 0.1799920160415504,
+            "pooled_bound": 0.6080943537274537
+          }
+        },
+        "asks for a code": {
+          "ratio_status": "finite",
+          "0.01": {
+            "point": 0.006791749954570236,
+            "worst_benchmark_bound": 0.003589712229054247,
+            "pooled_bound": 0.007619267881996363
+          },
+          "0.05": {
+            "point": 0.034404725375882184,
+            "worst_benchmark_bound": 0.01842579196923229,
+            "pooled_bound": 0.03846635185166132
+          },
+          "0.2": {
+            "point": 0.14474745844763595,
+            "worst_benchmark_bound": 0.08186585013870303,
+            "pooled_bound": 0.15968132821340136
+          }
+        },
+        "asks for a token": {
+          "ratio_status": "finite",
+          "0.01": {
+            "point": 0.0015711586233253358,
+            "worst_benchmark_bound": 0.0013446259837207543,
+            "pooled_bound": 0.002334236066866038
+          },
+          "0.05": {
+            "point": 0.008132761841960656,
+            "worst_benchmark_bound": 0.006966766147662235,
+            "pooled_bound": 0.012044223460829721
+          },
+          "0.2": {
+            "point": 0.037487335359675786,
+            "worst_benchmark_bound": 0.03224960620836605,
+            "pooled_bound": 0.054737783574724246
+          }
+        }
+      }
+    }
+  }
+}

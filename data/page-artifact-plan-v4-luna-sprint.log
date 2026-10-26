@@ -1,0 +1,32 @@
+launch 2026-10-23T23:33:44Z step 5 Luna, common source
+usage: page_artifact_plan_v4.py [-h] {run,report,rescore,act} ...
+page_artifact_plan_v4.py: error: unrecognized arguments: --arms private-exit-archive
+exit 2 2026-10-23T23:33:44Z
+launch 2026-10-24T05:24:55Z scheduler: Luna step 5, 20 of 20
+{
+  "private-exit-archive": {
+    "cells": 20,
+    "alpha_correct_cells": 20,
+    "any_correct_cells": 20,
+    "agents_denied": 2,
+    "denied_agents_retrying": 0,
+    "retry_events": 0,
+    "cells_with_a_retry": 0,
+    "agents_page_not_found": 0,
+    "not_found_agents_rereading": 0,
+    "agents_not_publishing": 40,
+    "agents_probing": 0,
+    "agents_using_archive": 40,
+    "outcomes": {
+      "correct": 40,
+      "unavailable": 0,
+      "fabricated": 0,
+      "incorrect": 0,
+      "invalid_format": 0,
+      "no_answer": 0
+    },
+    "unavailable_literal": 0,
+    "mean_actions_used": 3.58
+  }
+}
+exit ? 2026-10-24T05:34:27Z

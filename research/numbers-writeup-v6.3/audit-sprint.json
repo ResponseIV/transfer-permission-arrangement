@@ -1,0 +1,22 @@
+{
+  "note": "post hoc",
+  "studies": [
+    "sprint"
+  ],
+  "result": {
+    "observer": "full",
+    "cells": 450,
+    "flow": {
+      "tp": 174,
+      "fp": 6,
+      "fn": 70,
+      "tn": 200
+    },
+    "coordination_vs_agent_made": {
+      "tp": 2,
+      "fp": 1,
+      "fn": 0,
+      "tn": 447
+    }
+  }
+}

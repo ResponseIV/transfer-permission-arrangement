@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 420" font-family="Inter, Helvetica, Arial, sans-serif">
+<rect width="720" height="420" fill="#fcfcfb"/>
+<text x="64" y="24" font-size="15" font-weight="600" fill="#0b0b0b">How often a judge's alarm is a real transfer</text>
+<text x="64" y="42" font-size="12" fill="#52514e">Lower 95% bound, by the base rate of transfers among audited exchanges (all 450 sprint cells)</text>
+<line x1="64" x2="550" y1="368.0" y2="368.0" stroke="#e4e3df" stroke-width="1"/>
+<text x="56" y="372.0" font-size="11" fill="#52514e" text-anchor="end">0%</text>
+<line x1="64" x2="550" y1="290.0" y2="290.0" stroke="#e4e3df" stroke-width="1"/>
+<text x="56" y="294.0" font-size="11" fill="#52514e" text-anchor="end">25%</text>
+<line x1="64" x2="550" y1="212.0" y2="212.0" stroke="#e4e3df" stroke-width="1"/>
+<text x="56" y="216.0" font-size="11" fill="#52514e" text-anchor="end">50%</text>
+<line x1="64" x2="550" y1="134.0" y2="134.0" stroke="#e4e3df" stroke-width="1"/>
+<text x="56" y="138.0" font-size="11" fill="#52514e" text-anchor="end">75%</text>
+<line x1="64" x2="550" y1="56.0" y2="56.0" stroke="#e4e3df" stroke-width="1"/>
+<text x="56" y="60.0" font-size="11" fill="#52514e" text-anchor="end">100%</text>
+<text x="64.0" y="386" font-size="11" fill="#52514e" text-anchor="middle">0.1%</text>
+<text x="244.1" y="386" font-size="11" fill="#52514e" text-anchor="middle">1.0%</text>
+<text x="424.1" y="386" font-size="11" fill="#52514e" text-anchor="middle">10.0%</text>
+<text x="550.0" y="386" font-size="11" fill="#52514e" text-anchor="middle">50.0%</text>
+<text x="307.0" y="408" font-size="12" fill="#52514e" text-anchor="middle">Base rate of transfers (log scale)</text>
+<path d="M64.0,364.3 L149.9,357.0 L244.1,334.0 L330.0,283.0 L424.1,189.0 L510.1,106.4 L550.0,79.8" fill="none" stroke="#2a78d6" stroke-width="2"/>
+<circle cx="64.0" cy="364.3" r="4" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"><title>Astra p10, pages and log: base rate 0.1%, at least 1%</title></circle>
+<circle cx="149.9" cy="357.0" r="4" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"><title>Astra p10, pages and log: base rate 0.3%, at least 4%</title></circle>
+<circle cx="244.1" cy="334.0" r="4" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"><title>Astra p10, pages and log: base rate 1.0%, at least 11%</title></circle>
+<circle cx="330.0" cy="283.0" r="4" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"><title>Astra p10, pages and log: base rate 3.0%, at least 27%</title></circle>
+<circle cx="424.1" cy="189.0" r="4" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"><title>Astra p10, pages and log: base rate 10.0%, at least 57%</title></circle>
+<circle cx="510.1" cy="106.4" r="4" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"><title>Astra p10, pages and log: base rate 30.0%, at least 84%</title></circle>
+<circle cx="550.0" cy="79.8" r="4" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"><title>Astra p10, pages and log: base rate 50.0%, at least 92%</title></circle>
+<path d="M64.0,366.8 L149.9,364.4 L244.1,356.3 L330.0,334.9 L424.1,274.7 L510.1,173.9 L550.0,120.5" fill="none" stroke="#eb6834" stroke-width="2"/>
+<circle cx="64.0" cy="366.8" r="4" fill="#eb6834" stroke="#fcfcfb" stroke-width="2"><title>Astra p10, pages alone: base rate 0.1%, at least 0%</title></circle>
+<circle cx="149.9" cy="364.4" r="4" fill="#eb6834" stroke="#fcfcfb" stroke-width="2"><title>Astra p10, pages alone: base rate 0.3%, at least 1%</title></circle>
+<circle cx="244.1" cy="356.3" r="4" fill="#eb6834" stroke="#fcfcfb" stroke-width="2"><title>Astra p10, pages alone: base rate 1.0%, at least 4%</title></circle>
+<circle cx="330.0" cy="334.9" r="4" fill="#eb6834" stroke="#fcfcfb" stroke-width="2"><title>Astra p10, pages alone: base rate 3.0%, at least 11%</title></circle>
+<circle cx="424.1" cy="274.7" r="4" fill="#eb6834" stroke="#fcfcfb" stroke-width="2"><title>Astra p10, pages alone: base rate 10.0%, at least 30%</title></circle>
+<circle cx="510.1" cy="173.9" r="4" fill="#eb6834" stroke="#fcfcfb" stroke-width="2"><title>Astra p10, pages alone: base rate 30.0%, at least 62%</title></circle>
+<circle cx="550.0" cy="120.5" r="4" fill="#eb6834" stroke="#fcfcfb" stroke-width="2"><title>Astra p10, pages alone: base rate 50.0%, at least 79%</title></circle>
+<path d="M64.0,366.4 L149.9,363.1 L244.1,352.2 L330.0,324.1 L424.1,252.4 L510.1,151.4 L550.0,105.6" fill="none" stroke="#1baf7a" stroke-width="2"/>
+<circle cx="64.0" cy="366.4" r="4" fill="#1baf7a" stroke="#fcfcfb" stroke-width="2"><title>Luna p9, pages and log: base rate 0.1%, at least 1%</title></circle>
+<circle cx="149.9" cy="363.1" r="4" fill="#1baf7a" stroke="#fcfcfb" stroke-width="2"><title>Luna p9, pages and log: base rate 0.3%, at least 2%</title></circle>
+<circle cx="244.1" cy="352.2" r="4" fill="#1baf7a" stroke="#fcfcfb" stroke-width="2"><title>Luna p9, pages and log: base rate 1.0%, at least 5%</title></circle>
+<circle cx="330.0" cy="324.1" r="4" fill="#1baf7a" stroke="#fcfcfb" stroke-width="2"><title>Luna p9, pages and log: base rate 3.0%, at least 14%</title></circle>
+<circle cx="424.1" cy="252.4" r="4" fill="#1baf7a" stroke="#fcfcfb" stroke-width="2"><title>Luna p9, pages and log: base rate 10.0%, at least 37%</title></circle>
+<circle cx="510.1" cy="151.4" r="4" fill="#1baf7a" stroke="#fcfcfb" stroke-width="2"><title>Luna p9, pages and log: base rate 30.0%, at least 69%</title></circle>
+<circle cx="550.0" cy="105.6" r="4" fill="#1baf7a" stroke="#fcfcfb" stroke-width="2"><title>Luna p9, pages and log: base rate 50.0%, at least 84%</title></circle>
+<circle cx="562" cy="75.8" r="4" fill="#2a78d6"/>
+<text x="570" y="79.8" font-size="11" fill="#0b0b0b">Astra p10, pages and log</text>
+<circle cx="562" cy="101.6" r="4" fill="#1baf7a"/>
+<text x="570" y="105.6" font-size="11" fill="#0b0b0b">Luna p9, pages and log</text>
+<circle cx="562" cy="117.6" r="4" fill="#eb6834"/>
+<text x="570" y="121.6" font-size="11" fill="#0b0b0b">Astra p10, pages alone</text>
+</svg>

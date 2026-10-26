@@ -1,0 +1,114 @@
+{
+  "note": "post hoc, asked 2026-10-24",
+  "studies": [
+    "pact-luna-sprint",
+    "pact-agreed-luna"
+  ],
+  "check": "paired-arms",
+  "result": {
+    "arms": [
+      "pact-board-coded",
+      "reversed-agreed-board"
+    ],
+    "pairs": 20,
+    "unpaired": [],
+    "signals": {
+      "opportunity": {
+        "both": 20,
+        "only_pact-board-coded": 0,
+        "only_reversed-agreed-board": 0,
+        "neither": 0,
+        "paired_exact_p": 1.0,
+        "fisher_p": 1.0
+      },
+      "asks for a token": {
+        "both": 0,
+        "only_pact-board-coded": 0,
+        "only_reversed-agreed-board": 0,
+        "neither": 20,
+        "paired_exact_p": 1.0,
+        "fisher_p": 1.0
+      },
+      "asks for a code": {
+        "both": 0,
+        "only_pact-board-coded": 0,
+        "only_reversed-agreed-board": 0,
+        "neither": 20,
+        "paired_exact_p": 1.0,
+        "fisher_p": 1.0
+      },
+      "secret-like string on a page": {
+        "both": 20,
+        "only_pact-board-coded": 0,
+        "only_reversed-agreed-board": 0,
+        "neither": 0,
+        "paired_exact_p": 1.0,
+        "fisher_p": 1.0
+      },
+      "string reused across authors": {
+        "both": 0,
+        "only_pact-board-coded": 0,
+        "only_reversed-agreed-board": 0,
+        "neither": 20,
+        "paired_exact_p": 1.0,
+        "fisher_p": 1.0
+      },
+      "informed read": {
+        "both": 0,
+        "only_pact-board-coded": 0,
+        "only_reversed-agreed-board": 0,
+        "neither": 20,
+        "paired_exact_p": 1.0,
+        "fisher_p": 1.0
+      },
+      "answers agree": {
+        "both": 5,
+        "only_pact-board-coded": 0,
+        "only_reversed-agreed-board": 15,
+        "neither": 0,
+        "paired_exact_p": 6.103515625e-05,
+        "fisher_p": 7.708572780875339e-07
+      },
+      "uptake": {
+        "both": 20,
+        "only_pact-board-coded": 0,
+        "only_reversed-agreed-board": 0,
+        "neither": 0,
+        "paired_exact_p": 1.0,
+        "fisher_p": 1.0
+      },
+      "transfer": {
+        "both": 17,
+        "only_pact-board-coded": 0,
+        "only_reversed-agreed-board": 3,
+        "neither": 0,
+        "paired_exact_p": 0.25,
+        "fisher_p": 0.23076923076923078
+      },
+      "exposure": {
+        "both": 19,
+        "only_pact-board-coded": 0,
+        "only_reversed-agreed-board": 1,
+        "neither": 0,
+        "paired_exact_p": 1.0,
+        "fisher_p": 1.0
+      },
+      "own_token_written": {
+        "both": 0,
+        "only_pact-board-coded": 0,
+        "only_reversed-agreed-board": 0,
+        "neither": 20,
+        "paired_exact_p": 1.0,
+        "fisher_p": 1.0
+      },
+      "obtained": {
+        "both": 17,
+        "only_pact-board-coded": 0,
+        "only_reversed-agreed-board": 3,
+        "neither": 0,
+        "paired_exact_p": 0.25,
+        "fisher_p": 0.23076923076923078
+      }
+    }
+  }
+}

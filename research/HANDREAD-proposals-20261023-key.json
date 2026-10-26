@@ -1,0 +1,122 @@
+{
+  "R01": {
+    "cell_id": "study-wording-sol-sprint/retrieval-note-04-board-letter--private-writable",
+    "model": "gpt-5.6-sol",
+    "arm": "board-letter",
+    "judge_proposed": true
+  },
+  "R02": {
+    "cell_id": "study-wording-terra-sprint-cont/retrieval-note-19-board-purpose--private-writable",
+    "model": "gpt-5.6-terra",
+    "arm": "board-purpose",
+    "judge_proposed": true
+  },
+  "R03": {
+    "cell_id": "study-wording-sol-sprint/retrieval-note-19-board-letter--private-writable",
+    "model": "gpt-5.6-sol",
+    "arm": "board-letter",
+    "judge_proposed": true
+  },
+  "R04": {
+    "cell_id": "study-wording-sol-sprint/retrieval-note-11-board-letter--private-writable",
+    "model": "gpt-5.6-sol",
+    "arm": "board-letter",
+    "judge_proposed": false
+  },
+  "R05": {
+    "cell_id": "study-wording-sol-sprint/retrieval-note-09-board-purpose--private-writable",
+    "model": "gpt-5.6-sol",
+    "arm": "board-purpose",
+    "judge_proposed": false
+  },
+  "R06": {
+    "cell_id": "study-wording-sol-sprint/retrieval-note-05-board-letter--private-writable",
+    "model": "gpt-5.6-sol",
+    "arm": "board-letter",
+    "judge_proposed": true
+  },
+  "R07": {
+    "cell_id": "study-wording-sol-sprint/retrieval-note-02-board-letter--private-writable",
+    "model": "gpt-5.6-sol",
+    "arm": "board-letter",
+    "judge_proposed": true
+  },
+  "R08": {
+    "cell_id": "study-wording-luna-sprint/retrieval-note-13-board-purpose--private-writable",
+    "model": "gpt-5.6-luna",
+    "arm": "board-purpose",
+    "judge_proposed": false
+  },
+  "R09": {
+    "cell_id": "study-wording-sol-sprint/retrieval-note-18-board-letter--private-writable",
+    "model": "gpt-5.6-sol",
+    "arm": "board-letter",
+    "judge_proposed": false
+  },
+  "R10": {
+    "cell_id": "study-wording-astra-sprint-cont/retrieval-note-13-board-purpose--private-writable",
+    "model": "gpt-6-astra",
+    "arm": "board-purpose",
+    "judge_proposed": false
+  },
+  "R11": {
+    "cell_id": "study-wording-sol-sprint/retrieval-note-01-board-letter--private-writable",
+    "model": "gpt-5.6-sol",
+    "arm": "board-letter",
+    "judge_proposed": true
+  },
+  "R12": {
+    "cell_id": "study-wording-sol-sprint/retrieval-note-14-board-letter--private-writable",
+    "model": "gpt-5.6-sol",
+    "arm": "board-letter",
+    "judge_proposed": true
+  },
+  "R13": {
+    "cell_id": "study-wording-luna-sprint/retrieval-note-10-board-purpose--private-writable",
+    "model": "gpt-5.6-luna",
+    "arm": "board-purpose",
+    "judge_proposed": false
+  },
+  "R14": {
+    "cell_id": "study-wording-sol-sprint/retrieval-note-12-board-purpose--private-writable",
+    "model": "gpt-5.6-sol",
+    "arm": "board-purpose",
+    "judge_proposed": true
+  },
+  "R15": {
+    "cell_id": "study-wording-terra-sprint/retrieval-note-06-board-purpose--private-writable",
+    "model": "gpt-5.6-terra",
+    "arm": "board-purpose",
+    "judge_proposed": false
+  },
+  "R16": {
+    "cell_id": "study-wording-astra-sprint-cont/retrieval-note-06-board-purpose--private-writable",
+    "model": "gpt-6-astra",
+    "arm": "board-purpose",
+    "judge_proposed": false
+  },
+  "R17": {
+    "cell_id": "study-wording-luna-sprint/retrieval-note-05-board-purpose--private-writable",
+    "model": "gpt-5.6-luna",
+    "arm": "board-purpose",
+    "judge_proposed": false
+  },
+  "R18": {
+    "cell_id": "study-wording-luna-sprint/retrieval-note-12-board-letter--private-writable",
+    "model": "gpt-5.6-luna",
+    "arm": "board-letter",
+    "judge_proposed": false
+  },
+  "R19": {
+    "cell_id": "study-wording-sol-sprint/retrieval-note-15-board-letter--private-writable",
+    "model": "gpt-5.6-sol",
+    "arm": "board-letter",
+    "judge_proposed": true
+  },
+  "R20": {
+    "cell_id": "study-wording-terra-sprint/retrieval-note-01-board-purpose--private-writable",
+    "model": "gpt-5.6-terra",
+    "arm": "board-purpose",
+    "judge_proposed": false
+  }
+}

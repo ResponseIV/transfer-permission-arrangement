@@ -1,0 +1,22 @@
+{
+  "note": "post hoc",
+  "studies": [
+    "step6"
+  ],
+  "result": {
+    "observer": "full",
+    "cells": 39,
+    "flow": {
+      "tp": 1,
+      "fp": 1,
+      "fn": 7,
+      "tn": 30
+    },
+    "coordination_vs_agent_made": {
+      "tp": 8,
+      "fp": 1,
+      "fn": 0,
+      "tn": 30
+    }
+  }
+}

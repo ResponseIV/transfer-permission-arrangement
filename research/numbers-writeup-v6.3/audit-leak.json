@@ -1,0 +1,22 @@
+{
+  "note": "post hoc",
+  "studies": [
+    "leak"
+  ],
+  "result": {
+    "observer": "full",
+    "cells": 60,
+    "flow": {
+      "tp": 60,
+      "fp": 0,
+      "fn": 0,
+      "tn": 0
+    },
+    "coordination_vs_agent_made": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 60,
+      "tn": 0
+    }
+  }
+}

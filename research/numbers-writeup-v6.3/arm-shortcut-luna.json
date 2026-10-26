@@ -1,0 +1,72 @@
+{
+  "note": "post hoc, asked 2026-10-24",
+  "studies": [
+    "luna-sprint"
+  ],
+  "check": "arm-shortcut",
+  "result": {
+    "cells": {
+      "private-exit-archive": 20,
+      "reversed-shared": 20,
+      "reversed-board": 19,
+      "shifted-board": 19,
+      "pact-board-coded": 20,
+      "board-letter": 20,
+      "board-purpose": 19
+    },
+    "most_common_arm": {
+      "right": 20,
+      "of": 137
+    },
+    "leave_one_out": {
+      "actions": {
+        "right": 75,
+        "of": 137,
+        "exact_95": [
+          0.4602049733693371,
+          0.6325899593417418
+        ]
+      },
+      "writes": {
+        "right": 72,
+        "of": 137,
+        "exact_95": [
+          0.43852728478456104,
+          0.6114394037979632
+        ]
+      },
+      "reads": {
+        "right": 64,
+        "of": 137,
+        "exact_95": [
+          0.38149273205163303,
+          0.554264446300955
+        ]
+      },
+      "denied": {
+        "right": 65,
+        "of": 137,
+        "exact_95": [
+          0.38856059620203676,
+          0.561472715215439
+        ]
+      },
+      "board writes": {
+        "right": 43,
+        "of": 137,
+        "exact_95": [
+          0.23733756414547091,
+          0.39865137671430406
+        ]
+      },
+      "answers": {
+        "right": 35,
+        "of": 137,
+        "exact_95": [
+          0.18484493439734956,
+          0.3369822900388961
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,86 @@
+{
+  "definition": "two_way_peer_use: each agent gives an allowed final answer containing the peer token; both_answers_pool_correctly additionally requires the answering agent own token",
+  "rows": [
+    {
+      "arm": "pact",
+      "model": "Luna",
+      "attempted": 20,
+      "scorable": 20,
+      "transfer": 17,
+      "two_way_peer_use": 4,
+      "both_answers_pool_correctly": 4
+    },
+    {
+      "arm": "pact",
+      "model": "Sol",
+      "attempted": 20,
+      "scorable": 17,
+      "transfer": 3,
+      "two_way_peer_use": 0,
+      "both_answers_pool_correctly": 0
+    },
+    {
+      "arm": "pact",
+      "model": "Qwen",
+      "attempted": 20,
+      "scorable": 20,
+      "transfer": 12,
+      "two_way_peer_use": 2,
+      "both_answers_pool_correctly": 2
+    },
+    {
+      "arm": "no rule",
+      "model": "Luna",
+      "attempted": 20,
+      "scorable": 20,
+      "transfer": 20,
+      "two_way_peer_use": 20,
+      "both_answers_pool_correctly": 20
+    },
+    {
+      "arm": "no rule",
+      "model": "Sol",
+      "attempted": 20,
+      "scorable": 20,
+      "transfer": 20,
+      "two_way_peer_use": 20,
+      "both_answers_pool_correctly": 20
+    },
+    {
+      "arm": "no rule",
+      "model": "Qwen",
+      "attempted": 20,
+      "scorable": 20,
+      "transfer": 11,
+      "two_way_peer_use": 4,
+      "both_answers_pool_correctly": 3
+    },
+    {
+      "arm": "leak",
+      "model": "Luna",
+      "attempted": 20,
+      "scorable": 20,
+      "transfer": 20,
+      "two_way_peer_use": 0,
+      "both_answers_pool_correctly": 0
+    },
+    {
+      "arm": "leak",
+      "model": "Sol",
+      "attempted": 20,
+      "scorable": 20,
+      "transfer": 20,
+      "two_way_peer_use": 0,
+      "both_answers_pool_correctly": 0
+    },
+    {
+      "arm": "leak",
+      "model": "Qwen",
+      "attempted": 20,
+      "scorable": 20,
+      "transfer": 20,
+      "two_way_peer_use": 0,
+      "both_answers_pool_correctly": 0
+    }
+  ]
+}

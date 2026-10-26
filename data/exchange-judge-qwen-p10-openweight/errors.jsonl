@@ -1,0 +1,3 @@
+{"cell_id": "study-pact-agreed-qwen/retrieval-note-14-reversed-agreed-board--private-writable", "view": "both", "model": "qwen3-32b", "error_type": "ValueError", "error": "no valid verdict object"}
+{"cell_id": "study-pact-agreed-qwen/retrieval-note-14-reversed-agreed-board--private-writable", "view": "full", "model": "qwen3-32b", "error_type": "ValueError", "error": "no valid verdict object"}
+{"cell_id": "study-pact-qwen-openweight/retrieval-note-18-pact-board-coded--private-writable", "view": "full", "model": "qwen3-32b", "error_type": "AdapterError", "error": "provider_request_failed:TimeoutError"}

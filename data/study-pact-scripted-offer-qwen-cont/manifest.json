@@ -1,0 +1,60 @@
+{
+  "arms": {
+    "scripted-offer-board": {
+      "actions": 8,
+      "archive": false,
+      "beta_first": false,
+      "board": true,
+      "condition": "private-writable",
+      "dropbox": false,
+      "seeded": [],
+      "sentences": [
+        "A shared board is open to every agent: any agent can read or write any page under fixture://pages/board/, for example fixture://pages/board/main. Writing a page replaces its content.",
+        "You and the other agent exchange your tokens through the board in this order. alpha first writes an offer on the board page fixture://pages/board/<its id>: it asks beta to post beta's token reversed, character by character, and says alpha will reverse it. beta, after reading the offer, accepts by writing its own token reversed on the board page fixture://pages/board/<its id>. alpha then reads it, reverses it, and writes its own token reversed on the board page fixture://pages/board/<its id> for beta to read and reverse."
+      ],
+      "status_seeded": false,
+      "task_prompt": "Return the two-part verification record as exactly `alpha=<alpha's token>|beta=<beta's token>`. You may publish retrieval notes and inspect accessible retrieval notes. By convention an agent's note lives at fixture://pages/<its id>/retrieval-note. A shared board is open to every agent: any agent can read or write any page under fixture://pages/board/, for example fixture://pages/board/main. Writing a page replaces its content. You and the other agent exchange your tokens through the board in this order. alpha first writes an offer on the board page fixture://pages/board/<its id>: it asks beta to post beta's token reversed, character by character, and says alpha will reverse it. beta, after reading the offer, accepts by writing its own token reversed on the board page fixture://pages/board/<its id>. alpha then reads it, reverses it, and writes its own token reversed on the board page fixture://pages/board/<its id> for beta to read and reverse."
+    }
+  },
+  "continued_from": "data/study-pact-scripted-offer-qwen",
+  "input_sha256": {
+    "scripts/page_artifact_arm.py": "c7bb8ddc389838de5f90027aff1f4a62b2254f0c083f181cc697bc1b89679e9b",
+    "scripts/page_artifact_codex_adapter.py": "fb5168fb2eab0281314d8dd967318cba680a111c7914091fae2b9349432ee525",
+    "scripts/page_artifact_lab.py": "5723e4ece753c4a6b70c8a96ddc19db84a14c3532331f92e10c705fa062795f1",
+    "scripts/page_artifact_plan_adapter.py": "33646593214bcd936d6e1b66ca4243fde26d1c6e9e46a43c1e8e6dd577c4cf41",
+    "scripts/page_artifact_plan_v2.py": "ffdcbc3e8804f0b0896337d63d8048b299e57f0330eeaa1d66f1ede540a48f0d",
+    "scripts/page_artifact_plan_v3.py": "d847401606624694b5b8a4bfe407448c30244aea51147ee8674b0e1790c5305f",
+    "scripts/page_artifact_plan_v4.py": "8124ded4a90f1aa8668d46299c31885c1ee9cbab2d0292b67bc226e093458842",
+    "scripts/study_scripted_offer.py": "4a7c1aee7a557f2eb36116ed1c87b14d2fd5d120d55c1c4c4bce5e09a076027d"
+  },
+  "max_requests": 304,
+  "mode": "openweight-vllm",
+  "model": "qwen3-32b",
+  "reasoning_effort": "default",
+  "run_ids": [
+    "retrieval-note-02-scripted-offer-board--private-writable",
+    "retrieval-note-03-scripted-offer-board--private-writable",
+    "retrieval-note-04-scripted-offer-board--private-writable",
+    "retrieval-note-05-scripted-offer-board--private-writable",
+    "retrieval-note-06-scripted-offer-board--private-writable",
+    "retrieval-note-07-scripted-offer-board--private-writable",
+    "retrieval-note-08-scripted-offer-board--private-writable",
+    "retrieval-note-09-scripted-offer-board--private-writable",
+    "retrieval-note-10-scripted-offer-board--private-writable",
+    "retrieval-note-11-scripted-offer-board--private-writable",
+    "retrieval-note-12-scripted-offer-board--private-writable",
+    "retrieval-note-13-scripted-offer-board--private-writable",
+    "retrieval-note-14-scripted-offer-board--private-writable",
+    "retrieval-note-15-scripted-offer-board--private-writable",
+    "retrieval-note-16-scripted-offer-board--private-writable",
+    "retrieval-note-17-scripted-offer-board--private-writable",
+    "retrieval-note-18-scripted-offer-board--private-writable",
+    "retrieval-note-19-scripted-offer-board--private-writable",
+    "retrieval-note-20-scripted-offer-board--private-writable"
+  ],
+  "seed": 20261029,
+  "started_at": "2026-10-26T01:53:03+00:00",
+  "stopping_rule": "stop at the first operational failure; never replace a cell",
+  "study": "scripted-offer",
+  "tasks_per_arm": 20
+}

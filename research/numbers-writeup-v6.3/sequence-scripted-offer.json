@@ -1,0 +1,14 @@
+{
+  "note": "post hoc; the leak counts as agent-made under plus_factors.emergent though nobody agreed",
+  "rows": {
+    "Scripted offer (no rule)": {
+      "episodes": 26,
+      "transfers": 24,
+      "agent_made": 0,
+      "raw_sequence": 26,
+      "raw_sequence_on_agent_made": 0,
+      "candidate": 26,
+      "candidate_on_agent_made": 0
+    }
+  }
+}

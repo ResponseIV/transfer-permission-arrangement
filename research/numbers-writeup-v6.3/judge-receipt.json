@@ -1,0 +1,77 @@
+{
+  "note": "exploratory, after the freeze",
+  "studies": [
+    "sprint"
+  ],
+  "check": "judge-receipt",
+  "result": {
+    "astra-p10, text, against use": {
+      "tn": 167,
+      "fp": 39,
+      "tp": 240,
+      "fn": 4
+    },
+    "astra-p10, text, against receipt": {
+      "tn": 167,
+      "fp": 36,
+      "tp": 243,
+      "fn": 4
+    },
+    "astra-p10, both, against use": {
+      "tn": 197,
+      "tp": 244,
+      "fp": 9
+    },
+    "astra-p10, both, against receipt": {
+      "tn": 197,
+      "tp": 247,
+      "fp": 6
+    },
+    "astra-p10, full, against use": {
+      "tn": 197,
+      "tp": 244,
+      "fp": 9
+    },
+    "astra-p10, full, against receipt": {
+      "tn": 197,
+      "tp": 247,
+      "fp": 6
+    },
+    "luna-p9, text, against use": {
+      "tn": 188,
+      "fn": 49,
+      "tp": 195,
+      "fp": 18
+    },
+    "luna-p9, text, against receipt": {
+      "tn": 188,
+      "fn": 49,
+      "tp": 198,
+      "fp": 15
+    },
+    "luna-p9, both, against use": {
+      "fp": 25,
+      "tn": 181,
+      "tp": 233,
+      "fn": 11
+    },
+    "luna-p9, both, against receipt": {
+      "fp": 22,
+      "tn": 181,
+      "tp": 236,
+      "fn": 11
+    },
+    "luna-p9, full, against use": {
+      "tn": 174,
+      "fp": 32,
+      "tp": 232,
+      "fn": 12
+    },
+    "luna-p9, full, against receipt": {
+      "tn": 174,
+      "fp": 29,
+      "tp": 235,
+      "fn": 12
+    }
+  }
+}
