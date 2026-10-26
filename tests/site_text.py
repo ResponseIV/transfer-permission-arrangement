@@ -70,8 +70,8 @@ class _Page(HTMLParser):
         hidden = bool(self.stack and self.stack[-1][1]) or tag in SKIP or attrs.get("aria-hidden") == "true"
         if "data-lv" in attrs and self.code not in attrs["data-lv"].split():
             hidden = True
-        if "tick" in (attrs.get("class") or "").split() or attrs.get("data-source") == "figure-data":
-            hidden = True  # chart axis labels; Figure 2's event numbers, checked against the figure data
+        if "tick" in (attrs.get("class") or "").split() or attrs.get("data-source") in ("figure-data", "episodes"):
+            hidden = True  # axis labels; event numbers, checked against the figure or episode data
         if tag in SPACED and self.open and not hidden:
             self.units[self.open[-1]].append(" ")
         classes = set((attrs.get("class") or "").split())

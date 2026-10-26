@@ -24,6 +24,8 @@ CONTRAST = [(fg, bg, 4.5) for fg, bg in [
     ("yes", "yes-soft"), ("no", "no-soft"), ("ink-2", "yes-soft"), ("ink-2", "no-soft"), ("ink", "no-soft"),
     ("ink", "accent-soft"), ("accent", "accent-soft"), ("ink", "mark"), ("paper", "ink"), ("no", "paper"),
     ("no", "sheet"), ("paper", "alpha"), ("paper", "beta"), ("ink-2", "accent-soft"),
+    ("marker", "paper"), ("marker", "sheet"), ("ink", "marker-soft"), ("marker", "marker-soft"), ("ink-2", "sheet-2"),
+    ("ink-3", "sheet-2"), ("alpha", "sheet-2"), ("beta", "sheet-2"),
 ]] + [(fg, "sheet", 3.0) for fg in ("fig-log", "fig-unpres", "fig-pages", "control", "ink-3")]
 
 
@@ -224,6 +226,40 @@ class CaseEvidence(unittest.TestCase):
         for event in forbidden["steps"]:
             if event["action"] == "write":
                 self.assertIn(event["text"], self.page)
+
+    def test_permission_redline_quotes_each_prompt_verbatim(self):
+        forbidden, permitted = self.cases["luna-pact-02"]["prompt"], self.cases["luna-norule-02"]["prompt"]
+        block = self.page[self.page.index('class="redline-body"'):]
+        block = block[:block.index("</div>")]
+        for removed in re.findall(r"<del>(.*?)</del>", block):
+            self.assertIn(removed, forbidden)
+            self.assertNotIn(removed, permitted)
+        for added in re.findall(r"<ins>(.*?)</ins>", block):
+            self.assertIn(added, permitted)
+            self.assertNotIn(added, forbidden)
+        for kept in re.findall(r'<p class="same">(.*?)</p>', block):
+            for fragment in (part.strip() for part in kept.split("[…]")):
+                if fragment:
+                    self.assertIn(fragment.replace("&#x27;", "'"), forbidden)
+                    self.assertIn(fragment.replace("&#x27;", "'"), permitted)
+
+    def test_event_numbers_in_exhibits_match_the_episode_logs(self):
+        tracks = re.findall(r'<div class="track[^"]*">(.*?)</div>', self.page, re.S)
+        expected = [("sol-21", [[3], [4], [6], [8, 9]]), ("sol-scripted-01", [[1], [2], [4], [9, 10]])]
+        self.assertEqual(len(tracks), 2)
+        for track, (key, stations) in zip(tracks, expected):
+            shown = re.findall(r'<span class="evt" data-source="episodes">([^<]+)</span><b>([^<]+)</b>', track)
+            steps = {step["seq"]: step for step in self.cases[key]["steps"]}
+            self.assertEqual([label for _, label in shown], ["Offer", "Read", "Reply", "Use"])
+            for (number, _), seqs in zip(shown, stations):
+                self.assertEqual([int(n) for n in number.split("–")], seqs if len(seqs) == 1 else [seqs[0], seqs[-1]])
+                self.assertTrue(all(seq in steps for seq in seqs))
+            self.assertEqual(steps[stations[1][0]]["action"], "read")
+            self.assertTrue(all(steps[seq]["action"] == "final_answer" for seq in stations[3]))
+        leak = {step["seq"]: step for step in self.cases["luna-leak-01"]["steps"]}
+        revisions = self.page[self.page.index('class="revision-stack"'):]
+        self.assertEqual(re.findall(r'event <span data-source="episodes">(\d+)</span>', revisions[:revisions.index("</figure>")]), ["04", "01", "03"])
+        self.assertTrue(leak[1]["seeded"] and leak[4]["action"] == "write" and leak[3]["read_revision"] == leak[1]["revision"])
 
     def test_revision_exhibit_preserves_the_fixture_seed_and_later_agent_request(self):
         episode = self.cases["luna-leak-01"]

@@ -1,28 +1,30 @@
 /* Design primitives and semantic roles. See docs/DESIGN-SYSTEM.md. */
 
 :root {
-  --paper: #f7f8fa;
-  --sheet: #ffffff;
-  --sheet-2: #edf0f5;
-  --ink: #1b2434;
-  --ink-2: #465165;
-  --ink-3: #5e6879;
-  --rule: #d8dde6;
-  --rule-strong: #aab3c2;
-  --control: #7c889b;
-  --accent: #284bb5;
-  --accent-soft: #e9eefb;
-  --alpha: #284bb5;
-  --beta: #824467;
-  --fixture: #486225;
+  --paper: #f3efe6;
+  --sheet: #fbf9f4;
+  --sheet-2: #ece6d9;
+  --ink: #1b1915;
+  --ink-2: #4b463d;
+  --ink-3: #655f54;
+  --rule: #dcd4c4;
+  --rule-strong: #b8ae99;
+  --control: #837966;
+  --accent: #1f4466;
+  --accent-soft: #e2e6ea;
+  --alpha: #1f4f7a;
+  --beta: #8a4a12;
+  --fixture: #4f6420;
   --yes: #1d6a3a;
-  --yes-soft: #e0efe4;
+  --yes-soft: #e0ede1;
   --no: #8e2f21;
-  --no-soft: #f6e3de;
-  --mark: #f1e7b8;
+  --no-soft: #f4e1da;
+  --mark: #f1dfa6;
   --fig-log: #1f5f8b;
   --fig-unpres: #2e7d55;
   --fig-pages: #a8402c;
+  --marker: #a8361a;
+  --marker-soft: #f5ddd2;
 
   --serif: "Newsreader", "Iowan Old Style", "Palatino Linotype", Georgia, serif;
   --sans: "Instrument Sans", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
@@ -58,6 +60,7 @@
   --type-label: var(--weight-strong) var(--size-ui)/var(--line-ui) var(--sans);
   --type-note: var(--weight-regular) var(--size-ui)/var(--line-note) var(--sans);
   --type-record: var(--weight-regular) var(--size-record)/var(--line-note) var(--mono);
+  --type-tag: var(--weight-medium) 0.75rem/1rem var(--mono);
   --type-token: var(--weight-regular) var(--size-body)/var(--line-body) var(--mono);
   --type-metric: var(--weight-medium) 2.25rem/2.5rem var(--serif);
 
@@ -88,55 +91,59 @@
 
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
-    --paper: #131824;
-    --sheet: #1b2231;
-    --sheet-2: #252e40;
-    --ink: #eef1f7;
-    --ink-2: #bec8da;
-    --ink-3: #a5b0c4;
-    --rule: #354055;
-    --rule-strong: #5a6780;
-    --control: #8491a8;
-    --accent: #a7bdff;
-    --accent-soft: #253451;
-    --alpha: #a7bdff;
-    --beta: #edb0d0;
-    --fixture: #bddc94;
+    --paper: #15130f;
+    --sheet: #1e1b16;
+    --sheet-2: #2a261f;
+    --ink: #ede7db;
+    --ink-2: #bcb4a5;
+    --ink-3: #a0988a;
+    --rule: #38332a;
+    --rule-strong: #544d40;
+    --control: #857c6b;
+    --accent: #a6c4e0;
+    --accent-soft: #1e2a35;
+    --alpha: #93bbe6;
+    --beta: #e3a76c;
+    --fixture: #b8c680;
     --yes: #8fd3a5;
     --yes-soft: #18301f;
     --no: #f2a191;
     --no-soft: #3a1f1a;
-    --mark: #57481a;
+    --mark: #5a4a1a;
     --fig-log: #7fb8de;
     --fig-unpres: #79c99c;
     --fig-pages: #ee9480;
+    --marker: #f0906c;
+    --marker-soft: #3b231a;
     color-scheme: dark;
   }
 }
 :root[data-theme="dark"] {
-  --paper: #131824;
-  --sheet: #1b2231;
-  --sheet-2: #252e40;
-  --ink: #eef1f7;
-  --ink-2: #bec8da;
-  --ink-3: #a5b0c4;
-  --rule: #354055;
-  --rule-strong: #5a6780;
-  --control: #8491a8;
-  --accent: #a7bdff;
-  --accent-soft: #253451;
-  --alpha: #a7bdff;
-  --beta: #edb0d0;
-  --fixture: #bddc94;
+  --paper: #15130f;
+  --sheet: #1e1b16;
+  --sheet-2: #2a261f;
+  --ink: #ede7db;
+  --ink-2: #bcb4a5;
+  --ink-3: #a0988a;
+  --rule: #38332a;
+  --rule-strong: #544d40;
+  --control: #857c6b;
+  --accent: #a6c4e0;
+  --accent-soft: #1e2a35;
+  --alpha: #93bbe6;
+  --beta: #e3a76c;
+  --fixture: #b8c680;
   --yes: #8fd3a5;
   --yes-soft: #18301f;
   --no: #f2a191;
   --no-soft: #3a1f1a;
-  --mark: #57481a;
+  --mark: #5a4a1a;
   --fig-log: #7fb8de;
   --fig-unpres: #79c99c;
   --fig-pages: #ee9480;
-  color-scheme: dark;
+  --marker: #f0906c;
+    --marker-soft: #3b231a;
+    color-scheme: dark;
 }
 
 
@@ -154,7 +161,7 @@
 }
 @media print {
   :root:not([data-theme]), :root[data-theme] {
-    --paper: #ffffff; --sheet: #ffffff; --sheet-2: #f1f1f1;
+    --paper: #ffffff; --sheet: #ffffff; --marker: #8f2a12; --marker-soft: #f3f3f3; --sheet-2: #f1f1f1;
     --ink: #111111; --ink-2: #333333; --ink-3: #444444;
     --rule: #cccccc; --rule-strong: #888888;
     --accent: #173784; --accent-soft: #eeeeee;
