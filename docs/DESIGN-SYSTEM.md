@@ -15,7 +15,7 @@ strong 600; emphasis uses the relevant family's italic. There are no shrinking p
 | --- | --- | --- |
 | Cover | fluid 44–76, line 1 (`--type-cover`) | The opening question, the one fluid size |
 | Page title | 48/48, 36/40 phone | Evidence desk entrance |
-| Chapter title | 36/40, 32/40 phone | Article chapters and overview |
+| Chapter title | 40/48 (`--type-chapter`) | Article chapters and the closing "Read the full study" |
 | Subheading | 24/32 | Subsections and the active desk comparison |
 | Intro | 24/32 | Opening standfirst |
 | Body | 18/28 | Narrative, case explanations and the open question after each case |
@@ -24,9 +24,8 @@ strong 600; emphasis uses the relevant family's italic. There are no shrinking p
 | Note | 14/24 | Captions, provenance, cautions, metadata |
 | Record | 14/24, monospace | Literal page content, prompts, event paths |
 | Token specimen | 18/28, monospace | A short token being examined |
-| Chapter | 40/46 (`--type-chapter`) | Article chapter titles |
-| Question | 28/34 (`--type-question`) | The three-question band; the desk's A and B |
-| Figure | 32/36 (`--type-figure`) | Counts in unit charts and hypothetical results |
+| Question | 28/32 (`--type-question`) | The three-question band; the desk's A and B |
+| Figure | 32/40 (`--type-figure`) | Counts in unit charts and hypothetical results |
 
 The desk has a page title followed by a 24px comparison heading, 18px question and 14px record labels.
 It does not repeat the article's chapter-title scale inside every evidence group. Literal source text
@@ -34,7 +33,8 @@ stays 14px even when two cases remain adjacent on a narrow phone.
 
 ## Spacing and layout
 
-Spacing is an 8px unit: 8, 16, 24, 32, 40, 48, 64, 80 and 96px. A 4px half-step serves compact label
+Spacing is an 8px unit: 8, 16, 24, 32, 40, 48, 64, 80 and 96px. Line heights stay on the same unit.
+Components take vertical rhythm from the role tokens below rather than choosing a step. A 4px half-step serves compact label
 relationships. Borders, focus outlines, vector geometry and font optical alignment are exceptions,
 not additional spacing scales. Dimensions are relative units so browser text settings remain useful.
 
@@ -42,11 +42,12 @@ not additional spacing scales. Dimensions are relative units so browser text set
 | --- | --- |
 | Paragraph gap | 24px |
 | Heading to narrative | 32px after a chapter header; 16px after a subhead |
-| Major evidence block | 32px outside the block |
+| Subsection | 48px above a subhead (`--subsection-space`) |
+| Major evidence block | 32px outside any exhibit, figure, table, callout or disclosure (`--block-space`) |
 | Panel inset | 24px desktop, 16px phone |
 | Record/list row | 16px vertical spacing |
 | Label to associated text | 8px when stacked |
-| Chapter spacing | 80px wide, 64px tablet, 48px phone |
+| Chapter spacing | 80px wide, 64px tablet, 48px phone, from the last block to the next title (`--section-space`) |
 | Main gutter | 48px tablet/desktop, 24px phone, 16px below 360px |
 | Prose measure | 656px maximum |
 | Publication frame | 1280px including gutters |

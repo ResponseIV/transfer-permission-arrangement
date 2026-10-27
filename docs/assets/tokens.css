@@ -59,12 +59,11 @@
   --type-note: var(--weight-regular) var(--size-ui)/var(--line-note) var(--sans);
   --type-record: var(--weight-regular) var(--size-record)/var(--line-note) var(--mono);
   --type-tag: var(--weight-medium) 0.8125rem/1.25rem var(--sans);
-  --type-chapter: var(--weight-regular) 2.5rem/2.875rem var(--serif);
-  --type-question: var(--weight-regular) 1.75rem/2.125rem var(--serif);
-  --type-figure: var(--weight-regular) 2rem/2.25rem var(--serif);
+  --type-chapter: var(--weight-regular) 2.5rem/3rem var(--serif);
+  --type-question: var(--weight-regular) 1.75rem/2rem var(--serif);
+  --type-figure: var(--weight-regular) 2rem/2.5rem var(--serif);
   --type-cover: var(--weight-regular) clamp(2.75rem, 1.5rem + 4vw, 4.75rem)/1 var(--serif);
   --type-token: var(--weight-regular) var(--size-body)/var(--line-body) var(--mono);
-  --type-metric: var(--weight-medium) 2.25rem/2.5rem var(--serif);
 
   --space-half: 4px;
   --space-1: 8px;
@@ -85,6 +84,8 @@
   --gutter: var(--space-3);
   --panel-inset: var(--space-2);
   --section-space: var(--space-6);
+  --block-space: var(--space-4);
+  --subsection-space: var(--space-6);
   --column-gap: var(--space-6);
   --target: var(--space-6);
   --bar: var(--space-8);
@@ -149,10 +150,10 @@
   :root { --size-display: 4rem; --line-display: 4rem; --size-page: 3rem; --line-page: 3rem; --size-title: 2.25rem; }
 }
 @media (min-width: 768px) {
-  :root { --gutter: var(--space-6); --panel-inset: var(--space-3); --section-space: var(--space-10); }
+  :root { --gutter: var(--space-6); --panel-inset: var(--space-3); --section-space: var(--space-8); }
 }
 @media (min-width: 1280px) {
-  :root { --size-display: 4.5rem; --line-display: 4.5rem; --section-space: var(--space-12); --column-gap: var(--space-8); }
+  :root { --size-display: 4.5rem; --line-display: 4.5rem; --section-space: var(--space-10); --column-gap: var(--space-8); }
 }
 @media (max-width: 359px) {
   :root { --gutter: var(--space-2); }
