@@ -205,13 +205,13 @@ function fixtureEvidence(step) {
   return parts;
 }
 
-function eventCard(episode, step, { full = false, record = "both", prefix = "event" } = {}) {
+function eventCard(episode, step, { full = false, record = "both", prefix = "event", heading = "h4" } = {}) {
   const id = `${prefix}-${episode.key}-${step.seq}`.replace(/[^a-zA-Z0-9_-]/g, "-");
   const panes = [el("section", { class: "record-pane observer-pane", "aria-labelledby": `${id}-o` },
-    el("h4", { id: `${id}-o`, class: "pane-label" }, "Observer record"), observerEvidence(step, record))];
+    el(heading, { id: `${id}-o`, class: "pane-label" }, "Observer record"), observerEvidence(step, record))];
   if (full) {
     panes.push(el("section", { class: "record-pane fixture-pane", "aria-labelledby": `${id}-f` },
-      el("h4", { id: `${id}-f`, class: "pane-label" }, "Experiment fixture, complete record"), fixtureEvidence(step)));
+      el(heading, { id: `${id}-f`, class: "pane-label" }, "Experiment fixture, complete record"), fixtureEvidence(step)));
   }
   const notice = full && level() === "b" && step.guide.notice ? el("p", { class: "notice" }, step.guide.notice) : null;
   return el("li", { class: "record-event", "data-seq": String(step.seq) }, evt(step.seq), el("div", { class: "event-lanes" }, panes), notice);
@@ -231,7 +231,7 @@ function highlighted(episode) {
   return el("blockquote", { class: "prompt-text", translate: "no" }, parts);
 }
 
-function instructionsContent(episode, { suffix = "", excerpt = false } = {}) {
+function instructionsContent(episode, { suffix = "", excerpt = false, heading = "h4" } = {}) {
   const headingId = `instructions-${episode.key}${suffix ? `-${suffix}` : ""}`;
   const quote = excerpt
     ? [el("blockquote", { class: "prompt-text prompt-excerpt", translate: "no" },
@@ -239,7 +239,7 @@ function instructionsContent(episode, { suffix = "", excerpt = false } = {}) {
     el("details", { class: "whole-prompt" }, el("summary", {}, "The whole prompt"), highlighted(episode))]
     : [highlighted(episode)];
   return el("section", { class: "instructions-record", "aria-labelledby": headingId },
-    el("h4", { id: headingId, class: "pane-label" }, "Instructions supplied to both agents"), quote,
+    el(heading, { id: headingId, class: "pane-label" }, "Instructions supplied to both agents"), quote,
     el("p", { class: "instructions-why" }, episode.instructions[level()]));
 }
 
@@ -312,9 +312,9 @@ function renderSingle(episode) {
   const truth = level() === "b" || state.revealed;
   $("col-truth").textContent = level() === "b" ? "What really happened"
     : truth ? "What the fixture recorded" : "What the fixture recorded appears when you reveal it";
-  $("single-instructions").replaceChildren(state.record === "instr" ? instructionsContent(episode, { suffix: "single" })
+  $("single-instructions").replaceChildren(state.record === "instr" ? instructionsContent(episode, { suffix: "single", heading: "h3" })
     : el("div", { class: "locked single-locked" }, el("p", {}, "The instructions are not in the observer's record."), addInstructionsButton()));
-  $("timeline").replaceChildren(...episode.steps.map((step) => eventCard(episode, step, { record: state.record, full: truth, prefix: "single" })));
+  $("timeline").replaceChildren(...episode.steps.map((step) => eventCard(episode, step, { record: state.record, full: truth, prefix: "single", heading: "h3" })));
   renderSingleAnswer(episode);
   $("single-full").replaceChildren(findings(episode));
   move(state.step, false, false);
