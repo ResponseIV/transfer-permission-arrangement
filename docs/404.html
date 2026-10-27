@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Page not found – Transfer, Permission, Arrangement</title>
+<!-- GitHub serves this page at any missing path, so it loads nothing relative: styles are inline. -->
+<style>
+  :root { --paper: #f7f8fa; --ink: #1b2434; --ink-2: #465165; --accent: #284bb5; color-scheme: light; }
+  @media (prefers-color-scheme: dark) { :root { --paper: #131824; --ink: #eef1f7; --ink-2: #bec8da; --accent: #a7bdff; color-scheme: dark; } }
+  body { margin: 0; background: var(--paper); color: var(--ink); font: 400 1.125rem/1.75rem "Iowan Old Style", "Palatino Linotype", Georgia, serif; }
+  main { max-width: 41rem; padding: 96px 24px; margin: 0 auto; }
+  h1 { font-weight: 400; font-size: 2.5rem; line-height: 3rem; letter-spacing: -0.02em; margin: 0 0 32px; }
+  p { margin: 0 0 24px; color: var(--ink-2); }
+  a { color: var(--accent); text-underline-offset: 0.18em; }
+</style>
+</head>
+<body>
+<main>
+  <h1>This page is not part of the study</h1>
+  <p>The address may have changed when the companion site was published.</p>
+  <p><a id="home" href="./">Read the story</a> or <a id="desk" href="explorer.html">open the evidence desk</a>.</p>
+</main>
+<script>
+  // On a project page the site lives one folder down; point both links there from any depth.
+  (function () {
+    var first = location.pathname.split("/")[1];
+    if (!/\.github\.io$/.test(location.hostname) || !first) return;
+    document.getElementById("home").href = "/" + first + "/";
+    document.getElementById("desk").href = "/" + first + "/explorer.html";
+  })();
+</script>
+</body>
+</html>
