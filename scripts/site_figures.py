@@ -86,7 +86,9 @@ def legend() -> str:
         rows.append(f'<li><svg width="28" height="8" viewBox="0 0 28 8" aria-hidden="true">'
                     f'<line class="series {css}{" bound" if bound else ""}" x1="1" x2="27" y1="4" y2="4"/></svg>'
                     f"{label}</li>")
-    rows.append('<li><svg width="28" height="8" viewBox="0 0 28 8" aria-hidden="true"></svg>'
+    rows.append('<li><svg width="28" height="8" viewBox="0 0 28 8" aria-hidden="true">'
+                '<line class="series key" x1="1" x2="11" y1="4" y2="4"/>'
+                '<line class="series key bound" x1="16" x2="27" y1="4" y2="4"/></svg>'
                 "Solid: point rate; dashed: conservative bound</li>")
     return '<ul class="legend">\n' + "\n".join(rows) + "\n</ul>"
 

@@ -271,6 +271,8 @@ figcaption b { color: var(--ink); }
 .series.s-log { stroke: var(--fig-log); }
 .series.s-unpres { stroke: var(--fig-unpres); }
 .series.s-pages { stroke: var(--fig-pages); }
+.series.key { stroke: var(--ink-2); }
+.series.key.bound { stroke-dasharray: 3 2; }
 .chart .marker-line { stroke: var(--ink-3); stroke-width: 1; stroke-dasharray: 2 3; }
 .chart .dot { stroke: var(--sheet); stroke-width: 2; }
 .chart .dot.s-log { fill: var(--fig-log); }
