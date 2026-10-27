@@ -53,7 +53,7 @@ test("arranged/scripted landmarks preserve their actual offer, read, reply and a
 
 test("observer and fixture records remain separately named, and answer stays opt-in", () => {
   assert.match(source, /Observer record/);
-  assert.match(source, /Experiment fixture · complete record/);
+  assert.match(source, /Experiment fixture, complete record/);
   assert.match(source, /renderCompareAnswer/);
   assert.match(source, /aria-expanded/);
   assert.match(html, /id="nojs-evidence"/);

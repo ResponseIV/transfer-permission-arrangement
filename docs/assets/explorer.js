@@ -198,7 +198,7 @@ function fixtureEvidence(step) {
   if (level() === "e") {
     const raw = [`seq ${step.seq}`, step.actor, step.action, step.status, step.page ? page(step.page) : null,
       step.revision ? `wrote ${step.revision}` : null, step.read_revision ? `read ${step.read_revision}` : null].filter(Boolean);
-    parts.push(el("p", { class: "raw" }, raw.join(" · ")));
+    parts.push(el("p", { class: "raw" }, raw.join("; ")));
   }
   return parts;
 }
@@ -209,7 +209,7 @@ function eventCard(episode, step, { full = false, record = "both", prefix = "eve
     el("h4", { id: `${id}-o`, class: "pane-label" }, "Observer record"), observerEvidence(step, record))];
   if (full) {
     panes.push(el("section", { class: "record-pane fixture-pane", "aria-labelledby": `${id}-f` },
-      el("h4", { id: `${id}-f`, class: "pane-label" }, "Experiment fixture · complete record"), fixtureEvidence(step)));
+      el("h4", { id: `${id}-f`, class: "pane-label" }, "Experiment fixture, complete record"), fixtureEvidence(step)));
   }
   const notice = full && level() === "b" && step.guide.notice ? el("p", { class: "notice" }, step.guide.notice) : null;
   return el("li", { class: "record-event", "data-seq": String(step.seq) }, evt(step.seq), el("div", { class: "event-lanes" }, panes), notice);
@@ -253,12 +253,11 @@ function renderCompare() {
   const right = getEpisode(pair.right);
   const editorial = PAIR_COPY[pair.key];
   $("compare-intro").replaceChildren(
-    el("h2", { id: "compare-title" }, pair.title),
-    el("p", { class: "desk-question-text" }, editorial?.question[level()] || pair.question[level()]),
+    el("h2", { id: "compare-title" }, editorial?.question[level()] || pair.question[level()]),
     renderCompareAnswer(pair, left, right));
   const side = (episode, letter) => el("div", { class: "ledger-side" },
     el("span", { class: "side-letter" }, letter),
-    el("span", { class: "side-name" }, state.revealed ? episode.title : `Episode ${letter} · ${episode.model}`));
+    el("span", { class: "side-name" }, state.revealed ? episode.title : episode.model));
   const head = el("div", { class: "ledger-head", role: "presentation" }, el("span", { class: "ledger-gutter" }, "Landmark"),
     side(left, "A"), side(right, "B"));
   const cell = (episode, seqs, letter) => el("div", { class: "ledger-cell", "data-side": letter },
@@ -282,7 +281,7 @@ function renderCompare() {
   $("compare-full").replaceChildren(
     el("p", { class: "provenance" }, "Each event in full: the observer record beside what the experiment fixture recorded. Anonymous shared-board actors stay anonymous on the observer side."),
     el("div", { class: "full-compare" }, [left, right].map((episode, index) => el("section", { "aria-labelledby": `full-case-${index}` },
-      el("h3", { id: `full-case-${index}` }, `${index === 0 ? "A" : "B"} · ${episode.title}`),
+      el("h3", { id: `full-case-${index}` }, `${index === 0 ? "A" : "B"}: ${episode.title}`),
       el("ol", { class: "timeline compact" }, episode.steps.map((step) => eventCard(episode, step, { record: "instr", full: true, prefix: `full-${index}` }))),
       instructionsContent(episode, { suffix: `full-${index}` }), findings(episode)))));
 }
@@ -293,7 +292,7 @@ function renderCompareAnswer(pair, left, right) {
   const result = el("div", { id: "compare-answer-result", class: "answer-result", hidden: !state.revealed },
     el("p", { class: "answer-lead" }, pair.answer[level()]),
     el("dl", { class: "answer-pair" }, [left, right].flatMap((episode, index) => [
-      el("dt", {}, `${index === 0 ? "A" : "B"} · ${episode.kind}`), el("dd", {}, episode.verdict[level()])])));
+      el("dt", {}, `${index === 0 ? "A" : "B"}: ${episode.kind}`), el("dd", {}, episode.verdict[level()])])));
   return el("div", { class: "answer-request" }, button, result);
 }
 
@@ -302,11 +301,11 @@ function renderCompareAnswer(pair, left, right) {
 function renderSingle(episode) {
   const story = episode.story[level()];
   $("summary").replaceChildren(
-    el("p", { class: "kicker" }, `One episode · ${episode.model} · ${episode.rule_in_prompt ? "confidentiality rule" : "no rule"}`),
+    el("p", { class: "desk-meta" }, `${episode.model}, ${episode.rule_in_prompt ? "confidentiality rule" : "no rule"}`),
     el("h2", { id: "single-title" }, QUESTIONS[episode.key]?.[level()] || "What does this event record establish?"),
     el("p", { class: "desk-question-text" }, story),
     el("p", { class: "tokens" }, "Tokens: ", Object.entries(episode.tokens).map(([agent, token], index) =>
-      [index ? " · " : "", who(agent), " ", el("code", { translate: "no" }, token)])));
+      [index ? ", " : "", who(agent), " ", el("code", { translate: "no" }, token)])));
   $("col-observer").textContent = level() === "b" ? "What an auditor sees" : "What the observer record shows";
   $("col-truth").textContent = level() === "b" ? "What really happened" : "What the fixture recorded";
   $("single-instructions").replaceChildren(state.record === "instr" ? instructionsContent(episode, { suffix: "single" })
