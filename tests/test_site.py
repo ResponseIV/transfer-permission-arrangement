@@ -22,9 +22,9 @@ CONTRAST = [(fg, bg, 4.5) for fg, bg in [
     ("ink-2", "sheet-2"), ("ink-3", "paper"), ("ink-3", "sheet"), ("accent", "paper"), ("accent", "sheet"),
     ("alpha", "paper"), ("alpha", "sheet"), ("beta", "paper"), ("beta", "sheet"), ("fixture", "sheet"),
     ("yes", "yes-soft"), ("no", "no-soft"), ("ink-2", "yes-soft"), ("ink-2", "no-soft"), ("ink", "no-soft"),
-    ("ink", "accent-soft"), ("accent", "accent-soft"), ("ink", "mark"), ("paper", "ink"), ("no", "paper"),
+    ("ink", "accent-soft"), ("accent", "accent-soft"), ("mark-ink", "mark"), ("paper", "ink"), ("no", "paper"),
     ("no", "sheet"), ("paper", "alpha"), ("paper", "beta"), ("ink-2", "accent-soft"),
-    ("ink-2", "mark"), ("sheet", "accent"), ("ink-2", "sheet-2"),
+    ("mark-ink-2", "mark"), ("sheet", "accent"), ("ink-2", "sheet-2"),
     ("ink-3", "sheet-2"), ("alpha", "sheet-2"), ("beta", "sheet-2"),
 ]] + [(fg, "sheet", 3.0) for fg in ("fig-log", "fig-unpres", "fig-pages", "control", "ink-3")] + [("control", "paper", 3.0)]
 

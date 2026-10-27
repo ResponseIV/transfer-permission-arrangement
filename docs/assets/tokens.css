@@ -20,6 +20,8 @@
   --no: #8e2f21;
   --no-soft: #f6e3de;
   --mark: #f1e7b8;
+  --mark-ink: #1b2434;
+  --mark-ink-2: #465165;
   --fig-log: #1f5f8b;
   --fig-unpres: #2e7d55;
   --fig-pages: #a8402c;
@@ -112,7 +114,9 @@
     --yes-soft: #18301f;
     --no: #f2a191;
     --no-soft: #3a1f1a;
-    --mark: #57481a;
+    --mark: #e2cd78;
+    --mark-ink: #1b2434;
+    --mark-ink-2: #465165;
     --fig-log: #7fb8de;
     --fig-unpres: #79c99c;
     --fig-pages: #ee9480;
@@ -138,7 +142,9 @@
   --yes-soft: #18301f;
   --no: #f2a191;
   --no-soft: #3a1f1a;
-  --mark: #57481a;
+  --mark: #e2cd78;
+  --mark-ink: #1b2434;
+  --mark-ink-2: #465165;
   --fig-log: #7fb8de;
   --fig-unpres: #79c99c;
   --fig-pages: #ee9480;
@@ -165,7 +171,7 @@
     --rule: #cccccc; --rule-strong: #888888;
     --accent: #173784; --accent-soft: #eeeeee;
     --alpha: #173784; --beta: #713956; --fixture: #344c14;
-    --no: #812718; --no-soft: #ffffff; --mark: #eeeeee;
+    --no: #812718; --no-soft: #ffffff; --mark: #eeeeee; --mark-ink: #111111; --mark-ink-2: #333333;
     --fig-log: #1f5f8b; --fig-unpres: #2e7d55; --fig-pages: #a8402c;
   }
 }

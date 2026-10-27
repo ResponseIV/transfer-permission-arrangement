@@ -38,7 +38,8 @@
 .sheet-count { display: inline-grid; place-items: center; width: 20px; height: 20px; font: var(--type-tag); border: 1px solid var(--control); color: var(--ink-3); }
 .record-stack input:checked + label { color: var(--accent); background: var(--accent-soft); border-color: var(--accent); position: relative; }
 .record-stack input:checked + label .sheet-count { border-color: var(--accent); color: var(--accent); }
-.record-stack input:checked + label.instr { color: var(--ink); background: var(--mark); }
+.record-stack input:checked + label.instr { color: var(--mark-ink); background: var(--mark); }
+.record-stack input:checked + label.instr .sheet-count { color: var(--mark-ink); border-color: var(--mark-ink); }
 /* Records are cumulative: every sheet up to the chosen one is held. */
 .record-stack:has(#rec-both:checked) label[for="rec-text"],
 .record-stack:has(#rec-full:checked) label:is([for="rec-text"], [for="rec-both"]),
@@ -115,7 +116,7 @@
 .whole-prompt { margin-top: var(--space-1); }
 .whole-prompt > summary { font: var(--type-note); color: var(--ink-2); cursor: pointer; text-decoration: underline; text-underline-offset: 0.18em; }
 .whole-prompt[open] > summary { margin-bottom: var(--space-1); }
-.instructions-record mark { background: var(--mark); color: var(--ink); box-shadow: inset 0 -2px 0 var(--accent); padding: 0 4px; }
+.instructions-record mark { background: var(--mark); color: var(--mark-ink); box-shadow: inset 0 -2px 0 var(--accent); padding: 0 4px; }
 .instructions-why { font: var(--type-note); color: var(--ink); margin: var(--space-2) 0 0; padding-top: var(--space-2); border-top: 1px solid var(--rule); }
 .locked { border: 1px dashed var(--control); padding: var(--space-2) var(--space-3); }
 .single-locked { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: var(--space-2); margin-bottom: var(--space-3); }
