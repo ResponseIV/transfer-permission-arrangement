@@ -99,8 +99,6 @@ li::marker { color: var(--ink-3); }
 /* Cover: the question large on the left, the opening record on the right. */
 .hero { display: grid; grid-template-columns: minmax(0, 7fr) minmax(0, 5fr); gap: var(--space-10); align-items: start; padding-block: var(--space-12) var(--space-10); }
 .hero-copy, .cover-evidence { min-width: 0; }
-.edition { font: var(--type-ui); color: var(--ink-2); margin: 0 0 var(--space-5); }
-.edition span { display: block; color: var(--ink-3); font-weight: var(--weight-regular); }
 .hero h1 { font: var(--type-cover); letter-spacing: -0.03em; margin: 0 0 var(--space-5); text-wrap: initial; }
 .hero h1 em { font-weight: var(--weight-regular); color: var(--accent); white-space: nowrap; }
 .dek { max-width: 34rem; font: var(--type-intro); color: var(--ink-2); margin: 0 0 var(--space-4); }
@@ -184,6 +182,7 @@ section[id], h2[id], h3[id], details[id] { scroll-margin-top: var(--space-2); }
   .chapter > .col { position: relative; }
   .chapter .caution, .chapter .margin-note { float: right; clear: right; width: 15rem; margin: 0 -18rem var(--space-3) 0; padding-top: var(--space-1); border-top: 1px solid var(--rule-strong); }
   .chapter .col::after { content: ""; display: table; clear: both; }
+  .chapter .caution-inline { float: none; width: auto; margin: var(--block-space) 0; }
 }
 
 /* Exhibit compositions. Each case gets its own shape; they share the sheet, the labels and the highlighter. */
