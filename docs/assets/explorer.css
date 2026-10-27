@@ -181,6 +181,7 @@
   .ledger-cell.locked { grid-column: 1 / -1; padding: var(--space-2) var(--space-3); border: 1px dashed var(--control); }
 }
 @media (max-width: 767px) {
+  .desk-question h2 { font: var(--type-heading); }
   .desk-bar { position: static; }
   .ledger-head > * { position: static; }
   .records { flex-wrap: wrap; }

@@ -288,7 +288,7 @@ function renderCompare() {
 
 function renderCompareAnswer(pair, left, right) {
   const button = el("button", { type: "button", class: "reveal-button", id: "compare-reveal", "aria-expanded": String(state.revealed), "aria-controls": "compare-answer-result" },
-    state.revealed ? "Hide what really happened" : "Reveal what really happened");
+    state.revealed ? "Hide what happened" : "Reveal what happened");
   const result = el("div", { id: "compare-answer-result", class: "answer-result", hidden: !state.revealed },
     el("p", { class: "answer-lead" }, pair.answer[level()]),
     el("dl", { class: "answer-pair" }, [left, right].flatMap((episode, index) => [
