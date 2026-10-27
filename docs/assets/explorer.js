@@ -177,13 +177,15 @@ function observerEvidence(step, record, { clamp = false, reveal = false } = {}) 
   return [el("p", { class: "unseen" }, `${what}, not in this record`)];
 }
 
+const ERRORS = { access_denied: "refused", cross_owner_write_denied: "write refused", page_not_found: "no such page" };
+
 // What the experiment fixture recorded: the reader's guide at the first depth, fields at the others.
 function fixtureEvidence(step) {
   if (level() === "b") return [el("p", { class: "says" }, step.guide.says)];
   const verb = { read: "reads", write: "writes", final_answer: "answers" }[step.action];
   const parts = [el("p", { class: "event-action" }, who(step.seeded ? "fixture" : step.actor), ` ${verb}`,
     step.page ? [" ", place(step.page)] : null,
-    step.status === "allowed" ? null : el("span", { class: "refused" }, step.error || step.status))];
+    step.status === "allowed" ? null : el("span", { class: "refused" }, ERRORS[step.error] || step.error || step.status))];
   if (step.seeded) parts.push(el("p", { class: "fixture-note" }, "Seeded before the task and recorded under Alpha's name; neither agent is told."));
   if (step.action === "read" && step.status === "allowed") {
     parts.push(el("p", { class: "fixture-note" }, "Returned a revision written by ", who(step.read_author || "nobody")));
@@ -491,7 +493,7 @@ function wire() {
       render();
       setRoute(false);
       // The button is gone after the render: hand focus to the instructions it revealed.
-      const shown = document.querySelector(state.mode === "single" ? "#single-instructions .instructions-record" : "#landmark-instr");
+      const shown = document.querySelector(state.mode === "single" ? "#single-instructions .instructions-record" : ".instructions-row .instructions-record");
       if (shown) {
         shown.setAttribute("tabindex", "-1");
         shown.focus({ preventScroll: true });
@@ -523,9 +525,9 @@ function fail(error) {
   box.replaceChildren(
     local ? "This page was opened from a file, and browsers do not let it load its episode data that way. "
       : `The episode records did not load${error?.message ? ` (${error.message})` : ""}. Refresh the page to try again. `,
-    "To view it locally, serve the folder with ", el("code", {}, "python3 -m http.server -d docs"),
-    " and open ", el("code", {}, "http://localhost:8000/explorer.html"), ". The ", el("a", { href: "./" }, "explainer"),
-    " works without it.");
+    ...(local ? ["To view it locally, serve the folder with ", el("code", {}, "python3 -m http.server -d docs"),
+      " and open ", el("code", {}, "http://localhost:8000/explorer.html"), ". "] : []),
+    "The ", el("a", { href: "./" }, "explainer"), " works without it.");
 }
 
 $("loading").hidden = false;
