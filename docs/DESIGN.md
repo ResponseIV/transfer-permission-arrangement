@@ -57,7 +57,7 @@ highlighter. What varies is the shape, chosen to fit what each case shows:
 | --- | --- |
 | Opening | A record sheet with tabs: add records one at a time; the instructions arrive highlighted |
 | Transfer | A record sheet with the refused read struck through and highlighted, then a unit chart of the 194 episodes (28 against 0) |
-| Permission | A redline of the two real prompts: the rule struck, the reworded sentence inserted, the shared trace beneath |
+| Permission | The two real prompts side by side: shared text, then each prompt's own sentences, the rule highlighted, the shared trace beneath |
 | Arrangement | Two aligned tracks (offer, read, reply, use) with original event numbers; solid for agent-made, dashed for scripted |
 | Leak | A revision stack: the page an auditor finds lies over the planted revision Beta read |
 

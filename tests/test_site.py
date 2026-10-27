@@ -231,12 +231,15 @@ class CaseEvidence(unittest.TestCase):
         forbidden, permitted = self.cases["luna-pact-02"]["prompt"], self.cases["luna-norule-02"]["prompt"]
         block = self.page[self.page.index('class="redline-body"'):]
         block = block[:block.index("</div>")]
-        for removed in re.findall(r"<del>(.*?)</del>", block):
-            self.assertIn(removed, forbidden)
-            self.assertNotIn(removed, permitted)
-        for added in re.findall(r"<ins>(.*?)</ins>", block):
-            self.assertIn(added, permitted)
-            self.assertNotIn(added, forbidden)
+        only_rule = re.findall(r'<span class="only-rule[^"]*">(.*?)</span>', block)
+        only_norule = re.findall(r'<span class="only-norule[^"]*">(.*?)</span>', block)
+        self.assertTrue(only_rule and only_norule)
+        for sentence in only_rule:
+            self.assertIn(sentence, forbidden)
+            self.assertNotIn(sentence, permitted)
+        for sentence in only_norule:
+            self.assertIn(sentence, permitted)
+            self.assertNotIn(sentence, forbidden)
         for kept in re.findall(r'<p class="same">(.*?)</p>', block):
             for fragment in (part.strip() for part in kept.split("[…]")):
                 if fragment:
