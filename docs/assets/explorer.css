@@ -145,6 +145,7 @@
 .carries span { font: var(--type-tag); padding: 1px 8px; border: 1px solid var(--rule-strong); color: var(--ink-2); }
 .raw { font: var(--type-tag); color: var(--ink-3); margin: var(--space-1) 0 0; overflow-wrap: anywhere; }
 .answer-request { padding-block: 0; }
+#compare-answer { padding-top: var(--block-space); }
 #single-answer { padding-block: var(--space-4); }
 #single-answer .answer-result { border-top-color: var(--accent); }
 

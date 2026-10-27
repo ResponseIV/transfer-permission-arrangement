@@ -254,9 +254,8 @@ function renderCompare() {
   const left = getEpisode(pair.left);
   const right = getEpisode(pair.right);
   const editorial = PAIR_COPY[pair.key];
-  $("compare-intro").replaceChildren(
-    el("h2", { id: "compare-title" }, editorial?.question[level()] || pair.question[level()]),
-    renderCompareAnswer(pair, left, right));
+  $("compare-intro").replaceChildren(el("h2", { id: "compare-title" }, editorial?.question[level()] || pair.question[level()]));
+  $("compare-answer").replaceChildren(renderCompareAnswer(pair, left, right));
   const side = (episode, letter) => el("div", { class: "ledger-side" },
     el("span", { class: "side-letter" }, letter),
     el("span", { class: "side-name" }, state.revealed ? episode.title : episode.model));
@@ -309,10 +308,13 @@ function renderSingle(episode) {
     el("p", { class: "tokens" }, "Tokens: ", Object.entries(episode.tokens).map(([agent, token], index) =>
       [index ? ", " : "", who(agent), " ", el("code", { translate: "no" }, token)])));
   $("col-observer").textContent = level() === "b" ? "What an auditor sees" : "What the observer record shows";
-  $("col-truth").textContent = level() === "b" ? "What really happened" : "What the fixture recorded";
+  // The first depth is a guided walk with the truth beside each event; beyond it, the truth is part of the reveal.
+  const truth = level() === "b" || state.revealed;
+  $("col-truth").textContent = level() === "b" ? "What really happened"
+    : truth ? "What the fixture recorded" : "What the fixture recorded appears when you reveal it";
   $("single-instructions").replaceChildren(state.record === "instr" ? instructionsContent(episode, { suffix: "single" })
     : el("div", { class: "locked single-locked" }, el("p", {}, "The instructions are not in the observer's record."), addInstructionsButton()));
-  $("timeline").replaceChildren(...episode.steps.map((step) => eventCard(episode, step, { record: state.record, full: true, prefix: "single" })));
+  $("timeline").replaceChildren(...episode.steps.map((step) => eventCard(episode, step, { record: state.record, full: truth, prefix: "single" })));
   renderSingleAnswer(episode);
   $("single-full").replaceChildren(findings(episode));
   move(state.step, false, false);
@@ -325,7 +327,7 @@ function renderSingleAnswer(episode) {
     return;
   }
   const button = el("button", { type: "button", class: "reveal-button", id: "single-reveal", "aria-expanded": String(state.revealed), "aria-controls": "single-answer-result" },
-    state.revealed ? "Hide the verdict" : "Show the verdict and frozen label");
+    state.revealed ? "Hide what happened" : "Reveal what happened");
   const answer = el("div", { id: "single-answer-result", class: "answer-result", hidden: !state.revealed },
     el("p", { class: "answer-lead" }, episode.verdict[level()]),
     el("p", { class: "provenance" }, "Case: ", el("b", {}, episode.kind), ". Frozen transfer label: ", el("b", {}, episode.label.transfer ? "yes" : "no"), "."));

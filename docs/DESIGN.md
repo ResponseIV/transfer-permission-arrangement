@@ -74,16 +74,18 @@ in `assets/tokens.css`; `tests/test_site.py` checks every colour pair in use, in
 
 Controls first. A sticky band holds the view (compare two, or one episode), the case, and the record stack
 (1 Pages, 2 + Access log, 3 + Answers, 4 + Instructions; cumulative, the fourth highlighted). The question
-is the heading, with its reveal under it; the reveal names the true actors of unsigned board events in blue
-and gives each side's verdict.
+is the heading; the reveal comes after the evidence, below the instructions row, so a reader holds every record
+before seeing the answer. It names the true actors of unsigned board events in blue and gives each side's verdict.
 
 Compare is a ledger: landmarks in a gutter, A and B as columns, original event numbers, page text clamped with
 "Show the whole page". The instructions row is closed until the instructions record is held, and offers a button
 that adds it; once open it quotes the deciding sentences, with the whole prompt one tap away. Columns stay
 adjacent down to 320px.
 
-One episode is a stepped log, observer beside fixture. The first depth reads the fixture side as a guide (what
-happens, what to notice) and gets its verdict at the last step; the third adds raw fields. Labels, signals and every
+One episode is a stepped log. The first depth is a guided walk: the fixture side sits beside each event as a guide
+(what happens, what to notice), and the verdict comes at the last step. From the second depth the reader audits:
+only the observer record is shown until "Reveal what happened" adds the fixture's record and the verdict; the third
+depth adds raw fields. Labels, signals and every
 judge verdict are in a closed inspector at the end. The router keeps `#compare/<pair>`, `#single/<case>` and legacy
 `#<case>` links, with record, step and reveal state.
 
