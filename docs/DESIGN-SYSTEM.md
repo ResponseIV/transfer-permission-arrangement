@@ -55,8 +55,9 @@ not additional spacing scales. Dimensions are relative units so browser text set
 | Control target | 48px for navigation and the article's main actions; 36px for segmented controls, the record stack and desk buttons; contents links use a 36px row |
 
 Responsive changes alter composition rather than inventing smaller component type. Below 1024px the
-cover stacks and the contents become a native disclosure. Below 768px the masthead uses T/P/A and the
-overview stacks. Below 640px article comparison panels stack; desk source landmarks remain adjacent.
+cover stacks and the contents become a native disclosure. Below 768px the masthead shows only the
+stacked-sheets mark (the name stays its accessible label), reading depth becomes a boxed segmented control like the
+desk's record stack, so it reads as a setting rather than a second row of links, and the overview stacks. Below 640px article comparison panels stack; desk source landmarks remain adjacent.
 The compact 360px boundary changes gutters only. Role sizes change centrally at 640px and 1280px.
 
 ## Component rules

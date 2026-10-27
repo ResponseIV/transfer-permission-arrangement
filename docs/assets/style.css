@@ -67,7 +67,6 @@ li::marker { color: var(--ink-3); }
 .masthead .frame { display: flex; align-items: center; gap: var(--space-3); min-height: var(--space-8); }
 .brand { display: inline-flex; align-items: center; gap: var(--space-1); margin-right: auto; min-height: var(--target); white-space: nowrap; color: var(--ink); font: var(--type-label); text-decoration: none; }
 .brand svg { flex: none; }
-.brand-short { display: none; }
 .masthead nav { display: flex; align-items: center; gap: var(--space-2); font: var(--type-ui); white-space: nowrap; }
 .masthead nav a { display: inline-flex; align-items: center; min-height: var(--target); color: var(--ink-2); text-decoration: none; }
 .masthead nav a:hover, .masthead nav a[aria-current="page"] { color: var(--ink); text-decoration: underline; }
@@ -387,11 +386,13 @@ tbody th { font-weight: var(--weight-medium); }
 }
 @media (max-width: 767px) {
   .brand-long { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
-  .brand-short { display: inline; font-style: italic; }
-  .brand svg { display: none; }
   .levelbar legend { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
   .levelbar fieldset, .levelbar .segmented { flex: 1; }
-  .levelbar .segmented label { flex: 1 1 0; min-width: 0; padding-inline: 8px; }
+  /* On phones the depth reads as a setting, boxed like the desk's record stack, not as a second row of links. */
+  .levelbar .segmented { gap: 0; border: 1px solid var(--control); background: var(--sheet); }
+  .levelbar .segmented label { flex: 1 1 0; min-width: 0; min-height: 36px; padding-inline: 4px; border-bottom: 0; }
+  .levelbar .segmented label:not(:first-of-type) { border-left: 1px solid var(--control); }
+  .levelbar .segmented input:checked + label { background: var(--accent-soft); }
   .traces { grid-template-columns: 1fr; }
 }
 @media (max-width: 639px) {
