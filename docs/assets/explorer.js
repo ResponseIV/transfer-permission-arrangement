@@ -147,9 +147,12 @@ function who(name, truth) {
   return el("span", { class: `who ${name}` }, cap(name));
 }
 
+// Record text may wrap after "=" and "|", so answers like alpha=…|beta=… never split inside a token.
+const breakable = (text) => text.split(/(?<=[=|])/).flatMap((part, index) => (index ? [el("wbr", {}), part] : [part]));
+
 function body(text, label, clamp = false) {
   if (text === "") return el("div", { class: "record-body empty", "aria-label": label }, "(empty page)");
-  const node = el("div", { class: `record-body${clamp && text.length > 140 ? " clamped" : ""}`, "aria-label": label, translate: "no" }, text);
+  const node = el("div", { class: `record-body${clamp && text.length > 140 ? " clamped" : ""}`, "aria-label": label, translate: "no" }, breakable(text));
   if (!clamp || text.length <= 140) return node;
   const toggle = el("button", { type: "button", class: "more", "aria-expanded": "false" }, "Show the whole page");
   return el("div", { class: "record-text" }, node, toggle);

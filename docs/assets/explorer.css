@@ -179,7 +179,9 @@
   .records { margin-left: 0; flex-basis: 100%; }
   .ledger { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); }
   .ledger-head > .ledger-gutter { display: none; }
-  .ledger-row > .ledger-gutter { grid-column: 1 / -1; padding: var(--space-2) 0 var(--space-1); border-bottom: 0; }
+  /* Landmark labels span both columns; they stay in column A and carry the A|B rule through. */
+  .ledger-row > .ledger-gutter { position: relative; grid-column: 1 / -1; padding: var(--space-2) calc(50% + var(--space-2)) var(--space-1) 0; border-bottom: 0; }
+  .ledger-row > .ledger-gutter::after { content: ""; position: absolute; top: 0; bottom: 0; left: 50%; border-left: 1px solid var(--rule); }
   .ledger-cell { padding: 0 var(--space-2) var(--space-3) 0; border-left: 0; }
   .ledger-cell[data-side="B"] { padding: 0 0 var(--space-3) var(--space-2); border-left: 1px solid var(--rule); }
   .ledger-side { padding-left: 0 !important; }
