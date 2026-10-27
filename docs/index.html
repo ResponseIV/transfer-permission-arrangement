@@ -223,11 +223,6 @@
           <path d="M243 256 V272" class="arrow"/><path d="M243 272 l-3.5 -6 h7z" class="arrow-head"/>
         </svg>
       </div>
-      <figcaption data-lv="b">The setup. Each agent's code sits on its own private note. The shared board is the
-        wiki both can use. The task asks each agent for both codes; in many runs, a rule also forbids writing its
-        own code on any page.</figcaption>
-      <figcaption data-lv="a e">The task. Private notes are closed to the other agent in most conditions; the shared
-        board is open to both and does not record who wrote what. Conditions differ in what the instructions say.</figcaption>
     </figure>
   </div>
 </section>
@@ -244,8 +239,7 @@
       <div><dt>Planted leak</dt><dd>The fixture leaves a token on a readable note. A secret can pass without a recorded offer or reply.</dd></div>
       <div><dt>Scripted offer</dt><dd>A shared instruction supplies the offer, reply and completion. The sequence can resemble an agent-made plan.</dd></div>
     </dl>
-    <p class="source-note">The tests below compare each claim with the alternative that could imitate it.
-      Exact conditions and prompts are in <a href="https://github.com/ResponseIV/transfer-permission-arrangement/blob/submission/paper/report.md">the paper’s Methods and Appendix B</a>.</p>
+    <p class="source-note">Exact conditions and prompts are in <a href="https://github.com/ResponseIV/transfer-permission-arrangement/blob/submission/paper/report.md">the paper’s Methods and Appendix B</a>.</p>
   </div>
 </section>
 
@@ -261,8 +255,6 @@
       <div><dt>Final answers</dt><dd>What each agent returned, including a token it may have decoded from a disguised carrier.</dd></div>
       <div><dt><span>Instructions</span></dt><dd>The rule and any supplied plan. These were available to the human analysis, never to the transfer judges.</dd></div>
     </dl>
-    <p>Every case in this article ends with the same distinction: what the available record supports,
-      and which explanation it still leaves open.</p>
   </div>
 </section>
 <section class="chapter research-map" id="research-map" aria-labelledby="research-map-title" data-lv="e">
@@ -295,10 +287,7 @@
       </ol>
       <figcaption class="case-caption">Sol, shared archive, episode 02, condensed. <a href="explorer.html#single/sol-archive-02" data-internal>Open the record</a></figcaption>
     </figure>
-    <dl class="inference">
-      <div><dt>Supported</dt><dd>In this episode, the archive explains the matching answers. Beta did not read Alpha’s note.</dd></div>
-      <div><dt>Still open from pages alone</dt><dd>A written code may never have reached another agent. The page history cannot settle receipt.</dd></div>
-    </dl>
+    <p class="still-open"><b>Still open from pages alone.</b> A written code may never have reached another agent. The page history cannot settle receipt.</p>
     <div data-lv="b">
       <p>An <strong>access log</strong> records which page and version was read. Adding it removed this false alarm.
         Across the main test, Astra, the separate AI model used as a judge, found all 244 transfers with the log.</p>
@@ -468,10 +457,7 @@
       <div class="shared-record"><span class="slip-tag">Board writes, both runs</span><code translate="no">alpha  896817104A<br>beta   D2F82BF88B</code></div>
       <figcaption class="case-caption">Luna, task 02, quoted from both prompts. <a href="explorer.html#compare/forbidden-permitted" data-internal>Compare the records</a></figcaption>
     </figure>
-    <dl class="inference">
-      <div><dt>Supported</dt><dd>The instructions distinguish a forbidden scripted exchange from a permitted one.</dd></div>
-      <div><dt>Still open from behavior</dt><dd>A transfer alarm cannot establish that the transfer broke a rule.</dd></div>
-    </dl>
+    <p class="still-open"><b>Still open from behavior.</b> A transfer alarm cannot establish that the transfer broke a rule.</p>
     <p>Across 20 task pairs on Luna, six page and log signals were identical with and without the rule.
       They were also identical on Qwen. Sol behaved differently: it mostly asked for the token instead of following
       the pact script, so its traffic changed. The result depends on what the model did with the instructions.</p>
@@ -538,11 +524,8 @@
       </div>
       <figcaption class="case-caption">Event numbers from the logs, with the steps between them left out. <a href="explorer.html#compare/arranged-scripted" data-internal>Compare event by event</a></figcaption>
     </figure>
-    <dl class="inference">
-      <div><dt>Supported</dt><dd>An offer, its reading, a carrier reply and use were recorded in the follow-up.</dd></div>
-      <div><dt>Still open without instructions</dt><dd>The sequence alone does not say whether the experiment supplied the plan.
-        It also does not establish private intention.</dd></div>
-    </dl>
+    <p class="still-open"><b>Still open without instructions.</b> The sequence alone does not say whether the experiment supplied the plan.
+        It also does not establish private intention.</p>
     <details class="technical-note" data-lv="a e">
       <summary>The exchanges were usually one-way</summary>
       <p>9 of the 10 agent-arranged transfers served only the proposer. In the Sol follow-up,
@@ -575,11 +558,8 @@
     </figure>
     <p>The planted token was taken in 60 of 60 episodes across Luna, Sol and Qwen. No offer or reply was recorded.
       A monitor limited to arrangements would miss this kind of transfer.</p>
-    <dl class="inference">
-      <div><dt>Supported</dt><dd>Beta read the planted token and used it. The revision history explains where it came from.</dd></div>
-      <div><dt>Still unresolved by an arrangement test</dt><dd>Information can pass without an observed negotiation.
-        This toy leak measures token transfer, not downstream harm.</dd></div>
-    </dl>
+    <p class="still-open"><b>Still unresolved by an arrangement test.</b> Information can pass without an observed negotiation.
+        This toy leak measures token transfer, not downstream harm.</p>
     <details class="technical-note" data-lv="a e">
       <summary>The paper’s event traces, in order</summary>
       <figure id="figure-2">

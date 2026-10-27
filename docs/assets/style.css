@@ -89,11 +89,10 @@ li::marker { color: var(--ink-3); }
 /* Shared marks: event numbers in mono, plain labels, and one highlighter for the record that decides a case. */
 .evt { font: var(--type-record); color: var(--ink-3); font-variant-numeric: tabular-nums; }
 .slip-tag { display: block; font: var(--type-tag); color: var(--ink-3); }
-.hl { background: var(--mark); color: var(--ink); padding: 0 4px; margin: 0 -4px; -webkit-box-decoration-break: clone; box-decoration-break: clone; }
 .case-file { margin-block: var(--space-6); padding: var(--space-3) var(--space-4); background: var(--sheet); border: 1px solid var(--rule); }
 .case-caption { margin: var(--space-2) 0 0; padding-top: var(--space-2); border-top: 1px solid var(--rule); font: var(--type-note); color: var(--ink-3); }
 .case-caption a { white-space: nowrap; }
-.button, .text-link { display: inline-flex; align-items: center; min-height: var(--target); font: var(--type-ui); }
+.button { display: inline-flex; align-items: center; min-height: var(--target); font: var(--type-ui); }
 .button { padding-block: var(--space-1); border-bottom: 1px solid var(--accent); text-decoration: none; }
 .button:hover { border-bottom-width: 2px; }
 
@@ -152,8 +151,6 @@ li::marker { color: var(--ink-3); }
 .contents nav a { display: flex; align-items: center; color: var(--ink-3); font: var(--type-ui); min-height: 36px; padding-left: var(--space-2); margin-left: calc(-1 * var(--space-2)); border-left: 2px solid var(--rule); text-decoration: none; }
 .contents nav a[aria-current="location"] { color: var(--accent); border-left-color: var(--accent); }
 .contents nav a:hover { color: var(--ink); }
-.depth-note { margin: var(--space-4) 0 0; font: var(--type-note); color: var(--ink-2); }
-.depth-note span { display: block; color: var(--ink-3); margin-top: var(--space-1); }
 
 /* Chapters: space does the separating; cautions move into the margin when there is room. */
 .chapter { padding-block: var(--section-space); }
@@ -170,20 +167,15 @@ section[id], h2[id], h3[id], details[id] { scroll-margin-top: var(--space-2); }
 .technical-note[open] > summary { border-bottom: 1px solid var(--rule); }
 .technical-note > :not(summary) { margin-top: var(--space-3); }
 .technical-note > :last-child { margin-bottom: var(--space-3); }
-.alternative-index, .record-index, .evidence-map, .inference { margin-block: var(--space-4); }
+.alternative-index, .record-index, .evidence-map { margin-block: var(--space-4); }
 .alternative-index > div, .record-index > div, .evidence-map > div { display: grid; grid-template-columns: var(--label-column) minmax(0, 1fr); gap: var(--space-3); padding-block: var(--space-2); border-top: 1px solid var(--rule); }
 .alternative-index dt, .record-index dt, .evidence-map dt { font: var(--type-label); }
 .alternative-index dd, .record-index dd, .evidence-map dd { margin: 0; color: var(--ink-2); }
 .record-index { border-bottom: 1px solid var(--rule); }
 .record-index > div:last-child dt span { background: var(--mark); padding: 0 4px; margin: 0 -4px; }
-/* What the record establishes, and what it leaves open. */
-.inference { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--space-4); }
-.inference > div { display: grid; align-content: start; gap: var(--space-1); padding-top: var(--space-2); border-top: 1px solid var(--ink); }
-.inference > div + div { border-top-color: var(--rule-strong); }
-.inference dt { font: var(--type-label); color: var(--ink); }
-.inference > div + div dt { color: var(--ink-2); }
-.inference dd { margin: 0; }
-.inference > div + div dd { color: var(--ink-2); font-style: italic; }
+/* What the record leaves open: one line after each exhibit. */
+.still-open { margin-block: var(--space-4); padding-left: var(--space-2); border-left: 1px solid var(--rule-strong); font-style: italic; color: var(--ink-2); }
+.still-open b { font: var(--type-label); font-style: normal; color: var(--ink); margin-right: 4px; }
 .caution { margin-block: var(--space-4); font: var(--type-note); color: var(--ink-2); }
 .caution strong:first-child { color: var(--ink); }
 .caution p:last-child { margin: 0; }
@@ -211,8 +203,8 @@ section[id], h2[id], h3[id], details[id] { scroll-margin-top: var(--space-2); }
 .unit-row strong { font: var(--type-figure); color: var(--ink); font-variant-numeric: tabular-nums; }
 .unit-row small { font: var(--type-note); color: var(--ink-3); }
 .units { display: grid; grid-template-columns: repeat(auto-fill, 12px); gap: 4px; padding-top: 8px; }
-.units i { display: block; width: 12px; height: 12px; background: var(--sheet-2); }
-.units i.hit { background: var(--accent); }
+.units i { display: block; width: 12px; height: 12px; border: 1px solid var(--control); box-sizing: border-box; }
+.units i.hit { background: var(--accent); border-color: var(--accent); }
 .redline-body { font: var(--type-record); }
 .redline-body p { margin: 0; padding: var(--space-1) 0 var(--space-1) 8.5rem; position: relative; }
 .redline-body .same { color: var(--ink-3); }
@@ -377,7 +369,7 @@ tbody th { font-weight: var(--weight-medium); }
   .contents summary::after { content: "+"; font: var(--type-record); }
   .contents details[open] summary::after { content: "−"; }
   .contents nav { grid-template-columns: 1fr 1fr; gap: 0 var(--space-3); padding-block: var(--space-1); }
-  .contents .depth-note, .levelbar .who-for { display: none; }
+  .levelbar .who-for { display: none; }
 }
 @media (max-width: 767px) {
   .brand-long { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
@@ -397,9 +389,9 @@ tbody th { font-weight: var(--weight-medium); }
   .cover-evidence { padding: 0 var(--space-2) var(--space-2); }
   .exhibit-controls { gap: var(--space-2); }
   .case-file { padding: var(--space-2); }
-  .inference, .question-band { grid-template-columns: 1fr; }
+  .question-band { grid-template-columns: 1fr; }
   .keep { grid-template-columns: 1fr; }
-  .slip-lines li, .alternative-index > div, .record-index > div, .evidence-map > div, .inference > div,
+  .slip-lines li, .alternative-index > div, .record-index > div, .evidence-map > div,
   .methods dl > div, .timeline-list li, .unit-row, .shared-record { grid-template-columns: 1fr; gap: var(--space-1); }
   .units { grid-template-columns: repeat(auto-fill, 8px); gap: 4px; }
   .units i { width: 8px; height: 8px; }

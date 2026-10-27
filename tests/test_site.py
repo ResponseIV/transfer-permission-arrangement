@@ -26,7 +26,7 @@ CONTRAST = [(fg, bg, 4.5) for fg, bg in [
     ("no", "sheet"), ("paper", "alpha"), ("paper", "beta"), ("ink-2", "accent-soft"),
     ("ink-2", "mark"), ("sheet", "accent"), ("ink-2", "sheet-2"),
     ("ink-3", "sheet-2"), ("alpha", "sheet-2"), ("beta", "sheet-2"),
-]] + [(fg, "sheet", 3.0) for fg in ("fig-log", "fig-unpres", "fig-pages", "control", "ink-3")]
+]] + [(fg, "sheet", 3.0) for fg in ("fig-log", "fig-unpres", "fig-pages", "control", "ink-3")] + [("control", "paper", 3.0)]
 
 
 def tokens(css: str) -> dict[str, dict[str, str]]:
