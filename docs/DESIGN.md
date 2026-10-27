@@ -44,37 +44,38 @@ the scripted explanation in a `noscript` note and the desk offers a static compa
 
 ## Layout and visual language
 
-A printed case file, not a product page. Warm paper and ink; one rule weight for structure and a heavier ink
-rule to open every exhibit; one **marker** colour (vermilion) reserved for the record that changes the verdict:
-the instructions, the decisive line of a log, the reveal. Agents keep their own colours, always with their names.
-No gradients, shadows-as-decoration, coloured italic headlines or arrow glyphs on links.
+An investigator's annotated printout: cool white paper, navy ink, one blue for links, the active control and the
+turn of the headline, and a yellow **highlighter** on the record that changes the verdict: the instructions, the
+decisive line of a log, the inserted sentence, the planted token. Agents keep their own colours (Alpha blue, Beta
+plum), always with their names. Space separates chapters; there are no eyebrow labels, tracked capitals, dot
+separators or decorative rules. A caption gives the source and a link, never a restatement of the figure.
 
-**One grammar, five compositions.** Every exhibit shares the same marks: a tracked mono tag naming it, ruled
-ledger lines, mono event numbers, a caption in the note role, and the marker only where the verdict turns. What
-varies is the composition, chosen to fit what each case shows:
+**One sheet, five compositions.** Exhibits share plain sans labels, mono event numbers, hairline rows and the
+highlighter. What varies is the shape, chosen to fit what each case shows:
 
 | Case | Composition |
 | --- | --- |
-| Opening | A log slip: add records one at a time; the instructions arrive in the marker colour |
-| Transfer | A log slip with the refused read struck through, then a unit chart of the 194 episodes (28 against 0) |
+| Opening | A record sheet with tabs: add records one at a time; the instructions arrive highlighted |
+| Transfer | A record sheet with the refused read struck through and highlighted, then a unit chart of the 194 episodes (28 against 0) |
 | Permission | A redline of the two real prompts: the rule struck, the reworded sentence inserted, the shared trace beneath |
 | Arrangement | Two aligned tracks (offer, read, reply, use) with original event numbers; solid for agent-made, dashed for scripted |
 | Leak | A revision stack: the page an auditor finds lies over the planted revision Beta read |
 
 The page varies its width and rhythm: a cover split between the question and the opening exhibit, a full-width
 band of the three questions (echoed by the three-column "what to keep"), a measured reading column with a
-contents rail, and, on wide screens, cautions set as notes in the right margin.
+contents rail, exhibits that alternate between a white sheet and open compositions, and, on wide screens,
+cautions set as notes in the right margin.
 
 Type is self-hosted: Newsreader for reading and display (large, light, tight), Instrument Sans for controls and
-notes, JetBrains Mono for anything recorded and for the tracked tags. Licences are in `assets/fonts/`. Tokens live
-in `assets/tokens.css`; `tests/test_site.py` checks every colour pair in use, including the marker, in both themes.
+notes and labels, JetBrains Mono for anything recorded. Licences are in `assets/fonts/`. Tokens live
+in `assets/tokens.css`; `tests/test_site.py` checks every colour pair in use, including the highlighter, in both themes.
 
 ## Evidence desk
 
 Controls first. A sticky band holds the view (compare two, or one episode), the case, and the record stack
-(1 Pages, 2 + Access log, 3 + Answers, 4 + Instructions; cumulative, the fourth in the marker colour). The question
-and its reveal sit together under it; the reveal names the true actors of unsigned board events in the marker
-colour and gives each side's verdict.
+(1 Pages, 2 + Access log, 3 + Answers, 4 + Instructions; cumulative, the fourth highlighted). The question
+is the heading, with its reveal under it; the reveal names the true actors of unsigned board events in blue
+and gives each side's verdict.
 
 Compare is a ledger: landmarks in a gutter, A and B as columns, original event numbers, page text clamped with
 "Show the whole page". The instructions row is closed until the instructions record is held, and offers a button
