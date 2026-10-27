@@ -2,7 +2,7 @@
    record that changes the verdict); composition only here. Tokens: assets/tokens.css. */
 
 .explorer-main { min-height: 100vh; padding-bottom: var(--space-10); }
-.desk-head { padding-block: var(--space-10) var(--space-6); max-width: 48rem; }
+.desk-head { padding-block: var(--space-6) var(--space-4); max-width: var(--measure); }
 .desk-head h1 { font: var(--type-page); letter-spacing: var(--tracking-heading); margin: 0 0 var(--space-2); }
 .desk-lede { font: var(--type-intro); color: var(--ink-2); margin: 0; max-width: var(--measure); }
 .loading-note { font: var(--type-note); color: var(--ink-3); }
@@ -45,8 +45,8 @@
 .record-stack:has(#rec-instr:checked) label:is([for="rec-text"], [for="rec-both"], [for="rec-full"]) { color: var(--ink); background: var(--accent-soft); }
 
 /* Question, reveal and answer: one block, read first. */
-.desk-question { padding-block: var(--space-5) var(--space-4); max-width: 48rem; }
-.desk-question h2 { font: var(--type-title); letter-spacing: var(--tracking-heading); margin: 0 0 var(--space-2); }
+.desk-question { padding-block: var(--space-4) var(--space-3); max-width: var(--measure); }
+.desk-question h2 { font: var(--type-heading); letter-spacing: var(--tracking-heading); margin: 0 0 var(--space-2); }
 .desk-question-text { font: var(--type-body); color: var(--ink-2); margin: 0 0 var(--space-3); max-width: var(--measure); }
 .desk-meta { font: var(--type-ui); color: var(--ink-3); margin: 0 0 var(--space-2); }
 .tokens { font: var(--type-note); color: var(--ink-2); margin: 0 0 var(--space-3); }
@@ -66,12 +66,15 @@
 /* The ledger: landmarks in a gutter, A and B as columns, ruled like a log printout. */
 .ledger { display: grid; grid-template-columns: 11rem minmax(0, 1fr) minmax(0, 1fr); border-top: 1px solid var(--ink); }
 .ledger-head, .ledger-row { display: contents; }
+/* A strut in the side letters' face puts "Landmark" on the same baseline as A and B. */
+.ledger-head > .ledger-gutter { display: flex; align-items: baseline; }
+.ledger-head > .ledger-gutter::before { content: "\200b"; font: var(--type-question); }
 .ledger-head > * { padding: var(--space-2) var(--space-2) var(--space-2) 0; border-bottom: 1px solid var(--ink); position: sticky; top: calc(var(--bar) + var(--desk-bar, 58px)); background: var(--paper); z-index: 5; }
 .ledger-side { display: flex; align-items: baseline; gap: var(--space-2); padding-left: var(--space-3) !important; }
 .side-letter { font: var(--type-question); }
 .side-name { font: var(--type-ui); color: var(--ink-2); }
 .ledger-gutter { font: var(--type-tag); color: var(--ink-3); margin: 0; }
-.ledger-row > .ledger-gutter { padding: var(--space-3) var(--space-2) var(--space-3) 0; border-bottom: 1px solid var(--rule); }
+.ledger-row > .ledger-gutter { padding: var(--space-3) var(--space-2) var(--space-3) 0; border-bottom: 1px solid var(--rule); line-height: var(--line-note); }
 .landmark-note { display: block; margin-top: var(--space-1); font: var(--type-note); color: var(--ink-3); }
 .ledger-cell { min-width: 0; padding: var(--space-3); border-bottom: 1px solid var(--rule); border-left: 1px solid var(--rule); }
 .ledger-events { list-style: none; margin: 0; padding: 0; display: grid; gap: var(--space-2); }
@@ -98,9 +101,9 @@
 .who.anon { font-weight: var(--weight-medium); font-style: italic; color: var(--ink-2); }
 .who-truth { font-style: normal; font-weight: var(--weight-strong); color: var(--accent); }
 .record-text { margin-top: var(--space-1); }
-.record-body { font: var(--type-record); color: var(--ink); background: var(--sheet); border-left: 2px solid var(--rule-strong); padding: 8px 12px; margin-top: var(--space-1); white-space: pre-wrap; overflow-wrap: anywhere; }
+.record-body { font: var(--type-record); color: var(--ink); background: var(--sheet); border-left: 2px solid var(--rule-strong); padding: var(--space-1) var(--space-2); margin-top: var(--space-1); white-space: pre-wrap; overflow-wrap: anywhere; }
 .record-text .record-body { margin-top: 0; }
-.record-body.clamped { max-height: calc(3 * var(--line-note) + 12px); overflow: hidden; -webkit-mask-image: linear-gradient(to bottom, #000 60%, transparent); mask-image: linear-gradient(to bottom, #000 60%, transparent); }
+.record-body.clamped { max-height: calc(4 * var(--line-note) + var(--space-2)); overflow: hidden; -webkit-mask-image: linear-gradient(to bottom, #000 60%, transparent); mask-image: linear-gradient(to bottom, #000 60%, transparent); }
 .record-body.empty { color: var(--ink-3); font-style: italic; }
 .more { font: var(--type-note); color: var(--accent); background: none; border: 0; padding: 4px 0; cursor: pointer; text-decoration: underline; text-underline-offset: 0.18em; }
 .unseen { font: var(--type-note); color: var(--ink-3); font-style: italic; margin: 0; }
@@ -128,8 +131,9 @@
 .stepper .pos { font: var(--type-record); color: var(--ink-2); min-width: 8rem; }
 .timeline-head { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 0 var(--space-4); padding-left: 3rem; padding-bottom: var(--space-1); border-bottom: 1px solid var(--ink); font: var(--type-tag); color: var(--ink-3); }
 .timeline { list-style: none; margin: 0; padding: 0; }
-.timeline > .record-event { display: grid; grid-template-columns: 3rem minmax(0, 1fr); padding: var(--space-3) 0 var(--space-3) var(--space-2); margin-left: calc(-1 * var(--space-2)); border-bottom: 1px solid var(--rule); }
-.timeline > .record-event.current { box-shadow: inset 3px 0 0 var(--accent); }
+.timeline > .record-event { position: relative; display: grid; grid-template-columns: 3rem minmax(0, 1fr); padding-block: var(--space-3); border-bottom: 1px solid var(--rule); }
+/* The current-step bar sits in the gutter, so rows keep the column's left edge. */
+.timeline > .record-event.current::before { content: ""; position: absolute; top: 0; bottom: 0; left: calc(-1 * var(--space-2)); width: 3px; background: var(--accent); }
 .timeline > .record-event.current .evt { color: var(--ink); font-weight: var(--weight-strong); }
 .timeline .event-lanes { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: var(--space-4); }
 .timeline .pane-label { display: none; }
