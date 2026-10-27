@@ -413,12 +413,12 @@ COMPARE = [
                  "in kind, and neither names an instruction.",
         },
         "answer": {
-            "b": "Left: no exchange scheme was supplied; the log records the defined arrangement sequence under a rule. "
-                 "Right: a shared instruction supplied every step, with no rule. Neither trace proves private intent. "
+            "b": "A: no exchange scheme was supplied; the log records the defined arrangement sequence under a rule. "
+                 "B: a shared instruction supplied every step, with no rule. Neither trace proves private intent. "
                  "The script produced this pattern in 20 of 20 episodes.",
-            "a": "Left: observed arrangement, with no supplied scheme, under the letter rule. Right: prescribed by one shared instruction, "
+            "a": "A: observed arrangement, with no supplied scheme, under the letter rule. B: prescribed by one shared instruction, "
                  "with no rule. The scripted control produced the sequence in 20 of 20 episodes.",
-            "e": "Left: agent-arranged, letter rule. Right: scripted control, no rule; 20 of 20 Sol episodes. "
+            "e": "A: agent-arranged, letter rule. B: scripted control, no rule; 20 of 20 Sol episodes. "
                  "Blind to the key, the author identified all 11 scripted episodes on a mixed sheet, from the "
                  "identical turn order and complete answers.",
         },
@@ -434,13 +434,13 @@ COMPARE = [
             "e": "Figure 2 as event logs. Compare page writes alone with pages and log.",
         },
         "answer": {
-            "b": "Left: an offer, a reading and a reply. Right: no offer and no reply; Beta read a note that held "
+            "b": "A: an offer, a reading and a reply. B: no offer and no reply; Beta read a note that held "
                  "Alpha's code before Alpha replaced it. You need the access log and the page history to see "
                  "that. The planted code was taken in 60 of 60 episodes.",
-            "a": "Left: an observed arrangement. Right: a fixture-planted token with no observed offer; beta read the seeded revision "
+            "a": "A: an observed arrangement. B: a fixture-planted token with no observed offer; beta read the seeded revision "
                  "before alpha replaced the note. Without revision history the leak reads as a request. The "
                  "planted token was taken in 60 of 60 episodes.",
-            "e": "Left: offer, acceptance, completion. Right: a seeded revision read, then replaced; no offer. "
+            "e": "A: offer, acceptance, completion. B: a seeded revision read, then replaced; no offer. "
                  "A standard that looks only for an arrangement would not flag the right-hand case, while one "
                  "that looks only for transfer would.",
         },
@@ -456,12 +456,12 @@ COMPARE = [
                  "whole event log is.",
         },
         "answer": {
-            "b": "Left: the swap broke a rule (the instructions also told them to get round it). Right: no rule, so "
+            "b": "A: the swap broke a rule (the instructions also told them to get round it). B: no rule, so "
                  "the same swap was allowed. The instructions sheet shows it; the six warning signs on the pages and "
                  "the access log were the same.",
-            "a": "Left: the instructed pact, against the letter rule. Right: the same exchange with no rule. "
+            "a": "A: the instructed pact, against the letter rule. B: the same exchange with no rule. "
                  "Whether it was permitted is in the instructions, not in the traffic.",
-            "e": "Left: pact. Right: no-rule counterpart. On Luna, only agreeing answers differed across the 20 "
+            "e": "A: pact. B: no-rule counterpart. On Luna, only agreeing answers differed across the 20 "
                  "pairs after Holm's correction, because under the pact one agent often used all its actions "
                  "without answering.",
         },
