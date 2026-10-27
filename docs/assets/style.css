@@ -219,15 +219,17 @@ section[id], h2[id], h3[id], details[id] { scroll-margin-top: var(--space-2); }
 .track + .track { border-top: 1px solid var(--rule); }
 .track-name { margin: 0; font: var(--type-note); color: var(--ink-2); }
 .track-name b { font: var(--type-label); color: var(--ink); margin-right: var(--space-1); }
-.track-steps { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); border-top: 2px solid var(--alpha); }
-.track-steps li { margin: 0; padding: var(--space-2) var(--space-1) 0 0; display: grid; align-content: start; gap: 4px; position: relative; font: var(--type-note); }
-.track-steps li::before { content: ""; position: absolute; top: -4px; left: 0; width: 10px; height: 10px; background: var(--alpha); border-radius: 50%; }
-.track.scripted .track-steps { border-top: 2px dashed var(--ink-3); }
-.track.scripted .track-steps li::before { background: var(--paper); border: 2px solid var(--ink-3); width: 6px; height: 6px; }
+/* Each step draws its dot and the rail to the next dot, so the rail starts and ends on a station. */
+.track-steps { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); }
+.track-steps li { margin: 0; padding: var(--space-3) var(--space-2) 0 0; display: grid; align-content: start; gap: var(--space-half); position: relative; font: var(--type-note); }
+.track-steps li::before { content: ""; position: absolute; z-index: 1; top: -5px; left: 0; width: 10px; height: 10px; background: var(--alpha); border-radius: 50%; }
+.track-steps li:not(:last-child)::after { content: ""; position: absolute; top: -1px; left: 5px; right: -5px; border-top: 2px solid var(--alpha); }
+.track.scripted .track-steps li::before { background: var(--paper); border: 2px solid var(--ink-3); }
+.track.scripted .track-steps li:not(:last-child)::after { border-top-style: dashed; border-top-color: var(--ink-3); }
 .track-steps .evt { font: var(--type-record); }
 .track-steps b { font: var(--type-label); }
 .track-steps span:not(.evt) { color: var(--ink-2); }
-.track-steps code { font: var(--type-record); color: var(--ink); overflow-wrap: anywhere; }
+.track-steps code { font: var(--type-record); color: var(--ink); overflow-wrap: normal; }
 .track-count { margin: 0; font: var(--type-note); color: var(--ink-2); }
 .track-count strong { font: var(--type-heading); color: var(--ink); margin-right: 4px; }
 .case-file.revisions { background: transparent; border: 0; padding: 0; }
@@ -397,7 +399,12 @@ tbody th { font-weight: var(--weight-medium); }
   .units i { width: 8px; height: 8px; }
   .redline-body p { padding-left: 0; }
   .redline-mark { position: static; display: block; width: auto; margin-bottom: 4px; }
-  .track-steps { grid-template-columns: 1fr 1fr; row-gap: var(--space-2); }
+  .track-steps { grid-template-columns: 1fr; }
+  .track-steps li { padding: 0 0 var(--space-3) var(--space-4); }
+  .track-steps li:last-child { padding-bottom: 0; }
+  .track-steps li::before { top: 7px; }
+  .track-steps li:not(:last-child)::after { top: 12px; bottom: -12px; left: 4px; right: auto; border-top: 0; border-left: 2px solid var(--alpha); }
+  .track.scripted .track-steps li:not(:last-child)::after { border-left-style: dashed; border-left-color: var(--ink-3); }
   .revision.now { max-width: 100%; }
   .revision.then { margin-left: var(--space-3); }
   .paper-end { grid-template-columns: 1fr; }
