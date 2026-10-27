@@ -24,8 +24,8 @@ LEGEND = [("s-log", False, "Pages and log, all 206 nontransfers"),
           ("s-unpres", True, "Pages and log, the 194 with no prescribed exchange (bound)"),
           ("s-pages", False, "Pages alone, all 206")]
 LAYOUTS = {
-    "wide": {"w": 640, "h": 252, "left": 46, "right": 624, "top": 12, "bottom": 208, "font": 12},
-    "narrow": {"w": 340, "h": 262, "left": 38, "right": 330, "top": 12, "bottom": 214, "font": 11},
+    "wide": {"w": 640, "h": 316, "left": 46, "right": 624, "top": 12, "bottom": 272, "font": 12},
+    "narrow": {"w": 340, "h": 302, "left": 38, "right": 330, "top": 12, "bottom": 254, "font": 11},
 }
 
 
@@ -70,10 +70,10 @@ def svg(series: list[dict], layout: str) -> str:
         css = SERIES[(s["view"], s["negatives"])]
         points = " ".join(f"{x(px):.1f},{y(py):.1f}" for px, py in s["points"])
         out.append(f'<polyline class="series {css}{" bound" if s["bound"] else ""}" points="{points}"/>')
-    floor = math.inf  # labels are placed bottom-up, each at least one line above the previous
+    floor = math.inf  # labels are placed bottom-up, each a line plus a 4px gap above the previous
     for css, value in sorted(annotations(series), key=lambda item: item[1]):
         out.append(f'<circle class="dot {css}" cx="{marker:.1f}" cy="{y(value):.1f}" r="3.5"/>')
-        floor = min(y(value) + font * 0.35, floor - font - 1)
+        floor = min(y(value) + font * 0.35, floor - font - 4)
         out.append(f'<text class="val" x="{marker - 8:.1f}" y="{floor:.1f}" text-anchor="end" '
                    f'font-size="{font}">{round(value * 100)}%</text>')
     out.append("</svg>")
