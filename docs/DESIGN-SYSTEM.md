@@ -18,7 +18,7 @@ strong 600; emphasis uses the relevant family's italic. There are no shrinking p
 | Chapter title | 36/40, 32/40 phone | Article chapters and overview |
 | Subheading | 24/32 | Subsections and the active desk comparison |
 | Intro | 24/32 | Opening standfirst |
-| Body | 18/28 | Narrative, case explanations and inference text |
+| Body | 18/28 | Narrative, case explanations and the open question after each case |
 | Interface | 14/20, medium or strong | Navigation, controls |
 | Tag | 13/20 sans, medium, sentence case | Record categories, ledger gutters, small labels |
 | Note | 14/24 | Captions, provenance, cautions, metadata |
@@ -63,8 +63,8 @@ The compact 360px boundary changes gutters only. Role sizes change centrally at 
 - An exhibit has no title tag. It uses hairline rows, mono event numbers and sentence-case labels, and closes
   with one caption line: the source and a link. Compositions vary by case (see DESIGN.md).
   The opening record takes its natural content height; a hidden extra record does not reserve an empty area.
-- Case narrative stays in the body role. Its exact strings use the record role. The inference lines sit
-  against a single ink rule: what is established in roman, what is left open in italic.
+- Case narrative stays in the body role. Its exact strings use the record role. After each exhibit, one
+  italic line says what the record leaves open; what it establishes is left to the exhibit and the prose.
 - Comparative metrics share one size. Their denominator and assumed population remain adjacent in notes
   or body text; magnitude is not used as decorative promotion.
 - Technical disclosures use the same ruled summary, control target and spacing. They open at a deep link.
